@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "note": "Fallback registry for journals with incomplete or blocked publisher access. The live Google Drive Journal list remains authoritative; extend this registry for new sources. ISSNs must match Crossref container titles before records are accepted. Research Square requires separate preprint handling.",
+  "journals": [
+    {
+      "journal": "Science",
+      "issn": "0036-8075",
+      "publisher_family": "science"
+    },
+    {
+      "journal": "Cell",
+      "issn": "0092-8674",
+      "publisher_family": "cell"
+    },
+    {
+      "journal": "Nature",
+      "issn": "0028-0836",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Science Robotics",
+      "issn": "2470-9476",
+      "publisher_family": "science"
+    },
+    {
+      "journal": "Science Translational Medicine",
+      "issn": "1946-6234",
+      "publisher_family": "science"
+    },
+    {
+      "journal": "Nature Medicine",
+      "issn": "1078-8956",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Neuroscience",
+      "issn": "1097-6256",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Science Advances",
+      "issn": "2375-2548",
+      "publisher_family": "science"
+    },
+    {
+      "journal": "Nature Communications",
+      "issn": "2041-1723",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Proceedings of the National Academy of Sciences",
+      "issn": "0027-8424",
+      "publisher_family": "pnas"
+    },
+    {
+      "journal": "Matter",
+      "issn": "2590-2385",
+      "publisher_family": "cell"
+    },
+    {
+      "journal": "Neuron",
+      "issn": "0896-6273",
+      "publisher_family": "cell"
+    },
+    {
+      "journal": "Advanced Materials",
+      "issn": "0935-9648",
+      "publisher_family": "wiley"
+    },
+    {
+      "journal": "ACS Nano",
+      "issn": "1936-0851",
+      "publisher_family": "acs"
+    },
+    {
+      "journal": "Nano Letters",
+      "issn": "1530-6984",
+      "publisher_family": "acs"
+    },
+    {
+      "journal": "Device",
+      "issn": "2666-9986",
+      "publisher_family": "cell"
+    },
+    {
+      "journal": "Biosensors and Bioelectronics",
+      "issn": "0956-5663",
+      "publisher_family": "elsevier"
+    },
+    {
+      "journal": "npj Digital Medicine",
+      "issn": "2398-6352",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Advanced Functional Materials",
+      "issn": "1616-301X",
+      "publisher_family": "wiley"
+    },
+    {
+      "journal": "Advanced Healthcare Materials",
+      "issn": "2192-2640",
+      "publisher_family": "wiley"
+    },
+    {
+      "journal": "Sensors and Actuators A: Physical",
+      "issn": "0924-4247",
+      "publisher_family": "elsevier"
+    },
+    {
+      "journal": "Sensors and Actuators B: Chemical",
+      "issn": "0925-4005",
+      "publisher_family": "elsevier"
+    },
+    {
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "issn": "0018-9294",
+      "publisher_family": "ieee"
+    },
+    {
+      "journal": "Journal of Microelectromechanical Systems",
+      "issn": "1057-7157",
+      "publisher_family": "ieee"
+    },
+    {
+      "journal": "Journal of Micromechanics and Microengineering",
+      "issn": "0960-1317",
+      "publisher_family": "iop"
+    },
+    {
+      "journal": "Research Square - Nature Portfolio",
+      "prefix": "10.21203",
+      "publisher_family": "preprints",
+      "portfolio_verification_required": true,
+      "preferred_method": "visible_browser_filter",
+      "browse_url": "https://www.researchsquare.com/browse",
+      "selector_label": "Journals & Platforms",
+      "exact_option": "Nature Portfolio",
+      "submit": "Search",
+      "last_filter_verified": "2026-10-23",
+      "prefix_scope": "Platform discovery fallback only; prefix does not establish Nature Portfolio membership"
+    },
+    {
+      "journal": "Nature Biomedical Engineering",
+      "issn": "2157-846X",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Biotechnology",
+      "issn": "1087-0156",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Cardiovascular Research",
+      "issn": "2731-0590",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Electronics",
+      "issn": "2520-1131",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Machine Intelligence",
+      "issn": "2522-5839",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Materials",
+      "issn": "1476-1122",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Methods",
+      "issn": "1548-7091",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Nanotechnology",
+      "issn": "1748-3387",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Photonics",
+      "issn": "1749-4885",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Sensors",
+      "issn": "3059-4499",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Reviews Bioengineering",
+      "issn": "2731-6092",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Reviews Electrical Engineering",
+      "issn": "2948-1201",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Reviews Materials",
+      "issn": "2058-8437",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "npj Flexible Electronics",
+      "issn": "2397-4621",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Protocols",
+      "issn": "1750-2799",
+      "publisher_family": "nature",
+      "alternate_issns": [
+        "1754-2189"
+      ]
+    },
+    {
+      "journal": "Microsystems & Nanoengineering",
+      "issn": "2055-7434",
+      "publisher_family": "nature"
+    },
+    {
+      "journal": "Nature Mechanical Engineering",
+      "issn": "3091-5244",
+      "publisher_family": "nature"
+    }
+  ]
+}

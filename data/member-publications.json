@@ -1,0 +1,966 @@
+{
+  "checked_on": "2026-10-14",
+  "method": "Exact full-author-name matching to DOI metadata, with explicit user-confirmed per-paper identities where metadata abbreviates names. Initials alone are never sufficient.",
+  "groups": [
+    [
+      "postdoctoral-fellows",
+      "Postdoctoral Fellows",
+      "博士后研究员",
+      [
+        [
+          "Chong Zhang",
+          "张翀",
+          "The Chinese University of Hong Kong / 香港中文大学"
+        ],
+        [
+          "Wai Hong Chong",
+          "张伟鸿",
+          "Universiti Sains Malaysia / 马来西亚理科大学"
+        ]
+      ]
+    ],
+    [
+      "phd-students",
+      "Ph.D. Students",
+      "博士研究生",
+      [
+        [
+          "Yiran Wang",
+          "王毅然",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Zhongyi Nie",
+          "聂众一",
+          "Beihang University / 北京航空航天大学"
+        ],
+        [
+          "Yaozheng Wang",
+          "王耀正",
+          "Northwestern Polytechnical University / 西北工业大学"
+        ],
+        [
+          "Jingyan Zhang",
+          "张景岩",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Xiang Lin",
+          "林湘",
+          "Sun Yat-sen University / 中山大学"
+        ],
+        [
+          "Shaotong Zhang",
+          "张少彤",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Ruyue Zhong",
+          "钟如玥",
+          "Sun Yat-sen University / 中山大学"
+        ],
+        [
+          "Kedong Wu",
+          "吴可栋",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Denghua Wu",
+          "吴登华",
+          "Yale University / 耶鲁大学"
+        ],
+        [
+          "Zixiang Wu",
+          "吴自翔",
+          "Sichuan University / 四川大学"
+        ],
+        [
+          "Ning Sun",
+          "孙宁",
+          "Nanjing University of Posts and Telecommunications / 南京邮电大学"
+        ],
+        [
+          "Chendong Yang",
+          "杨辰东",
+          "Beihang University / 北京航空航天大学"
+        ]
+      ]
+    ],
+    [
+      "undergraduates",
+      "Undergraduates & Visiting Students",
+      "本科生与访问学生",
+      [
+        [
+          "Yujie Shang",
+          "商宇杰",
+          "Nanjing University of Aeronautics and Astronautics / 南京航空航天大学"
+        ],
+        [
+          "Weixiang He",
+          "赫伟翔",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Kangle Li",
+          "李康乐",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Yanzhong Wang",
+          "王言中",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Yunling Li",
+          "李云凌",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Penglai Yao",
+          "姚朋来",
+          "Peking University / 北京大学"
+        ],
+        [
+          "Junjie Wang",
+          "王俊洁",
+          "Peking University / 北京大学"
+        ]
+      ]
+    ]
+  ],
+  "member_paper_ids": {
+    "Mengdi Han": [
+      126,
+      125,
+      124,
+      123,
+      122,
+      120,
+      119,
+      115,
+      114,
+      113,
+      112,
+      110,
+      109,
+      105,
+      104,
+      103,
+      102,
+      85,
+      81,
+      80,
+      78,
+      73,
+      72,
+      69
+    ],
+    "Chong Zhang": [
+      127,
+      126,
+      125
+    ],
+    "Yiran Wang": [
+      125,
+      124,
+      112,
+      110,
+      88
+    ],
+    "Zhongyi Nie": [
+      126,
+      125,
+      124,
+      120,
+      114,
+      113,
+      112,
+      110
+    ],
+    "Yaozheng Wang": [
+      125,
+      124,
+      112,
+      110,
+      109,
+      102
+    ],
+    "Jingyan Zhang": [
+      125,
+      124,
+      112,
+      110,
+      104
+    ],
+    "Xiang Lin": [
+      125,
+      124,
+      120,
+      115,
+      112,
+      110,
+      103
+    ],
+    "Shaotong Zhang": [
+      125,
+      124,
+      115,
+      112,
+      110
+    ],
+    "Ruyue Zhong": [
+      125,
+      124,
+      120
+    ],
+    "Kedong Wu": [
+      126,
+      125,
+      124,
+      120
+    ],
+    "Denghua Wu": [
+      125,
+      122
+    ],
+    "Zixiang Wu": [],
+    "Ning Sun": [],
+    "Chendong Yang": [],
+    "Yujie Shang": [],
+    "Weixiang He": [
+      120
+    ],
+    "Kangle Li": [
+      122
+    ],
+    "Yanzhong Wang": [],
+    "Yunling Li": [],
+    "Penglai Yao": [],
+    "Junjie Wang": [],
+    "Wai Hong Chong": []
+  },
+  "evidence": {
+    "85": {
+      "doi": "10.1126/sciadv.abj3686",
+      "full_authors": [
+        "Haiwen Luan",
+        "Qihui Zhang",
+        "Tzu-Li Liu",
+        "Xueju Wang",
+        "Shiwei Zhao",
+        "Heling Wang",
+        "Shenglian Yao",
+        "Yeguang Xue",
+        "Jean Won Kwak",
+        "Wubin Bai",
+        "Yameng Xu",
+        "Mengdi Han",
+        "Kan Li",
+        "Zhengwei Li",
+        "Xinchen Ni",
+        "Jilong Ye",
+        "Dongwhi Choi",
+        "Quansan Yang",
+        "Jae-Hwan Kim",
+        "Shuo Li",
+        "Shulin Chen",
+        "Changsheng Wu",
+        "Di Lu",
+        "Jan-Kai Chang",
+        "Zhaoqian Xie",
+        "Yonggang Huang",
+        "John A. Rogers"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1126/sciadv.abj3686",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:IUKN3-7HHlwC",
+      "checked_on": "2026-10-14"
+    },
+    "81": {
+      "doi": "10.1038/s41551-021-00723-y",
+      "full_authors": [
+        "Enming Song",
+        "Zhaoqian Xie",
+        "Wubin Bai",
+        "Haiwen Luan",
+        "Bowen Ji",
+        "Xin Ning",
+        "Yu Xia",
+        "Janice Mihyun Baek",
+        "Yujin Lee",
+        "Raudel Avila",
+        "Huang-Yu Chen",
+        "Jae-Hwan Kim",
+        "Surabhi Madhvapathy",
+        "Kuanming Yao",
+        "Dengfeng Li",
+        "Jingkun Zhou",
+        "Mengdi Han",
+        "Sang Min Won",
+        "Xinyuan Zhang",
+        "Daniel J. Myers",
+        "Yongfeng Mei",
+        "Xu Guo",
+        "Shuai Xu",
+        "Jan-Kai Chang",
+        "Xinge Yu",
+        "Yonggang Huang",
+        "John A. Rogers"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1038/s41551-021-00723-y",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:_5tno0g5mFcC",
+      "checked_on": "2026-10-14"
+    },
+    "80": {
+      "doi": "10.1038/s41593-021-00849-x",
+      "full_authors": [
+        "Yiyuan Yang",
+        "Mingzheng Wu",
+        "Abraham Vázquez-Guardado",
+        "Amy J. Wegener",
+        "Jose G. Grajales-Reyes",
+        "Yujun Deng",
+        "Taoyi Wang",
+        "Raudel Avila",
+        "Justin A. Moreno",
+        "Samuel Minkowicz",
+        "Vasin Dumrongprechachan",
+        "Jungyup Lee",
+        "Shuangyang Zhang",
+        "Alex A. Legaria",
+        "Yuhang Ma",
+        "Sunita Mehta",
+        "Daniel Franklin",
+        "Layne Hartman",
+        "Wubin Bai",
+        "Mengdi Han",
+        "Hangbo Zhao",
+        "Wei Lu",
+        "Yongjoon Yu",
+        "Xing Sheng",
+        "Anthony Banks",
+        "Xinge Yu",
+        "Zoe R. Donaldson",
+        "Robert W. Gereau",
+        "Cameron H. Good",
+        "Zhaoqian Xie",
+        "Yonggang Huang",
+        "Yevgenia Kozorovitskiy",
+        "John A. Rogers"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1038/s41593-021-00849-x",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:2VqYfGB8ITEC",
+      "checked_on": "2026-10-14"
+    },
+    "78": {
+      "doi": "10.1038/s41378-021-00261-2",
+      "full_authors": [
+        "Dan-Liang Wen",
+        "De-Heng Sun",
+        "Peng Huang",
+        "Wen Huang",
+        "Meng Su",
+        "Ya Wang",
+        "Meng-Di Han",
+        "Beomjoon Kim",
+        "Juergen Brugger",
+        "Hai-Xia Zhang",
+        "Xiao-Sheng Zhang"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1038/s41378-021-00261-2",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:sNmaIFBj_lkC",
+      "checked_on": "2026-10-14"
+    },
+    "73": {
+      "doi": "10.1016/j.jmps.2021.104400",
+      "full_authors": [
+        "Xuebo Yuan",
+        "Sang Min Won",
+        "Mengdi Han",
+        "Youshan Wang",
+        "John A. Rogers",
+        "Yonggang Huang",
+        "Heling Wang"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works?rows=3&query.title=Mechanics%20of%20encapsulated%20three-dimensional%20structures%20for%20simultaneous%20sensing%20of%20pressure%20and%20shear%20stress",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:4hFrxpcac9AC",
+      "checked_on": "2026-10-14"
+    },
+    "72": {
+      "doi": "10.1126/sciadv.abf9153",
+      "full_authors": [
+        "Yoonseok Park",
+        "Colin K. Franz",
+        "Hanjun Ryu",
+        "Haiwen Luan",
+        "Kristen Y. Cotton",
+        "Jong Uk Kim",
+        "Ted S. Chung",
+        "Shiwei Zhao",
+        "Abraham Vazquez-Guardado",
+        "Da Som Yang",
+        "Kan Li",
+        "Raudel Avila",
+        "Jack K. Phillips",
+        "Maria J. Quezada",
+        "Hokyung Jang",
+        "Sung Soo Kwak",
+        "Sang Min Won",
+        "Kyeongha Kwon",
+        "Hyoyoung Jeong",
+        "Amay J. Bandodkar",
+        "Mengdi Han",
+        "Hangbo Zhao",
+        "Gabrielle R. Osher",
+        "Heling Wang",
+        "KunHyuck Lee",
+        "Yihui Zhang",
+        "Yonggang Huang",
+        "John D. Finan",
+        "John A. Rogers"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1126/sciadv.abf9153",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:a9-T7VOCCH8C",
+      "checked_on": "2026-10-14"
+    },
+    "69": {
+      "doi": "10.34133/2021/8653218",
+      "full_authors": [
+        "Wubin Bai",
+        "Masahiro Irie",
+        "Zhonghe Liu",
+        "Haiwen Luan",
+        "Daniel Franklin",
+        "Khizar Nandoliya",
+        "Hexia Guo",
+        "Hao Zang",
+        "Yang Weng",
+        "Di Lu",
+        "Di Wu",
+        "Yixin Wu",
+        "Joseph Song",
+        "Mengdi Han",
+        "Enming Song",
+        "Yiyuan Yang",
+        "Xuexian Chen",
+        "Hangbo Zhao",
+        "Wei Lu",
+        "Giuditta Monti",
+        "Iwona Stepien",
+        "Irawati Kandela",
+        "Chad R. Haney",
+        "Changsheng Wu",
+        "Sang Min Won",
+        "Hanjun Ryu",
+        "Alina Rwei",
+        "Haixu Shen",
+        "Jihye Kim",
+        "Hong-Joon Yoon",
+        "Wei Ouyang",
+        "Yihan Liu",
+        "Emily Suen",
+        "Huang-yu Chen",
+        "Jerry Okina",
+        "Jushen Liang",
+        "Yonggang Huang",
+        "Guillermo A. Ameer",
+        "Weidong Zhou",
+        "John A. Rogers"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works?rows=3&query.title=Bioresorbable%20multilayer%20photonic%20cavities%20as%20temporary%20implants%20for%20tether-free%20measurements%20of%20regional%20tissue%20temperatures",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&cstart=100&pagesize=100&citation_for_view=rjC8MUQAAAAJ:HtEfBTGE9r8C",
+      "checked_on": "2026-10-14"
+    },
+    "88": {
+      "doi": "10.1016/j.mtphys.2022.100647",
+      "full_authors": [
+        "Y. Wang",
+        "C. Xu",
+        "X. Yu",
+        "H. Zhang",
+        "M. Han"
+      ],
+      "matched_members": [],
+      "publisher_metadata": "https://api.crossref.org/works?rows=3&query.title=Multilayer%20flexible%20electronics%3A%20manufacturing%20approaches%20and%20applications",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:QYdC8u9Cj1oC",
+      "checked_on": "2026-10-14"
+    },
+    "104": {
+      "doi": "10.3390/mi14122184",
+      "full_authors": [
+        "Jingyan Zhang",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Jingyan Zhang"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works?rows=3&query.title=Editorial%20for%20the%20special%20issue%20on%20flexible%20sensors%20and%20actuators%20for%20biomedicine",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&cstart=100&pagesize=100&citation_for_view=rjC8MUQAAAAJ:LhH-TYMQEocC",
+      "checked_on": "2026-10-14"
+    },
+    "103": {
+      "doi": "10.20517/ss.2023.05",
+      "full_authors": [
+        "Xiang Lin",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Xiang Lin"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works?rows=3&query.title=Recent%20progress%20in%20soft%20electronics%20and%20robotics%20based%20on%20magnetic%20nanomaterials",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:r_AWSJRzSzQC",
+      "checked_on": "2026-10-14"
+    },
+    "102": {
+      "doi": "10.1007/s12274-023-5778-8",
+      "full_authors": [
+        "Pengcheng Zhao",
+        "Haobin Wang",
+        "Yaozheng Wang",
+        "Wei Zhao",
+        "Mengdi Han",
+        "Haixia Zhang"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Yaozheng Wang"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1007/s12274-023-5778-8",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:HeT0ZceujKMC",
+      "checked_on": "2026-10-14"
+    },
+    "115": {
+      "doi": "10.1002/admt.202301895",
+      "full_authors": [
+        "Shaotong Zhang",
+        "Xiang Lin",
+        "Ji Wan",
+        "Chen Xu",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Xiang Lin",
+        "Shaotong Zhang"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1002/admt.202301895",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:OP4eGU-M3BUC",
+      "checked_on": "2026-10-14"
+    },
+    "113": {
+      "doi": "10.1126/sciadv.adp8804",
+      "full_authors": [
+        "Bofan Hu",
+        "Dian Xu",
+        "Yuting Shao",
+        "Zhongyi Nie",
+        "Pengchuan Liu",
+        "Jinbao Li",
+        "Lianjie Zhou",
+        "Pei Wang",
+        "Ningge Huang",
+        "Junhan Liu",
+        "Yifei Lu",
+        "Zhongyuan Wu",
+        "Bo Wang",
+        "Yongfeng Mei",
+        "Mengdi Han",
+        "Rui Li",
+        "Enming Song"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Zhongyi Nie"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1126/sciadv.adp8804",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:lvd772isFD0C",
+      "checked_on": "2026-10-14"
+    },
+    "112": {
+      "doi": "10.1126/sciadv.adp6094",
+      "full_authors": [
+        "Chen Xu",
+        "Yiran Wang",
+        "Jingyan Zhang",
+        "Ji Wan",
+        "Zehua Xiang",
+        "Zhongyi Nie",
+        "Jie Xu",
+        "Xiang Lin",
+        "Pengcheng Zhao",
+        "Yaozheng Wang",
+        "Shaotong Zhang",
+        "Jing Zhang",
+        "Chunxiu Liu",
+        "Ning Xue",
+        "Wei Zhao",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Yiran Wang",
+        "Zhongyi Nie",
+        "Yaozheng Wang",
+        "Jingyan Zhang",
+        "Xiang Lin",
+        "Shaotong Zhang"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1126/sciadv.adp6094",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:ZzlSgRqYykMC",
+      "checked_on": "2026-10-14"
+    },
+    "110": {
+      "doi": "10.1126/sciadv.adm9314",
+      "full_authors": [
+        "Ji Wan",
+        "Zhongyi Nie",
+        "Jie Xu",
+        "Zixuan Zhang",
+        "Shenglian Yao",
+        "Zehua Xiang",
+        "Xiang Lin",
+        "Yuxing Lu",
+        "Chen Xu",
+        "Pengcheng Zhao",
+        "Yiran Wang",
+        "Jingyan Zhang",
+        "Yaozheng Wang",
+        "Shaotong Zhang",
+        "Jinzhuo Wang",
+        "Weitao Man",
+        "Min Zhang",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Yiran Wang",
+        "Zhongyi Nie",
+        "Yaozheng Wang",
+        "Jingyan Zhang",
+        "Xiang Lin",
+        "Shaotong Zhang"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1126/sciadv.adm9314",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:8xutWZnSdmoC",
+      "checked_on": "2026-10-14"
+    },
+    "109": {
+      "doi": "10.1002/adma.202308575",
+      "full_authors": [
+        "Zehua Xiang",
+        "Haobin Wang",
+        "Pengcheng Zhao",
+        "Xinying Fa",
+        "Ji Wan",
+        "Yaozheng Wang",
+        "Chen Xu",
+        "Shenglian Yao",
+        "Wei Zhao",
+        "Haixia Zhang",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Yaozheng Wang"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1002/adma.202308575",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:a3BOlSfXSfwC",
+      "checked_on": "2026-10-14"
+    },
+    "120": {
+      "doi": "10.1039/d5mh00563a",
+      "full_authors": [
+        "Kedong Wu",
+        "Weixiang He",
+        "Ruyue Zhong",
+        "Zhongyi Nie",
+        "Xiang Lin",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Zhongyi Nie",
+        "Xiang Lin",
+        "Ruyue Zhong",
+        "Kedong Wu",
+        "Weixiang He"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1039/d5mh00563a",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&cstart=100&pagesize=100&citation_for_view=rjC8MUQAAAAJ:gVv57TyPmFsC",
+      "checked_on": "2026-10-14"
+    },
+    "119": {
+      "doi": "10.1038/s41378-025-00890-x",
+      "full_authors": [
+        "Qi Wang",
+        "Zetian Wang",
+        "Yang Yang",
+        "Chi Zhang",
+        "Mengdi Han",
+        "Wei Wang",
+        "Yufeng Jin"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1038/s41378-025-00890-x",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&cstart=100&pagesize=100&citation_for_view=rjC8MUQAAAAJ:nVrZBo8bIpAC",
+      "checked_on": "2026-10-14"
+    },
+    "126": {
+      "doi": "10.1038/s41467-026-75632-2",
+      "full_authors": [
+        "Chong Zhang",
+        "Chengfeng Pan",
+        "Neng Xia",
+        "Haojin Yang",
+        "Lin Su",
+        "Xin Wang",
+        "Zhongyi Nie",
+        "Kedong Wu",
+        "Lingxiao Zhou",
+        "Mengdi Han",
+        "Carmel Majidi",
+        "Li Zhang"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Chong Zhang",
+        "Zhongyi Nie",
+        "Kedong Wu"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1038/s41467-026-75632-2",
+      "scholar_article": null,
+      "checked_on": "2026-10-14"
+    },
+    "125": {
+      "doi": "10.1002/smll.74405",
+      "full_authors": [
+        "Pengcheng Zhao",
+        "Ruyue Zhong",
+        "Jie Xu",
+        "Kaige Mao",
+        "Shuzheng Gu",
+        "Kedong Wu",
+        "Yiran Wang",
+        "Zhongyi Nie",
+        "Jingyan Zhang",
+        "Yaozheng Wang",
+        "Yuefang Zhao",
+        "Shaotong Zhang",
+        "Xiang Lin",
+        "Denghua Wu",
+        "Chong Zhang",
+        "Shenglian Yao",
+        "Haixia Zhang",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Chong Zhang",
+        "Yiran Wang",
+        "Zhongyi Nie",
+        "Yaozheng Wang",
+        "Jingyan Zhang",
+        "Xiang Lin",
+        "Shaotong Zhang",
+        "Ruyue Zhong",
+        "Kedong Wu",
+        "Denghua Wu"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1002/smll.74405",
+      "scholar_article": null,
+      "checked_on": "2026-10-14"
+    },
+    "124": {
+      "doi": "10.1002/adhm.202505765",
+      "full_authors": [
+        "Shaotong Zhang",
+        "Dan Li",
+        "Tao Liu",
+        "Zhongyi Nie",
+        "Kedong Wu",
+        "Xiang Lin",
+        "Jingyan Zhang",
+        "Jie Xu",
+        "Yiran Wang",
+        "Ruyue Zhong",
+        "Pengcheng Zhao",
+        "Yaozheng Wang",
+        "Shigang Ding",
+        "Guoqing Cui",
+        "Yue Wen",
+        "Baohua Li",
+        "Shaomei Shang",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Yiran Wang",
+        "Zhongyi Nie",
+        "Yaozheng Wang",
+        "Jingyan Zhang",
+        "Xiang Lin",
+        "Shaotong Zhang",
+        "Ruyue Zhong",
+        "Kedong Wu"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1002/adhm.202505765",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&cstart=100&pagesize=100&citation_for_view=rjC8MUQAAAAJ:artPoR2Yc-kC",
+      "checked_on": "2026-10-14"
+    },
+    "122": {
+      "doi": "10.1002/smtd.202501460",
+      "full_authors": [
+        "Xinyan Chen",
+        "Denghua Wu",
+        "Kangle Li",
+        "Mengdi Han"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Denghua Wu",
+        "Kangle Li"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1002/smtd.202501460",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&cstart=100&pagesize=100&citation_for_view=rjC8MUQAAAAJ:5icHVeHT4IsC",
+      "checked_on": "2026-10-14"
+    },
+    "105": {
+      "doi": "10.1002/brx2.47",
+      "full_authors": [
+        "Lianjie Zhou",
+        "Zhongyuan Wu",
+        "Mubai Sun",
+        "Jaejin Park",
+        "Mengdi Han",
+        "Ming Wang",
+        "Junsheng Yu",
+        "Zengfeng Di",
+        "Yongfeng Mei",
+        "Wubin Bai",
+        "Xinge Yu",
+        "Ki Jun Yu",
+        "Enming Song"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1002/brx2.47",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:nZcligLrVowC",
+      "checked_on": "2026-10-14"
+    },
+    "123": {
+      "doi": "10.1038/s41528-025-00518-0",
+      "full_authors": [
+        "Junhan Liu",
+        "Zhongyuan Wu",
+        "Lianjie Zhou",
+        "Yanran Shen",
+        "Xiaojun Wu",
+        "Junling Liang",
+        "Yuting Shao",
+        "Pengchuan Liu",
+        "Zhongzheng Li",
+        "Bofan Hu",
+        "Ming Wang",
+        "Zengfeng Di",
+        "Tianjun Cai",
+        "Fan Xu",
+        "Su Jiang",
+        "Mengdi Han",
+        "Ling Tao",
+        "Yongfeng Mei",
+        "Enming Song"
+      ],
+      "matched_members": [
+        "Mengdi Han"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1038/s41528-025-00518-0",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&cstart=100&pagesize=100&citation_for_view=rjC8MUQAAAAJ:vDZJ-YLwNdEC",
+      "checked_on": "2026-10-14"
+    },
+    "114": {
+      "doi": "10.1002/adma.202205609",
+      "full_authors": [
+        "Zhongyi Nie",
+        "Jean Won Kwak",
+        "Mengdi Han",
+        "John A. Rogers"
+      ],
+      "matched_members": [
+        "Mengdi Han",
+        "Zhongyi Nie"
+      ],
+      "publisher_metadata": "https://api.crossref.org/works/10.1002/adma.202205609",
+      "scholar_article": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rjC8MUQAAAAJ&pagesize=100&citation_for_view=rjC8MUQAAAAJ:OcBU2YAGkTUC",
+      "checked_on": "2026-10-14"
+    }
+  },
+  "confirmed_author_positions": {
+    "88": {
+      "Yiran Wang": {
+        "author_index": 0,
+        "source": "User explicitly confirmed on 2026-10-14 that Yiran Wang is first author of the Materials Today Physics paper.",
+        "checked_on": "2026-10-14"
+      }
+    },
+    "127": {
+      "Chong Zhang": {
+        "author_index": 1,
+        "source": "User requested inclusion of this co-first-author review in Current Members on 2026-10-26; canonical bibliography marks C Zhang¹.",
+        "checked_on": "2026-10-26"
+      }
+    }
+  },
+  "excluded_representative_paper_ids": {
+    "104": "Editorial; excluded from member research paper and review selections at the user’s request."
+  },
+  "member_roles": {
+    "Mengdi Han": "Principle Investigator",
+    "Chong Zhang": "Postdoc",
+    "Yiran Wang": "Ph.D. Student",
+    "Zhongyi Nie": "Ph.D. Student",
+    "Yaozheng Wang": "Ph.D. Student",
+    "Jingyan Zhang": "Ph.D. Student",
+    "Xiang Lin": "Ph.D. Student",
+    "Shaotong Zhang": "Ph.D. Student",
+    "Ruyue Zhong": "Ph.D. Student",
+    "Kedong Wu": "Ph.D. Student",
+    "Denghua Wu": "Ph.D. Student",
+    "Zixiang Wu": "Ph.D. Student",
+    "Ning Sun": "Ph.D. Student",
+    "Chendong Yang": "Ph.D. Student",
+    "Yujie Shang": "Visiting Student",
+    "Weixiang He": "Undergraduate",
+    "Kangle Li": "Undergraduate",
+    "Yanzhong Wang": "Undergraduate",
+    "Yunling Li": "Undergraduate",
+    "Penglai Yao": "Undergraduate",
+    "Junjie Wang": "Undergraduate",
+    "Wai Hong Chong": "Postdoc"
+  }
+}

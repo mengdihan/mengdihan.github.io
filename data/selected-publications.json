@@ -1,0 +1,28 @@
+{
+  "paper_ids": [
+    114,
+    112,
+    110,
+    109,
+    89,
+    84,
+    67,
+    66,
+    56,
+    44
+  ],
+  "automatic_inclusion": {
+    "enabled": true,
+    "after_paper_id": 127,
+    "journal_families": [
+      "Nature Portfolio",
+      "Science family",
+      "Cell Press"
+    ],
+    "additional_journals": [
+      "Proceedings of the National Academy of Sciences",
+      "Advanced Materials"
+    ],
+    "note": "Keep the existing curated selection. Automatically include qualifying papers added after this rule was established (paper 127); historical additions remain explicit."
+  }
+}

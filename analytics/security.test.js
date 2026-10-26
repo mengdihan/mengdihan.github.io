@@ -1,0 +1,6 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import worker,{csvCell} from './src/worker.js';
+test('all private routes deny missing and forged identity without touching DB',async()=>{for(const path of ['/admin/','/admin/app.js','/admin/api/summary','/admin/api/events','/admin/export.csv']){for(const headers of [{},{'Cf-Access-Authenticated-User-Email':'owner@example.org','Cf-Access-Jwt-Assertion':'forged'}]){const r=await worker.fetch(new Request('https://analytics.example'+path,{headers}),{ACCESS_ISSUER:'https://example.cloudflareaccess.com',ACCESS_AUD:'expected',ADMIN_EMAIL:'owner@example.org'});assert.equal(r.status,401);assert.equal(r.headers.get('Cache-Control'),'no-store')}}});
+test('collector rejects foreign origin and missing configuration',async()=>{assert.equal((await worker.fetch(new Request('https://analytics.example/collect',{method:'POST',headers:{Origin:'https://attacker.example'}}),{SITE_ORIGIN:'https://hanmd1990.github.io'})).status,403);assert.equal((await worker.fetch(new Request('https://analytics.example/collect',{method:'POST',headers:{Origin:'https://hanmd1990.github.io'}}),{SITE_ORIGIN:'https://hanmd1990.github.io'})).status,503)});
+test('CSV prevents spreadsheet formula execution',()=>{assert.equal(csvCell('=1+1'),'"\'=1+1"');assert.equal(csvCell('a"b'),'"a""b"')});

@@ -1,0 +1,91 @@
+/* Home presentation; shared navigation and other pages retain their styles. */
+.lab-home-design .rd-main{max-width:none;padding:0;margin:0}
+.home-page-title{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.lab-home-design .home-carousel{position:relative;width:100%;max-width:none;margin:0 0 54px;aspect-ratio:2.5;isolation:isolate}
+.home-slide{position:absolute;inset:0;margin:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .7s ease,visibility .7s;z-index:0;overflow:hidden}
+.home-slide.is-active{opacity:1;visibility:visible;pointer-events:auto;z-index:1}
+.home-image-link{display:block;width:100%;height:100%;outline-offset:-4px}
+.lab-home-design .home-image-link img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center}
+.home-caption{position:absolute;left:5%;bottom:11%;width:39%;max-width:425px;padding:25px 27px;background:rgba(255,255,255,.70);border-radius:5px;color:#142B55;pointer-events:none}
+.lab-home-design .home-caption h2{font:650 clamp(24px,3.1vw,32px)/1.16 Montserrat,'Segoe UI',Arial,sans-serif;letter-spacing:-.03em;color:inherit;margin:0 0 19px;text-wrap:balance}
+.lab-home-design .home-description{font:400 14px/1.75 'Segoe UI',Arial,sans-serif;color:#455162;max-width:48ch;margin:0}
+.lab-home-design #s-content .home-journal{font:500 italic 12px/1.5 'Segoe UI',Arial,sans-serif;color:#967044;margin:0 0 17px}
+.home-dots{position:absolute;z-index:5;bottom:-45px;left:50%;transform:translateX(-50%);display:flex;gap:0;padding:0;background:transparent}
+.home-dots button{position:relative;display:grid;place-items:center;width:34px;height:34px;padding:0;border:0;background:transparent;color:#142B55;cursor:pointer}
+.home-dots button::before{content:'';display:block;width:11px;height:11px;box-sizing:border-box;border-radius:50%;border:1.5px solid #7b879b;background:#fff;transition:background .2s}
+.home-dots button[aria-current=true]::before{background:#142B55;border-color:#142B55}
+.home-dots button:hover::before{background:#967044;border-color:#967044}
+.home-dot-tooltip{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);box-sizing:border-box;width:240px;max-width:76vw;padding:11px 14px;border:1px solid #dce3eb;border-radius:7px;background:#f3f6f9;color:#142B55;box-shadow:0 4px 16px #142b5518;font:500 12px/1.5 'Segoe UI',Arial,sans-serif;text-align:center;visibility:hidden;opacity:0;pointer-events:none;z-index:10}
+.home-dot-tooltip strong{display:block;font:500 12px/1.5 'Segoe UI',Arial,sans-serif;color:#142B55}
+.home-dot-tooltip em{display:block;margin-top:3px;font:400 italic 11px/1.5 'Segoe UI',Arial,sans-serif;color:#967044}
+.home-dots button:focus-visible .home-dot-tooltip{visibility:visible;opacity:1}
+.home-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-width:1200px;margin:0 auto;padding:0 44px 35px;background:#fff}
+.lab-home-design .lab-header .lab-radar-link,.lab-home-design #s-content .home-actions a{display:inline-flex;align-items:center;justify-content:center;gap:14px;box-sizing:border-box;padding:13px 16px;border:1px solid #e1e6ed;border-radius:8px;background:#f3f6f9;color:#142B55!important;box-shadow:0 4px 14px #142b5512;font:600 15px/1.3 'Segoe UI',Arial,sans-serif;text-decoration:none;text-align:center}
+.lab-home-design #s-content .home-actions a{min-height:52px}
+.lab-home-design .lab-header .lab-radar-link:is(:hover,:focus-visible),.lab-home-design #s-content .home-actions a:is(:hover,:focus-visible){background:#e6edf5;border-color:#c7d3e1;box-shadow:0 5px 16px #142b5520;color:#142B55!important}
+.lab-home-design #s-content .home-actions a span{color:inherit!important}
+.home-action-icon{display:block;width:18px;height:18px;flex:0 0 18px;color:inherit}
+.home-dots button:focus-visible,.lab-home-design .home-carousel:focus-visible,.home-image-link:focus-visible{outline:2px solid #967044;outline-offset:3px}
+@media(max-width:700px){
+ .lab-home-design .home-carousel{aspect-ratio:auto;height:385px}
+ .home-caption{left:5%;bottom:9%;width:63%;padding:18px 20px}
+ .lab-home-design .home-caption h2{font-size:24px;margin-bottom:10px}
+ .lab-home-design .home-description{font-size:12px;line-height:1.55}
+ .lab-home-design #s-content .home-journal{margin-bottom:10px}
+ .home-actions{padding:0 22px 28px;gap:10px}
+ .lab-home-design #s-content .home-actions a{font-size:12px;padding:16px 10px;gap:12px}
+}
+@media(max-width:480px){.home-actions{grid-template-columns:1fr}.home-caption{width:80%}}
+@media(pointer:coarse){.home-dots button{width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){.home-slide,.home-dots button::before{transition:none}}
+
+
+/* Only the caption links to the paper; photographs remain passive. */
+.lab-home-design .home-caption{pointer-events:auto;text-decoration:none;transition:background .18s ease,box-shadow .18s ease,transform .18s ease}
+.lab-home-design #s-content a.home-caption:is(:hover,:focus-visible){background:rgba(255,255,255,.8);box-shadow:0 5px 20px #142b5518;transform:translateY(-2px)}
+.lab-home-design #s-content a.home-caption .home-description{color:#455162!important}
+.lab-home-design #s-content a.home-caption .home-journal{font-size:14px;color:#967044!important}
+.lab-home-design #s-content a.home-caption h2{color:#142b55!important}
+.home-research-mission{max-width:1112px;margin:0 auto;padding:12px 44px 34px}
+.lab-home-design .home-research-mission h2{font:700 28px/1.3 Montserrat,'Segoe UI',Arial,sans-serif;letter-spacing:-.025em;margin:0 0 18px}
+.lab-home-design .home-research-mission p{font:400 16px/1.8 'Segoe UI',Arial,sans-serif;color:#455162;margin:12px 0 0;max-width:84ch}
+.lab-home-design .home-research-mission .home-mission-lead{font-size:19px;color:#142b55}
+@media(max-width:700px){.home-research-mission{padding:10px 22px 28px}.lab-home-design .home-research-mission h2{font-size:24px}.lab-home-design .home-research-mission .home-mission-lead{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.lab-home-design .home-caption{transition:none}.lab-home-design #s-content a.home-caption:is(:hover,:focus-visible){transform:none}}
+
+/* Bounded, image-and-text presentation for laptop and widescreen displays. */
+.lab-home-design .home-carousel{display:grid;height:auto;aspect-ratio:auto;margin:36px 0 54px}
+.lab-home-design .home-slide{position:relative;inset:auto;grid-area:1/1;display:grid;grid-template-columns:minmax(0,25fr) minmax(0,75fr);align-items:center;min-height:0;border:1px solid #e1e6ed;border-radius:8px}
+.lab-home-design .home-image-link{grid-column:2;grid-row:1;width:100%;height:auto;padding:0;box-sizing:border-box}
+.lab-home-design .home-image-link img{width:100%;height:auto;max-width:100%;aspect-ratio:auto;object-fit:contain}
+.lab-home-design .home-caption{position:static;grid-column:1;grid-row:1;align-self:stretch;display:flex;flex-direction:column;justify-content:center;left:auto;bottom:auto;width:auto;max-width:none;padding:30px 28px;border-radius:0;background:#f3f6f9;transform:none}
+.lab-home-design #s-content a.home-caption:is(:hover,:focus-visible){background:#eaf0f6;transform:none;box-shadow:none}
+.lab-home-design .home-description{font-size:14px;line-height:1.75}
+.lab-home-design .home-research-mission{max-width:none;margin:0;padding:12px 0 34px}
+.lab-home-design .home-actions{max-width:none;padding:0 0 35px}
+@media(max-width:700px){
+ .lab-home-design .home-carousel{height:auto;margin-top:24px}
+ .lab-home-design .home-slide{grid-template-columns:minmax(0,1fr);min-height:0}
+ .lab-home-design .home-caption{grid-column:1;grid-row:1;padding:24px}
+ .lab-home-design .home-image-link{grid-column:1;grid-row:2;padding:0}
+ .lab-home-design .home-caption h2{font-size:26px}
+}
+
+/* Compact caption and a single consistently styled mission paragraph. */
+.lab-home-design .home-caption{padding:24px}
+.lab-home-design .home-caption h2{font-size:26px;line-height:1.25}
+.lab-home-design .home-research-mission p.home-mission-lead{font:400 16px/1.8 'Segoe UI',Arial,sans-serif;color:#455162;max-width:none}
+
+/* A compact filmstrip replaces the dots without repeating the captions. */
+.lab-home-design .home-carousel{margin-bottom:34px}
+.home-dots{position:relative;grid-area:2/1;bottom:auto;left:auto;transform:none;display:grid;grid-template-columns:repeat(5,38px);gap:10px;width:max-content;margin:16px auto 0;padding:0}
+.home-dots button{display:grid;place-items:center;width:38px;height:38px;min-height:38px;min-width:0;padding:2px;border:1px solid #e1e6ed;border-radius:5px;background:#fff;transition:border-color .18s,box-shadow .18s}
+.home-dots button::before{display:none}
+.lab-home-design .home-thumbnail{display:block;width:32px;height:32px;aspect-ratio:1;object-fit:cover;object-position:center;border-radius:2px;opacity:.62;transition:opacity .18s}
+.home-dots button[aria-current=true]{border-color:#967044;box-shadow:0 0 0 1px #967044}
+.home-dots button:is([aria-current=true],:focus-visible) .home-thumbnail{opacity:1}
+
+@media(max-width:700px){.home-dots{gap:7px;margin-top:12px}.home-dots button{padding:2px}}
+@media(prefers-reduced-motion:reduce){.home-dots button,.lab-home-design .home-thumbnail{transition:none}}
+
+@media(pointer:coarse){.home-dots{grid-template-columns:repeat(5,44px)}.home-dots button{width:44px;height:44px;min-height:44px}}

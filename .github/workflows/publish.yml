@@ -1,0 +1,39 @@
+name: Deploy laboratory website
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: laboratory-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install lxml==5.3.0
+      - name: Verify and package independent website
+        run: |
+          mkdir -p outputs/hmd-lab-site
+          git archive HEAD | tar -x -C outputs/hmd-lab-site --exclude='.github' --exclude='work' --exclude='preview' --exclude='tools' --exclude='.gitignore' --exclude='README.md'
+          python tools/build_site.py outputs/hmd-lab-site
+          python tools/verify_site.py outputs/hmd-lab-site
+          python tools/check_research.py outputs/hmd-lab-site
+          node --test tools/amap/*.test.cjs
+          node tools/check_archive_ui.cjs outputs/hmd-lab-site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: outputs/hmd-lab-site
+      - uses: actions/deploy-pages@v4
+        id: deployment

@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "policy": "Only confirmed delivered entries; unknown publication dates are allowed",
+  "history_scope": "Confirmed public editions only; merge accessible private/chat delivery history before asserting full historical deduplication",
+  "entries": [
+    {
+      "id": "10.1126/science.ady8560",
+      "doi": "10.1126/science.ady8560",
+      "title": "Wireless electrocatalytic closed-loop system for drug-free management of diabesity",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41586-026-11293-x",
+      "doi": "10.1038/s41586-026-11293-x",
+      "title": "Cortex-wide imaging in naturally behaving mice with 1-gram wireless mesoscopes",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/d41586-026-03359-7",
+      "doi": "10.1038/d41586-026-03359-7",
+      "title": "Body-clock disruptions contribute to one in four cases of depression, suggests large study",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/d41586-026-03064-5",
+      "doi": "10.1038/d41586-026-03064-5",
+      "title": "Fabric user interface can be worn on your sleeve — and machine-washed",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41586-026-11128-9",
+      "doi": "10.1038/s41586-026-11128-9",
+      "title": "Touch-sensing digital pixel fibre enables interactive garment GUI",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s42256-026-01325-6",
+      "doi": "10.1038/s42256-026-01325-6",
+      "title": "Large-scale iontronic skins with neural-hierarchical processing architecture",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41563-026-02759-4",
+      "doi": "10.1038/s41563-026-02759-4",
+      "title": "Bioresorbable metal-free molecular magnets enable untethered organ monitoring",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41565-026-02289-9",
+      "doi": "10.1038/s41565-026-02289-9",
+      "title": "Millisecond phonon lifetimes in piezoelectric nanomechanical resonators",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1126/sciadv.aei0002",
+      "doi": "10.1126/sciadv.aei0002",
+      "title": "Bioinspired supramolecular thermistor for resolving subtle temperature variations",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1126/sciadv.aei5334",
+      "doi": "10.1126/sciadv.aei5334",
+      "title": "Extended field-of-view two-photon imaging in the deep brain of freely behaving mice using lightweight microfabricated corrective optics",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1126/sciadv.aed1014",
+      "doi": "10.1126/sciadv.aed1014",
+      "title": "Local control of Cre-regulated genetic modeling in vivo using wireless implantable optoelectronics",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1126/sciadv.aeh6700",
+      "doi": "10.1126/sciadv.aeh6700",
+      "title": "Magnetically gated millimeter-scale capsule power system for leadless electrotherapy",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1126/sciadv.aef4338",
+      "doi": "10.1126/sciadv.aef4338",
+      "title": "Magneto-mechano-electrochemical fiber for deformation-resilient and smart electronic textiles",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1126/sciadv.aef5042",
+      "doi": "10.1126/sciadv.aef5042",
+      "title": "Mechanoadaptive nanowire viscoplastic composites with strain-enhanced conductivity for reprocessable bioelectronic interfaces",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1126/sciadv.aeg5408",
+      "doi": "10.1126/sciadv.aeg5408",
+      "title": "Ultrasound-driven electronically programmable microbubbles",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41467-026-78619-1",
+      "doi": "10.1038/s41467-026-78619-1",
+      "title": "Regenerable, closed-loop, nonenzymatic continuous glucose monitoring enabled by in situ electrochemical interfacial alkalinization",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41467-026-78963-2",
+      "doi": "10.1038/s41467-026-78963-2",
+      "title": "Author Correction: Coaxially printed magnetic mechanical electrical hybrid structures with actuation and sensing functionalities",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1073/pnas.2610816123",
+      "doi": "10.1073/pnas.2610816123",
+      "title": "mechanoLight: A genetically encoded fluorescent biosensor for visualizing 5-HT2AR mechanotransduction in live cells",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1073/pnas.2606732123",
+      "doi": "10.1073/pnas.2606732123",
+      "title": "First-principles channel model and capacity-achieving transmission scheme in thermal noise backscatter links",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adma.75437",
+      "doi": "10.1002/adma.75437",
+      "title": "Biodegradable Capacitive‐Coupling Bioelectronics for Wireless Electrical Stimulation and Longitudinal Electrophysiological Monitoring of Peripheral Nerve Regeneration",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adma.75235",
+      "doi": "10.1002/adma.75235",
+      "title": "Bridging Biosensing and Hardware‐Level Data Security With a Conjugated Radical Polymer",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adma.75421",
+      "doi": "10.1002/adma.75421",
+      "title": "Minimally Invasive In Vivo Fabrication of Multiscale Biohybrid Systems",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adma.75360",
+      "doi": "10.1002/adma.75360",
+      "title": "Strain‐Insensitive Conductors for Stretchable Electronics",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1021/acsnano.6c14428",
+      "doi": "10.1021/acsnano.6c14428",
+      "title": "Nanomesh Bioelectronics Inspired by Basement Membrane for In Situ Monitoring of Oxidative Stress at the Alveolar-Capillary Barrier",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1021/acsnano.6c14521",
+      "doi": "10.1021/acsnano.6c14521",
+      "title": "Nanoedge-Regulated Impedance Sensing for Sensitive Cardiomyocyte Mechanophysiological Investigation and Functional Drug Assessment",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1021/acs.nanolett.6c03896",
+      "doi": "10.1021/acs.nanolett.6c03896",
+      "title": "Flexible Microlaser Emitter for Mechanical Sensing and Pulse Mapping",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1021/acs.nanolett.6c04011",
+      "doi": "10.1021/acs.nanolett.6c04011",
+      "title": "Unveiling the Creep Recovery Behavior of Pseudo-Free-Standing Polymer Thin Films for Wearable Electronics",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41378-026-01470-3",
+      "doi": "10.1038/s41378-026-01470-3",
+      "title": "A fabrication-aware vectorized generative representation for topology optimization of path-defined MEMS microstructures",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41378-026-01474-z",
+      "doi": "10.1038/s41378-026-01474-z",
+      "title": "Focusing and weighing microanalytes in liquid enabled by higher-order piezoelectric resonant membranes",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41378-026-01464-1",
+      "doi": "10.1038/s41378-026-01464-1",
+      "title": "Towards advanced motion control systems for micro-scale magnetic drillers inside viscoelastic media",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41528-026-00654-1",
+      "doi": "10.1038/s41528-026-00654-1",
+      "title": "Multiplexed sensor arrays for high-spatiotemporal decoding of complex physiological networks",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1038/s41528-026-00656-z",
+      "doi": "10.1038/s41528-026-00656-z",
+      "title": "Machine learning–driven structural optimization of zigzag silk fibroin ionic conductors for spatially resolved wearable motion detection",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adfm.79109",
+      "doi": "10.1002/adfm.79109",
+      "title": "A Starfish‐Inspired Hierarchical Multimodal Flexible Sensor for Decoupled Thumb Motion Perception and Virtual Human–Machine Interaction",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adfm.79135",
+      "doi": "10.1002/adfm.79135",
+      "title": "Bio‐Derived Polyurethane Ionoelastomers With Hierarchical Dynamic Networks for Ultrawide‐Range Iontronic Pressure Sensing",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adfm.79013",
+      "doi": "10.1002/adfm.79013",
+      "title": "Flexible Neuromorphic Softness Sensory System",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adhm.71865",
+      "doi": "10.1002/adhm.71865",
+      "title": "A Standardized Chewable Conductive Hydrogel Sensor for Direct Monitoring of Masticatory Dynamics",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1002/adhm.71844",
+      "doi": "10.1002/adhm.71844",
+      "title": "Macrophage–Fibroblast Crosstalk Governs Tumor Mechanics, as Revealed by Spatiotemporal Force Mapping in 3D Spheroids",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1088/1361-6439/aeb680",
+      "doi": "10.1088/1361-6439/aeb680",
+      "title": "Property-level analysis of environment-dependent piezoelectric resonant microcantilever mass sensors: Multi-metric sensitivity and Pareto screening",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.48550/arxiv.2610.26317",
+      "doi": "10.48550/arxiv.2610.26317",
+      "title": "Leaky-Wave Antenna for Non-Invasive Continuous Glucose Monitoring",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.64898/2026.10.19.760203",
+      "doi": "10.64898/2026.10.19.760203",
+      "title": "Microrobot and Cellbot Locomotion in Confined Hydrogels and Cardiac Tissue Surfaces",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.64898/2026.10.19.760169",
+      "doi": "10.64898/2026.10.19.760169",
+      "title": "Ultra-high-efficacy Wireless Neuromodulation Using a Conductive Ring Interface",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1016/j.bios.2026.119348",
+      "doi": "10.1016/j.bios.2026.119348",
+      "title": "Dual-MOF encapsulated smart gel electrolyte for plant-wearable electrochemical detection of organophosphate pesticides",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1016/j.neuron.2026.09.030",
+      "doi": "10.1016/j.neuron.2026.09.030",
+      "title": "Distinct patterns of whole-body coding in human motor cortex and posterior parietal cortex",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1109/tbme.2026.3745751",
+      "doi": "10.1109/tbme.2026.3745751",
+      "title": "A Sensitive BLE-Enabled Wearable fNIRS Biosensor for Real-Time Monitoring and Mapping of Task-Evoked Oxygen Influxes During On-Screen Cognitive Tasks",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1109/tbme.2026.3745757",
+      "doi": "10.1109/tbme.2026.3745757",
+      "title": "An Improved Fabrication Method for Flexible COC-Based Implantable Neural Probes with Reliability Validation",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.1109/tbme.2026.3745374",
+      "doi": "10.1109/tbme.2026.3745374",
+      "title": "Function-based Deep Learning Autoencoder for Passive Shimming in a Portable MRI Magnet with Enhanced Field Homogeneity",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.21203/rs.3.rs-10823611/v1",
+      "doi": "10.21203/rs.3.rs-10823611/v1",
+      "title": "A single-wire, large-area, super-resolution electromagnetic skin enabling human-level spatial acuity",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.21203/rs.3.rs-10804825/v1",
+      "doi": "10.21203/rs.3.rs-10804825/v1",
+      "title": "Overcoming conventional trade-offs in strain sensing with physics-guided inverse design of aperiodic architected nanocomposites",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11204203/v1",
+      "doi": "10.21203/rs.3.rs-11204203/v1",
+      "title": "Intrinsic Vectorial Gradiometry via Quantum Control of a Spin-based Sensor",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.21203/rs.3.rs-10726871/v1",
+      "doi": "10.21203/rs.3.rs-10726871/v1",
+      "title": "Multiparametric quantification of dynamic force adaptation in living cells by atomic force microscopy",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11017633/v1",
+      "doi": "10.21203/rs.3.rs-11017633/v1",
+      "title": "An acoustic coupling fluid improves intraoperative ultrasound image quality during glioma surgery: Results of a Pivotal Multicenter Study (NCT04734444)",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11149224/v1",
+      "doi": "10.21203/rs.3.rs-11149224/v1",
+      "title": "Thermal-history encoding through ionic-state programming in a monolithic organic thermosynapse",
+      "first_delivered_edition": "2026-10-23",
+      "delivery_confirmed_on": "2026-10-23"
+    }
+  ]
+}

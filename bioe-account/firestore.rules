@@ -1,0 +1,93 @@
+// Data model: readers/{uid}/feedback/{sha64} is owner-only, with key/id/doi
+// <=1000, title<=2000, journal<=300, note<=2000, signals and updatedAt.
+// communityReactions/{uid}_{sha64}: key<=1000, article sha64, uid<=128,
+// token-verified name<=100, signals, event autoID20, server updatedAt.
+// reactionEvents/{autoID20}: same shared fields, server createdAt; immutable.
+// Shared records are readable by signed-in readers; never contain notes/email.
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthenticated() { return request.auth != null; }
+    function isOwner(uid) { return isAuthenticated() && request.auth.uid == uid; }
+    function uidUnchanged(uid) { return request.auth.uid == uid; }
+    function uidNotModified(uid) { return request.auth.uid == uid; }
+    function bounded(value, limit) { return value is string && value.size() <= limit; }
+    function validFeedback(d) {
+      return d.keys().hasAll(['key','id','doi','title','journal','signals','note','updatedAt'])
+        && d.keys().hasOnly(['key','id','doi','title','journal','signals','note','updatedAt'])
+        && bounded(d.key,1000) && d.key.size()>0 && bounded(d.id,1000) && d.id.size()>0
+        && bounded(d.doi,1000) && bounded(d.title,2000) && d.title.size()>0
+        && bounded(d.journal,300) && bounded(d.note,2000)
+        && d.signals is list && d.signals.size() <= 2
+        && d.signals.toSet().size()==d.signals.size()
+        && d.signals.hasOnly(['useful','more','irrelevant'])
+        && (!d.signals.hasAny(['irrelevant']) || d.signals.size()==1)
+        && d.updatedAt is timestamp && d.updatedAt==request.time;
+    }
+    match /readers/{uid}/feedback/{article} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && uidUnchanged(uid)
+        && article.matches('^[a-f0-9]{64}$') && validFeedback(request.resource.data);
+      allow update: if isOwner(uid) && uidNotModified(uid)
+        && validFeedback(request.resource.data)
+        && request.resource.data.key == resource.data.key
+        && request.resource.data.id == resource.data.id;
+      allow delete: if false;
+    }
+    function validSignals(signals) {
+      return signals is list && signals.size()<=2
+        && signals.toSet().size()==signals.size()
+        && signals.hasOnly(['useful','more','irrelevant'])
+        && (!signals.hasAny(['irrelevant']) || signals.size()==1);
+    }
+    function validShared(d) {
+      return bounded(d.key,1000) && d.key.size()>0
+        && bounded(d.article,64) && d.article.matches('^[a-f0-9]{64}$')
+        && bounded(d.uid,128) && d.uid==request.auth.uid
+        && bounded(d.name,100) && d.name.size()>0
+        && d.name==request.auth.token.get('name','Reader')
+        && validSignals(d.signals);
+    }
+    function validReaction(d) {
+      return d.keys().hasAll(['key','article','uid','name','signals','event','updatedAt'])
+        && d.keys().hasOnly(['key','article','uid','name','signals','event','updatedAt'])
+        && validShared(d) && bounded(d.event,20) && d.event.matches('^[a-zA-Z0-9]{20}$')
+        && d.updatedAt is timestamp && d.updatedAt==request.time;
+    }
+    function validEvent(d) {
+      return d.keys().hasAll(['key','article','uid','name','signals','createdAt'])
+        && d.keys().hasOnly(['key','article','uid','name','signals','createdAt'])
+        && validShared(d) && d.createdAt is timestamp && d.createdAt==request.time;
+    }
+    function eventMatches(d) {
+      let event=getAfter(/databases/$(database)/documents/reactionEvents/$(d.event)).data;
+      return event.uid==d.uid && event.article==d.article && event.key==d.key
+        && event.name==d.name && event.signals==d.signals && event.createdAt==request.time;
+    }
+    function currentMatches(d,eventId) {
+      let reaction=getAfter(/databases/$(database)/documents/communityReactions/$(d.uid+'_'+d.article)).data;
+      let feedbackDoc=getAfter(/databases/$(database)/documents/readers/$(d.uid)/feedback/$(d.article)).data;
+      return reaction.event==eventId && reaction.updatedAt==request.time
+        && reaction.uid==d.uid && reaction.key==d.key && reaction.article==d.article
+        && reaction.name==d.name && reaction.signals==d.signals
+        && feedbackDoc.key==d.key && feedbackDoc.signals==d.signals && feedbackDoc.updatedAt==request.time;
+    }
+    match /communityReactions/{reaction} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && validReaction(request.resource.data)
+        && reaction==request.auth.uid+'_'+request.resource.data.article && eventMatches(request.resource.data);
+      allow update: if isAuthenticated() && validReaction(request.resource.data)
+        && isOwner(resource.data.uid) && request.resource.data.uid==resource.data.uid
+        && request.resource.data.key==resource.data.key && request.resource.data.article==resource.data.article
+        && reaction==request.auth.uid+'_'+request.resource.data.article && eventMatches(request.resource.data);
+      allow delete: if false;
+    }
+    match /reactionEvents/{event} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && event.matches('^[a-zA-Z0-9]{20}$')
+        && validEvent(request.resource.data) && currentMatches(request.resource.data,event);
+      allow update, delete: if false;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

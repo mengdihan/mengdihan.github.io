@@ -1,0 +1,93 @@
+{
+  "records": {
+    "126": {
+      "year": 2026,
+      "volume": "17",
+      "article_number": "8690",
+      "source": "https://www.nature.com/articles/s41467-026-75632-2",
+      "checked_on": "2026-10-23",
+      "title": "Stretchable multimodal deformation sensor with self-mode recognition by a single Hall sensor"
+    },
+    "125": {
+      "year": 2026,
+      "volume": "22",
+      "article_number": "e74405",
+      "source": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74405",
+      "checked_on": "2026-10-20",
+      "title": "Reluctance modulation of structured magnetorheological elastomers for wireless biomechanical sensing"
+    },
+    "127": {
+      "title": "Design strategies for liquid metal-based soft electronics",
+      "year": 2026,
+      "volume": null,
+      "article_number": null,
+      "source": "https://www.nature.com/articles/s44287-026-00335-1",
+      "checked_on": "2026-10-23",
+      "display_status": "accepted",
+      "crossref": {
+        "url": "https://api.crossref.org/works/10.1038/s44287-026-00335-1",
+        "volume": null,
+        "page": null,
+        "article_number": null,
+        "published_online": "2026-10-01"
+      }
+    },
+    "124": {
+      "title": "Skin-interfaced wireless biomechanical system for detecting aspiration in elderly populations",
+      "year": 2026,
+      "volume": "15",
+      "article_number": "e05765",
+      "source": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202505765",
+      "checked_on": "2026-10-23",
+      "crossref_status": "HTTP 429; not verified this run"
+    },
+    "123": {
+      "title": "Conformal, ultrathin crystalline-silicon-based Hall sensor arrays with deep learning models for early-stage monitoring of three-dimensional tumor tissues",
+      "year": 2026,
+      "volume": "10",
+      "article_number": "16",
+      "source": "https://www.nature.com/articles/s41528-025-00518-0",
+      "checked_on": "2026-10-23",
+      "publisher_evidence": "Publisher citation retrieved through search: npj Flex Electron 10, 16 (2026); direct full page redirects to identity provider.",
+      "crossref": {
+        "url": "https://api.crossref.org/works/10.1038/s41528-025-00518-0",
+        "volume": "10",
+        "article_number": "16",
+        "published_online": "2025-12-27"
+      },
+      "year_resolution": "Keep publisher citation year 2026; Crossref online publication date is 2025-12-27. No year migration."
+    },
+    "122": {
+      "title": "Magnetic implantable devices and materials for the brain",
+      "year": 2026,
+      "volume": "10",
+      "article_number": "e01460",
+      "source": "https://onlinelibrary.wiley.com/doi/10.1002/smtd.202501460",
+      "checked_on": "2026-10-23",
+      "crossref": {
+        "url": "https://api.crossref.org/works/10.1002/smtd.202501460",
+        "volume": "10",
+        "article_number": "e01460",
+        "published_online": "2025-09-09",
+        "published_print": "2026-02"
+      },
+      "year_resolution": "Retain 2026 issue year; online-first date is in 2025."
+    }
+  },
+  "maintenance_attempt": {
+    "attempted_on": "2026-10-23",
+    "scholar_status": "HTTP 429 Too Many Requests; complete pagination, new-entry detection, detail checks and citation refresh not completed. Existing citation counts and check dates preserved.",
+    "scholar_author_writeback": "Not performed; no newly collected Scholar entries could be verified and no authenticated Scholar edit session was established.",
+    "crossref_rate_limited_dois": [
+      "10.1038/s41467-026-75632-2",
+      "10.1002/smll.74405",
+      "10.1002/adhm.202505765"
+    ],
+    "publisher_partial_checks": {
+      "125": "Publisher page retrieved as Early View, e74405; volume 22 not independently reverified this run. Preserve existing metadata and previous checked_on.",
+      "123": "Publisher citation available via search; direct article redirect failed."
+    },
+    "bibliography_changes": false,
+    "citation_changes": false
+  }
+}

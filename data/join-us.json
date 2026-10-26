@@ -1,0 +1,34 @@
+{
+  "updated_on": "2026-10-20",
+  "intro": "We are looking for talented and motivated postdoctoral fellows, Ph.D. students, and undergraduate students to join us. Please contact Dr. Mengdi Han by email if you are interested.",
+  "roles": [
+    {
+      "id": "postdocs",
+      "label": "Postdoctoral Fellow",
+      "title": "Postdoctoral Fellow",
+      "count": "2027: 1–2 positions",
+      "body": "<p>Please contact Dr. Mengdi Han by <a href=\"mailto:hmd@pku.edu.cn\" target=\"_self\">EMAIL </a>and include your <strong>CV </strong>and <strong>representative publications</strong>. We will contact shortlisted candidates to schedule onsite or online interviews. We accept application throughout the year, but please be aware of the deadline of Peking University Boya Postdoctoral Fellowship (<a href=\"https://postdocs.pku.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">https://postdocs.pku.edu.cn/</a>). The application of Boya Postdoctoral Fellowship usually ends in March and October.</p><h3>Requirements:</h3><ul><li>Younger than 35, received the Ph.D. degree within 3 years</li><li>Ph.D. degree in electrical engineering, biomedical engineering, materials science and engineering, chemical engineering, mechanical engineering, or other related fields</li><li>Strong publication record</li><li>We prefer applicants with the expertise in biosensors, embedded system, machine learning, and finite element analysis</li></ul><h3>Benefits:</h3><ul><li><span>Pre-tax yearly income &gt;400,000 RMB </span>for applicants with Boya Postdoctoral Fellowship</li><li>Registered permanent residence in Beijing</li><li>Opportunities to apply grants from the National Natural Science Foundation and other funding agencies</li><li>Opportunities to promote to senior research positions at Peking University</li><li>Children of postdocs can attend the kindergarten and primary school affiliated to Peking University</li></ul><h3>Principal Responsibilities:</h3><ul><li>Lead projects related to wearable and/or implantable devices</li><li>Publish research work in reputable journals</li><li>Present research work in domestic and international conferences</li><li>Provide technical support and mentorship to graduate and undergraduate students</li></ul>"
+    },
+    {
+      "id": "phd",
+      "label": "Ph.D. Student",
+      "title": "Ph.D. Student",
+      "count": "Fall 2028: 1–2 positions\nFall 2027: no positions",
+      "body": "<p>We are looking for Ph.D. students that are <strong>self-motivated</strong>, <strong>assiduous</strong>, <strong>creative</strong>, and <strong>collaborative</strong>.</p><h3><span><strong>Undergraduate students</strong></span></h3><p>Please apply the Summer Camp in College of Future Technology at Peking University. Application usually ends in mid-June. Please pay close attention to the news announced in <a href=\"https://admission.pku.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">https://admission.pku.edu.cn/</a>. Motivated students from all backgrounds are encouraged to contact Dr. Mengdi Han by <a href=\"mailto:hmd@pku.edu.cn\" target=\"_self\">EMAIL</a> with your <strong>CV </strong>and <strong>transcripts</strong>.</p><h3 id=\"masters\"><span><strong>Master students</strong></span></h3><p>Please apply the Ph.D. Program in College of Future Technology at Peking University. Application usually ends in early-December. Please pay close attention to the news announced in <a href=\"https://admission.pku.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">https://admission.pku.edu.cn/</a>. Motivated students from all backgrounds are encouraged to contact Dr. Mengdi Han by <a href=\"mailto:hmd@pku.edu.cn\" target=\"_self\">EMAIL</a> with your <strong>CV</strong>, <strong>transcripts</strong>, and <strong>representative publications</strong>.</p>"
+    },
+    {
+      "id": "undergraduates",
+      "label": "Undergraduate Student",
+      "title": "Undergraduate Student",
+      "count": "Multiple positions",
+      "body": "<p>We welcome undergrads from all backgrounds at Peking University to participate in our latest multidisciplinary research projects. Please contact Dr. Mengdi Han by <a href=\"mailto:hmd@pku.edu.cn\" target=\"_self\">EMAIL</a> if you are interested. Project areas include but not limited to:</p><ul><li>wearable and implantable devices</li><li>micro and nano fabrication</li><li>data analytics and machine learning</li></ul>"
+    },
+    {
+      "id": "research-assistants",
+      "label": "Research Assistant",
+      "title": "Research Assistant",
+      "count": "No positions",
+      "body": "<p>We do NOT have positions for research assistants.</p>"
+    }
+  ]
+}
