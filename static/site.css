@@ -41,3 +41,9 @@
 @media(prefers-reduced-motion:reduce){:root body .lab-header .lab-radar-link::after{animation:none;transform:rotate(35deg)}}
 
 :root.lab-radar-visited body .lab-header .lab-radar-link::after{animation-play-state:paused}
+
+/* Small, in-page preview for News spotlight images. */
+.lab-lightbox.lab-lightbox-compact{box-sizing:border-box;width:min(480px,calc(100vw - 48px));max-width:none;max-height:76vh;padding:44px 14px 14px;border:1px solid #d8dde5;border-radius:10px;box-shadow:0 16px 60px #142b5530}
+.lab-lightbox-compact::backdrop{background:#142b5566}
+.lab-lightbox.lab-lightbox-compact img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(76vh - 60px);margin:auto;object-fit:contain}
+.lab-lightbox-compact button{border-radius:4px;font:13px/1.4 'Segoe UI',Arial,sans-serif}

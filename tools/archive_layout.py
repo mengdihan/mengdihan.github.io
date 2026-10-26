@@ -20,7 +20,11 @@ def news_inline(paragraph):
             if tag=='a':
                 href=urljoin('https://hanmd1990.github.io/',child.get('href',''))
                 if urlparse(href).scheme in ('http','https','mailto','tel'):
-                    content='<a href="'+escape(href,quote=True)+'" target="_blank" rel="noopener noreferrer">'+content+'</a>'
+                    if child.get('data-lightbox')=='compact':
+                        # Keep the image local and preserve the small popup in every News view.
+                        content='<a href="'+escape(child.get('href',''),quote=True)+'" data-lightbox="compact" aria-label="'+escape(child.get('aria-label','Open news image'),quote=True)+'" aria-haspopup="dialog">'+content+'</a>'
+                    else:
+                        content='<a href="'+escape(href,quote=True)+'" target="_blank" rel="noopener noreferrer">'+content+'</a>'
             elif tag in ('strong','b','em','i','sup','sub'):content='<'+tag+'>'+content+'</'+tag+'>'
             elif tag=='br':content='<br>'+content
             result+=content+text(child.tail)
