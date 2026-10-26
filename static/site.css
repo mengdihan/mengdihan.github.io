@@ -47,3 +47,12 @@
 .lab-lightbox-compact::backdrop{background:#142b5566}
 .lab-lightbox.lab-lightbox-compact img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(76vh - 60px);margin:auto;object-fit:contain}
 .lab-lightbox-compact button{border-radius:4px;font:13px/1.4 'Segoe UI',Arial,sans-serif}
+
+/* Back to top: only visible after a substantial scroll. */
+.lab-back-to-top{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(22px,env(safe-area-inset-bottom));z-index:600;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #cbd4df;border-radius:50%;background:#fffffff2;color:#142B55;box-shadow:0 3px 14px #142b5526;cursor:pointer;transition:background .15s,border-color .15s}
+.lab-back-to-top[hidden]{display:none}
+.lab-back-to-top svg{display:block;width:21px;height:21px}
+.lab-back-to-top:hover{background:#EFF1F5;border-color:#547DA6;color:#547DA6}
+.lab-back-to-top:focus-visible{outline:2px solid #547DA6;outline-offset:4px}
+@media(max-width:600px){.lab-back-to-top{right:max(14px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom))}}
+@media(prefers-reduced-motion:reduce){.lab-back-to-top{transition:none}}

@@ -163,5 +163,5 @@
 
 /* Research directions are opened from their titles only. */
 .rf-title-link{color:inherit;text-decoration:none}
-.rf-title-link:hover{color:var(--hmd-gold,#A1662F);text-decoration:underline;text-underline-offset:4px}
+.rf-title-link:hover{color:var(--hmd-blue,#547DA6);text-decoration:underline;text-underline-offset:4px}
 .rf-title-link:focus-visible{outline:2px solid var(--hmd-gold,#A1662F);outline-offset:4px}

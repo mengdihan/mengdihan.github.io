@@ -366,3 +366,14 @@ body .hmd-archive,.lab-contact-layout,.lab-join-layout{box-sizing:content-box;ma
 .lab-contact-navigation a{display:inline-flex;align-items:center;justify-content:center;flex:none;min-height:24px;box-sizing:border-box;padding:2px 7px;border:1px solid #142b5530;border-radius:4px;font-size:11px;line-height:1.5;white-space:nowrap;text-decoration:none;color:var(--hmd-navy)}
 .lab-contact-navigation a:hover{background:#142b550a;border-color:var(--hmd-navy)}
 .lab-contact-navigation a:focus-visible{outline:2px solid var(--hmd-navy);outline-offset:3px}
+
+/* Article titles and research directions use the HMD blue hover accent. */
+:root body #s-content a:is(.lab-publication-link,.paper-title,.cover-tile,.lab-cover-article,.rf-title-link,[data-link-kind="article"]):is(:hover,:focus-visible),
+:root body #s-content a:is(.lab-publication-link,.paper-title,.cover-tile,.lab-cover-article,.rf-title-link,[data-link-kind="article"]):is(:hover,:focus-visible) *,
+:root body #s-content a:is([href*="doi.org/"],[href*="/doi/"],[href*="nature.com/articles/"]):is(:hover,:focus-visible),
+:root body #s-content a:is([href*="doi.org/"],[href*="/doi/"],[href*="nature.com/articles/"]):is(:hover,:focus-visible) *,
+:root body #literature-main .lit-paper h2 a:is(:hover,:focus-visible),
+:root body #literature-main .lit-paper h2 a:is(:hover,:focus-visible) *{color:var(--hmd-blue)!important}
+
+:root body.lab-modern-archive #s-content.hmd-archive .news-row p a:is([href*="doi.org/"],[href*="/doi/"],[href*="nature.com/articles/"]):is(:hover,:focus-visible),
+:root body.lab-modern-archive #s-content.hmd-archive .news-row p a:is([href*="doi.org/"],[href*="/doi/"],[href*="nature.com/articles/"]):is(:hover,:focus-visible) *{color:var(--hmd-blue)!important}

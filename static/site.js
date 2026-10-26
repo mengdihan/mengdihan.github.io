@@ -37,3 +37,16 @@ document.querySelectorAll('.lab-carousel').forEach(carousel=>{
  motion.addEventListener('change',restart);show(0);restart();
 });
 document.addEventListener('click',event=>{const a=event.target.closest('a[data-lightbox]');if(!a)return;event.preventDefault();const dialog=document.createElement('dialog');dialog.className='lab-lightbox'+(a.dataset.lightbox==='compact'?' lab-lightbox-compact':'');dialog.setAttribute('aria-label',a.getAttribute('aria-label')||'Image preview');const img=document.createElement('img');img.src=a.href;img.alt=a.querySelector('img')?.alt||a.getAttribute('aria-label')||'';const button=document.createElement('button');button.textContent='Close';button.addEventListener('click',()=>dialog.close());dialog.append(button,img);document.body.append(dialog);dialog.addEventListener('close',()=>{dialog.remove();a.focus()});dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog.showModal();});
+
+// A shared, keyboard-accessible return-to-top control for long pages.
+(()=>{
+ const button=document.createElement('button');
+ button.type='button';button.className='lab-back-to-top';button.hidden=true;
+ button.setAttribute('aria-label','Back to top');button.title='Back to top';
+ button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12l6-6 6 6M12 6v13"/></svg>';
+ document.body.append(button);
+ const update=()=>{button.hidden=window.scrollY<Math.max(600,window.innerHeight*.8)};
+ window.addEventListener('scroll',update,{passive:true});
+ window.addEventListener('resize',update);update();
+ button.addEventListener('click',()=>window.scrollTo({top:0,left:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+})();
