@@ -1,7 +1,7 @@
 /* HMD Lab: automatic GA4 and Baidu measurement on the production host. */
 (() => {
   'use strict';
-  if (location.hostname !== 'hanmd1990.github.io') return;
+  if (!['hmd-lab.com', 'www.hmd-lab.com', 'mengdihan.github.io'].includes(location.hostname)) return;
   const id = 'G-WPKN8C626L';
   let previouslyDeclined = false;
   try { previouslyDeclined = localStorage.getItem('hmd-analytics-consent-v1') === 'declined'; } catch { /* No stored preference available. */ }
