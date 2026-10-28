@@ -161,7 +161,10 @@
 /* Let Overview copy reach the content edge. */
 .rd-overview-authored .rd-overview-intro p{max-width:none;min-width:0}
 
-/* Research directions are opened from their titles only. */
+/* Stretch each direction's native link across its entire card. */
+.rf-thrust{cursor:pointer}
 .rf-title-link{color:inherit;text-decoration:none}
+.rf-title-link::after{content:'';position:absolute;inset:0;z-index:1}
 .rf-title-link:hover{color:var(--hmd-blue,#547DA6);text-decoration:underline;text-underline-offset:4px}
-.rf-title-link:focus-visible{outline:2px solid var(--hmd-gold,#A1662F);outline-offset:4px}
+.rd-main .rf-title-link:focus-visible{outline:none}
+.rf-title-link:focus-visible::after{outline:2px solid var(--hmd-gold,#A1662F);outline-offset:4px}
