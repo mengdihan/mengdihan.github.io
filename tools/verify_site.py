@@ -77,7 +77,7 @@ for f in ROOT.rglob('*'):
         if f.relative_to(ROOT).as_posix()=='static/analytics.js':
             for approved in ('https://www.googletagmanager.com/gtag/js?id=',
                              'https://policies.google.com/technologies/partner-sites',
-                             'https://hm.baidu.com/hm.js?e387d8beff78853986f3b7b31860f890'):
+                             'https://hm.baidu.com/hm.js?a41405dd5bbde883fd62a55a5ae775a7'):
                 script=script.replace(approved,'')
         # Owner-requested account login and private sync; official version-pinned SDK.
         if f.relative_to(ROOT).as_posix()=='static/literature-account.js':
