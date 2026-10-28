@@ -15,7 +15,7 @@
     const baidu = document.createElement('script');
     baidu.async = true;
     baidu.dataset.hmdBaiduTag = 'true';
-    baidu.src = 'https://hm.baidu.com/hm.js?e387d8beff78853986f3b7b31860f890';
+    baidu.src = 'https://hm.baidu.com/hm.js?a41405dd5bbde883fd62a55a5ae775a7';
     document.head.append(baidu);
   }
   if (document.querySelector('script[data-hmd-ga-tag]')) return;
