@@ -23,3 +23,7 @@
 @media(max-width:1000px){.rd-detail .rd-detail-section{grid-template-columns:150px minmax(0,1fr);gap:24px}.rd-detail .rd-detail-grid{gap:22px}.rd-detail .rd-detail-intro{grid-template-columns:290px minmax(0,1fr);gap:24px}}
 @media(max-width:760px){.rd-detail .rd-detail-intro{grid-template-columns:1fr;gap:18px;padding:20px;margin:20px 0 24px}.rd-detail .rd-detail-intro h1{font-size:30px}.rd-detail .rd-detail-section{grid-template-columns:1fr;gap:18px;padding:26px 0}.rd-detail .rd-detail-section>h2{border:0;padding:0}.rd-detail .rd-detail-grid{grid-template-columns:1fr;gap:18px}.rd-detail .rd-detail-reference{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){.rd-detail .rd-detail-image img,.rd-detail .rd-detail-reference{transition:none}.rd-detail .rd-detail-image:hover img{transform:none}}
+
+/* Use the same flat 8:3 media window as the Home research gallery. */
+.rd-detail .rd-detail-image img{object-fit:cover;object-position:center}
+.rd-detail .rd-detail-image img[src$=".svg"]{object-fit:contain}

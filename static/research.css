@@ -168,3 +168,8 @@
 :root body.lab-research-design #s-content a.rf-title-link:is(:hover,:focus-visible){color:#142B55!important;text-decoration:none!important}
 .rd-main .rf-title-link:focus-visible{outline:none}
 .rf-title-link:focus-visible::after{outline:2px solid var(--hmd-gold,#A1662F);outline-offset:4px}
+
+/* Research prose defaults to justified alignment, including future descriptions. */
+.rd-area-nav{justify-content:center}
+.rd-main:has(>.rd-area-nav) p,.rd-overview-authored p{text-align:justify;text-justify:inter-word;hyphens:manual}
+.rd-main .rd-detail-note{text-align:left}

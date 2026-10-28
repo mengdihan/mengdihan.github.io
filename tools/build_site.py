@@ -384,7 +384,7 @@ for path in ROOT.rglob('index.html'):
             card.append(caption);grid.append(card)
         content.append(gallery)
     # Research navigation is authored centrally, so every page uses the same four entries.
-    research_routes = [('overview', 'Overview'), ('wireless-implants', 'Wireless implants'), ('actuators-microrobotics', 'Actuators and microrobots'), ('wearable-devices-eskins', 'Wearables and e-skins')]
+    research_routes = [('overview', 'Overview'), ('wireless-implants', 'Wireless implants'), ('actuators-microrobotics', 'Actuators & microrobots'), ('wearable-devices-eskins', 'Wearables & e-skins')]
     for menu in tree.xpath('//header[contains(@class,"lab-header")]//details'):
         if text(menu.find('summary')).strip().upper() == 'RESEARCH':
             panel = menu.find('div')
