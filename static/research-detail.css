@@ -28,7 +28,14 @@
 .rd-detail .rd-detail-image img{object-fit:cover;object-position:center}
 .rd-detail .rd-detail-image img[src$=".svg"]{object-fit:contain}
 
-/* Full-width, single-line research headings above their overview prose. */
-.rd-detail .rd-detail-intro{grid-template-columns:minmax(0,1fr);gap:16px}
+/* Single-line headings and right-hand prose share the same vertical center. */
+.rd-detail .rd-detail-intro{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11px 42px}
+.rd-detail .rd-detail-intro>div{display:contents}
+.rd-detail .rd-detail-intro .rd-detail-note{grid-column:1;grid-row:1;margin:0}
+.rd-detail .rd-detail-intro h1{grid-column:1;grid-row:2}
+.rd-detail .rd-detail-intro>p{grid-column:2;grid-row:2;align-self:center}
 #s-content .rd-detail .rd-detail-intro h1{white-space:nowrap;text-wrap:nowrap;font-family:'Segoe UI',Arial,sans-serif;font-size:clamp(18px,4vw,32px);font-weight:700;line-height:1.2;letter-spacing:normal}
 .rd-detail .rd-detail-status{padding:28px 0;border-top:1px solid #e1e6ed;color:#6b7480;font-size:16px}
+
+@media(min-width:761px) and (max-width:1000px){#s-content .rd-detail .rd-detail-intro h1{font-size:clamp(18px,3vw,32px)}}
+@media(max-width:760px){.rd-detail .rd-detail-intro{grid-template-columns:minmax(0,1fr);gap:14px}.rd-detail .rd-detail-intro>p{grid-column:1;grid-row:3}}
