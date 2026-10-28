@@ -6,7 +6,7 @@ from lxml import html
 
 
 ROUTES = ('', 'overview', 'wireless-implants', 'actuators-microrobotics', 'wearable-devices-eskins', 'bio')
-AREAS = [('wireless-implants', 'Wireless implants'), ('actuators-microrobotics', 'Actuators & microrobotics'), ('wearable-devices-eskins', 'Wearable devices & e-skins')]
+AREAS = [('wireless-implants', 'Wireless implants'), ('actuators-microrobotics', 'Actuators and microrobots'), ('wearable-devices-eskins', 'Wearables and e-skins')]
 
 
 def text(node):
