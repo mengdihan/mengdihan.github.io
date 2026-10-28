@@ -56,3 +56,13 @@
 .lab-back-to-top:focus-visible{outline:2px solid #547DA6;outline-offset:4px}
 @media(max-width:600px){.lab-back-to-top{right:max(14px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){.lab-back-to-top{transition:none}}
+
+/* Keep group-photo navigation available while viewing the full image. */
+.lab-lightbox-gallery{box-sizing:border-box;width:min(1200px,94vw);max-width:94vw;max-height:94vh;padding:44px 16px 16px}
+.lab-lightbox-gallery img{display:block;max-width:100%;max-height:calc(94vh - 170px);max-height:calc(94dvh - 170px);width:auto;height:auto;margin:auto}
+.lab-lightbox-caption{margin:12px 0;color:#20252a;text-align:center;font:14px/1.5 Arial,sans-serif}
+.lab-lightbox-navigation{display:flex;align-items:center;justify-content:space-between;gap:16px;font:14px/1.5 Arial,sans-serif;color:#20252a}
+.lab-lightbox .lab-lightbox-navigation button{position:static;min-height:44px;padding:8px 16px;border-radius:4px;font:inherit}
+.lab-lightbox-navigation button:hover{background:#f1f5f8}
+.lab-lightbox-navigation button:disabled{opacity:.5;cursor:default}
+@media(max-width:600px){.lab-lightbox-gallery{padding:44px 10px 12px}.lab-lightbox .lab-lightbox-navigation button{padding:8px 10px}.lab-lightbox-navigation{gap:8px}}

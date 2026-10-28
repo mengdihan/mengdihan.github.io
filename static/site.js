@@ -36,7 +36,61 @@ document.querySelectorAll('.lab-carousel').forEach(carousel=>{
  dots.forEach(dot=>dot.addEventListener('click',()=>{show(Number(dot.dataset.slide));restart()}));
  motion.addEventListener('change',restart);show(0);restart();
 });
-document.addEventListener('click',event=>{const a=event.target.closest('a[data-lightbox]');if(!a)return;event.preventDefault();const dialog=document.createElement('dialog');dialog.className='lab-lightbox'+(a.dataset.lightbox==='compact'?' lab-lightbox-compact':'');dialog.setAttribute('aria-label',a.getAttribute('aria-label')||'Image preview');const img=document.createElement('img');img.src=a.href;img.alt=a.querySelector('img')?.alt||a.getAttribute('aria-label')||'';const button=document.createElement('button');button.textContent='Close';button.addEventListener('click',()=>dialog.close());dialog.append(button,img);document.body.append(dialog);dialog.addEventListener('close',()=>{dialog.remove();a.focus()});dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog.showModal();});
+document.addEventListener('click', event => {
+ const a = event.target.closest('a[data-lightbox]');
+ if (!a) return;
+ event.preventDefault();
+ const gallery = a.closest('.member-gallery');
+ const photos = gallery ? [...gallery.querySelectorAll('.member-gallery-slide a[data-lightbox]')] : [a];
+ let index = photos.indexOf(a);
+ const dialog = document.createElement('dialog');
+ dialog.className = 'lab-lightbox' + (a.dataset.lightbox === 'compact' ? ' lab-lightbox-compact' : '') + (gallery ? ' lab-lightbox-gallery' : '');
+ const img = document.createElement('img');
+ const close = document.createElement('button');
+ close.type = 'button'; close.textContent = 'Close';
+ close.addEventListener('click', () => dialog.close());
+ dialog.append(close, img);
+ const caption = document.createElement('p');
+ caption.className = 'lab-lightbox-caption';
+ const count = document.createElement('span');
+ count.setAttribute('aria-live', 'polite');
+ function show(next) {
+  index = (next + photos.length) % photos.length;
+  const photo = photos[index];
+  img.src = photo.href;
+  img.alt = photo.querySelector('img')?.alt || photo.getAttribute('aria-label') || '';
+  dialog.setAttribute('aria-label', photo.getAttribute('aria-label') || 'Image preview');
+  const figureCaption = photo.closest('figure')?.querySelector('figcaption');
+  caption.textContent = figureCaption ? [...figureCaption.childNodes].map(node => node.textContent.trim()).filter(Boolean).join(' — ') : img.alt;
+  count.textContent = `${index + 1} / ${photos.length}`;
+  if (gallery) gallery.querySelector(`[data-gallery-index="${index}"]`)?.click();
+ }
+ if (gallery) {
+  const controls = document.createElement('div');
+  controls.className = 'lab-lightbox-navigation';
+  const previous = document.createElement('button');
+  previous.type = 'button'; previous.textContent = '← Previous';
+  previous.setAttribute('aria-label', 'Previous group photograph');
+  previous.addEventListener('click', () => show(index - 1));
+  const next = document.createElement('button');
+  next.type = 'button'; next.textContent = 'Next →';
+  next.setAttribute('aria-label', 'Next group photograph');
+  next.addEventListener('click', () => show(index + 1));
+  previous.disabled = next.disabled = photos.length < 2;
+  controls.append(previous, count, next);
+  dialog.append(caption, controls);
+  dialog.addEventListener('keydown', event => {
+   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault(); show(index + (event.key === 'ArrowRight' ? 1 : -1));
+   }
+  });
+ }
+ show(index);
+ document.body.append(dialog);
+ dialog.addEventListener('close', () => { dialog.remove(); photos[index].focus(); });
+ dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+ dialog.showModal();
+});
 
 // A shared, keyboard-accessible return-to-top control for long pages.
 (()=>{
