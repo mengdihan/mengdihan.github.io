@@ -179,6 +179,7 @@
       110
     ],
     "Yaozheng Wang": [
+      128,
       125,
       124,
       112,
@@ -933,6 +934,13 @@
         "author_index": 1,
         "source": "User requested inclusion of this co-first-author review in Current Members on 2026-10-26; canonical bibliography marks C Zhang¹.",
         "checked_on": "2026-10-26"
+      }
+    },
+    "128": {
+      "Yaozheng Wang": {
+        "author_index": 0,
+        "source": "User supplied full author list and confirmed equal contribution of Yaozheng Wang and Wen Fan on 2026-10-28.",
+        "checked_on": "2026-10-28"
       }
     }
   },

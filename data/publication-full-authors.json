@@ -1688,6 +1688,25 @@
           "Michael D. Dickey"
         ]
       }
+    },
+    "128": {
+      "title": "Digitizing force-assisted clinical manipulation and procedure via a wireless, multimodal tactile glove",
+      "url": "/publications/2026/#paper-128",
+      "authors": "Yaozheng Wang¹, Wen Fan¹, Yiran Wang, Jingyan Zhang, Jie Xu, Pengcheng Zhao, Zehua Xiang, Xiaowen Zhang, Shaotong Zhang, Ruyue Zhong, Xiang Lin, Zhongyi Nie, Yuefang Zhao, Kedong Wu, Denghua Wu, Chong Zhang, Yipeng Lu, Guoqing Cui, Mengdi Han*",
+      "evidence": {
+        "id": 128,
+        "title": "Digitizing force-assisted clinical manipulation and procedure via a wireless, multimodal tactile glove",
+        "authors": "Yaozheng Wang, Wen Fan, Yiran Wang, Jingyan Zhang, Jie Xu, Pengcheng Zhao, Zehua Xiang, Xiaowen Zhang, Shaotong Zhang, Ruyue Zhong, Xiang Lin, Zhongyi Nie, Yuefang Zhao, Kedong Wu, Denghua Wu, Chong Zhang, Yipeng Lu, Guoqing Cui, Mengdi Han",
+        "source": "User-provided accepted manuscript metadata, 2026-10-28",
+        "checked_on": "2026-10-28",
+        "equal_contributors": [
+          "Yaozheng Wang",
+          "Wen Fan"
+        ],
+        "corresponding_authors": [
+          "Mengdi Han"
+        ]
+      }
     }
   }
 }
