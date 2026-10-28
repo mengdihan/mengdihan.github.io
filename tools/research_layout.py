@@ -60,7 +60,7 @@ def rebuild_research(root):
         for node in source.xpath('//head/title|//head/meta[@name="description" or @name="keywords" or @property]|//head/link[@rel="canonical" or @rel="icon" or @rel="shortcut icon"]'):
             head.append(copy.deepcopy(node))
         styles = ('site.css', 'hmd-color.css', 'research.css')
-        if route in ('actuators-microrobotics', 'wearable-devices-eskins'):
+        if route in ('wireless-implants', 'actuators-microrobotics', 'wearable-devices-eskins'):
             styles += ('research-detail.css',)
         if not route:
             body.set('class', 'lab-research-design lab-home-design')

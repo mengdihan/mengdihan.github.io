@@ -27,3 +27,8 @@
 /* Use the same flat 8:3 media window as the Home research gallery. */
 .rd-detail .rd-detail-image img{object-fit:cover;object-position:center}
 .rd-detail .rd-detail-image img[src$=".svg"]{object-fit:contain}
+
+/* Full-width, single-line research headings above their overview prose. */
+.rd-detail .rd-detail-intro{grid-template-columns:minmax(0,1fr);gap:16px}
+#s-content .rd-detail .rd-detail-intro h1{white-space:nowrap;text-wrap:nowrap;font-family:'Segoe UI',Arial,sans-serif;font-size:clamp(18px,4vw,32px);font-weight:700;line-height:1.2;letter-spacing:normal}
+.rd-detail .rd-detail-status{padding:28px 0;border-top:1px solid #e1e6ed;color:#6b7480;font-size:16px}
