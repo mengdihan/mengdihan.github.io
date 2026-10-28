@@ -114,10 +114,10 @@
 .rf-core>p:not(.rf-eyebrow){font-size:16px;line-height:1.6;color:#e4ebf4}
 .rf-technologies{display:flex;justify-content:center;gap:10px 24px;flex-wrap:wrap;margin-top:18px;padding-top:15px;border-top:1px solid #415576;font-size:12px;color:#c3d4e8;line-height:1.5}
 .rf-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;position:relative;padding-top:48px}
-.rf-branches::before{content:'';position:absolute;top:24px;left:calc((100% - 48px)/6);right:calc((100% - 48px)/6);border-top:1px solid #99acc2}
-.rf-core::after{content:'';position:absolute;left:50%;top:100%;height:24px;border-left:1px solid #99acc2}
+.rf-branches::before{content:'';position:absolute;top:24px;left:calc((100% - 48px)/6);right:calc((100% - 48px)/6);height:24px;border-top:1px solid #99acc2;background:linear-gradient(#99acc2,#99acc2) left top/1px 100% no-repeat,linear-gradient(#99acc2,#99acc2) center top/1px 100% no-repeat,linear-gradient(#99acc2,#99acc2) right top/1px 100% no-repeat;pointer-events:none}
+.rf-branches::after{content:'';position:absolute;left:50%;top:-3px;height:27px;border-left:1px solid #99acc2;pointer-events:none}
 .rf-thrust{position:relative;min-width:0;clear:none;padding:24px 22px 26px;border:1px solid #dce3ec;border-top:3px solid #547da6;background:#fff;scroll-margin-top:24px}
-.rf-thrust::before{content:'';position:absolute;bottom:calc(100% + 3px);left:50%;height:22px;border-left:1px solid #99acc2}
+/* Connector lines belong to the stationary branches layer, not the moving cards. */
 .rf-thrust-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;color:#547da6}
 .rf-index{font-size:12px;letter-spacing:.12em;font-variant-numeric:tabular-nums}
 .rf-thrust svg{width:46px;height:46px;overflow:visible}
@@ -126,14 +126,14 @@
 .rf-thrust .rf-description{font-size:14px;line-height:1.8;color:#596579}
 .rf-framework figcaption{font-size:12px;line-height:1.7;color:#69778a;text-align:center;margin-top:24px}
 @media(max-width:900px){.rf-framework{padding:28px 22px 22px}.rf-branches{gap:16px}.rf-thrust{padding:20px 16px}.rf-thrust h3{font-size:19px}.rf-worlds span+span::before{padding:0 16px}.rf-branches::before{left:calc((100% - 32px)/6);right:calc((100% - 32px)/6)}}
-@media(max-width:620px){.rd-overview-authored .rd-overview-intro{padding:30px 0 26px}.rd-overview-authored h1{font-size:28px}.rf-framework{padding:24px 16px 20px}.rf-worlds{font-size:11px;gap:8px;margin-bottom:22px;align-items:stretch}.rf-worlds span{flex:1;position:relative;display:flex;align-items:center;justify-content:center;line-height:1.6}.rf-worlds span+span::before{position:absolute;left:-9px;padding:0}.rf-core{padding:22px 16px}.rf-core h2{font-size:25px}.rf-core>p:not(.rf-eyebrow){font-size:14px}.rf-technologies{gap:7px;font-size:11px;flex-direction:column}.rf-branches{grid-template-columns:1fr;gap:16px;padding-top:26px}.rf-branches::before{display:none}.rf-core::after{height:26px}.rf-thrust::before{display:none}.rf-thrust{padding:20px}.rf-thrust h3{font-size:21px;min-height:0}.rf-thrust-top{margin-bottom:10px}.rf-thrust .rf-subtitle{margin-top:10px}.rf-framework figcaption{font-size:11px;text-align:left;margin-top:20px}}
+@media(max-width:620px){.rd-overview-authored .rd-overview-intro{padding:30px 0 26px}.rd-overview-authored h1{font-size:28px}.rf-framework{padding:24px 16px 20px}.rf-worlds{font-size:11px;gap:8px;margin-bottom:22px;align-items:stretch}.rf-worlds span{flex:1;position:relative;display:flex;align-items:center;justify-content:center;line-height:1.6}.rf-worlds span+span::before{position:absolute;left:-9px;padding:0}.rf-core{padding:22px 16px}.rf-core h2{font-size:25px}.rf-core>p:not(.rf-eyebrow){font-size:14px}.rf-technologies{gap:7px;font-size:11px;flex-direction:column}.rf-branches{grid-template-columns:1fr;gap:16px;padding-top:26px}.rf-branches::before{display:none}.rf-branches::after{height:29px}.rf-thrust::before{display:none}.rf-thrust{padding:20px}.rf-thrust h3{font-size:21px;min-height:0}.rf-thrust-top{margin-bottom:10px}.rf-thrust .rf-subtitle{margin-top:10px}.rf-framework figcaption{font-size:11px;text-align:left;margin-top:20px}}
 /* Review refinements: member-page title, representative images and quiet hover. */
 .rd-overview-authored h1{font-family:'Segoe UI',Arial,sans-serif;font-size:32px;font-weight:700;line-height:1.2;letter-spacing:normal}
 .rf-core{box-shadow:0 2px 9px #142b5512;transition:box-shadow .18s ease,background-color .18s ease,transform .18s ease}
 .rf-thrust{box-shadow:0 2px 9px #142b5512;transition:box-shadow .18s ease,border-color .18s ease,transform .18s ease;cursor:pointer}
 .rd-main .rf-thrust-image{display:block;width:100%;height:152px;object-fit:contain;margin:0 0 22px;background:#fff}
-.rf-core:hover{background:#1c3966;box-shadow:0 14px 32px #142b5540;transform:translateY(-4px)}
-.rf-thrust:hover{border-color:#a1662f;box-shadow:0 14px 32px #142b5540;transform:translateY(-4px)}
+.rf-core:hover{background:#1c3966;box-shadow:0 14px 32px #142b5540;transform:translateY(-3px)}
+.rf-thrust:hover{border-color:#a1662f;box-shadow:0 14px 32px #142b5540;transform:translateY(-3px)}
 @media(max-width:620px){.rd-overview-authored h1{font-size:32px}.rd-main .rf-thrust-image{height:180px;margin-bottom:18px}}
 @media(prefers-reduced-motion:reduce){.rf-core,.rf-thrust{transition:none}.rf-core:hover,.rf-thrust:hover{transform:none}}
 /* Wider research images and justified overview copy. */
