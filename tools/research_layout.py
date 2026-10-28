@@ -103,6 +103,9 @@ def build_home(main, content):
 def build_overview(main, content):
     authored = content.find('.//*[@class="rd-overview-authored"]')
     if authored is not None:
+        navigation = element('div', **{'class': 'rd-overview-navigation'})
+        navigation.append(area_nav('overview'))
+        main.append(navigation)
         main.append(copy.deepcopy(authored))
         return
     main.append(area_nav('overview'))
