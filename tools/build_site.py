@@ -466,6 +466,26 @@ rebuild_literature(ROOT)
 from research_layout import rebuild_research
 rebuild_research(ROOT)
 
+# Apply branding last: page renderers also replace entire document heads.
+# Cover archives, standalone pages, maps, and the 404 page, including future pages.
+favicon_version=hashlib.sha256((ROOT/'favicon.ico').read_bytes()).hexdigest()[:12]
+favicon_links=''.join([
+    f'<link rel="icon" href="/favicon.ico?v={favicon_version}" sizes="any">',
+    *[f'<link rel="icon" type="image/png" sizes="{size}x{size}" href="/images/brand/hmd-smile-{size}.png?v={favicon_version}">' for size in (16,32,48,192)],
+    f'<link rel="apple-touch-icon" sizes="180x180" href="/images/brand/hmd-smile-180.png?v={favicon_version}">',
+])
+for page in ROOT.rglob('*.html'):
+    markup=page.read_text(encoding='utf-8')
+    if not re.search(r'</head\s*>',markup,re.I):continue
+    def keep_non_icon(match):
+        tag=match.group(0)
+        rel=re.search(r'\brel\s*=\s*([\"\'])(.*?)\1',tag,re.I)
+        if rel and any(token in ('icon','apple-touch-icon','apple-touch-icon-precomposed','mask-icon') for token in rel[2].lower().split()):return ''
+        return tag
+    markup=re.sub(r'<link\b[^>]*>',keep_non_icon,markup,flags=re.I)
+    markup=re.sub(r'</head\s*>',lambda match:favicon_links+match[0],markup,count=1,flags=re.I)
+    page.write_text(markup,encoding='utf-8')
+
 report={'archive_design':'clean-academic',**archive_details,'current_year':today,'publications_entry_year':current(pub_years),'news_entry_year':current(news_years),'publication_years':pub_years,'news_years':news_years,'publication_counts':counts,'total_publications':len(paper_ids)}
 (ROOT/'archive-build-report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report))
