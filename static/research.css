@@ -4,7 +4,6 @@
 .lab-research-design [hidden]{display:none!important}
 .lab-research-design .lab-header{padding-top:26px}
 .lab-research-design .lab-header nav{margin-top:18px}
-.lab-research-design .lab-header nav a[aria-current=page]{text-decoration:underline;text-underline-offset:7px;text-decoration-color:#547da6}
 .rd-skip{position:absolute;top:-100px;left:16px;z-index:1000;padding:12px 20px;background:#142b55;color:#fff}
 .rd-skip:focus{top:12px}
 .rd-main{max-width:1240px;margin:0 auto;padding:0 40px 100px}
