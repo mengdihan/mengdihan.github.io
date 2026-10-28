@@ -117,7 +117,7 @@ def rebuild_archives(root,bibliography,scholar,today):
                 for n in ns:
                     if n['year']==year:result+=f'<article class="news-row"><div class="news-date">{n["date"]}</div><p>{n["html"]}</p></article>'
                 result+='</div><aside class="news-gallery" aria-label="News images from '+str(year)+'">'
-                for photo in news_images[str(year)]:result+=f'<a class="news-photo-open" href="{escape(images[photo["image"]],quote=True)}" data-lightbox="true" aria-label="Enlarge {escape(photo["alt"],quote=True)}">{image(photo["image"],photo["alt"])}</a>'
+                for photo in news_images[str(year)]:result+=f'<div class="news-photo">{image(photo["image"],photo["alt"])}</div>'
                 result+='</aside></div></section>'
         return result
     routes=[('publications','publication','latest','list'),('publications/all','publication','all','list'),('publications/covers','publication','all','covers'),('publications/selected','publication','all','selected'),('news','news','latest','list'),('news/all','news','all','list')]
