@@ -52,6 +52,7 @@ def rebuild_research(root):
     sources = {route: html.document_fromstring((root / route / 'index.html').read_bytes()) for route in ROUTES}
     for route, source in sources.items():
         content = copy.deepcopy(source.get_element_by_id('s-content'))
+        refresh_research_references(content, root)
         for node in content.xpath('.//style|.//script'):
             node.getparent().remove(node)
         page = html.document_fromstring('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body class="lab-research-design"></body></html>')
@@ -59,6 +60,8 @@ def rebuild_research(root):
         for node in source.xpath('//head/title|//head/meta[@name="description" or @name="keywords" or @property]|//head/link[@rel="canonical" or @rel="icon" or @rel="shortcut icon"]'):
             head.append(copy.deepcopy(node))
         styles = ('site.css', 'hmd-color.css', 'research.css')
+        if route in ('actuators-microrobotics', 'wearable-devices-eskins'):
+            styles += ('research-detail.css',)
         if not route:
             body.set('class', 'lab-research-design lab-home-design')
             styles += ('home.css',)
@@ -128,7 +131,8 @@ def build_area(main, content, route):
     authored = content.find('.//*[@class="rd-research-authored"]')
     if authored is not None:
         main.append(area_nav(route))
-        main.append(copy.deepcopy(authored))
+        detail = copy.deepcopy(authored)
+        main.append(detail)
         return
     title = dict(AREAS)[route]
     main.append(area_nav(route))
@@ -184,3 +188,27 @@ def build_bio(main, content):
         prose.set('class', 'rd-bio-prose')
         section.append(prose)
         main.append(section)
+
+
+def refresh_research_references(content, root):
+    from member_publications import read_bibliography
+    groups = content.xpath('.//*[@data-paper-ids]')
+    if not groups:
+        return
+    from pathlib import Path
+    papers = read_bibliography(Path(__file__).resolve().parent.parent)
+    for group in groups:
+        ids = [int(value) for value in group.get('data-paper-ids').split(',')]
+        for child in list(group):
+            group.remove(child)
+        group.append(element('span', 'RELATED PUBLICATIONS', **{'class': 'rd-detail-reference-label'}))
+        for pid in ids:
+            paper = papers[pid]
+            details = text(paper['metadata']).replace(paper['journal'], '', 1).strip()
+            details = re.split(r'\s*[\(\[]', details)[0]
+            details = re.sub('accepted', 'accepted', details, flags=re.I)
+            link = element('a', href=paper['url'], target='_blank', rel='noopener noreferrer', title=paper['title'], aria_label=paper['title'], **{'class': 'rd-detail-reference'})
+            journal = element('em', paper['journal'])
+            journal.tail = ' ' + details
+            link.append(journal)
+            group.append(link)
