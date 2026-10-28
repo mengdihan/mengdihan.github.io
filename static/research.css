@@ -173,3 +173,9 @@
 .rd-area-nav{justify-content:center}
 .rd-main:has(>.rd-area-nav) p,.rd-overview-authored p{text-align:justify;text-justify:inter-word;hyphens:manual}
 .rd-main .rd-detail-note{text-align:left}
+
+/* Compact Advanced sensing core after removing its secondary description. */
+.rf-core{padding:18px 24px}
+.rf-core h2{margin-bottom:0}
+.rf-technologies{margin-top:12px;padding-top:10px}
+@media(max-width:620px){.rf-core{padding:18px 16px}}

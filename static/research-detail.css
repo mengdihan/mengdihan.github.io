@@ -29,3 +29,17 @@
 .rd-detail .rd-detail-image img[src$=".svg"]{object-fit:contain}
 
 .rd-detail .rd-detail-status{padding:28px 0;border-top:1px solid #e1e6ed;color:#6b7480;font-size:16px}
+
+/* Approved white Overview-style layout for the three research areas. */
+/* Overview is unchanged; direction pages inherit its white editorial layout. */
+.lab-research-design .rd-main{max-width:1240px;padding:0 40px 64px}
+.lab-research-design .rd-area-nav{justify-content:center;gap:28px;padding:25px 0 23px;font-size:14px}
+.lab-research-design .rd-detail-intro{display:grid;grid-template-columns:minmax(230px,max-content) minmax(0,1fr);gap:40px;align-items:start;background:transparent;border:0;border-radius:0;padding:48px 0 38px;margin:0;min-height:0}
+.lab-research-design #s-content .rd-detail-intro h1{font-family:'Segoe UI',Arial,sans-serif;font-size:32px;font-weight:700;line-height:1.2;letter-spacing:normal;white-space:nowrap;margin:0}
+.lab-research-design .rd-detail-intro>p{font-size:16px;line-height:1.8;color:#46566a;border:0;padding:0;max-width:none;text-align:justify}
+.lab-research-design .rd-detail-intro .rd-detail-note{font:500 13px/1.6 'Segoe UI',Arial,sans-serif;color:#a1662f;margin:12px 0 0}
+.lab-research-design .rd-detail .rd-detail-section{gap:40px;padding:32px 0 34px}
+.lab-research-design .rd-detail .rd-detail-section>h2{font-family:'Segoe UI',Arial,sans-serif;font-weight:700;font-size:24px;letter-spacing:normal}
+.lab-research-design .rd-detail-grid p{font-size:15px;line-height:1.8}
+@media(max-width:1000px){.lab-research-design .rd-main{padding-left:28px;padding-right:28px}.lab-research-design .rd-detail-intro{gap:28px}.lab-research-design #s-content .rd-detail-intro h1{font-size:26px}}
+@media(max-width:760px){.lab-research-design .rd-main{padding:0 20px 55px}.lab-research-design .rd-detail-intro{grid-template-columns:1fr;gap:20px;padding:30px 0 26px}.lab-research-design #s-content .rd-detail-intro h1{font-size:clamp(18px,4.7vw,28px)}.lab-research-design .rd-area-nav{gap:10px 20px;font-size:12px;padding:20px 0}.lab-research-design .rd-detail .rd-detail-section{gap:18px;padding:26px 0}}
