@@ -60,3 +60,10 @@
 
 .member-thumb-date{display:block;padding:3px 0 2px;font-size:11px;line-height:1.4;color:#656b74;text-align:center;white-space:nowrap}
 .member-gallery-thumbs a[aria-current] .member-thumb-date{color:#A1662F}
+
+/* Three newest group photos appear at full sidebar width; older photos stay in the dated index. */
+.member-gallery-slides{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.member-gallery-slide>a{aspect-ratio:4/3}
+.member-gallery-slide figcaption{min-height:0;margin:8px 0 0}
+.member-gallery-thumbs{margin-top:13px}
+.member-gallery-controls button:disabled{opacity:.35;cursor:default}
