@@ -7,6 +7,23 @@
   const search=byId('lit-search'),edition=byId('lit-edition'),sort=byId('lit-sort'),results=byId('lit-results');
   const dialog=byId('lit-journals-dialog'),journalOpen=byId('lit-journals-open');
   let topic='',journals=new Set(),draft=new Set(),sources=[];
+  // Broad navigation categories; original article tags remain available to search
+  // and personalization. A paper may belong to more than one category.
+  const topicGroups=[
+    ['Magnetics & implants', /magnet|wireless|implant|battery.free|deep.tissue/i],
+    ['Wearables & e-skins', /wearab|e.skin|electronic skin|tactile|textile|human.machine|multiaxial force/i],
+    ['Bioelectronics & neural', /bioelectronic|neural|neuro|electromyograph|\bEEG\b|\bECG\b|electrochemical|spinal|closed.loop therap/i],
+    ['Biomechanics & physiology', /mechanic|resonat|pressure|hemodynamic|cardiac|pulse|physiolog|monitor|rheometr|viscoelastic|free behavior|locomotion|stroke|endothelial|ultrasound|biochemical/i],
+    ['Robotics & actuation', /robot|actuat|motor|closed.loop (?:system|control)|origami|shape morph/i],
+    ['Materials & fabrication', /material|fabricat|MEMS|microelectronic|microneedle|stretchable|flexible electronic|fatigue|packag/i],
+    ['Methods & signals', /method|signal|decod|reconstruct|inverse|model|imaging|readout|artifact|optical|sensor|hardware|comput|energy|digital twin/i]
+  ];
+  function articleTopicGroups(article){
+    const tags=(article.topics||[]).join(' / ');
+    const groups=topicGroups.filter(([,pattern])=>pattern.test(tags)).map(([name])=>name);
+    return groups.length?groups:['Methods & signals'];
+  }
+
   const node=(tag,cls,value)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined)el.textContent=value;return el;};
   const account=window.BioERadarAccount,personalization=window.BioERadarPersonalization;
   let feedback=Object.create(null),accountState={status:'loading',user:null},tooltipIndex=0;
@@ -40,7 +57,7 @@
     const focused=document.activeElement,focusedArticle=focused?.closest('.lit-paper')?.dataset.id,focusedSignal=focused?.dataset.signal;
     const e=selected(),q=search.value.trim().toLocaleLowerCase();
     const feedbackFilter='all',version=sort.value==='personal'?'personal':'community';
-    const items=e.articles.filter(a=>(feedbackFilter==='all'||(feedbackFilter==='marked'?hasFeedback(a):feedback[feedbackId(a)]?.signals.includes(feedbackFilter)))&&(!topic||a.topics.includes(topic))&&journals.has(sourceName(a.journal))&&(!q||[a.title,a.journal,a.summary,a.doi,...a.authors,...a.topics].join(' ').toLocaleLowerCase().includes(q)));
+    const items=e.articles.filter(a=>(feedbackFilter==='all'||(feedbackFilter==='marked'?hasFeedback(a):feedback[feedbackId(a)]?.signals.includes(feedbackFilter)))&&(!topic||articleTopicGroups(a).includes(topic))&&journals.has(sourceName(a.journal))&&(!q||[a.title,a.journal,a.summary,a.doi,...a.authors,...a.topics].join(' ').toLocaleLowerCase().includes(q)));
     if(sort.value==='personal'||sort.value==='community'){const baseline=personalization.beforeEdition(accountState.events||[],e,version==='personal'?accountState.user?.uid:undefined,version==='personal'?feedback:{});const history=data.editions.flatMap(report=>report.articles);const ranked=personalization.rank(items,baseline,history);items.splice(0,items.length,...ranked);}else items.sort((a,b)=>sort.value==='date'?String(b.date||'').localeCompare(String(a.date||''))||a.title.localeCompare(b.title):sort.value==='journal'?a.journal.localeCompare(b.journal)||String(b.date||'').localeCompare(String(a.date||'')):b.relevance-a.relevance||a.journal.localeCompare(b.journal)||a.title.localeCompare(b.title));
     tooltipIndex=0;results.replaceChildren(...items.map(row));
     if(focusedArticle&&focusedSignal)Array.from(results.children).find(card=>card.dataset.id===focusedArticle)?.querySelector('button[data-signal="'+focusedSignal+'"]')?.focus({preventScroll:true});
@@ -109,7 +126,7 @@
   topicObserver.observe(document.querySelector('.lit-topics'));
   function setup(){
     const e=selected();sources=[...new Set([...e.coverage.map(c=>sourceName(c.journal)),...e.articles.map(a=>sourceName(a.journal))])].filter(j=>j!=='Small').sort();
-    journals=new Set(sources);topic='';const topics=['',...[...new Set(e.articles.flatMap(a=>a.topics))].sort()];
+    journals=new Set(sources);topic='';const available=new Set(e.articles.flatMap(articleTopicGroups));const topics=['',...topicGroups.map(([name])=>name).filter(name=>available.has(name))];
     document.querySelector('.lit-topics').replaceChildren(...topics.map(t=>{const b=node('button','',t||'All topics');b.type='button';b.dataset.topic=t;b.setAttribute('aria-pressed',String(!t));b.addEventListener('click',()=>{topic=t;render();});return b;}));render();fitTopics();
   }
   journalOpen.addEventListener('click',()=>{draft=new Set(journals);paintJournals();dialog.showModal();});
