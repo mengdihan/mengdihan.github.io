@@ -1,0 +1,138 @@
+{
+  "checkedOn": "2026-10-30",
+  "window": {
+    "start": "2026-10-23T03:30:00+08:00",
+    "end": "2026-10-30T03:30:00+08:00"
+  },
+  "scope": "Supplement only; existing published edition retained",
+  "selected": [
+    {
+      "doi": "10.1126/science.aeh5957",
+      "journal": "Science",
+      "publicationDate": "2026-10-29",
+      "publicationDateEvidence": "Institution explicitly states published online on 29 October 2026",
+      "evidenceUrls": [
+        "https://liu.se/en/news-item/gomda-och-glomda-2d-material-upptacks-med-ai"
+      ]
+    },
+    {
+      "doi": "10.1016/j.device.2026.101333",
+      "journal": "Device",
+      "publicationDate": "2026-10-26",
+      "publicationDateEvidence": "MIT announcement dated 26 October 2026 explicitly says paper appearing today in Device",
+      "evidenceUrls": [
+        "https://news.mit.edu/2026/implantable-device-uses-ultrasound-improve-drug-delivery-brain-1026",
+        "https://www-prod.media.mit.edu/publications/long-term-ultrasound-enhanced-convective-injection-device-for-neural-drug-delivery/"
+      ]
+    }
+  ],
+  "notAdded": [
+    {
+      "doi": "10.1126/science.adx4170",
+      "journal": "Science",
+      "knownDate": "2026-10-08",
+      "reason": "Earlier than the requested supplement window"
+    },
+    {
+      "doi": "10.1126/scitranslmed.adt0044",
+      "journal": "Science Translational Medicine",
+      "knownDate": "2026-10-07",
+      "reason": "Earlier than the requested supplement window"
+    },
+    {
+      "doi": "10.1126/scitranslmed.aea4947",
+      "journal": "Science Translational Medicine",
+      "knownDate": "2026-10-21",
+      "reason": "Earlier than the requested supplement window"
+    },
+    {
+      "doi": "10.1126/science.aeg1070",
+      "journal": "Science",
+      "knownDate": "2026-10-01",
+      "reason": "Earlier than the requested supplement window"
+    },
+    {
+      "doi": "10.1016/j.matt.2026.103067",
+      "journal": "Matter",
+      "title": "Non-equilibrium fluctuations in the corrosion process",
+      "firstOnlineDate": null,
+      "crossrefCreatedAt": "2026-10-26T14:56:04Z",
+      "reason": "First-online date unverified; DOI registration and news dates do not establish eligibility"
+    },
+    {
+      "doi": "10.1016/j.matt.2026.103068",
+      "journal": "Matter",
+      "title": "Bioinspired and biodegradable fluorine-free superhydrophobic coatings",
+      "firstOnlineDate": null,
+      "crossrefCreatedAt": "2026-10-27T15:04:27Z",
+      "reason": "First-online date unverified; DOI registration and news dates do not establish eligibility"
+    },
+    {
+      "doi": "10.1016/j.matt.2026.103069",
+      "journal": "Matter",
+      "title": "An intrinsically stretchable thin-film organic rechargeable sodium-ion battery enabled for wearable devices",
+      "firstOnlineDate": null,
+      "crossrefCreatedAt": "2026-10-29T14:39:31Z",
+      "reason": "First-online date unverified; DOI registration and news dates do not establish eligibility"
+    },
+    {
+      "doi": "10.1016/j.matt.2026.103089",
+      "journal": "Matter",
+      "title": "Fracture-mediated percolation governs electrical activation in liquid metal composite conductors",
+      "firstOnlineDate": null,
+      "crossrefCreatedAt": "2026-10-29T14:39:30Z",
+      "reason": "First-online date unverified; DOI registration and news dates do not establish eligibility"
+    },
+    {
+      "doi": "10.1126/scitranslmed.adv7928",
+      "journal": "Science Translational Medicine",
+      "title": "B cell subsets are associated with durable responses in distinct cancer types after immune checkpoint inhibition",
+      "knownDate": "2026-10-28",
+      "reason": "Abstract reviewed; no clear sensing/engineering relevance under focused owner interests"
+    },
+    {
+      "doi": "10.1126/scitranslmed.adz4081",
+      "journal": "Science Translational Medicine",
+      "title": "MIF-CD74 orchestrates synovial macrophage metabolic-inflammatory reprogramming by ENO2 interaction to drive osteoarthritis pathogenesis",
+      "knownDate": "2026-10-28",
+      "reason": "Abstract reviewed; no clear sensing/engineering relevance under focused owner interests"
+    },
+    {
+      "doi": "10.1126/scitranslmed.aea7127",
+      "journal": "Science Translational Medicine",
+      "title": "T cell–mediated depletion of intratumoral regulatory T cells using a CCR8xCD3 T cell–engaging bispecific antibody (TCB) promotes antitumor immunity in preclinical mouse models",
+      "knownDate": "2026-10-28",
+      "reason": "Abstract reviewed; no clear sensing/engineering relevance under focused owner interests"
+    },
+    {
+      "doi": "10.1126/scitranslmed.aed9994",
+      "journal": "Science Translational Medicine",
+      "title": "Brain-sensing synNotch–CAR T cells enable precise targeting and clearance of diffuse midline glioma in multiple preclinical models",
+      "knownDate": "2026-10-28",
+      "reason": "Abstract reviewed; no clear sensing/engineering relevance under focused owner interests"
+    },
+    {
+      "doi": "10.1126/scitranslmed.aef3967",
+      "journal": "Science Translational Medicine",
+      "title": "Keratinocyte-derived CHI3L2 reprograms phospholipid metabolism to promote skin inflammation in psoriasis",
+      "knownDate": "2026-10-28",
+      "reason": "Abstract reviewed; no clear sensing/engineering relevance under focused owner interests"
+    },
+    {
+      "doi": "10.1126/scitranslmed.aeh0442",
+      "journal": "Science Translational Medicine",
+      "title": "Acute kidney injury as a systemic disease",
+      "knownDate": "2026-10-28",
+      "reason": "Abstract reviewed; no clear sensing/engineering relevance under focused owner interests"
+    },
+    {
+      "doi": "10.1126/scitranslmed.aei5117",
+      "journal": "Science Translational Medicine",
+      "title": "Dengue virus controlled human challenge reveals that preexisting immunity shapes viral replication and broadly protective responses",
+      "knownDate": "2026-10-28",
+      "reason": "Abstract reviewed; no clear sensing/engineering relevance under focused owner interests"
+    }
+  ],
+  "coverage": "Partial publisher coverage; no exhaustive no-new-articles claim",
+  "historicalDeduplication": "Confirmed public editions checked; older private/report history not fully available"
+}

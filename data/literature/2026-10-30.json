@@ -4,7 +4,7 @@
   "end": "2026-10-30 03:30",
   "updated": "2026-10-30",
   "publishedAt": "2026-10-30T03:53:47+08:00",
-  "note": "Newly delivered literature since the previous edition, including reviewed baseline/backfill records where exact first-online timing remains unavailable. Small is excluded by owner instruction. Research Square Nature Portfolio membership was verified through the visible filtered interface; all listed preprints remain unreviewed. Science publisher pages and editor credits could not be exhaustively verified, so the Marc Lavine inclusion rule remains only partially checked.",
+  "note": "Newly delivered literature since the previous edition, including reviewed baseline/backfill records where exact first-online timing remains unavailable. Small is excluded by owner instruction. Research Square Nature Portfolio membership was verified through the visible filtered interface; all listed preprints remain unreviewed. Science publisher pages and editor credits could not be exhaustively verified, so the Marc Lavine inclusion rule remains only partially checked. The 30 October date-verified supplement adds one Science article (29 October) and one Device article (26 October). The supplementary review uses the 23 October 03:30 to 30 October 03:30 Beijing window; earlier recommendations were not added in this update. Matter candidates with unverified first-online dates were held. Seven dated STM entries from 28 October were assessed from abstracts and none had a clear sensing/engineering connection under the current focused selection; STM catalogue coverage remains partial. The original edition and immutable publication cutoff are preserved.",
   "articles": [
     {
       "id": "10.1021/acsnano.6c13086",
@@ -1343,18 +1343,96 @@
         "Imaging biomarkers"
       ],
       "type": "Preprint — not peer reviewed"
+    },
+    {
+      "id": "10.1126/science.aeh5957",
+      "doi": "10.1126/science.aeh5957",
+      "title": "Data-driven discovery and rapid, direct synthesis of MXenes",
+      "journal": "Science",
+      "date": "2026-10-29",
+      "authors": [
+        "Ali Saffar Shamshirgar",
+        "Guilherme Ribeiro Portugal",
+        "Soheil Ershadrad",
+        "Roman Ivanov",
+        "Martin Dahlqvist",
+        "Florian Chabanais",
+        "Sanjay Chakraborty",
+        "Rainer Traksmaa",
+        "Topias Jussila",
+        "Maarit Karppinen",
+        "Irina Hussainova",
+        "Fredrik Heintz",
+        "Per O. Å. Persson",
+        "Johanna Rosen"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/science.aeh5957",
+      "relevance": 2,
+      "summary": "Machine-learning-assisted database mining identifies 33 previously synthesized but unrecognized MXene candidates. A self-propagating synthesis route produces seven multilayer MXenes without sustained external heating, and the study extends the family to 11 rare-earth-based MXenes with varied magnetic states. For bioelectronics, the transferable value is the materials-discovery and scalable-manufacturing strategy; implant compatibility, degradation and sensing performance are not established by the abstract.",
+      "topics": [
+        "Materials & fabrication",
+        "Magnetic materials"
+      ],
+      "type": "Research article",
+      "readingBasis": "Abstract; full text not reviewed",
+      "evidenceUrls": [
+        "https://liu.se/en/news-item/gomda-och-glomda-2d-material-upptacks-med-ai"
+      ],
+      "firstSeenAt": "2026-10-30",
+      "deliveryContext": "Date-verified supplement within the edition window",
+      "publicationDateEvidence": "Institution explicitly states published online on 29 October 2026"
+    },
+    {
+      "id": "10.1016/j.device.2026.101333",
+      "doi": "10.1016/j.device.2026.101333",
+      "title": "Long-term ultrasound-enhanced convective injection device for neural drug delivery",
+      "journal": "Device",
+      "date": "2026-10-26",
+      "authors": [
+        "Jason F. Hou",
+        "Sarah B. Ornellas",
+        "Michal O. Nowicki",
+        "Jerry Li",
+        "Heloise Leblanc",
+        "Betul Serra Tulu",
+        "David Sadat",
+        "Marco Mineo",
+        "Steve Ramirez",
+        "E. Antonio Chiocca",
+        "Canan Dagdeviren"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1016/j.device.2026.101333",
+      "relevance": 2,
+      "summary": "LUCID combines a flexible implant with a drug-delivery cannula printed directly onto an array of 24 miniature ultrasound transducers. Ultrasound promotes local molecular distribution, with tests in tissue models and mice, and the system supports sustained delivery rather than repeated injections. The platform is relevant to miniaturized implants, ultrasound integration and controlled intervention in the brain; it does not itself demonstrate magnetic readout or pressure sensing. Publication on 26 October was confirmed by MIT’s same-day paper announcement; the journal full text was not reviewed.",
+      "topics": [
+        "Wireless implants",
+        "Ultrasound",
+        "Microfabrication",
+        "Targeted delivery"
+      ],
+      "type": "Research article",
+      "readingBasis": "Author institution publication record and research description; full text not reviewed",
+      "evidenceUrls": [
+        "https://news.mit.edu/2026/implantable-device-uses-ultrasound-improve-drug-delivery-brain-1026",
+        "https://www-prod.media.mit.edu/publications/long-term-ultrasound-enhanced-convective-injection-device-for-neural-drug-delivery/"
+      ],
+      "publicationDateEvidence": "MIT announcement dated 26 October 2026 explicitly says paper appearing today in Device",
+      "firstSeenAt": "2026-10-30",
+      "deliveryContext": "Date-verified supplement within the edition window"
     }
   ],
   "coverage": [
     {
       "journal": "Science",
       "status": "partial",
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
+      "detail": "Metadata and selected abstracts reviewed. A date-verified MXene materials/manufacturing article was added for 29 October. Official-page editorial-summary signature coverage remains incomplete; this article is included on relevance evidence, not an assumed signature. Publisher catalogue completeness remains unverified.",
       "readCount": 167,
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
+      "selectedCount": 1
     },
     {
       "journal": "Cell",
@@ -1389,7 +1467,7 @@
     {
       "journal": "Science Translational Medicine",
       "status": "partial",
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
+      "detail": "35 metadata candidates inspected, including seven dated 28 October entries reviewed from abstracts. No clearly relevant sensing/engineering entry was selected from those seven. Publisher catalogue completeness remains unverified; this does not prove absence across all inaccessible content.",
       "readCount": 35,
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
@@ -1589,7 +1667,7 @@
     {
       "journal": "Matter",
       "status": "partial",
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
+      "detail": "Relevant candidates identified, but several recent records lack verified first-online dates. DOI creation dates and press-release dates were not treated as publication dates; no unverified-date record was added in this supplement.",
       "readCount": 41,
       "readCountIsLowerBound": false,
       "readCountDatePending": 41,
@@ -1649,12 +1727,12 @@
     {
       "journal": "Device",
       "status": "partial",
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
+      "detail": "A date-verified 26 October implantable ultrasound/drug-delivery article was added after checking MIT’s same-day publication announcement. Other candidates still require first-online date review; publisher catalogue completeness remains unverified.",
       "readCount": 15,
       "readCountIsLowerBound": false,
       "readCountDatePending": 15,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
+      "selectedCount": 1
     },
     {
       "journal": "Biosensors and Bioelectronics",

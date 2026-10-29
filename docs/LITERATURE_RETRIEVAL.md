@@ -1,3 +1,9 @@
+## Science / STM abstract and editorial-summary inclusion — 30 October 2026
+
+The owner explicitly confirmed that the Science editorial-summary signature “Marc S. Lavine” is sufficient for the special all-inclusion rule. Do not require separate proof of handling-editor identity, and do not relabel the signature as proof of handling editorship. Verify the actual Editor’s summary attribution in official article HTML/PDF or accessible official-page index text; unrelated mentions, coauthor names and the editorial board list do not qualify. Preserve source evidence; keep editor names off article cards. Other relevant Science articles remain eligible, and the existing level 1/2 full-report policy is not narrowed by this clarification.
+
+For both Science and Science Translational Medicine, a readable, verified abstract or editorial summary is sufficient for relevance review. Official indexed page text, PubMed, Europe PMC, actual deposited Crossref abstracts, and author/institution copies may supply content when the publisher page is unavailable. Record the actual reading basis and source. Do not hold eligible papers solely because full text, figures or Methods are unavailable; do not imply those were read. Do not require an editorial signature for relevance-based inclusion. Unknown dates follow the existing baseline/backfill rule; only actual successful delivery updates the ledger. Private historical delivery coverage may be incomplete and must be disclosed.
+
 # Literature retrieval and recovery
 
 ## Verified failure modes
