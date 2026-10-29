@@ -747,6 +747,28 @@
       "first_seen_at": "2026-10-30T03:30:00+08:00",
       "first_delivered_edition": "2026-10-30",
       "delivery_confirmed_on": "2026-10-30"
+    },
+    {
+      "id": "10.1126/science.aeh5957",
+      "doi": "10.1126/science.aeh5957",
+      "title": "Data-driven discovery and rapid, direct synthesis of MXenes",
+      "publication_date": "2026-10-29",
+      "first_seen_at": "2026-10-30",
+      "first_delivered_edition": "2026-10-30",
+      "delivery_confirmed_on": "2026-10-30",
+      "delivery_channel": "Verified live public BioE Radar edition",
+      "delivery_commit": "76623a0146964ab2fda8f1ad31d2fc7ef0651aea"
+    },
+    {
+      "id": "10.1016/j.device.2026.101333",
+      "doi": "10.1016/j.device.2026.101333",
+      "title": "Long-term ultrasound-enhanced convective injection device for neural drug delivery",
+      "publication_date": "2026-10-26",
+      "first_seen_at": "2026-10-30",
+      "first_delivered_edition": "2026-10-30",
+      "delivery_confirmed_on": "2026-10-30",
+      "delivery_channel": "Verified live public BioE Radar edition",
+      "delivery_commit": "76623a0146964ab2fda8f1ad31d2fc7ef0651aea"
     }
   ]
 }
