@@ -7,7 +7,7 @@
   // The settings page itself must never generate analytics visits.
   let ownerExcluded = false;
   try { ownerExcluded = localStorage.getItem('hmd-owner-analytics-v1') === 'exclude'; } catch { /* Storage may be blocked. */ }
-  if (ownerExcluded || location.pathname.startsWith('/analytics-device/')) {
+  if (ownerExcluded || location.pathname.startsWith('/analytics-device/') || location.pathname.startsWith('/HMD-Lab-Internal/')) {
     window['ga-disable-' + id] = true;
     window.hmdAnalyticsStatus = 'owner-excluded';
     return;
