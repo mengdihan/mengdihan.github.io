@@ -3,7 +3,7 @@ from datetime import datetime
 
 def build_gallery(entries):
     aside=html.Element('aside',{'class':'member-photos member-gallery','aria-label':'Group photos'})
-    heading=html.Element('h2');heading.text='Group Photos';aside.append(heading)
+    heading=html.Element('h2');heading.text='Group photos';aside.append(heading)
     slides=html.Element('div',{'class':'member-gallery-slides','aria-live':'polite'});aside.append(slides)
     for i,entry in enumerate(entries):
         figure=html.Element('figure',id='group-photo-'+str(i+1),attrib={'class':'member-gallery-slide'})
@@ -14,7 +14,7 @@ def build_gallery(entries):
     for action,label in [('previous','Previous'),('next','Next')]:
         button=html.Element('button',type='button',attrib={'data-gallery-action':action,'aria-label':label+' group photograph'});button.text=label
         if action=='next':
-            count=html.Element('span',{'class':'member-gallery-count','aria-live':'polite'});count.text='1 / '+str(len(entries));controls.append(count)
+            count=html.Element('span',{'class':'member-gallery-count','aria-live':'polite'});count.text='1–3 / '+str(len(entries));controls.append(count)
         controls.append(button)
     aside.append(controls)
     thumbs=html.Element('div',{'class':'member-gallery-thumbs','aria-label':'Choose a group photograph'});aside.append(thumbs)
