@@ -3,6 +3,16 @@
   'use strict';
   if (!['hmd-lab.com', 'www.hmd-lab.com', 'mengdihan.github.io'].includes(location.hostname)) return;
   const id = 'G-WPKN8C626L';
+  // A browser-local owner preference is independent of IP address and VPN.
+  // The settings page itself must never generate analytics visits.
+  let ownerExcluded = false;
+  try { ownerExcluded = localStorage.getItem('hmd-owner-analytics-v1') === 'exclude'; } catch { /* Storage may be blocked. */ }
+  if (ownerExcluded || location.pathname.startsWith('/analytics-device/')) {
+    window['ga-disable-' + id] = true;
+    window.hmdAnalyticsStatus = 'owner-excluded';
+    return;
+  }
+  window.hmdAnalyticsStatus = 'visitor';
   let previouslyDeclined = false;
   try { previouslyDeclined = localStorage.getItem('hmd-analytics-consent-v1') === 'declined'; } catch { /* No stored preference available. */ }
   if (navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || previouslyDeclined) {

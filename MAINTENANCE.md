@@ -45,3 +45,7 @@ Home、Research 的五个页面与 Bio 页面在发布时由 `tools/research_lay
 - 根目录 `404.html` 和 `static/legacy-routes.js` 将旧年份、Full List、封面和 microrobot 链接跳转到新地址，并保留查询参数和锚点。GitHub Pages 的兼容跳转依赖浏览器 JavaScript，旧链接的首次响应是 404；新站内部链接全部直接使用新地址。
 
 目录规则以本节为准，取代旧维护文档中的根目录年份路径。历史源页面中的旧链接在隔离发布构建中统一转换为新路径；不需要手工重写整份页面。
+
+## 本人访问排除（2026-10-29）
+
+访问 `/analytics-device/`，在每个常用浏览器中设置设备并启用排除。`static/analytics.js` 在加载百度和 GA4 前读取 `hmd-owner-analytics-v1=exclude`，命中时两套采集均不加载。`hmd-owner-device-v1` 只保存 office/laptop/phone 标签，不上传。标记不依赖 IP；清除网站数据或换浏览器后需重设。设置页不参与访问统计。恢复按钮可撤销，历史数据不变。此标记仅是统计偏好，不是登录或访问控制。
