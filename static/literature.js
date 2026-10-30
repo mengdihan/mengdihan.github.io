@@ -44,7 +44,24 @@
     }
     box.append(buttons);return box;
   }
-  const selected=()=>data.editions.find(e=>e.id===edition.value);
+  let allEditions;
+  const selected=()=>{
+    if(edition.value!=='all')return data.editions.find(e=>e.id===edition.value);
+    if(!allEditions){
+      const reports=[...data.editions].sort((a,b)=>b.id.localeCompare(a.id)),articles=new Map(),coverage=new Map();
+      for(const report of reports){
+        for(const article of report.articles)if(!articles.has(feedbackId(article)))articles.set(feedbackId(article),article);
+        for(const source of report.coverage){
+          const total=coverage.get(source.journal)||{...source,readCount:0};
+          total.readCount+=Number.isInteger(source.readCount)&&source.readCount>=0?source.readCount:0;
+          coverage.set(source.journal,total);
+        }
+      }
+      allEditions={id:'all',articles:[...articles.values()],coverage:[...coverage.values()],
+        start:reports.map(e=>e.start).sort()[0],end:reports.map(e=>e.end).sort().at(-1)};
+    }
+    return allEditions;
+  };
   const sourceName=s=>s.replace('bioRxiv - Bioengineering','bioRxiv · Bioengineering').replace('Arxiv - Applied Physics','arXiv · Applied Physics');
   function row(a){
     const card=node('article','lit-paper');card.dataset.id=a.id;
@@ -81,7 +98,7 @@
     byId('lit-version-note').hidden=!byId('lit-version-note').textContent;
     byId('lit-count').textContent=items.length+' of '+e.articles.length+' selected articles';
     byId('lit-empty').hidden=items.length!==0;
-    byId('lit-window').textContent=e.start+' – '+e.end+' (Beijing time)';
+    byId('lit-window').textContent=(e.id==='all'?'All editions · ':'')+e.start+' – '+e.end+' (Beijing time)';
     byId('lit-coverage-list').textContent=sources.join('; ')+'.';
     document.querySelectorAll('.lit-topics button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.topic===topic)));
     journalOpen.textContent=journals.size===sources.length?'All '+sources.length+' sources':journals.size+' selected';

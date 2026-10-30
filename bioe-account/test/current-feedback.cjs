@@ -22,7 +22,7 @@ test('community uses current totals, counts a double mark twice, and handles und
 });
 
 // Small DOM fixture: runs the real page script with fake accounts, no browser or live data.
-function ui(initial){
+function ui(initial,extraReports=[]){
  let document;
  class Element{
   constructor(tag='div'){this.tagName=tag.toUpperCase();this.children=[];this.dataset={};this.style={};this.attributes={};this.handlers={};this.value='';this.textContent='';this.className='';this.isConnected=true;}
@@ -46,7 +46,7 @@ function ui(initial){
  const boxes=['more','useful','irrelevant','later'].map(signal=>{const box=add('mark-'+signal,'input');box.dataset.feedbackFilter=signal;box.checked=true;return box;});
  const option=new Element('option');option.setAttribute('value','personal');ids.get('lit-sort').append(option);
  ids.get('lit-edition').value='2026-10-30';ids.get('lit-sort').value='community';
- ids.get('lit-data').content={textContent:JSON.stringify({editions:[{id:'2026-10-30',start:'2026-10-23 03:30',end:'2026-10-30 03:30',publishedAt:'2026-10-30T03:30:00+08:00',coverage:[{journal:'Science'}],articles:[paper('a',4),paper('b',3),paper('c',2),paper('d',1)]}]})};
+ ids.get('lit-data').content={textContent:JSON.stringify({editions:[{id:'2026-10-30',start:'2026-10-23 03:30',end:'2026-10-30 03:30',publishedAt:'2026-10-30T03:30:00+08:00',coverage:[{journal:'Science'}],articles:[paper('a',4),paper('b',3),paper('c',2),paper('d',1)]},...extraReports]})};
  document={activeElement:null,getElementById:id=>ids.get(id),createElement:tag=>new Element(tag),querySelector:s=>roots.find(e=>e.matches(s))||null,querySelectorAll:s=>s==='.lit-topics button'?topics.children:s==='[data-feedback-filter]'?boxes:[],addEventListener(){}};
  let state=initial||{status:'signed-in',user:{uid:'alice',displayName:'Alice'},feedback:{},reactions:[],events:[],communityStatus:'ready',message:'Synced across your devices.'};let subscriber;
  const emit=patch=>{state={...state,...patch};subscriber(state);};
@@ -131,4 +131,14 @@ test('All/Clear change only mark filters and retain search and sort',async()=>{
  await app.trigger('lit-marks-clear','click');assert.equal(app.boxes.some(b=>b.checked),false);assert.deepEqual(app.order(),[]);
  await app.trigger('lit-marks-all','click');assert.equal(app.boxes.every(b=>b.checked),true);assert.deepEqual(app.order(),['b']);
  assert.equal(app.ids.get('lit-search').value,'b');assert.equal(app.ids.get('lit-sort').value,'date');
+});
+
+
+test('All editions merges articles, deduplicates DOI using the newest record, and supports filters and switching back',async()=>{
+ const old={id:'2026-10-23',start:'2026-10-16 03:30',end:'2026-10-23 03:30',coverage:[{journal:'Science',readCount:2}],articles:[{...paper('a',1000),title:'Old duplicate'},paper('e',0)]};
+ const app=ui(undefined,[old]);assert.equal(app.order().length,4);
+ app.ids.get('lit-edition').value='all';await app.trigger('lit-edition','change');assert.deepEqual(app.order(),['a','b','c','d','e']);assert.match(app.ids.get('lit-window').textContent,/All editions.*2026-10-16/);
+ await app.click('e','later');await app.trigger('lit-sort','change');assert.equal(app.order()[0],'e');
+ await app.trigger('lit-marks-clear','click');assert.deepEqual(app.order(),[]);app.ids.get('mark-later').checked=true;await app.trigger('mark-later','change');assert.deepEqual(app.order(),['e']);
+ await app.trigger('lit-marks-all','click');app.ids.get('lit-edition').value='2026-10-30';await app.trigger('lit-edition','change');assert.equal(app.order().length,4);assert.equal(app.order().includes('e'),false);
 });

@@ -86,6 +86,7 @@ def rebuild_literature(root):
     dialog=html.fragment_fromstring('''<dialog id="lit-journals-dialog" aria-labelledby="lit-journals-title"><div class="lit-dialog-heading"><div><h2 id="lit-journals-title">Journals included</h2><p>Select one or more journals and preprint sources.</p></div><button id="lit-journals-close" type="button" aria-label="Close journal selection">×</button></div><div class="lit-dialog-actions"><button type="button" id="lit-journals-all">Select all</button><button type="button" id="lit-journals-none">Clear all</button><span id="lit-journals-selection" role="status" aria-live="polite"></span></div><div id="lit-journals-options"></div><div class="lit-dialog-footer"><button type="button" id="lit-journals-cancel">Cancel</button><button type="button" id="lit-journals-apply">Apply selection</button></div></dialog>''')
     body.append(dialog)
     select=main.get_element_by_id('lit-edition')
+    all_option=html.Element('option',value='all');all_option.text='All';select.append(all_option)
     for e in editions:
         opt=html.Element('option',value=e['id']);opt.text=e['id']
         if e==latest:opt.set('selected','selected')
