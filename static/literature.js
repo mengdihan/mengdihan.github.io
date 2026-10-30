@@ -27,6 +27,8 @@
   const node=(tag,cls,value)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined)el.textContent=value;return el;};
   const account=window.BioERadarAccount,personalization=window.BioERadarPersonalization;
   let feedback=Object.create(null),accountState={status:'loading',user:null},tooltipIndex=0;
+  let displayedOrder=[],rankingHydrated=false;
+  const canReact=()=>accountState.status==='signed-in'&&rankingHydrated;
   const feedbackId=personalization.key;
   const hasFeedback=a=>{const f=feedback[feedbackId(a)];return !!(f&&(f.signals.length||f.note));};
   function feedbackControls(a){
@@ -37,8 +39,8 @@
       const voters=(accountState.reactions||[]).filter(r=>r.key===key&&r.signals.includes(signal));
       const names=[...new Map(voters.map(r=>[r.uid,r.name])).values()].sort((a,b)=>a.localeCompare(b));
       const wrap=node('span','lit-reaction-wrap'),tip=node('span','lit-reaction-tip',names.length?names.join(', '):accountState.user?'No reactions yet':'Sign in to see reader reactions');tip.id='lit-reaction-tip-'+(++tooltipIndex);tip.setAttribute('role','tooltip');
-      const b=node('button','',title+(names.length?' '+names.length:''));b.setAttribute('aria-label',title);b.setAttribute('aria-describedby',tip.id);b.type='button';b.dataset.signal=signal;b.disabled=accountState.status!=='signed-in';b.setAttribute('aria-pressed',String(current().signals.includes(signal)));
-      b.addEventListener('click',async()=>{const entry={...current(),signals:[...current().signals]};if(entry.signals.includes(signal))entry.signals=entry.signals.filter(x=>x!==signal);else entry.signals=signal==='irrelevant'?['irrelevant']:[...entry.signals.filter(x=>x!=='irrelevant'),signal];b.disabled=true;await update(entry);if(b.isConnected)b.disabled=accountState.status!=='signed-in';});wrap.append(b,tip);buttons.append(wrap);
+      const b=node('button','',title+(names.length?' '+names.length:''));b.setAttribute('aria-label',title);b.setAttribute('aria-describedby',tip.id);b.type='button';b.dataset.signal=signal;b.disabled=!canReact();b.setAttribute('aria-pressed',String(current().signals.includes(signal)));
+      b.addEventListener('click',async()=>{const entry={...current(),signals:[...current().signals]};if(entry.signals.includes(signal))entry.signals=entry.signals.filter(x=>x!==signal);else entry.signals=signal==='irrelevant'?['irrelevant']:[...entry.signals.filter(x=>x!=='irrelevant'),signal];b.disabled=true;await update(entry);if(b.isConnected)b.disabled=!canReact();});wrap.append(b,tip);buttons.append(wrap);
     }
     box.append(buttons);return box;
   }
@@ -53,12 +55,24 @@
     const authors=node('p','lit-author-line',(a.authors.length?a.authors.join(', '):'Author list unavailable.')+(a.authorsComplete?'':' (Complete author list not verified.)'));
     card.append(meta,heading,authors,node('p','lit-summary',a.summary),bottom,feedbackControls(a));return card;
   }
-  function render(){
+  function render(reorder=true){
     const focused=document.activeElement,focusedArticle=focused?.closest('.lit-paper')?.dataset.id,focusedSignal=focused?.dataset.signal;
     const e=selected(),q=search.value.trim().toLocaleLowerCase();
     const feedbackFilter='all',version=sort.value==='personal'?'personal':'community';
     const items=e.articles.filter(a=>(feedbackFilter==='all'||(feedbackFilter==='marked'?hasFeedback(a):feedback[feedbackId(a)]?.signals.includes(feedbackFilter)))&&(!topic||articleTopicGroups(a).includes(topic))&&journals.has(sourceName(a.journal))&&(!q||[a.title,a.journal,a.summary,a.doi,...a.authors,...a.topics].join(' ').toLocaleLowerCase().includes(q)));
-    if(sort.value==='personal'||sort.value==='community'){const baseline=personalization.beforeEdition(accountState.events||[],e,version==='personal'?accountState.user?.uid:undefined,version==='personal'?feedback:{});const history=data.editions.flatMap(report=>report.articles);const ranked=personalization.rank(items,baseline,history);items.splice(0,items.length,...ranked);}else items.sort((a,b)=>sort.value==='date'?String(b.date||'').localeCompare(String(a.date||''))||a.title.localeCompare(b.title):sort.value==='journal'?a.journal.localeCompare(b.journal)||String(b.date||'').localeCompare(String(a.date||'')):b.relevance-a.relevance||a.journal.localeCompare(b.journal)||a.title.localeCompare(b.title));
+    if(reorder!==false){
+      if(sort.value==='personal'){
+        const history=data.editions.flatMap(report=>report.articles);
+        items.splice(0,items.length,...personalization.rankPersonal(items,feedback,history));
+      }else if(sort.value==='community'){
+        items.splice(0,items.length,...personalization.rankCommunity(items,accountState.reactions||[]));
+      }else items.sort((a,b)=>sort.value==='date'?String(b.date||'').localeCompare(String(a.date||''))||a.title.localeCompare(b.title):sort.value==='journal'?a.journal.localeCompare(b.journal)||String(b.date||'').localeCompare(String(a.date||'')):b.relevance-a.relevance||a.title.localeCompare(b.title));
+      displayedOrder=items.map(a=>a.id);
+    }else{
+      // Sync controls and names without moving any cards after a reaction.
+      const positions=new Map(displayedOrder.map((id,i)=>[id,i]));
+      items.sort((a,b)=>(positions.get(a.id)??Infinity)-(positions.get(b.id)??Infinity));
+    }
     tooltipIndex=0;results.replaceChildren(...items.map(row));
     if(focusedArticle&&focusedSignal)Array.from(results.children).find(card=>card.dataset.id===focusedArticle)?.querySelector('button[data-signal="'+focusedSignal+'"]')?.focus({preventScroll:true});
     document.querySelectorAll('[data-reading-version]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.readingVersion===version));b.disabled=b.dataset.readingVersion==='personal'&&!accountState.user;});
@@ -149,6 +163,9 @@
   byId('lit-account-signout').addEventListener('click',()=>account.signOut());
   account.subscribe(state=>{
     const prior=accountState.user?.uid;accountState=state;feedback=state.feedback;
+    if(prior!==state.user?.uid)rankingHydrated=false;
+    const initialReady=!rankingHydrated&&state.status==='signed-in'&&['ready','error'].includes(state.communityStatus);
+    if(initialReady)rankingHydrated=true;
     byId('lit-account-name').textContent=state.user?state.user.displayName:'Your reading account';
     document.querySelector('.lit-account-panel').dataset.state=state.status;
     byId('lit-email-open').hidden=!!state.user;byId('lit-email-open').disabled=['loading','error'].includes(state.status);
@@ -157,7 +174,7 @@
     sort.querySelector('option[value="personal"]').disabled=!state.user;
     if(!state.user&&sort.value==='personal')sort.value='community';
     if(prior!==state.user?.uid)sort.value=state.user?'personal':'community';
-    if(edition.value&&(prior!==state.user?.uid||document.activeElement?.tagName!=='TEXTAREA'))render();
+    if(edition.value&&(prior!==state.user?.uid||document.activeElement?.tagName!=='TEXTAREA'))render(prior!==state.user?.uid||initialReady);
   });
   // Anchor the recurring schedule in Beijing, then derive both DST-sensitive cities.
   const now=new Date(),parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);

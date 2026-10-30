@@ -17,6 +17,35 @@
     });
     return scored.sort((a,b)=>Number(a.negative)-Number(b.negative)||b.score-a.score||a.article.title.localeCompare(b.article.title)).map(x=>x.article);
   }
+  // Current feedback is the primary order; content affinity breaks personal ties.
+  const personalTier=signals=>signals?.includes('irrelevant')?-1:
+    signals?.includes('more')&&signals?.includes('useful')?2:
+    signals?.some(s=>s==='more'||s==='useful')?1:0;
+  function rankPersonal(articles,feedback={},history=articles){
+    return rank(articles,feedback,history).sort((a,b)=>
+      personalTier(feedback[key(b)]?.signals)-personalTier(feedback[key(a)]?.signals));
+  }
+  function communityTotals(reactions=[]){
+    const latest=new Map(),totals=Object.create(null);
+    for(const reaction of reactions){
+      if(!reaction.uid||!reaction.key)continue;
+      const id=reaction.uid+'\n'+key({id:reaction.key}),prior=latest.get(id);
+      if(!prior||millis(reaction.updatedAt)>=millis(prior.updatedAt))latest.set(id,reaction);
+    }
+    for(const reaction of latest.values()){
+      const id=key({id:reaction.key}),t=totals[id]||(totals[id]={like:0,useful:0,irrelevant:0,score:0});
+      const signals=reaction.signals||[];
+      if(signals.includes('irrelevant'))t.irrelevant++;
+      else{if(signals.includes('more'))t.like++;if(signals.includes('useful'))t.useful++;}
+      t.score=t.like+t.useful-t.irrelevant;
+    }
+    return totals;
+  }
+  function rankCommunity(articles,reactions=[]){
+    const totals=communityTotals(reactions);
+    return [...articles].sort((a,b)=>(totals[key(b)]?.score||0)-(totals[key(a)]?.score||0)||
+      (Number(b.relevance)||0)-(Number(a.relevance)||0)||a.title.localeCompare(b.title));
+  }
   const signalWeight=signals=>signals.includes('irrelevant')?-1:(signals.includes('more')?1:0)+(signals.includes('useful')?2:0);
   const millis=value=>typeof value==='number'?value:value?.toMillis?value.toMillis():Date.parse(value)||Infinity;
   const cutoff=edition=>Date.parse(edition.publishedAt||edition.end.replace(' ','T')+':00+08:00');
@@ -46,5 +75,5 @@
     else{const grouped=new Map();for(const e of latest.values()){if(!e.signals.length)continue;const g=grouped.get(e.key)||[];g.push(signalWeight(e.signals));grouped.set(e.key,g);}for(const [k,weights] of grouped)result[k]={signals:[],weight:weights.reduce((a,b)=>a+b,0)/weights.length};}
     return result;
   }
-  return{key,rank,cutoff,beforeEdition,signalWeight,interestTitle,interests,withInterests};
+  return{key,rank,rankPersonal,rankCommunity,communityTotals,personalTier,cutoff,beforeEdition,signalWeight,interestTitle,interests,withInterests};
 });

@@ -1,3 +1,11 @@
+## Current-edition feedback sorting — 30 October 2026
+
+This owner instruction supersedes earlier frozen-edition and per-reader community-average sorting rules. Current reactions take effect on refresh or an explicit search/topic/source/edition/sort/reset action. Save/undo and incoming feedback snapshots update buttons, counts and names immediately but preserve the displayed article order and focus; never automatically reorder after a reaction.
+
+Personal preference: both Like and Useful first; either mark next; unmarked next; Not relevant last. Account-specific feedback is read only for the signed-in UID. Existing bounded content-affinity ranking may break ties within these groups. Community average (retained UI label): sort by current total Like + Useful − Not relevant, not per-user averages; one current mark of each kind per user/article, double positive counts twice, undo removes the mark. Equal community scores fall back to editorial relevance and title. Use current communityReactions, not a publication-cutoff query. Preserve append-only reactionEvents for history and existing atomic writes/security rules. Initial login hydration may establish the order once before reactions are enabled; subsequent data synchronization must not move cards.
+
+Keep publication timestamps immutable as publication metadata; they no longer freeze article-reaction sorting. Do not claim saved article-interest profiles are fully integrated by this change; that separate feature is unchanged. No live user/private data belongs in repository tests.
+
 ## Content-based article interests (25 October 2026)
 
 The interest entry now searches Crossref and Europe PMC by title or DOI, shows matching title/journal/year/authors, reads the selected article's available abstract and preferably Europe PMC open full-text XML, and asks the reader to confirm before saving. No readable substantive content means no save; network failures are explicit. Search uses public services without cookies or application credentials. Content terms are extracted from the retrieved text and feed the existing bounded text-similarity recommender; do not claim an LLM has interpreted the full paper. Paywalled/unavailable full text is not claimed as read.

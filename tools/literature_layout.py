@@ -61,7 +61,8 @@ def rebuild_literature(root):
         sort_select.append(option)
     for el in main.xpath('.//div[@class="lit-reader-tools"]'):
         el.getparent().remove(el)
-    help_body.xpath('./p')[1].text='You can also use BioE Radar without logging in. Community recommendations use readers’ overall preferences.'
+    help_body.xpath('./p')[0].text='Personal preference puts articles you mark both Like and Useful first, then articles with either mark, followed by unmarked articles; Not relevant moves an article down. Reactions save immediately, and the list stays in place until you refresh or change a filter or sorting option.'
+    help_body.xpath('./p')[1].text='Community average ranks articles by total Like + Useful − Not relevant across readers. Each reader contributes at most one of each mark per article. When shared feedback is unavailable, articles follow editorial relevance.' 
     topline=main.xpath('.//div[@class="lit-intro-topline"]')[0]
     details.getparent().remove(details);topline.insert(1,details)
     introduction=html.Element('p',{'class':'lit-intro-description'})

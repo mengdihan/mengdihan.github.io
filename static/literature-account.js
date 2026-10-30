@@ -37,12 +37,7 @@
           emit({status:'signed-in',feedback,message:snapshot.metadata.hasPendingWrites?'Saving…':snapshot.metadata.fromCache?'Offline — changes will sync when connected.':'Synced across your devices.'});
         },error=>{if(current===generation)emit({status:'sync-error',feedback:Object.create(null),message:explain(error)});}));
         subscriptions.push(F.onSnapshot(F.collection(db,'communityReactions'),snapshot=>{
-          if(current===generation)emit({reactions:snapshot.docs.map(doc=>doc.data())});
-        },()=>{if(current===generation)emit({communityStatus:'error'});}));
-        const reports=JSON.parse(document.getElementById('lit-data').content.textContent).editions;
-        const boundary=Math.max(...reports.map(window.BioERadarPersonalization.cutoff));
-        subscriptions.push(F.onSnapshot(F.query(F.collection(db,'reactionEvents'),F.where('createdAt','<=',F.Timestamp.fromMillis(boundary))),snapshot=>{
-          if(current===generation)emit({events:snapshot.docs.map(doc=>doc.data()),communityStatus:'ready'});
+          if(current===generation)emit({reactions:snapshot.docs.map(doc=>doc.data()),communityStatus:'ready'});
         },()=>{if(current===generation)emit({communityStatus:'error'});}));
       },error=>emit({status:'error',user:null,feedback:Object.create(null),message:explain(error)}));
       return true;

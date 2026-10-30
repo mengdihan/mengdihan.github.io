@@ -1,3 +1,11 @@
+## Current-edition feedback sorting — 30 October 2026
+
+This owner instruction supersedes earlier frozen-edition and per-reader community-average sorting rules. Current reactions take effect on refresh or an explicit search/topic/source/edition/sort/reset action. Save/undo and incoming feedback snapshots update buttons, counts and names immediately but preserve the displayed article order and focus; never automatically reorder after a reaction.
+
+Personal preference: both Like and Useful first; either mark next; unmarked next; Not relevant last. Account-specific feedback is read only for the signed-in UID. Existing bounded content-affinity ranking may break ties within these groups. Community average (retained UI label): sort by current total Like + Useful − Not relevant, not per-user averages; one current mark of each kind per user/article, double positive counts twice, undo removes the mark. Equal community scores fall back to editorial relevance and title. Use current communityReactions, not a publication-cutoff query. Preserve append-only reactionEvents for history and existing atomic writes/security rules. Initial login hydration may establish the order once before reactions are enabled; subsequent data synchronization must not move cards.
+
+Keep publication timestamps immutable as publication metadata; they no longer freeze article-reaction sorting. Do not claim saved article-interest profiles are fully integrated by this change; that separate feature is unchanged. No live user/private data belongs in repository tests.
+
 ## Science / STM abstract and editorial-summary inclusion — 30 October 2026
 
 The owner explicitly confirmed that the Science editorial-summary signature “Marc S. Lavine” is sufficient for the special all-inclusion rule. Do not require separate proof of handling-editor identity, and do not relabel the signature as proof of handling editorship. Verify the actual Editor’s summary attribution in official article HTML/PDF or accessible official-page index text; unrelated mentions, coauthor names and the editorial board list do not qualify. Preserve source evidence; keep editor names off article cards. Other relevant Science articles remain eligible, and the existing level 1/2 full-report policy is not narrowed by this clarification.
