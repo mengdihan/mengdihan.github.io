@@ -8,7 +8,7 @@ def build_gallery(entries):
     for i,entry in enumerate(entries):
         figure=html.Element('figure',id='group-photo-'+str(i+1),attrib={'class':'member-gallery-slide'})
         link=html.Element('a',href=entry['image'],attrib={'data-lightbox':'true','aria-label':'Enlarge '+entry['caption']+' — '+entry['date']})
-        photo=html.Element('img',src=entry['image'],alt=entry['caption'],loading='eager' if i==0 else 'lazy',decoding='async');link.append(photo);figure.append(link)
+        photo=html.Element('img',src=entry.get('preview',entry.get('thumbnail',entry['image'])),alt=entry['caption'],loading='eager' if i==0 else 'lazy',decoding='async');link.append(photo);figure.append(link)
         caption=html.Element('figcaption');caption.text=entry['caption'];date=html.Element('span',{'class':'photo-date'});date.text=entry['date'];caption.append(date);figure.append(caption);slides.append(figure)
     controls=html.Element('div',{'class':'member-gallery-controls','hidden':'hidden'})
     for action,label in [('previous','Previous'),('next','Next')]:
