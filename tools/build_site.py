@@ -490,3 +490,7 @@ report={'archive_design':'clean-academic',**archive_details,'current_year':today
 (ROOT/'archive-build-report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report))
 
+
+# Optimize final generated pages while retaining original lightbox links.
+from optimize_images import optimize_images
+optimize_images(ROOT)

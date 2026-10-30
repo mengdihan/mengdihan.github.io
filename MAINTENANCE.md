@@ -51,3 +51,7 @@ Home、Research 的五个页面与 Bio 页面在发布时由 `tools/research_lay
 `static/analytics.js` 在加载百度和 GA4 前读取本浏览器的 `hmd-owner-analytics-v1=exclude`，命中时两套采集均不加载。`hmd-owner-device-v1` 只保存 office/laptop/phone 标签，不上传。标记不依赖 IP；清除网站数据或换浏览器后需重设。此标记仅是统计偏好，不是登录或访问控制。
 
 原 `/analytics-device/` 保持删除。`/HMD-Lab-Internal/` 提供密码加密的本地设备设置（PBKDF2-SHA256，600,000 次迭代，随机盐；AES-256-GCM）。仓库仅保存密文，不保存密码、解密密钥或明文设置内容。每次刷新需重新解锁；解锁不上传密码，不创建服务器登录会话。持有密码者可解锁，此页不是人员身份验证系统，不得用于存放后台凭据或敏感用户数据。不要添加导航入口；页面禁止索引且不加载统计。设备排除标记持续生效，不依赖页面是否锁定。
+
+## 图片加载优化（2026-10-30）
+
+发布构建末尾运行 `tools/optimize_images.py`，为超过 80 KB 的本地静态 JPEG/PNG/WebP 生成最大 640/1280 像素的响应式 WebP 展示图。原始图片文件与现有放大、下载和外链地址保持不变；动画图片不转换。生成图位于发布包 `images/optimized/`，不需要手动提交。更新原图后下次构建会生成新的内容指纹地址。已优化的成员合影预览不重复处理。构建环境需要 Pillow；`verify_site.py` 检查 srcset 的格式及全部资源路径。

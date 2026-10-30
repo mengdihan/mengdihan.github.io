@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install lxml==5.3.0
+      - run: pip install lxml==5.3.0 Pillow==11.3.0
       - name: Verify and package independent website
         run: |
           mkdir -p outputs/hmd-lab-site

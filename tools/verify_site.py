@@ -26,7 +26,12 @@ for f in ROOT.rglob('*'):
             for a in ('src','poster','data','background'):
                 if e.get(a):
                     check(e.get(a),f)
-            if e.get('srcset'):errors.append(f'{f}: srcset needs explicit verification')
+            if e.get('srcset'):
+                for candidate in e.get('srcset').split(','):
+                    fields=candidate.strip().split()
+                    if len(fields)!=2 or not re.fullmatch(r'(?:[1-9][0-9]*w|(?:[0-9]+(?:\.[0-9]+)?)x)',fields[1]):
+                        errors.append(f'{f}: invalid srcset candidate {candidate}')
+                    else:check(fields[0],f)
             if e.tag=='link' and e.get('rel')!='canonical':check(e.get('href'),f)
             if e.tag=='a':check(e.get('href'),f,'link')
             if e.tag=='form' and not (f.relative_to(ROOT).as_posix()=='BioE_Radar/index.html' and e.get('id')=='lit-email-form' and e.get('method')=='dialog'):

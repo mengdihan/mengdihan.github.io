@@ -31,7 +31,7 @@ for route in ('', 'overview', 'wireless-implants', 'actuators-microrobotics', 'w
     rendered_text = normalize_text(output.text_content())
     for paragraph in source.xpath('.//p'):
         assert normalize_text(paragraph.text_content()) in rendered_text, (route, paragraph.text_content())
-    assert Counter(source.xpath('.//img/@src')) == Counter(output.xpath('.//img/@src')), route
+    assert Counter(source.xpath('.//img/@src')) == Counter(image.get('data-original-src', image.get('src')) for image in output.xpath('.//img')), route
     links = {normalize_link(value) for value in output.xpath('.//a/@href')}
     assert all(normalize_link(value) in links for value in source.xpath('.//a/@href')), route
     assert len(page.xpath('//main')) == len(page.xpath('//h1')) == 1, route
