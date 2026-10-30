@@ -21,9 +21,20 @@
   const personalTier=signals=>signals?.includes('irrelevant')?-1:
     signals?.includes('more')&&signals?.includes('useful')?2:
     signals?.some(s=>s==='more'||s==='useful')?1:0;
+  const readLater=entry=>{try{return JSON.parse(entry?.note||'null')?.bioeReadLater===true;}catch(error){return false;}};
+  function toggleReadLater(entry){
+    let note;try{note=JSON.parse(entry.note);}catch(error){}
+    if(!note||typeof note!=='object'||Array.isArray(note))note={legacyNote:entry.note||''};
+    note={...note,bioeReadLater:!readLater(entry)};
+    const encoded=JSON.stringify(note);
+    if(encoded.length>2000)throw new Error('This article’s saved note is too long to add Read Later.');
+    return {...entry,note:encoded};
+  }
+  const matchesFeedback=(entry,selected)=>selected.size===4||[...selected].some(signal=>signal==='later'?readLater(entry):entry?.signals?.includes(signal));
+  const personalPriority=entry=>personalTier(entry?.signals)*2+(personalTier(entry?.signals)===0&&readLater(entry)?1:0);
   function rankPersonal(articles,feedback={},history=articles){
     return rank(articles,feedback,history).sort((a,b)=>
-      personalTier(feedback[key(b)]?.signals)-personalTier(feedback[key(a)]?.signals));
+      personalPriority(feedback[key(b)])-personalPriority(feedback[key(a)]));
   }
   function communityTotals(reactions=[]){
     const latest=new Map(),totals=Object.create(null);
@@ -75,5 +86,5 @@
     else{const grouped=new Map();for(const e of latest.values()){if(!e.signals.length)continue;const g=grouped.get(e.key)||[];g.push(signalWeight(e.signals));grouped.set(e.key,g);}for(const [k,weights] of grouped)result[k]={signals:[],weight:weights.reduce((a,b)=>a+b,0)/weights.length};}
     return result;
   }
-  return{key,rank,rankPersonal,rankCommunity,communityTotals,personalTier,cutoff,beforeEdition,signalWeight,interestTitle,interests,withInterests};
+  return{key,rank,rankPersonal,rankCommunity,communityTotals,personalTier,readLater,toggleReadLater,matchesFeedback,cutoff,beforeEdition,signalWeight,interestTitle,interests,withInterests};
 });

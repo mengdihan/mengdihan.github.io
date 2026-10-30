@@ -28,19 +28,19 @@
   const account=window.BioERadarAccount,personalization=window.BioERadarPersonalization;
   let feedback=Object.create(null),accountState={status:'loading',user:null},tooltipIndex=0;
   let displayedOrder=[],rankingHydrated=false;
+  const feedbackBoxes=[...document.querySelectorAll('[data-feedback-filter]')];
   const canReact=()=>accountState.status==='signed-in'&&rankingHydrated;
   const feedbackId=personalization.key;
-  const hasFeedback=a=>{const f=feedback[feedbackId(a)];return !!(f&&(f.signals.length||f.note));};
   function feedbackControls(a){
     const key=feedbackId(a),box=node('div','lit-feedback'),buttons=node('div','lit-feedback-buttons');
     const current=()=>feedback[key]||{key,id:a.id,doi:a.doi||'',title:a.title,journal:a.journal,signals:[],note:''};
     const update=async entry=>{await account.save(entry);};
-    for(const [signal,title] of [['more','Like'],['useful','Useful'],['irrelevant','Not relevant']]){
+    for(const [signal,title] of [['more','Like'],['useful','Useful'],['irrelevant','Not relevant'],['later','Read Later']]){
       const voters=(accountState.reactions||[]).filter(r=>r.key===key&&r.signals.includes(signal));
       const names=[...new Map(voters.map(r=>[r.uid,r.name])).values()].sort((a,b)=>a.localeCompare(b));
-      const wrap=node('span','lit-reaction-wrap'),tip=node('span','lit-reaction-tip',names.length?names.join(', '):accountState.user?'No reactions yet':'Sign in to see reader reactions');tip.id='lit-reaction-tip-'+(++tooltipIndex);tip.setAttribute('role','tooltip');
-      const b=node('button','',title+(names.length?' '+names.length:''));b.setAttribute('aria-label',title);b.setAttribute('aria-describedby',tip.id);b.type='button';b.dataset.signal=signal;b.disabled=!canReact();b.setAttribute('aria-pressed',String(current().signals.includes(signal)));
-      b.addEventListener('click',async()=>{const entry={...current(),signals:[...current().signals]};if(entry.signals.includes(signal))entry.signals=entry.signals.filter(x=>x!==signal);else entry.signals=signal==='irrelevant'?['irrelevant']:[...entry.signals.filter(x=>x!=='irrelevant'),signal];b.disabled=true;await update(entry);if(b.isConnected)b.disabled=!canReact();});wrap.append(b,tip);buttons.append(wrap);
+      const wrap=node('span','lit-reaction-wrap'),tip=node('span','lit-reaction-tip',signal==='later'?'Your private reading list':names.length?names.join(', '):accountState.user?'No reactions yet':'Sign in to see reader reactions');tip.id='lit-reaction-tip-'+(++tooltipIndex);tip.setAttribute('role','tooltip');
+      const b=node('button','',title+(signal!=='later'&&names.length?' '+names.length:''));b.setAttribute('aria-label',title);b.setAttribute('aria-describedby',tip.id);b.type='button';b.dataset.signal=signal;b.disabled=!canReact();b.setAttribute('aria-pressed',String(signal==='later'?personalization.readLater(current()):current().signals.includes(signal)));
+      b.addEventListener('click',async()=>{let entry={...current(),signals:[...current().signals]};if(signal==='later'){try{entry=personalization.toggleReadLater(entry);}catch(error){byId('lit-feedback-status').textContent=error.message;return;}}else if(entry.signals.includes(signal))entry.signals=entry.signals.filter(x=>x!==signal);else entry.signals=signal==='irrelevant'?['irrelevant']:[...entry.signals.filter(x=>x!=='irrelevant'),signal];b.disabled=true;await update(entry);if(b.isConnected)b.disabled=!canReact();});wrap.append(b,tip);buttons.append(wrap);
     }
     box.append(buttons);return box;
   }
@@ -58,8 +58,10 @@
   function render(reorder=true){
     const focused=document.activeElement,focusedArticle=focused?.closest('.lit-paper')?.dataset.id,focusedSignal=focused?.dataset.signal;
     const e=selected(),q=search.value.trim().toLocaleLowerCase();
-    const feedbackFilter='all',version=sort.value==='personal'?'personal':'community';
-    const items=e.articles.filter(a=>(feedbackFilter==='all'||(feedbackFilter==='marked'?hasFeedback(a):feedback[feedbackId(a)]?.signals.includes(feedbackFilter)))&&(!topic||articleTopicGroups(a).includes(topic))&&journals.has(sourceName(a.journal))&&(!q||[a.title,a.journal,a.summary,a.doi,...a.authors,...a.topics].join(' ').toLocaleLowerCase().includes(q)));
+    const feedbackFilter=new Set(feedbackBoxes.filter(box=>box.checked).map(box=>box.dataset.feedbackFilter)),version=sort.value==='personal'?'personal':'community';
+    const positions=new Map(displayedOrder.map((id,i)=>[id,i]));
+    // Keep membership as well as order stable when a mark is removed in a filtered list.
+    const items=e.articles.filter(a=>(reorder===false?positions.has(a.id):personalization.matchesFeedback(feedback[feedbackId(a)],feedbackFilter))&&(!topic||articleTopicGroups(a).includes(topic))&&journals.has(sourceName(a.journal))&&(!q||[a.title,a.journal,a.summary,a.doi,...a.authors,...a.topics].join(' ').toLocaleLowerCase().includes(q)));
     if(reorder!==false){
       if(sort.value==='personal'){
         const history=data.editions.flatMap(report=>report.articles);
@@ -70,7 +72,6 @@
       displayedOrder=items.map(a=>a.id);
     }else{
       // Sync controls and names without moving any cards after a reaction.
-      const positions=new Map(displayedOrder.map((id,i)=>[id,i]));
       items.sort((a,b)=>(positions.get(a.id)??Infinity)-(positions.get(b.id)??Infinity));
     }
     tooltipIndex=0;results.replaceChildren(...items.map(row));
@@ -149,7 +150,8 @@
   byId('lit-journals-apply').addEventListener('click',()=>{journals=new Set(draft);render();dialog.close();});
   for(const id of ['lit-journals-close','lit-journals-cancel'])byId(id).addEventListener('click',()=>dialog.close());
   search.addEventListener('input',render);sort.addEventListener('change',render);edition.addEventListener('change',setup);
-  byId('lit-reset').addEventListener('click',()=>{search.value='';sort.value=accountState.user?'personal':'community';setup();search.focus();});
+  feedbackBoxes.forEach(box=>box.addEventListener('change',render));
+  byId('lit-reset').addEventListener('click',()=>{feedbackBoxes.forEach(box=>box.checked=true);search.value='';sort.value=accountState.user?'personal':'community';setup();search.focus();});
 
   document.querySelectorAll('[data-reading-version]').forEach(b=>b.addEventListener('click',()=>{version=b.dataset.readingVersion;sort.value='personal';render();}));
   const st=byId('lit-sources-toggle');st.addEventListener('click',()=>{const open=st.getAttribute('aria-expanded')==='true';st.setAttribute('aria-expanded',String(!open));byId('lit-sources-body').hidden=open;});

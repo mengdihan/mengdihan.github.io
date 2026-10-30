@@ -1,3 +1,9 @@
+## Read Later and mark filters — 30 October 2026
+
+Read Later is an independent, owner-only bookmark stored as `bioeReadLater: true` in the existing private feedback note JSON; preserve legacy text and any other JSON fields. Existing shared Like/Useful/Not relevant signals and deployed rules are unchanged. Bookmark-only saves write no shared reaction/event. Read Later can coexist with any reaction and does not contribute to community totals. Personal order is both Like and Useful, either positive, Read Later, unmarked, Not relevant; a negative reaction takes precedence over a bookmark.
+
+Four checked-by-default checkboxes in the main filter panel select the reader's Like, Useful, Not relevant and Read Later marks with OR semantics in either sorting view. All four checked means no mark restriction, including unmarked articles; none checked means no results. Reset filters checks all four and restores all other filters. Incoming snapshots and clicks preserve both displayed membership and order: undoing a mark under a mark filter must not remove the article until refresh or an explicit filter/search/sort action. Bookmarks sync through the same UID-isolated feedback listener. Keep the current-feedback tests and private schema; never send bookmark notes to shared documents.
+
 ## Current-edition feedback sorting — 30 October 2026
 
 This owner instruction supersedes earlier frozen-edition and per-reader community-average sorting rules. Current reactions take effect on refresh or an explicit search/topic/source/edition/sort/reset action. Save/undo and incoming feedback snapshots update buttons, counts and names immediately but preserve the displayed article order and focus; never automatically reorder after a reaction.

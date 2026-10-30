@@ -43,10 +43,11 @@ function ui(initial){
  const ids=new Map(),roots=[];const add=(id,tag='div',cls='')=>{const e=new Element(tag);e.id=id;e.className=cls;ids.set(id,e);roots.push(e);return e;};
  const names=['lit-data','lit-search','lit-edition','lit-sort','lit-results','lit-journals-dialog','lit-journals-open','lit-version-note','lit-count','lit-empty','lit-window','lit-coverage-list','lit-journals-options','lit-journals-selection','lit-journals-all','lit-journals-none','lit-journals-apply','lit-journals-close','lit-journals-cancel','lit-reset','lit-sources-toggle','lit-sources-body','lit-recommendations-toggle','lit-recommendations-body','lit-account-signout','lit-account-name','lit-email-open','lit-feedback-status','lit-schedule-times'];
  names.forEach(id=>add(id));const topics=add('topics','div','lit-topics'),panel=add('account-panel','div','lit-account-panel'),help=add('help','div','lit-account-help');help.append(ids.get('lit-recommendations-toggle'),ids.get('lit-recommendations-body'));
+ const boxes=['more','useful','irrelevant','later'].map(signal=>{const box=add('mark-'+signal,'input');box.dataset.feedbackFilter=signal;box.checked=true;return box;});
  const option=new Element('option');option.setAttribute('value','personal');ids.get('lit-sort').append(option);
  ids.get('lit-edition').value='2026-10-30';ids.get('lit-sort').value='community';
  ids.get('lit-data').content={textContent:JSON.stringify({editions:[{id:'2026-10-30',start:'2026-10-23 03:30',end:'2026-10-30 03:30',publishedAt:'2026-10-30T03:30:00+08:00',coverage:[{journal:'Science'}],articles:[paper('a',4),paper('b',3),paper('c',2),paper('d',1)]}]})};
- document={activeElement:null,getElementById:id=>ids.get(id),createElement:tag=>new Element(tag),querySelector:s=>roots.find(e=>e.matches(s))||null,querySelectorAll:s=>s==='.lit-topics button'?topics.children:[],addEventListener(){}};
+ document={activeElement:null,getElementById:id=>ids.get(id),createElement:tag=>new Element(tag),querySelector:s=>roots.find(e=>e.matches(s))||null,querySelectorAll:s=>s==='.lit-topics button'?topics.children:s==='[data-feedback-filter]'?boxes:[],addEventListener(){}};
  let state=initial||{status:'signed-in',user:{uid:'alice',displayName:'Alice'},feedback:{},reactions:[],events:[],communityStatus:'ready',message:'Synced across your devices.'};let subscriber;
  const emit=patch=>{state={...state,...patch};subscriber(state);};
  const account={subscribe(fn){subscriber=fn;fn(state);},async save(entry){const feedback={...state.feedback,[entry.key]:{...entry,updatedAt:Date.now()}};emit({feedback});const others=state.reactions.filter(r=>!(r.uid===state.user.uid&&r.key===entry.key));emit({reactions:[...others,{...entry,uid:state.user.uid,name:state.user.displayName,updatedAt:Date.now()}]});return true;},signOut(){emit({status:'signed-out',user:null,feedback:{},reactions:[],communityStatus:'signed-out'});}};
@@ -54,7 +55,7 @@ function ui(initial){
  vm.runInNewContext(fs.readFileSync(path.resolve(__dirname,'../../static/literature.js'),'utf8'),{window,document,ResizeObserver:class{observe(){}},Intl,Date,innerWidth:1000,innerHeight:800});
  const order=()=>ids.get('lit-results').children.map(e=>e.dataset.id);
  const button=(id,signal)=>ids.get('lit-results').children.find(e=>e.dataset.id===id).querySelector('button[data-signal="'+signal+'"]');
- return {ids,order,button,emit,get state(){return state;},async trigger(id,event){await ids.get(id).dispatch(event);},async click(id,signal){const b=button(id,signal);assert.equal(b.disabled,false);b.focus();await b.dispatch('click');}};
+ return {ids,boxes,order,button,emit,get state(){return state;},async trigger(id,event){await ids.get(id).dispatch(event);},async click(id,signal){const b=button(id,signal);assert.equal(b.disabled,false);b.focus();await b.dispatch('click');}};
 }
 test('clicks/undo sync controls without jumping; search, sort, source Apply and reload use latest marks',async()=>{
  const app=ui();assert.deepEqual(app.order(),['a','b','c','d']);
@@ -80,4 +81,47 @@ test('feedback stays disabled during initial loading, then initial data establis
  assert.equal(app.button('d','more').disabled,true);
  app.emit({status:'signed-in',feedback:{d:{signals:['more']}},communityStatus:'loading'});assert.equal(app.button('d','more').disabled,true);
  app.emit({communityStatus:'ready'});assert.equal(app.order()[0],'d');assert.equal(app.button('d','more').disabled,false);
+});
+
+test('Read Later persists privately, can coexist with reactions, and ranks between positives and neutral',async()=>{
+ const entry={signals:['more'],note:'legacy text'};
+ const saved=P.toggleReadLater(entry);assert.equal(P.readLater(saved),true);assert.equal(JSON.parse(saved.note).legacyNote,'legacy text');assert.deepEqual(saved.signals,['more']);
+ assert.equal(P.readLater(P.toggleReadLater(saved)),false);assert.equal(P.readLater({note:'legacy'}),false);
+ const structured=P.toggleReadLater({note:JSON.stringify({other:'retained'}),signals:[]});assert.equal(JSON.parse(structured.note).other,'retained');
+ const feedback={both:{signals:['more','useful']},positive:{signals:['useful']},later:{signals:[],note:saved.note},negative:{signals:['irrelevant'],note:saved.note}};
+ assert.deepEqual(P.rankPersonal(['neutral','negative','later','positive','both'].map(id=>paper(id,id==='neutral'?100:0)),feedback).map(a=>a.id),['both','positive','later','neutral','negative']);
+ const app=ui();await app.click('d','later');assert.equal(P.readLater(app.state.feedback.d),true);assert.deepEqual(app.order(),['a','b','c','d']);
+ await app.trigger('lit-sort','change');assert.equal(app.order()[0],'d');
+ await app.click('d','useful');assert.equal(P.readLater(app.state.feedback.d),true);await app.click('d','later');assert.equal(P.readLater(app.state.feedback.d),false);assert.deepEqual(Array.from(app.state.feedback.d.signals),['useful']);
+});
+test('mark filters use OR; reset checks all four including unmarked; undo preserves membership until explicit changes',async()=>{
+ const app=ui();await app.click('b','more');await app.click('c','useful');await app.click('d','later');
+ for(const box of app.boxes)box.checked=['more','later'].includes(box.dataset.feedbackFilter);
+ await app.trigger('mark-more','change');assert.deepEqual(new Set(app.order()),new Set(['b','d']));
+ await app.click('d','later');assert.deepEqual(new Set(app.order()),new Set(['b','d']));assert.equal(app.button('d','later').getAttribute('aria-pressed'),'false');
+ await app.trigger('lit-search','input');assert.deepEqual(app.order(),['b']);
+ for(const box of app.boxes)box.checked=false;await app.trigger('mark-more','change');assert.deepEqual(app.order(),[]);
+ await app.trigger('lit-reset','click');assert.equal(app.boxes.every(box=>box.checked),true);assert.equal(app.order().length,4);
+ for(const box of app.boxes)box.checked=box.dataset.feedbackFilter==='irrelevant';await app.trigger('mark-irrelevant','change');assert.deepEqual(app.order(),[]);
+ app.emit({feedback:{...app.state.feedback,a:{signals:['irrelevant']}}});assert.deepEqual(app.order(),[]);
+ await app.trigger('lit-sort','change');assert.deepEqual(app.order(),['a']);
+});
+
+test('production account adapter saves bookmarks only in owner feedback and preserves shared reactions',async()=>{
+ const writes=[],records=new Map();let privateListener;
+ const user={uid:'alice',displayName:'Alice'};
+ const auth={currentUser:user};
+ const F={getFirestore:()=>({}),collection:(_db,...parts)=>parts.join('/'),doc:(...args)=>({path:args.slice(1).join('/')}),serverTimestamp:()=>123,
+  onSnapshot(collection,...args){const cb=args.find(x=>typeof x==='function');if(collection==='readers/alice/feedback'){privateListener=()=>cb({forEach:fn=>records.forEach(data=>fn({data:()=>data})),metadata:{}});privateListener();}else cb({docs:[]});return()=>{};},
+  writeBatch(){const batch=[];return {set(ref,data){batch.push({path:ref.path,data});},async commit(){writes.push(batch);for(const w of batch)if(w.path.startsWith('readers/'))records.set(w.data.key,w.data);privateListener();}};}};
+ const A={getAuth:()=>auth,onAuthStateChanged(_auth,fn){fn(user);}};
+ const window={};
+ const source=fs.readFileSync(path.resolve(__dirname,'../../static/literature-account.js'),'utf8').replace("await Promise.all([import(base+'firebase-app.js'),import(base+'firebase-auth.js'),import(base+'firebase-firestore.js')])","await Promise.resolve([mock.app,mock.A,mock.F])");
+ vm.runInNewContext(source,{window,mock:{app:{initializeApp:()=>({})},A,F},crypto:require('node:crypto').webcrypto,TextEncoder});
+ await new Promise(resolve=>setImmediate(resolve));
+ const account=window.BioERadarAccount;
+ let entry={key:'paper',id:'paper',doi:'',title:'Test paper',journal:'Science',signals:[],note:''};
+ entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[0].length,1);assert.match(writes[0][0].path,/^readers\/alice\/feedback\/[a-f0-9]{64}$/);assert.equal(P.readLater(writes[0][0].data),true);
+ entry={...entry,signals:['more']};assert.equal(await account.save(entry),true);assert.equal(writes[1].length,3);for(const w of writes[1].slice(1))assert.equal('note' in w.data,false);
+ entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[2].length,1);assert.equal(P.readLater(writes[2][0].data),false);assert.deepEqual(Array.from(writes[2][0].data.signals),['more']);
 });
