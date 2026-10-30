@@ -41,7 +41,7 @@ function ui(initial){
   showModal(){this.open=true;}close(){this.open=false;}
  }
  const ids=new Map(),roots=[];const add=(id,tag='div',cls='')=>{const e=new Element(tag);e.id=id;e.className=cls;ids.set(id,e);roots.push(e);return e;};
- const names=['lit-data','lit-search','lit-edition','lit-sort','lit-results','lit-journals-dialog','lit-journals-open','lit-version-note','lit-count','lit-empty','lit-window','lit-coverage-list','lit-journals-options','lit-journals-selection','lit-journals-all','lit-journals-none','lit-journals-apply','lit-journals-close','lit-journals-cancel','lit-reset','lit-sources-toggle','lit-sources-body','lit-recommendations-toggle','lit-recommendations-body','lit-account-signout','lit-account-name','lit-email-open','lit-feedback-status','lit-schedule-times'];
+ const names=['lit-data','lit-search','lit-edition','lit-sort','lit-results','lit-journals-dialog','lit-journals-open','lit-version-note','lit-count','lit-empty','lit-window','lit-coverage-list','lit-journals-options','lit-journals-selection','lit-journals-all','lit-journals-none','lit-journals-apply','lit-journals-close','lit-journals-cancel','lit-marks-all','lit-marks-clear','lit-sources-toggle','lit-sources-body','lit-recommendations-toggle','lit-recommendations-body','lit-account-signout','lit-account-name','lit-email-open','lit-feedback-status','lit-schedule-times'];
  names.forEach(id=>add(id));const topics=add('topics','div','lit-topics'),panel=add('account-panel','div','lit-account-panel'),help=add('help','div','lit-account-help');help.append(ids.get('lit-recommendations-toggle'),ids.get('lit-recommendations-body'));
  const boxes=['more','useful','irrelevant','later'].map(signal=>{const box=add('mark-'+signal,'input');box.dataset.feedbackFilter=signal;box.checked=true;return box;});
  const option=new Element('option');option.setAttribute('value','personal');ids.get('lit-sort').append(option);
@@ -66,7 +66,7 @@ test('clicks/undo sync controls without jumping; search, sort, source Apply and 
  await app.click('c','irrelevant');assert.equal(app.order()[0],'c');
  await app.trigger('lit-journals-open','click');await app.trigger('lit-journals-apply','click');assert.deepEqual(app.order(),['d','a','b','c']);
  await app.click('d','more');assert.equal(app.order()[0],'d');assert.equal(app.button('d','more').getAttribute('aria-pressed'),'false');
- await app.trigger('lit-reset','click');assert.deepEqual(app.order(),['a','b','d','c']);
+ await app.trigger('lit-marks-all','click');assert.deepEqual(app.order(),['a','b','d','c']);
  await app.click('d','useful');const reloaded=ui(app.state);assert.equal(reloaded.order()[0],'d');
 });
 test('community totals update on explicit filter changes; switching account clears personal ordering',async()=>{
@@ -94,14 +94,14 @@ test('Read Later persists privately, can coexist with reactions, and ranks betwe
  await app.trigger('lit-sort','change');assert.equal(app.order()[0],'d');
  await app.click('d','useful');assert.equal(P.readLater(app.state.feedback.d),true);await app.click('d','later');assert.equal(P.readLater(app.state.feedback.d),false);assert.deepEqual(Array.from(app.state.feedback.d.signals),['useful']);
 });
-test('mark filters use OR; reset checks all four including unmarked; undo preserves membership until explicit changes',async()=>{
+test('mark filters use OR; select all checks all four including unmarked; undo preserves membership until explicit changes',async()=>{
  const app=ui();await app.click('b','more');await app.click('c','useful');await app.click('d','later');
  for(const box of app.boxes)box.checked=['more','later'].includes(box.dataset.feedbackFilter);
  await app.trigger('mark-more','change');assert.deepEqual(new Set(app.order()),new Set(['b','d']));
  await app.click('d','later');assert.deepEqual(new Set(app.order()),new Set(['b','d']));assert.equal(app.button('d','later').getAttribute('aria-pressed'),'false');
  await app.trigger('lit-search','input');assert.deepEqual(app.order(),['b']);
  for(const box of app.boxes)box.checked=false;await app.trigger('mark-more','change');assert.deepEqual(app.order(),[]);
- await app.trigger('lit-reset','click');assert.equal(app.boxes.every(box=>box.checked),true);assert.equal(app.order().length,4);
+ await app.trigger('lit-marks-all','click');assert.equal(app.boxes.every(box=>box.checked),true);assert.equal(app.order().length,4);
  for(const box of app.boxes)box.checked=box.dataset.feedbackFilter==='irrelevant';await app.trigger('mark-irrelevant','change');assert.deepEqual(app.order(),[]);
  app.emit({feedback:{...app.state.feedback,a:{signals:['irrelevant']}}});assert.deepEqual(app.order(),[]);
  await app.trigger('lit-sort','change');assert.deepEqual(app.order(),['a']);
@@ -124,4 +124,11 @@ test('production account adapter saves bookmarks only in owner feedback and pres
  entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[0].length,1);assert.match(writes[0][0].path,/^readers\/alice\/feedback\/[a-f0-9]{64}$/);assert.equal(P.readLater(writes[0][0].data),true);
  entry={...entry,signals:['more']};assert.equal(await account.save(entry),true);assert.equal(writes[1].length,3);for(const w of writes[1].slice(1))assert.equal('note' in w.data,false);
  entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[2].length,1);assert.equal(P.readLater(writes[2][0].data),false);assert.deepEqual(Array.from(writes[2][0].data.signals),['more']);
+});
+
+test('All/Clear change only mark filters and retain search and sort',async()=>{
+ const app=ui();app.ids.get('lit-search').value='b';app.ids.get('lit-sort').value='date';
+ await app.trigger('lit-marks-clear','click');assert.equal(app.boxes.some(b=>b.checked),false);assert.deepEqual(app.order(),[]);
+ await app.trigger('lit-marks-all','click');assert.equal(app.boxes.every(b=>b.checked),true);assert.deepEqual(app.order(),['b']);
+ assert.equal(app.ids.get('lit-search').value,'b');assert.equal(app.ids.get('lit-sort').value,'date');
 });
