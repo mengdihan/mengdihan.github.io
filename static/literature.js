@@ -177,7 +177,10 @@
   const googleConnect=byId('lit-google-connect');
   googleConnect?.addEventListener('click',async()=>{
     googleConnect.disabled=true;
-    try{await account.signIn();if(!accountState.user)byId('lit-feedback-status').classList.remove('lit-account-sync-status');}
+    try{
+      const result=await account.signIn();
+      if(result?.ok===false){const status=byId('lit-feedback-status');status.textContent=result.message;status.classList.remove('lit-account-sync-status');}
+    }catch(error){const status=byId('lit-feedback-status');status.textContent='Google sign-in could not connect. Please try again.';status.classList.remove('lit-account-sync-status');}
     finally{googleConnect.disabled=['loading','error'].includes(accountState.status);}
   });
   byId('lit-account-signout').addEventListener('click',()=>account.signOut());

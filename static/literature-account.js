@@ -46,7 +46,12 @@
   window.BioERadarAccount={
     subscribe(fn){listeners.add(fn);fn(state);return()=>listeners.delete(fn);},
     getState:()=>state,
-    async signIn(){if(!await ready)return;try{const provider=new sdk.A.GoogleAuthProvider();provider.setCustomParameters({prompt:'select_account'});await sdk.A.signInWithPopup(auth,provider);}catch(error){emit({message:explain(error)});}},
+    async signIn(){
+      // Invoke the popup directly from the click while browser user activation is live.
+      if(!sdk||!auth)return {ok:false,message:state.message};
+      try{const provider=new sdk.A.GoogleAuthProvider();provider.setCustomParameters({prompt:'select_account'});await sdk.A.signInWithPopup(auth,provider);return {ok:true};}
+      catch(error){const message=explain(error);emit({message});return {ok:false,message,code:error.code};}
+    },
     async signOut(){if(!await ready)return;try{await sdk.A.signOut(auth);}catch(error){emit({message:explain(error)});}},
     async signInEmail(email,password){
       if(!await ready)return {ok:false,message:state.message};
