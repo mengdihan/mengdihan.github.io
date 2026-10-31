@@ -174,13 +174,12 @@
 
   document.querySelectorAll('[data-reading-version]').forEach(b=>b.addEventListener('click',()=>{version=b.dataset.readingVersion;sort.value='personal';render();}));
   const st=byId('lit-sources-toggle');st.addEventListener('click',()=>{const open=st.getAttribute('aria-expanded')==='true';st.setAttribute('aria-expanded',String(!open));byId('lit-sources-body').hidden=open;});
-  const ht=byId('lit-recommendations-toggle'),hp=byId('lit-recommendations-body');
-  function placeTip(trigger,tip){const r=trigger.getBoundingClientRect(),w=Math.min(320,innerWidth-24);tip.style.width=w+'px';tip.style.left=Math.max(12,Math.min(r.right-w,innerWidth-w-12))+'px';tip.style.top=Math.max(12,Math.min(r.bottom+8,innerHeight-tip.getBoundingClientRect().height-12))+'px';}
-  const show=()=>{ht.setAttribute('aria-expanded','true');placeTip(ht,hp);},hide=()=>ht.setAttribute('aria-expanded','false');
-  ht.addEventListener('mouseenter',show);ht.addEventListener('focus',show);ht.addEventListener('click',show);ht.closest('.lit-account-help').addEventListener('mouseleave',hide);ht.addEventListener('blur',hide);
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')hide();});document.addEventListener('click',e=>{if(!e.target.closest('.lit-account-help'))hide();});
-  document.querySelectorAll('.lit-version-option').forEach(w=>{const b=w.querySelector('button'),t=w.querySelector('.lit-context-tip');for(const e of ['mouseenter','focus','click'])b.addEventListener(e,()=>placeTip(b,t));});
-  window.addEventListener('scroll',hide,{passive:true});window.addEventListener('resize',hide);
+  const googleConnect=byId('lit-google-connect');
+  googleConnect?.addEventListener('click',async()=>{
+    googleConnect.disabled=true;
+    try{await account.signIn();if(!accountState.user)byId('lit-feedback-status').classList.remove('lit-account-sync-status');}
+    finally{googleConnect.disabled=['loading','error'].includes(accountState.status);}
+  });
   byId('lit-account-signout').addEventListener('click',()=>account.signOut());
   account.subscribe(state=>{
     const prior=accountState.user?.uid;accountState=state;feedback=state.feedback;
@@ -190,6 +189,7 @@
     byId('lit-account-name').textContent=state.user?state.user.displayName:'Your reading account';
     document.querySelector('.lit-account-panel').dataset.state=state.status;
     byId('lit-email-open').hidden=!!state.user;byId('lit-email-open').disabled=['loading','error'].includes(state.status);
+    if(googleConnect){googleConnect.hidden=!!state.user;googleConnect.disabled=['loading','error'].includes(state.status);}
     byId('lit-account-signout').hidden=!state.user;
     byId('lit-feedback-status').textContent=state.status==='signed-out'?'Private preferences across devices':state.message==='Synced across your devices.'?'Preferences synced':state.message;
     sort.querySelector('option[value="personal"]').disabled=!state.user;

@@ -1,3 +1,7 @@
+## Direct Google connection — 31 October 2026
+
+The account panel exposes Connect with Google alongside Log in (email). It uses the existing Firebase Google popup flow, hides both actions after authentication, and restores them on sign-out. The Personalized recommendations caption and its hover/focus disclosure have been removed; article content, ranking, and private feedback remain unchanged.
+
 ## Read Later and mark filters — 30 October 2026
 
 Read Later is an independent, owner-only bookmark stored as `bioeReadLater: true` in the existing private feedback note JSON; preserve legacy text and any other JSON fields. Existing shared Like/Useful/Not relevant signals and deployed rules are unchanged. Bookmark-only saves write no shared reaction/event. Read Later can coexist with any reaction and does not contribute to community totals. Personal order is both Like and Useful, either positive, Read Later, unmarked, Not relevant; a negative reaction takes precedence over a bookmark.
