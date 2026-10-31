@@ -174,15 +174,6 @@
 
   document.querySelectorAll('[data-reading-version]').forEach(b=>b.addEventListener('click',()=>{version=b.dataset.readingVersion;sort.value='personal';render();}));
   const st=byId('lit-sources-toggle');st.addEventListener('click',()=>{const open=st.getAttribute('aria-expanded')==='true';st.setAttribute('aria-expanded',String(!open));byId('lit-sources-body').hidden=open;});
-  const googleConnect=byId('lit-google-connect');
-  googleConnect?.addEventListener('click',async()=>{
-    googleConnect.disabled=true;
-    try{
-      const result=await account.signIn();
-      if(result?.ok===false){const status=byId('lit-feedback-status');status.textContent=result.message;status.classList.remove('lit-account-sync-status');}
-    }catch(error){const status=byId('lit-feedback-status');status.textContent='Google sign-in could not connect. Please try again.';status.classList.remove('lit-account-sync-status');}
-    finally{googleConnect.disabled=['loading','error'].includes(accountState.status);}
-  });
   byId('lit-account-signout').addEventListener('click',()=>account.signOut());
   account.subscribe(state=>{
     const prior=accountState.user?.uid;accountState=state;feedback=state.feedback;
@@ -192,7 +183,6 @@
     byId('lit-account-name').textContent=state.user?state.user.displayName:'Your reading account';
     document.querySelector('.lit-account-panel').dataset.state=state.status;
     byId('lit-email-open').hidden=!!state.user;byId('lit-email-open').disabled=['loading','error'].includes(state.status);
-    if(googleConnect){googleConnect.hidden=!!state.user;googleConnect.disabled=['loading','error'].includes(state.status);}
     byId('lit-account-signout').hidden=!state.user;
     byId('lit-feedback-status').textContent=state.status==='signed-out'?'Private preferences across devices':state.message==='Synced across your devices.'?'Preferences synced':state.message;
     sort.querySelector('option[value="personal"]').disabled=!state.user;

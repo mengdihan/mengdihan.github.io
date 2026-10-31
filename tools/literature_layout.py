@@ -33,10 +33,6 @@ def rebuild_literature(root):
     # Keep account actions direct, without recommendation copy or a hover disclosure.
     help_section=main.xpath('.//div[@class="lit-personalization-help"]')[0]
     help_section.getparent().remove(help_section)
-    actions=main.xpath('.//div[@class="lit-account-actions"]')[0]
-    google=html.Element('button',type='button',id='lit-google-connect',disabled='disabled')
-    google.text='Connect with Google'
-    actions.insert(0,google)
     main.get_element_by_id('lit-feedback-status').set('class','lit-account-sync-status')
     details=main.xpath('.//div[@class="lit-intro-details"]')[0]
     schedule=main.xpath('.//p[@class="lit-update-note"]')[0]

@@ -1,3 +1,7 @@
+## Email-only account controls — 31 October 2026
+
+Removed the Connect with Google entry from the account panel at the owner’s request. Keep the original Log in dialog with email sign-in, registration and password reset. The Personalized recommendations caption and hover disclosure stay removed. Existing account data and Firebase provider configuration are unchanged.
+
 ## Direct Google connection — 31 October 2026
 
 The account panel exposes Connect with Google alongside Log in (email). It uses the existing Firebase Google popup flow, hides both actions after authentication, and restores them on sign-out. The Personalized recommendations caption and its hover/focus disclosure have been removed; article content, ranking, and private feedback remain unchanged.

@@ -293,7 +293,3 @@
 .literature-tools .lit-mark-actions button{height:28px;padding:3px 10px;font-size:12px;line-height:1.4}
 
 .lit-account-actions{flex-wrap:wrap;justify-content:flex-end}
-.lit-account-actions #lit-google-connect{background:#fff;color:var(--hmd-navy);border-color:#c7cdd6}
-.lit-account-actions #lit-google-connect:hover{background:var(--hmd-light-gray);border-color:var(--hmd-navy)}
-.lit-account-panel .lit-account-actions{grid-column:1/-1;grid-row:2;justify-content:center}
-.lit-account-panel #lit-feedback-status{grid-row:3}
