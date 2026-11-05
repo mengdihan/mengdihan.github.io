@@ -1,1835 +1,542 @@
 {
-  "checked_at": "2026-10-29T19:32:30.907179+00:00",
+  "checked_at": "2026-11-05T19:48:49.792242+00:00",
   "window": {
-    "start": "2026-10-23 03:30",
-    "end": "2026-10-30 03:30",
+    "start": "2026-10-30 03:30",
+    "end": "2026-11-06 03:30",
     "timezone": "Asia/Shanghai"
   },
   "sources": [
     {
       "journal": "Science",
-      "issn": "0036-8075",
       "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 167,
-      "in_window_day_verified": 2,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 8,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 167,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 159,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 116,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 167,
+      "readCount": 173,
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Official catalogue access failed; Editor’s summary signatures remain unknown. No all-signature coverage claim is made.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 2
     },
     {
       "journal": "Cell",
-      "issn": "0092-8674",
       "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 56,
-      "in_window_day_verified": 5,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 56,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 43,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 56,
+      "readCount": 53,
       "readCountIsLowerBound": false,
-      "readCountDatePending": 16,
+      "readCountDatePending": 13,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Publisher routes returned a Site Unavailable shell; deposited metadata or indexed official summaries supply the accessible evidence.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
       "selectedCount": 0
     },
     {
       "journal": "Nature",
-      "issn": "0028-0836",
       "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 372,
-      "in_window_day_verified": 80,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 368,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 368,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 372,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 250,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 372,
+      "readCount": 379,
       "readCountIsLowerBound": false,
-      "readCountDatePending": 10,
+      "readCountDatePending": 8,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 2
     },
     {
       "journal": "Science Robotics",
-      "issn": "2470-9476",
       "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 9,
-      "in_window_day_verified": 3,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 9,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 9,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 9,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
       "readCount": 9,
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
     },
     {
       "journal": "Science Translational Medicine",
-      "issn": "1946-6234",
       "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 35,
-      "in_window_day_verified": 7,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 35,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 35,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 35,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 35,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 0,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Nature Medicine",
-      "issn": "1078-8956",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 57,
-      "in_window_day_verified": 15,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 57,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 52,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 57,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 50,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 57,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 5,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Nature Neuroscience",
-      "issn": "1097-6256",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 32,
-      "in_window_day_verified": 5,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 32,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 31,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 32,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 31,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 32,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 2,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Science Advances",
-      "issn": "2375-2548",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 548,
-      "in_window_day_verified": 39,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 387,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 345,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 506,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 548,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 41,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 3
-    },
-    {
-      "journal": "Nature Communications",
-      "issn": "2041-1723",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 798,
-      "in_window_day_verified": 169,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 797,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 797,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 796,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 154,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 798,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 33,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 3
-    },
-    {
-      "journal": "Proceedings of the National Academy of Sciences",
-      "issn": "0027-8424",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 433,
-      "in_window_day_verified": 107,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 430,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 430,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 430,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 416,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 433,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 16,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
-    },
-    {
-      "journal": "Matter",
-      "issn": "2590-2385",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 41,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 41,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 41,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 41,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Neuron",
-      "issn": "0896-6273",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 29,
-      "in_window_day_verified": 3,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 28,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 23,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 29,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 6,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Advanced Materials",
-      "issn": "0935-9648",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 335,
-      "in_window_day_verified": 70,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 326,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 301,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 335,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 296,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 335,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 12,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 4
-    },
-    {
-      "journal": "ACS Nano",
-      "issn": "1936-0851",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 195,
-      "in_window_day_verified": 45,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 191,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 191,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 195,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 3,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 195,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 14,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 2
-    },
-    {
-      "journal": "Nano Letters",
-      "issn": "1530-6984",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 169,
-      "in_window_day_verified": 31,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 168,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 168,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 169,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 2,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 169,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 6,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Device",
-      "issn": "2666-9986",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 15,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 15,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 15,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 15,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Biosensors and Bioelectronics",
-      "issn": "0956-5663",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 70,
-      "in_window_day_verified": 3,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 70,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 61,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 70,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 10,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
-    },
-    {
-      "journal": "npj Digital Medicine",
-      "issn": "2398-6352",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 116,
-      "in_window_day_verified": 10,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 116,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 116,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 116,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 13,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 116,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 5,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
-    },
-    {
-      "journal": "Advanced Functional Materials",
-      "issn": "1616-301X",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 572,
-      "in_window_day_verified": 117,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 564,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 527,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 572,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 572,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 33,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 4
-    },
-    {
-      "journal": "Advanced Healthcare Materials",
-      "issn": "2192-2640",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 128,
-      "in_window_day_verified": 34,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 124,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 96,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 128,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 110,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 128,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 4,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 2
-    },
-    {
-      "journal": "Sensors and Actuators A: Physical",
-      "issn": "0924-4247",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 137,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 137,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 137,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 137,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 2
-    },
-    {
-      "journal": "Sensors and Actuators B: Chemical",
-      "issn": "0925-4005",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 124,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 124,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 124,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 124,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
-    },
-    {
-      "journal": "IEEE Transactions on Biomedical Engineering",
-      "issn": "0018-9294",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 32,
-      "in_window_day_verified": 2,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 32,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 20,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 32,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 12,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 2
-    },
-    {
-      "journal": "Journal of Microelectromechanical Systems",
-      "issn": "1057-7157",
-      "status": "unavailable",
-      "access": "no_records_recovered",
-      "records_recovered": 0,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "error",
-          "detail": "ISSN/title mismatch: []"
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 0,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 0,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Journal of Micromechanics and Microengineering",
-      "issn": "0960-1317",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 15,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 15,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 6,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 8,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 15,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 2,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Research Square - Nature Portfolio",
-      "issn": null,
-      "status": "partial",
-      "access": "filtered_browser_verified",
-      "records_recovered": 100,
-      "in_window_day_verified": null,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "posted",
-          "status": "ok",
-          "records": 8730,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Nature Portfolio selected in the visible interface; 100 latest cards inspected. This is a lower bound, not the platform-wide Crossref count.",
-      "readCount": 100,
-      "readCountIsLowerBound": true,
-      "readCountBasis": "100 visible filtered cards inspected",
-      "readCountDatePending": 0,
-      "selectedCount": 2
-    },
-    {
-      "journal": "Nature Biomedical Engineering",
-      "issn": "2157-846X",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 26,
-      "in_window_day_verified": 5,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 26,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 26,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 26,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 19,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 26,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 4,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
-    },
-    {
-      "journal": "Nature Biotechnology",
-      "issn": "1087-0156",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 33,
-      "in_window_day_verified": 3,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 33,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 19,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 33,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 19,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
       "readCount": 33,
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Biomedical Engineering",
+      "status": "partial",
+      "readCount": 24,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 1,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 3
+    },
+    {
+      "journal": "Nature Biotechnology",
+      "status": "partial",
+      "readCount": 27,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
       "selectedCount": 0
     },
     {
       "journal": "Nature Cardiovascular Research",
-      "issn": "2731-0590",
       "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 13,
-      "in_window_day_verified": 6,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 13,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 13,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 13,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 11,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 13,
+      "readCount": 18,
       "readCountIsLowerBound": false,
-      "readCountDatePending": 4,
+      "readCountDatePending": 1,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 2
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
     },
     {
       "journal": "Nature Electronics",
-      "issn": "2520-1131",
       "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 9,
-      "in_window_day_verified": 1,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 9,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 9,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 9,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
       "readCount": 9,
       "readCountIsLowerBound": false,
-      "readCountDatePending": 1,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Nature Machine Intelligence",
-      "issn": "2522-5839",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 12,
-      "in_window_day_verified": 1,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 12,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 12,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 12,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 12,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 2,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Nature Materials",
-      "issn": "1476-1122",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 23,
-      "in_window_day_verified": 9,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 23,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 23,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 23,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 20,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 23,
-      "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 2
-    },
-    {
-      "journal": "Nature Methods",
-      "issn": "1548-7091",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 32,
-      "in_window_day_verified": 9,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 32,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 26,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 32,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 23,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 32,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 1,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
-    },
-    {
-      "journal": "Nature Nanotechnology",
-      "issn": "1748-3387",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 23,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 23,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 13,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 23,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 14,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 23,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 1,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
       "selectedCount": 0
-    },
-    {
-      "journal": "Nature Photonics",
-      "issn": "1749-4885",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 14,
-      "in_window_day_verified": 1,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 14,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 14,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 14,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 14,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 1,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Nature Sensors",
-      "issn": "3059-4499",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 10,
-      "in_window_day_verified": 2,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 10,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 0,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 2
-    },
-    {
-      "journal": "Nature Reviews Bioengineering",
-      "issn": "2731-6092",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 7,
-      "in_window_day_verified": 1,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 7,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 7,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 7,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 7,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 0,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Nature Reviews Electrical Engineering",
-      "issn": "2948-1201",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 10,
-      "in_window_day_verified": 1,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 10,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 1,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Nature Reviews Materials",
-      "issn": "2058-8437",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 10,
-      "in_window_day_verified": 3,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 10,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 2,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "npj Flexible Electronics",
-      "issn": "2397-4621",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 10,
-      "in_window_day_verified": 2,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 10,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 10,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 0,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
-    },
-    {
-      "journal": "Nature Protocols",
-      "issn": "1750-2799",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 4,
-      "in_window_day_verified": 2,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 4,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 4,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 4,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 4,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 4,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 0,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 0
-    },
-    {
-      "journal": "Microsystems & Nanoengineering",
-      "issn": "2055-7434",
-      "status": "partial",
-      "access": "metadata_recovered",
-      "records_recovered": 17,
-      "in_window_day_verified": 2,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "ok",
-          "records": 17,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "ok",
-          "records": 17,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "ok",
-          "records": 17,
-          "pagination_exhausted": true
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 16,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
-      "readCount": 17,
-      "readCountIsLowerBound": false,
-      "readCountDatePending": 0,
-      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
-      "selectedCount": 1
     },
     {
       "journal": "Nature Mechanical Engineering",
-      "issn": "3091-5244",
       "status": "unavailable",
-      "access": "no_records_recovered",
-      "records_recovered": 0,
-      "in_window_day_verified": 0,
-      "attempts": [
-        {
-          "service": "Crossref",
-          "query": "online-pub",
-          "status": "error",
-          "detail": "HTTP Error 404: Not Found"
-        },
-        {
-          "service": "Crossref",
-          "query": "pub",
-          "status": "error",
-          "detail": "HTTP Error 404: Not Found"
-        },
-        {
-          "service": "Crossref",
-          "query": "created",
-          "status": "error",
-          "detail": "HTTP Error 404: Not Found"
-        },
-        {
-          "service": "Europe PMC",
-          "status": "ok",
-          "records": 0,
-          "pagination_exhausted": true
-        }
-      ],
-      "detail": "Metadata discovery only; publisher completeness, first-online dates, editor credits and indexing delays still require review.",
       "readCount": 0,
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Metadata recovery returned no usable records. This does not establish that no articles exist.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
       "selectedCount": 0
+    },
+    {
+      "journal": "Nature Machine Intelligence",
+      "status": "partial",
+      "readCount": 12,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Materials",
+      "status": "partial",
+      "readCount": 21,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Medicine",
+      "status": "partial",
+      "readCount": 62,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 1,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Methods",
+      "status": "partial",
+      "readCount": 41,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 4,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Nanotechnology",
+      "status": "partial",
+      "readCount": 25,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Neuroscience",
+      "status": "partial",
+      "readCount": 40,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Photonics",
+      "status": "partial",
+      "readCount": 24,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 9,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Sensors",
+      "status": "partial",
+      "readCount": 7,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 1,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 2
+    },
+    {
+      "journal": "Nature Reviews Bioengineering",
+      "status": "partial",
+      "readCount": 5,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Reviews Electrical Engineering",
+      "status": "partial",
+      "readCount": 9,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 1,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Reviews Materials",
+      "status": "partial",
+      "readCount": 11,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 1,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Science Advances",
+      "status": "partial",
+      "readCount": 387,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 122,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 3
+    },
+    {
+      "journal": "Nature Communications",
+      "status": "partial",
+      "readCount": 854,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 45,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 1
+    },
+    {
+      "journal": "Proceedings of the National Academy of Sciences",
+      "status": "partial",
+      "readCount": 437,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 18,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Matter",
+      "status": "partial",
+      "readCount": 46,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 46,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Publisher routes returned a Site Unavailable shell; deposited metadata or indexed official summaries supply the accessible evidence.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 3
+    },
+    {
+      "journal": "Neuron",
+      "status": "partial",
+      "readCount": 29,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 8,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Publisher routes returned a Site Unavailable shell; deposited metadata or indexed official summaries supply the accessible evidence.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Nature Protocols",
+      "status": "partial",
+      "readCount": 6,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Advanced Materials",
+      "status": "partial",
+      "readCount": 304,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 12,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 2
+    },
+    {
+      "journal": "ACS Nano",
+      "status": "partial",
+      "readCount": 215,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 7,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 2
+    },
+    {
+      "journal": "Nano Letters",
+      "status": "partial",
+      "readCount": 172,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 2,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 1
+    },
+    {
+      "journal": "Device",
+      "status": "partial",
+      "readCount": 14,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 14,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Publisher routes returned a Site Unavailable shell; deposited metadata or indexed official summaries supply the accessible evidence.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 4
+    },
+    {
+      "journal": "Biosensors and Bioelectronics",
+      "status": "partial",
+      "readCount": 282,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 231,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Publisher routes returned a Site Unavailable shell; deposited metadata or indexed official summaries supply the accessible evidence.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Microsystems & Nanoengineering",
+      "status": "partial",
+      "readCount": 18,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "npj Digital Medicine",
+      "status": "partial",
+      "readCount": 97,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 5,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "npj Flexible Electronics",
+      "status": "partial",
+      "readCount": 14,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 2,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 4
+    },
+    {
+      "journal": "Advanced Functional Materials",
+      "status": "partial",
+      "readCount": 588,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 26,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 3
+    },
+    {
+      "journal": "Advanced Healthcare Materials",
+      "status": "partial",
+      "readCount": 129,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 9,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 3
+    },
+    {
+      "journal": "Sensors and Actuators A: Physical",
+      "status": "partial",
+      "readCount": 353,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 353,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Publisher routes returned a Site Unavailable shell; deposited metadata or indexed official summaries supply the accessible evidence.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Sensors and Actuators B: Chemical",
+      "status": "partial",
+      "readCount": 469,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 469,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading. Publisher routes returned a Site Unavailable shell; deposited metadata or indexed official summaries supply the accessible evidence.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "status": "partial",
+      "readCount": 51,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 13,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Journal of Microelectromechanical Systems",
+      "status": "unavailable",
+      "readCount": 0,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Metadata recovery returned no usable records. This does not establish that no articles exist.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 0
+    },
+    {
+      "journal": "Journal of Micromechanics and Microengineering",
+      "status": "partial",
+      "readCount": 19,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 2,
+      "readCountBasis": "Unique metadata inspected in this run, including baseline/backfill; not a publication total",
+      "detail": "Public metadata recovered and selected content reviewed; publisher and all-content completeness remain unverified. Counts include baseline/backfill records and do not mean full-text reading.",
+      "lastMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-05T19:48:49.792242+00:00",
+      "selectedCount": 2
+    },
+    {
+      "journal": "Arxiv - Applied Physics",
+      "status": "partial",
+      "readCount": 40,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique Applied Physics API records inspected with precise UTC published timestamps, 2026-10-29T19:30Z to 2026-11-05T19:30Z; pagination exhausted",
+      "detail": "Public API category and published timestamps inspected; selected abstracts reviewed. Preprints are not peer reviewed.",
+      "selectedCount": 8
+    },
+    {
+      "journal": "bioRxiv - Bioengineering",
+      "status": "partial",
+      "readCount": 68,
+      "readCountIsLowerBound": true,
+      "readCountDatePending": 17,
+      "readCountBasis": "Unique Bioengineering DOIs in paginated details API; version updates deduplicated. 51 version-1 records; day-only cutoff dates remain uncertain.",
+      "detail": "Category-verified public API metadata and selected abstracts inspected. Full given author names were not available for selected papers; source XML requests returned 403/429. Not peer reviewed.",
+      "selectedCount": 12
+    },
+    {
+      "journal": "Research Square - Nature Portfolio",
+      "status": "partial",
+      "readCount": 100,
+      "readCountIsLowerBound": true,
+      "readCountDatePending": 0,
+      "readCountBasis": "First ten visible pages / 100 records in the Nature Portfolio filter, selected through Journals & Platforms then Search; entries dated 29 October–5 November inspected",
+      "detail": "Nature Portfolio filter and result-card marks verified. Seven detail-page abstracts and author lists checked. Earlier baseline gaps remain; this is not an exhaustive historical scan or evidence of Nature journal acceptance. Preprints are not peer reviewed.",
+      "selectedCount": 7
     }
   ]
 }

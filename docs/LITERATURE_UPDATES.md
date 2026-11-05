@@ -1,3 +1,9 @@
+## Current archive and mark controls — 6 November 2026
+
+Preserve Edition All: canonical DOI/article-ID deduplication with the latest-edition record preferred, all existing filters and stable feedback order, latest edition default, and “All editions” plus the full range. All/Clear controls only the four personal mark filters: All includes unmarked articles, Clear produces no results. Do not restore Reset filters, double-click exclusive selection, the removed mark heading or explanatory paragraph. Read Later stays private; current reactions reorder only on explicit filtering or refresh.
+
+The 6 November edition contains newly reviewed deliveries and dated/undated backfills. Partial source coverage and missing author/date evidence are recorded explicitly. Metadata-only candidates in the private report appendix are pending, not delivered.
+
 ## Read Later and mark filters — 30 October 2026
 
 Read Later is an independent, owner-only bookmark stored as `bioeReadLater: true` in the existing private feedback note JSON; preserve legacy text and any other JSON fields. Existing shared Like/Useful/Not relevant signals and deployed rules are unchanged. Bookmark-only saves write no shared reaction/event. Read Later can coexist with any reaction and does not contribute to community totals. Personal order is both Like and Useful, either positive, Read Later, unmarked, Not relevant; a negative reaction takes precedence over a bookmark.
