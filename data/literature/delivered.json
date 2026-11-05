@@ -1,7 +1,7 @@
 {
   "version": 1,
   "policy": "Only confirmed delivered entries; unknown publication dates are allowed",
-  "history_scope": "Confirmed public editions only; merge accessible private/chat delivery history before asserting full historical deduplication",
+  "history_scope": "Confirmed public editions plus four independently visible earlier delivery identifiers. Does not establish complete coverage of all historical private reports.",
   "entries": [
     {
       "id": "10.1126/science.ady8560",
@@ -769,6 +769,623 @@
       "delivery_confirmed_on": "2026-10-30",
       "delivery_channel": "Verified live public BioE Radar edition",
       "delivery_commit": "76623a0146964ab2fda8f1ad31d2fc7ef0651aea"
+    },
+    {
+      "id": "10.1126/science.adt7185",
+      "doi": "10.1126/science.adt7185",
+      "title": "Discovering molecular modulators with nanoswitch screening",
+      "first_published_on": null,
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1126/science.aeh7074",
+      "doi": "10.1126/science.aeh7074",
+      "title": "Stacked porous NiTi structure with low cost and ultrahigh fatigue life for elastocaloric cooling",
+      "first_published_on": null,
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41586-026-11148-5",
+      "doi": "10.1038/s41586-026-11148-5",
+      "title": "Multimodal X-ray imaging reveals hierarchical fibre mechanics",
+      "first_published_on": "2026-11-04",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41467-026-79116-1",
+      "doi": "10.1038/s41467-026-79116-1",
+      "title": "In vivo ultrasound–MRI 3D mapping of neuromuscular compartments reveals the neuromechanical architecture of finger-specific control",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1126/sciadv.aeh5747",
+      "doi": "10.1126/sciadv.aeh5747",
+      "title": "Magnetic omniconversion: Source-independent molding of magnetostatic fields",
+      "first_published_on": null,
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1126/sciadv.aei9767",
+      "doi": "10.1126/sciadv.aei9767",
+      "title": "Multiplexed and implantable fiber sensor for real-time blood monitoring",
+      "first_published_on": null,
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1126/sciadv.aef4772",
+      "doi": "10.1126/sciadv.aef4772",
+      "title": "A soft wireless bioelectronic patch for noninvasive modulation of cavernosal microenvironment in diabetic erectile dysfunction",
+      "first_published_on": null,
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1021/acsnano.6c11864",
+      "doi": "10.1021/acsnano.6c11864",
+      "title": "Spatially Decoupled Donor and Acceptor Gradient Brush Particle Blends for Mechanically Robust, Fatigue-Resistant, and Recyclable Elastomers",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1021/acsnano.6c13921",
+      "doi": "10.1021/acsnano.6c13921",
+      "title": "Ion Accessibility Governs Electrochemically Effective Actuation in Carbon Nanotube Muscles",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adma.75597",
+      "doi": "10.1002/adma.75597",
+      "title": "Waveguided, Self‐Sensing Sheath–Core Liquid Crystal Elastomer Fiber Actuators",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adma.75589",
+      "doi": "10.1002/adma.75589",
+      "title": "Structure‐Encoded Magnetic Anisotropy in Super‐Tough Magnetoelastic Aramid–Silk–Magnetite Fibers",
+      "first_published_on": "2026-11-05",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1021/acs.nanolett.6c04290",
+      "doi": "10.1021/acs.nanolett.6c04290",
+      "title": "A Liquid Metal Route for Designing Stretchability and Nanoporosity in Gold Thin Film Bioelectrodes",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adfm.79319",
+      "doi": "10.1002/adfm.79319",
+      "title": "Intrinsic‐Decoupled Biomimetic Two‐Dimensional Sensing Enabled by Positive‐Negative Dielectric Heterostructures for Pressure Visualization",
+      "first_published_on": "2026-10-31",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adfm.79394",
+      "doi": "10.1002/adfm.79394",
+      "title": "Hydrogel‐Based Method for High‐Resolution Measurements of Contact Mechanics in Rapid Biological Adhesives: A Case Study in Cuttlefish Tentacle Strikes",
+      "first_published_on": "2026-11-04",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adfm.79432",
+      "doi": "10.1002/adfm.79432",
+      "title": "Architected Bio‐Based Iontronic Skin With Dual‐Mode Pressure and Strain Sensing",
+      "first_published_on": "2026-11-05",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1016/j.matt.2026.102971",
+      "doi": "10.1016/j.matt.2026.102971",
+      "title": "Interface-engineered liquid metal-composited hydrogels with high toughness and extreme flaw insensitivity for damage-tolerant wearables",
+      "first_published_on": "2026-08-26",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1016/j.matt.2026.102970",
+      "doi": "10.1016/j.matt.2026.102970",
+      "title": "Triboelectric E-Fibers: Toward energy-autonomous wearable electronics",
+      "first_published_on": "2026-08-25",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1016/j.matt.2026.103089",
+      "doi": "10.1016/j.matt.2026.103089",
+      "title": "Fracture-mediated percolation governs electrical activation in liquid metal composite conductors",
+      "first_published_on": "2026-10-29",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41378-026-01451-6",
+      "doi": "10.1038/s41378-026-01451-6",
+      "title": "Low-voltage, ultra-broadband wearable MEMS ultrasound: a frequency-merged, wafer-scale framework for continuous in vivo cardiovascular imaging and monitoring",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41528-026-00663-0",
+      "doi": "10.1038/s41528-026-00663-0",
+      "title": "Machine-knitted magnetoactive textiles for wireless charging, biomechanical sensing, and haptic feedback",
+      "first_published_on": "2026-10-31",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41528-026-00650-5",
+      "doi": "10.1038/s41528-026-00650-5",
+      "title": "Skin-mimetic adaptive gradient electrode for ambulatory noninvasive brain-computer interfaces",
+      "first_published_on": "2026-10-31",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41528-026-00662-1",
+      "doi": "10.1038/s41528-026-00662-1",
+      "title": "Liquid metal interfaces for component mounting on kirigami stretchable substrates",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41528-026-00655-0",
+      "doi": "10.1038/s41528-026-00655-0",
+      "title": "Adaptive tunable sensing system inspired by scorpions for dynamic vibration perception in unstructured environments",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41551-026-01829-x",
+      "doi": "10.1038/s41551-026-01829-x",
+      "title": "Non-invasive oral magnetoelectric vagus nerve neuromodulation for Parkinson’s disease therapy",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s44460-026-00148-7",
+      "doi": "10.1038/s44460-026-00148-7",
+      "title": "Millisecond olfaction system with in-sensor feature extraction",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s44460-026-00147-8",
+      "doi": "10.1038/s44460-026-00147-8",
+      "title": "A smart nose for robots through in-sensor computing",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41586-026-11228-6",
+      "doi": "10.1038/s41586-026-11228-6",
+      "title": "An AI-native experimental laboratory for autonomous biomolecular operations",
+      "first_published_on": "2026-11-04",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1016/j.device.2026.101312",
+      "doi": "10.1016/j.device.2026.101312",
+      "title": "Large-stroke thin haptic interface for restoring pressure and friction in virtual reality",
+      "first_published_on": "2026-10-12",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1016/j.device.2026.101329",
+      "doi": "10.1016/j.device.2026.101329",
+      "title": "Implantable neural chip with electrochemical sensing and optogenetic stimulation for monitoring of cholinergic pharmacological responses",
+      "first_published_on": "2026-10-14",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1016/j.device.2026.101330",
+      "doi": "10.1016/j.device.2026.101330",
+      "title": "Smart contact lens for personalized glucose level sensing and forecasting",
+      "first_published_on": null,
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1016/j.device.2026.101332",
+      "doi": "10.1016/j.device.2026.101332",
+      "title": "From actuation to autonomy: Physical and artificial intelligence in magnetic robots",
+      "first_published_on": null,
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adhm.71905",
+      "doi": "10.1002/adhm.71905",
+      "title": "Magnetoactive Hydrogels to Probe Curvature‐Directed Endothelial Cell Mechanosensing",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adhm.71939",
+      "doi": "10.1002/adhm.71939",
+      "title": "Hypoxia‐Guided Magnetic Catheter for Localization and Minimally Invasive Intervention in Early‐Stage Lung Cancer",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1002/adhm.71938",
+      "doi": "10.1002/adhm.71938",
+      "title": "Bioprinted Stiffness‑Tunable Pancreatic Microniches to Decode Early Tumor Initiation Mechanisms",
+      "first_published_on": "2026-11-05",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1088/1361-6439/aeb272",
+      "doi": "10.1088/1361-6439/aeb272",
+      "title": "A microcantilever-based current sensor with magnetic transduction for AC/DC measurement",
+      "first_published_on": "2026-10-09",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1088/1361-6439/aeb89a",
+      "doi": "10.1088/1361-6439/aeb89a",
+      "title": "Reconfigurable surface acoustic wave platform for particle concentration, sorting and in situ Raman identification on a single lithium niobate chip",
+      "first_published_on": "2026-11-04",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41551-026-01820-6",
+      "doi": "10.1038/s41551-026-01820-6",
+      "title": "A single-step injectable Janus-adhesive hydrogel for endoscopic gastrointestinal fistula repair",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1038/s41551-026-01822-4",
+      "doi": "10.1038/s41551-026-01822-4",
+      "title": "Re-timing mortality risk through individualized modelling of lifespan trajectories",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2611.00211",
+      "doi": null,
+      "title": "Magnetoelectric Wireless Power Transfer Receivers for Sub-Millimeter Scale Implantable Bioelectronics",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2610.42113",
+      "doi": null,
+      "title": "Magnetic Johnson noise from arbitrarily shaped conductors: experimental validation of the fluctuation-dissipation finite-element method",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2611.04251",
+      "doi": null,
+      "title": "Differentiable topology optimization for high-fidelity acoustic holography beyond the thin-element approximation",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2611.03485",
+      "doi": null,
+      "title": "Identifying the Shear Piezoelectric Coefficient using Physics-Informed Neural Networks under Exact Boundary and Initial Constraints",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2611.02442",
+      "doi": null,
+      "title": "Coupled Soft-Clamped Polygon Resonators with Tunable Mechanical Coupling",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2611.00299",
+      "doi": null,
+      "title": "The Agentic AI Kerr Lab: LLM Agents for Kerr Microscopy Experiments with Magnetic Skyrmions",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2611.05180",
+      "doi": null,
+      "title": "Analog signal processing, storage, and demultiplexing via in-materia wave-based computing",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "arxiv:2611.03707",
+      "doi": null,
+      "title": "Surface chemistry as data for level-set simulation of etching and deposition",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.28.762586",
+      "doi": "10.64898/2026.10.28.762586",
+      "title": "Mesoscale Soft Robotics for Mechanically Perturbing and Functionally Monitoring Responses in Human Organoids",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.29.762665",
+      "doi": "10.64898/2026.10.29.762665",
+      "title": "Measurement-Dependent Parameter Recoverability in Neural Cardiovascular LPN Inference",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.29.762829",
+      "doi": "10.64898/2026.10.29.762829",
+      "title": "Machine Learning-Based Early Prediction of Neural Microelectrode Lifetime Under Accelerated Aging Conditions",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.29.758432",
+      "doi": "10.64898/2026.10.29.758432",
+      "title": "Injectable Nanoparticles Assemble In Situ into Modular, Functionally Segmented Brain Electrodes",
+      "first_published_on": "2026-10-30",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.30.762336",
+      "doi": "10.64898/2026.10.30.762336",
+      "title": "Raman-probe-derived biomarkers account for cartilage composition, structure, and viscoelastic properties",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.30.763221",
+      "doi": "10.64898/2026.10.30.763221",
+      "title": "Cross-species structure-mechanics prediction in the intervertebral disc",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.29.758467",
+      "doi": "10.64898/2026.10.29.758467",
+      "title": "Bioresorbable, Injectable In Situ-Formed Electroactive mRNA-Delivering Device for Precision Gene Therapy after Myocardial Infarction",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.30.763203",
+      "doi": "10.64898/2026.10.30.763203",
+      "title": "Feasibility of an anterior abdominal electrode array for non-invasive measurement of uterine contractions across the menstrual cycle",
+      "first_published_on": "2026-11-02",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.11.01.763425",
+      "doi": "10.64898/2026.11.01.763425",
+      "title": "Stop-Flow Lithography Using Hydrodynamic Flow Resistance Regulation and Hydraulic Compliance Minimization for Size-Tunable Anisotropic Multilayered Microparticles Fabrication",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.10.31.763347",
+      "doi": "10.64898/2026.10.31.763347",
+      "title": "Differential sensing with imprinted and non-imprinted organic electrochemical transistors reduces calibration drift in wearable sweat cortisol sensors",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.11.01.763270",
+      "doi": "10.64898/2026.11.01.763270",
+      "title": "An Efficient Microfluidic Platform for Organ-Specific CyclicMultiaxial Loading and Differentiation of Progenitor Cells",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.64898/2026.11.03.763565",
+      "doi": "10.64898/2026.11.03.763565",
+      "title": "Wearable Estimation of Knee Joint Contact Forces: SiMPLeSENSE, a Simulated-IMU Pipeline Validated Against In Vivo Loads",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11190892/v1",
+      "doi": "10.21203/rs.3.rs-11190892/v1",
+      "title": "In situ acoustic manufacturing of conformal brain–computer interfaces",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11501955/v1",
+      "doi": "10.21203/rs.3.rs-11501955/v1",
+      "title": "PA-SfM: Tracker-free freehand 3D photoacoustic imaging via differentiable acoustic radiation",
+      "first_published_on": "2026-11-03",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.21203/rs.3.rs-10927351/v1",
+      "doi": "10.21203/rs.3.rs-10927351/v1",
+      "title": "Characterizing the Spatiotemporal Boundaries of Functional Ultrasound for Brain Decoding",
+      "first_published_on": "2026-11-01",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11054050/v1",
+      "doi": "10.21203/rs.3.rs-11054050/v1",
+      "title": "Multimodal imaging maps spinal glymphatic transport in health and its disruption after injury",
+      "first_published_on": "2026-11-01",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11342178/v1",
+      "doi": "10.21203/rs.3.rs-11342178/v1",
+      "title": "PINPOINT enables non-destructive nanoscopic quality control of individual lipid nanoparticles and their mRNA cargo",
+      "first_published_on": "2026-11-04",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11352451/v1",
+      "doi": "10.21203/rs.3.rs-11352451/v1",
+      "title": "M³Sculptor: A Knowledge-Driven Multimodal-Agent Framework for Automated Metamaterial Design",
+      "first_published_on": "2026-11-04",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11605391/v1",
+      "doi": "10.21203/rs.3.rs-11605391/v1",
+      "title": "A Self-Evolving Agent for Longitudinal Personal Health Management",
+      "first_published_on": "2026-11-04",
+      "first_seen_at": "2026-11-05T19:47:05.083554+00:00",
+      "first_delivered_edition": "2026-11-06",
+      "delivery_confirmed_on": "2026-11-05T19:55:32.634005+00:00"
+    },
+    {
+      "id": "10.1126/science.adx4170",
+      "doi": "10.1126/science.adx4170",
+      "title": "",
+      "first_delivered_edition": "2026-10-30",
+      "delivery_confirmed_on": "2026-10-30",
+      "delivery_channel": "Previously delivered message; public identifier imported from accessible history"
+    },
+    {
+      "id": "10.1126/science.aeg1070",
+      "doi": "10.1126/science.aeg1070",
+      "title": "",
+      "first_delivered_edition": "2026-10-30",
+      "delivery_confirmed_on": "2026-10-30",
+      "delivery_channel": "Previously delivered message; public identifier imported from accessible history"
+    },
+    {
+      "id": "10.1126/scitranslmed.adt0044",
+      "doi": "10.1126/scitranslmed.adt0044",
+      "title": "",
+      "first_delivered_edition": "2026-10-30",
+      "delivery_confirmed_on": "2026-10-30",
+      "delivery_channel": "Previously delivered message; public identifier imported from accessible history"
+    },
+    {
+      "id": "10.1126/scitranslmed.aea4947",
+      "doi": "10.1126/scitranslmed.aea4947",
+      "title": "",
+      "first_delivered_edition": "2026-10-30",
+      "delivery_confirmed_on": "2026-10-30",
+      "delivery_channel": "Previously delivered message; public identifier imported from accessible history"
     }
   ]
 }
