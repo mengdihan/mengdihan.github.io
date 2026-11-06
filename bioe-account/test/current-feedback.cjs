@@ -41,9 +41,9 @@ function ui(initial,extraReports=[]){
   showModal(){this.open=true;}close(){this.open=false;}
  }
  const ids=new Map(),roots=[];const add=(id,tag='div',cls='')=>{const e=new Element(tag);e.id=id;e.className=cls;ids.set(id,e);roots.push(e);return e;};
- const names=['lit-data','lit-search','lit-edition','lit-sort','lit-results','lit-journals-dialog','lit-journals-open','lit-version-note','lit-count','lit-empty','lit-window','lit-coverage-list','lit-journals-options','lit-journals-selection','lit-journals-all','lit-journals-none','lit-journals-apply','lit-journals-close','lit-journals-cancel','lit-marks-all','lit-marks-clear','lit-sources-toggle','lit-sources-body','lit-recommendations-toggle','lit-recommendations-body','lit-account-signout','lit-account-name','lit-email-open','lit-feedback-status','lit-schedule-times'];
+ const names=['lit-data','lit-search','lit-edition','lit-sort','lit-results','lit-journals-dialog','lit-journals-open','lit-version-note','lit-count','lit-empty','lit-window','lit-coverage-list','lit-journals-options','lit-journals-selection','lit-journals-all','lit-journals-none','lit-journals-apply','lit-journals-close','lit-journals-cancel','lit-filters-reset','lit-marks-all','lit-marks-clear','lit-sources-toggle','lit-sources-body','lit-recommendations-toggle','lit-recommendations-body','lit-account-signout','lit-account-name','lit-email-open','lit-feedback-status','lit-schedule-times'];
  names.forEach(id=>add(id));const topics=add('topics','div','lit-topics'),panel=add('account-panel','div','lit-account-panel'),help=add('help','div','lit-account-help');help.append(ids.get('lit-recommendations-toggle'),ids.get('lit-recommendations-body'));
- const boxes=['more','useful','irrelevant','later'].map(signal=>{const box=add('mark-'+signal,'input');box.dataset.feedbackFilter=signal;box.checked=true;return box;});
+ const boxes=['more','useful','irrelevant','later','unlabeled'].map(signal=>{const box=add('mark-'+signal,'input');box.dataset.feedbackFilter=signal;box.checked=true;return box;});
  const option=new Element('option');option.setAttribute('value','personal');ids.get('lit-sort').append(option);
  ids.get('lit-edition').value='2026-10-30';ids.get('lit-sort').value='community';
  ids.get('lit-data').content={textContent:JSON.stringify({editions:[{id:'2026-10-30',start:'2026-10-23 03:30',end:'2026-10-30 03:30',publishedAt:'2026-10-30T03:30:00+08:00',coverage:[{journal:'Science'}],articles:[paper('a',4),paper('b',3),paper('c',2),paper('d',1)]},...extraReports]})};
@@ -141,4 +141,22 @@ test('All editions merges articles, deduplicates DOI using the newest record, an
  await app.click('e','later');await app.trigger('lit-sort','change');assert.equal(app.order()[0],'e');
  await app.trigger('lit-marks-clear','click');assert.deepEqual(app.order(),[]);app.ids.get('mark-later').checked=true;await app.trigger('mark-later','change');assert.deepEqual(app.order(),['e']);
  await app.trigger('lit-marks-all','click');app.ids.get('lit-edition').value='2026-10-30';await app.trigger('lit-edition','change');assert.equal(app.order().length,4);assert.equal(app.order().includes('e'),false);
+});
+
+
+test('Unlabeled means no reaction and no bookmark; four selected categories do not imply all',()=>{
+ const defaults=new Set(['more','useful','later','unlabeled']);
+ assert.equal(P.matchesFeedback(undefined,defaults),true);
+ assert.equal(P.matchesFeedback({signals:['irrelevant']},defaults),false);
+ assert.equal(P.matchesFeedback({signals:['more']},new Set(['unlabeled'])),false);
+ assert.equal(P.matchesFeedback(P.toggleReadLater({signals:[]}),new Set(['unlabeled'])),false);
+ assert.equal(P.matchesFeedback({signals:[]},new Set(['unlabeled'])),true);
+});
+test('Reset restores search, latest edition, sorting, all sources, topics and default mark selection',async()=>{
+ const app=ui();app.ids.get('lit-search').value='missing';app.ids.get('lit-sort').value='date';
+ await app.trigger('lit-marks-clear','click');assert.equal(app.order().length,0);
+ await app.trigger('lit-filters-reset','click');
+ assert.equal(app.ids.get('lit-search').value,'');assert.equal(app.ids.get('lit-sort').value,'personal');
+ assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','later','unlabeled']);
+ assert.equal(app.order().length,4);
 });

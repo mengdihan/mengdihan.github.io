@@ -30,7 +30,7 @@
     if(encoded.length>2000)throw new Error('This article’s saved note is too long to add Read Later.');
     return {...entry,note:encoded};
   }
-  const matchesFeedback=(entry,selected)=>selected.size===4||[...selected].some(signal=>signal==='later'?readLater(entry):entry?.signals?.includes(signal));
+  const matchesFeedback=(entry,selected)=>[...selected].some(signal=>signal==='unlabeled'?!(entry?.signals?.length||readLater(entry)):signal==='later'?readLater(entry):entry?.signals?.includes(signal));
   const personalPriority=entry=>personalTier(entry?.signals)*2+(personalTier(entry?.signals)===0&&readLater(entry)?1:0);
   function rankPersonal(articles,feedback={},history=articles){
     return rank(articles,feedback,history).sort((a,b)=>

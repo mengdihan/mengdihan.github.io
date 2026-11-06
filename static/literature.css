@@ -293,3 +293,6 @@
 .literature-tools .lit-mark-actions button{height:28px;padding:3px 10px;font-size:12px;line-height:1.4}
 
 .lit-account-actions{flex-wrap:wrap;justify-content:flex-end}
+
+#lit-filters-reset{align-self:end;min-height:36px;padding:8px 12px;border:1px solid #c7cdd6;border-radius:6px;background:#fff;color:var(--hmd-navy);font:600 12px Segoe UI,Arial,sans-serif;cursor:pointer}
+#lit-filters-reset:hover{background:var(--hmd-light-gray)}

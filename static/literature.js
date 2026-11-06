@@ -28,6 +28,7 @@
   const account=window.BioERadarAccount,personalization=window.BioERadarPersonalization;
   let feedback=Object.create(null),accountState={status:'loading',user:null},tooltipIndex=0;
   let displayedOrder=[],rankingHydrated=false;
+  const defaultEdition=edition.value;
   const feedbackBoxes=[...document.querySelectorAll('[data-feedback-filter]')];
   const canReact=()=>accountState.status==='signed-in'&&rankingHydrated;
   const feedbackId=personalization.key;
@@ -168,6 +169,11 @@
   for(const id of ['lit-journals-close','lit-journals-cancel'])byId(id).addEventListener('click',()=>dialog.close());
   search.addEventListener('input',render);sort.addEventListener('change',render);edition.addEventListener('change',setup);
   feedbackBoxes.forEach(box=>box.addEventListener('change',render));
+  byId('lit-filters-reset').addEventListener('click',()=>{
+    search.value='';edition.value=data.latest||defaultEdition;sort.value=accountState.user?'personal':'community';
+    feedbackBoxes.forEach(box=>box.checked=box.dataset.feedbackFilter!=='irrelevant');
+    setup();draft=new Set(journals);
+  });
   for(const [id,checked] of [['lit-marks-all',true],['lit-marks-clear',false]]){
     byId(id).addEventListener('click',()=>{feedbackBoxes.forEach(box=>box.checked=checked);render();});
   }
