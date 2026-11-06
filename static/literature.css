@@ -294,5 +294,7 @@
 
 .lit-account-actions{flex-wrap:wrap;justify-content:flex-end}
 
-#lit-filters-reset{align-self:end;min-height:36px;padding:8px 12px;border:1px solid #c7cdd6;border-radius:6px;background:#fff;color:var(--hmd-navy);font:600 12px Segoe UI,Arial,sans-serif;cursor:pointer}
+.literature-tools #lit-filters-reset{flex:none;width:auto;min-height:28px;height:28px;margin-left:auto;padding:3px 9px;white-space:nowrap;border:1px solid #c7cdd6;border-radius:6px;background:#fff;color:var(--hmd-navy);font:600 12px Segoe UI,Arial,sans-serif;cursor:pointer}
 #lit-filters-reset:hover{background:var(--hmd-light-gray)}
+
+@media(max-width:600px){.lit-mark-actions{flex:1;order:0}.literature-tools #lit-filters-reset{order:1}.lit-mark-options label{order:2}}

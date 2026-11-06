@@ -52,7 +52,7 @@ def rebuild_literature(root):
         el.getparent().remove(el)
     feedback_filters=html.fragment_fromstring('''<fieldset class="lit-mark-filters" aria-label="Filter by my marks"><div class="lit-mark-options"><div class="lit-mark-actions"><button type="button" id="lit-marks-all">All</button><button type="button" id="lit-marks-clear">Clear</button></div><label><input type="checkbox" data-feedback-filter="more" checked>Like</label><label><input type="checkbox" data-feedback-filter="useful" checked>Useful</label><label><input type="checkbox" data-feedback-filter="irrelevant">Not Relevant</label><label><input type="checkbox" data-feedback-filter="later" checked>Read Later</label><label><input type="checkbox" data-feedback-filter="unlabeled" checked>Unlabeled</label></div></fieldset>''')
     reset=html.Element('button',type='button',id='lit-filters-reset');reset.text='Reset filters'
-    main.xpath('.//div[@class="literature-tools"]')[0].append(reset)
+    feedback_filters.xpath('.//div[@class="lit-mark-options"]')[0].append(reset)
     main.xpath('.//div[@class="literature-tools"]')[0].append(feedback_filters)
     topline=main.xpath('.//div[@class="lit-intro-topline"]')[0]
     details.getparent().remove(details);topline.insert(1,details)
