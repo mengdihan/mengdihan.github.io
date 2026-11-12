@@ -168,7 +168,12 @@
   byId('lit-journals-apply').addEventListener('click',()=>{journals=new Set(draft);render();dialog.close();});
   for(const id of ['lit-journals-close','lit-journals-cancel'])byId(id).addEventListener('click',()=>dialog.close());
   search.addEventListener('input',render);sort.addEventListener('change',render);edition.addEventListener('change',setup);
-  feedbackBoxes.forEach(box=>box.addEventListener('change',render));
+  feedbackBoxes.forEach(box=>box.addEventListener('change',()=>{
+    if(box.dataset.feedbackFilter==='later'&&(box.checked||feedbackBoxes.some(other=>other!==box&&other.checked))){
+      feedbackBoxes.forEach(other=>other.checked=other===box);
+    }
+    render();
+  }));
   byId('lit-filters-reset').addEventListener('click',()=>{
     search.value='';edition.value=data.latest||defaultEdition;sort.value=accountState.user?'personal':'community';
     feedbackBoxes.forEach(box=>box.checked=box.dataset.feedbackFilter!=='irrelevant');

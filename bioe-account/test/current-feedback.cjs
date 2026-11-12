@@ -160,3 +160,15 @@ test('Reset restores search, latest edition, sorting, all sources, topics and de
  assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','later','unlabeled']);
  assert.equal(app.order().length,4);
 });
+
+
+test('Read Later switches a mixed filter to bookmarks only, including from checked defaults',async()=>{
+ const app=ui();await app.click('b','later');await app.click('c','more');
+ // A click on the initially checked filter toggles it off before change fires.
+ app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
+ assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['later']);
+ assert.deepEqual(app.order(),['b']);
+ app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');assert.deepEqual(app.order(),[]);
+ app.ids.get('mark-later').checked=true;await app.trigger('mark-later','change');assert.deepEqual(app.order(),['b']);
+ await app.trigger('lit-filters-reset','click');assert.equal(app.boxes.filter(b=>b.checked).length,4);
+});
