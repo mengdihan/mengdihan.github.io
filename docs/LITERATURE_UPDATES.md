@@ -1,3 +1,13 @@
+## 13 November 2026 delivery and coverage
+
+Publication target: mengdihan/mengdihan.github.io, master, https://hmd-lab.com/BioE_Radar/. This overrides historical repository/branch references below. Preserve all prior editions and current account/filter implementation.
+
+The edition adds 68 newly reviewed entries, including 19 preprints and dated/undated backfills. The live read-only Journal list was checked; Small remains excluded and the Nature Protocols retrieval URL was corrected locally. All 45 sources retain coverage records. Crossref online-pub/pub/created and Europe PMC discovery were run with a 21-day lookback and cursor pagination. Counts describe inspected unique metadata, not total publications or full-text reads. Publisher and level 1/2 all-content completeness remain unverified. The private Chinese report retains 945 pending level 1/2 metadata candidates separately; these are not delivered and must not enter the delivery ledger.
+
+Science official catalogue and Editor’s summary attribution checks remain incomplete; unknown signatures must not be interpreted as absent. No all-signature completeness claim is made. The Research Square visible Nature Portfolio filter was verified and ten consecutive pages / 100 records inspected, with seven relevant detail pages checked. Its catalogue total is not a weekly count. Preprints are not peer reviewed.
+
+Only update delivered.json after the new Pages deployment and official website are independently confirmed. No private reader feedback, IDs, full abstracts or profile information belong in this update.
+
 ## Current archive and mark controls — 6 November 2026
 
 Preserve Edition All: canonical DOI/article-ID deduplication with the latest-edition record preferred, all existing filters and stable feedback order, latest edition default, and “All editions” plus the full range. All/Clear controls only the four personal mark filters: All includes unmarked articles, Clear produces no results. Do not restore Reset filters, double-click exclusive selection, the removed mark heading or explanatory paragraph. Read Later stays private; current reactions reorder only on explicit filtering or refresh.

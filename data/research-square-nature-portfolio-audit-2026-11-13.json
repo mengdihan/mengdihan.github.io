@@ -1,0 +1,169 @@
+{
+  "checked_on": "2026-11-13",
+  "source": "https://www.researchsquare.com/browse",
+  "method": "Open Browse, select Nature Portfolio in Journals & Platforms, press Search; inspect card logos and paginate visibly. URL changed to the query string only after the visible UI action.",
+  "filter": "Nature Portfolio",
+  "filtered_catalogue_total_displayed": 5920,
+  "records_inspected": 100,
+  "scope": "Ten consecutive pages of latest filtered results, 5–12 November. 81 visible list records were dated 6–12 November; counts are not precise 03:30-window totals. Records below preserve the seven selected detail verifications; not a copy of every list card.",
+  "records": [
+    {
+      "title": "Photoacoustic imaging of human brain function through intact adult skulls",
+      "authors": [
+        "Lihong Wang",
+        "Yilin Luo",
+        "Rui Cao",
+        "Manxiu Cui",
+        "Karteekeya Sastry",
+        "Kay Jann",
+        "Yousuf Aborahama",
+        "Geng Ku",
+        "Jinhua Xu",
+        "Xiaofei Luo",
+        "Shuai Na",
+        "Samuel Davis",
+        "Konstantin Maslov",
+        "Yang Zhang",
+        "Danny Wang"
+      ],
+      "date": "2026-11-11",
+      "url": "https://www.researchsquare.com/article/rs-11296823/v1",
+      "doi": "10.21203/rs.3.rs-11296823/v1",
+      "platform": "nature-portfolio",
+      "content_read": "Official abstract; no SI",
+      "peer_reviewed": false
+    },
+    {
+      "title": "Continuous glucose monitoring earbuds for periodic metabolic sensing",
+      "authors": [
+        "Joseph Wang",
+        "Barak Sabbagh",
+        "Christian Gosti",
+        "Ellen V Stadler",
+        "Madeleine McSwain",
+        "Lauren Chiu",
+        "Muhammad Inam Khan",
+        "Qinyu Yu",
+        "Victor Perez",
+        "Tamoghna Saha",
+        "Gaoyuan Ji",
+        "Minjoon Park",
+        "Kavya Garg",
+        "Parth Bhagwat",
+        "Yi Fung Winsten Lam",
+        "Omeed Djassemi",
+        "Maria Reynoso",
+        "Fabiana Arduini"
+      ],
+      "date": "2026-11-10",
+      "url": "https://www.researchsquare.com/article/rs-11505206/v1",
+      "doi": "10.21203/rs.3.rs-11505206/v1",
+      "platform": "nature-portfolio",
+      "content_read": "Official abstract; no SI",
+      "peer_reviewed": false
+    },
+    {
+      "title": "A Wireless Microrobot for Deep Brain Navigation at the Human Head Scale",
+      "authors": [
+        "Tian Qiu",
+        "Meng Zhang",
+        "Jyothi Mariyanna",
+        "Moonkwang Jeong",
+        "Andre Sagerer",
+        "Jiyuan Tian",
+        "Yue Gao",
+        "Rudi Apolle",
+        "Haoying Wang",
+        "Ann-Sophia Müller",
+        "Liyuan Tan",
+        "Rayan Younis",
+        "Martin Wagner",
+        "Tirosh Mekler",
+        "Netanel Korin",
+        "Konstantin Morozov",
+        "Alexander Leshansky",
+        "Tareq Juratli"
+      ],
+      "date": "2026-11-08",
+      "url": "https://www.researchsquare.com/article/rs-11230753/v1",
+      "doi": "10.21203/rs.3.rs-11230753/v1",
+      "platform": "nature-portfolio",
+      "content_read": "Official abstract; no SI",
+      "peer_reviewed": false
+    },
+    {
+      "title": "Kilohertz electrical stimulation drives widespread neuronal activation and temporal interference imposes focal rhythmic modulation",
+      "authors": [
+        "Ken Berglund",
+        "Ryohei Yoshimoto",
+        "Matthew Stern",
+        "Thomas Eggers",
+        "Emma Acerbo",
+        "Nealen Laxpati",
+        "Claire-Anne Gutekunst"
+      ],
+      "date": "2026-11-11",
+      "url": "https://www.researchsquare.com/article/rs-11459867/v1",
+      "doi": "10.21203/rs.3.rs-11459867/v1",
+      "platform": "nature-portfolio",
+      "content_read": "Official abstract; no SI",
+      "peer_reviewed": false
+    },
+    {
+      "title": "Assessment of sensorimotor cortical beta oscillations from peripheral electromyography and force recordings",
+      "authors": [
+        "Christian Georgiev",
+        "Pierre Cabaraux",
+        "Nicolás Yanguma Muñoz",
+        "Daria Digileva",
+        "Scott Mongold",
+        "Vincent Wens",
+        "Armin Torbati",
+        "Lousin Moumdjian",
+        "Gilles Naeije",
+        "Xavier de Tiège",
+        "Mathieu Bourguignon"
+      ],
+      "date": "2026-11-09",
+      "url": "https://www.researchsquare.com/article/rs-11372464/v1",
+      "doi": "10.21203/rs.3.rs-11372464/v1",
+      "platform": "nature-portfolio",
+      "content_read": "Official abstract; no SI",
+      "peer_reviewed": false
+    },
+    {
+      "title": "An insect-scale quadruped robot with a mechanically coupled transmission for confined environments",
+      "authors": [
+        "Yide Liu",
+        "Rui Chen",
+        "Bian Gan",
+        "Bo Feng",
+        "Shaoxing Qu"
+      ],
+      "date": "2026-11-08",
+      "url": "https://www.researchsquare.com/article/rs-11571811/v1",
+      "doi": "10.21203/rs.3.rs-11571811/v1",
+      "platform": "nature-portfolio",
+      "content_read": "Official abstract; no SI",
+      "peer_reviewed": false
+    },
+    {
+      "title": "Bioprinted aquatic plant-inspired soft machines for underwater environmental sensing",
+      "authors": [
+        "Isabella Fiorello",
+        "Israel Kellersztein",
+        "Beatriz Arsuffi",
+        "Frederike Klimm",
+        "Barbara Mazzolai",
+        "Thomas Speck",
+        "Chiara Daraio"
+      ],
+      "date": "2026-11-05",
+      "url": "https://www.researchsquare.com/article/rs-11412743/v1",
+      "doi": "10.21203/rs.3.rs-11412743/v1",
+      "platform": "nature-portfolio",
+      "content_read": "Official abstract; no SI",
+      "peer_reviewed": false
+    }
+  ]
+}

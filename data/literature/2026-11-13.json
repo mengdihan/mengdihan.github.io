@@ -1,0 +1,4152 @@
+{
+  "id": "2026-11-13",
+  "start": "2026-11-06 03:30",
+  "end": "2026-11-13 03:30",
+  "updated": "2026-11-13",
+  "publishedAt": "2026-11-12T19:47:10.431209+00:00",
+  "note": "Newly reviewed deliveries and backfills; publication dates are retained or explicitly unverified. Coverage is partial: level 1/2 all-content review and Science editorial-summary attribution could not be completed. Counts represent inspected metadata rather than total publications or full-text reads. No private reader feedback was accessed.",
+  "articles": [
+    {
+      "doi": "10.1038/s41586-026-11324-7",
+      "title": "NRF2 is a mechanosensitive checkpoint for NLRP3 inflammasome activation",
+      "journal": "Nature",
+      "authors": [
+        "Daniel Okin",
+        "Joon H Choi",
+        "Chun Wang",
+        "Anh Cao",
+        "Daniel Fisch",
+        "Weiyi Ma",
+        "Katherine E Lindblad",
+        "Marta Valenti",
+        "Tristan Kooistra",
+        "Trong Nguyen",
+        "Lida P Hariri",
+        "Neha Chaudhary",
+        "Yun Chen Tien",
+        "Henrique Borges da Silva",
+        "Rachel S Knipe",
+        "Gabriel Mbalaviele",
+        "Jonathan C Kagan"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41586-026-11324-7",
+      "id": "10.1038/s41586-026-11324-7",
+      "date": "2026-11-11",
+      "relevance": 1,
+      "summary": "Extracellular-matrix stiffness controls whether phagocytes activate NLRP3 with one inflammatory signal. Physiological stiffness engages an NRF2–Panx1 pathway, helping reconcile cell-culture and in vivo responses. This mechanobiology result may inform tissue-matched experimental models; no sensing device is demonstrated.",
+      "topics": [
+        "Mechanobiology",
+        "Responsive materials"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0028-0836/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0028-0836/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0028-0836/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0028-0836+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:31:46.234460+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aeg2342",
+      "title": "Ultrasound neural interface enabling acute spinal cord monitoring and blood flow modulation",
+      "journal": "Science Advances",
+      "authors": [
+        "Max J Kerensky",
+        "Siddharth Krishnan",
+        "Ruixing Liang",
+        "Kelley M Kempski Leadingham",
+        "Victor M Quiroz",
+        "Joshua Punnoose",
+        "Constantin Smit",
+        "Denis Routkevitch",
+        "Avisha Kumar",
+        "A Daniel Davidar",
+        "Leonard Steger",
+        "Carly Weber-Levine",
+        "Kelly Jiang",
+        "Meghana Bhimreddy",
+        "Stuart J Bauer",
+        "Angelica F Lopez",
+        "Patrick Kramer",
+        "Kayla Robinson",
+        "Arjun K Menta",
+        "Abdul Karim Ghaith",
+        "Andrew M Hersh",
+        "Haley G Abramson",
+        "Ali Mohammadabadi",
+        "John N Theodore",
+        "Osamah M Zmily",
+        "Ritvik Jillala",
+        "Vikas Vattipally",
+        "David Kopala",
+        "Siavash S Barough",
+        "Mohammad Hossein Amini",
+        "Jonathan Maltz",
+        "Francisco Chavez",
+        "Kyle Morrison",
+        "Laura Roy",
+        "Ian Suk",
+        "Ryan P Lee",
+        "Betty Tyler",
+        "Mark Luciano",
+        "Nitish V Thakor",
+        "Joshua C Doloff",
+        "Nicholas Theodore",
+        "Amir Manbachi"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aeg2342",
+      "id": "10.1126/sciadv.aeg2342",
+      "date": "2026-11-04",
+      "relevance": 3,
+      "summary": "MUSIC creates a temporary epidural acoustic interface after spinal-cord decompression. Imaging, Doppler monitoring and blood-flow modulation were evaluated across bench, cadaver and porcine studies. The work directly connects postoperative local hemodynamic monitoring with a potential intervention interface; clinical efficacy remains untested.",
+      "topics": [
+        "Ultrasound",
+        "Implantable devices",
+        "Hemodynamics"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.893807+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aei1954",
+      "title": "A high robustness decoding technique for ultrasound modulated electroencephalogram",
+      "journal": "Science Advances",
+      "authors": [
+        "Xue Wang",
+        "Guowei Chen",
+        "Jia He",
+        "Pu Wang",
+        "Rongxu Guo",
+        "Shenjie Ji",
+        "Mingyu Li",
+        "Feng He",
+        "Yanqiu Zhang",
+        "Xiqi Jian",
+        "Hao Zhang",
+        "Minpeng Xu",
+        "Dong Ming"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aei1954",
+      "id": "10.1126/sciadv.aei1954",
+      "date": "2026-11-04",
+      "relevance": 2,
+      "summary": "A pulse-repetition-frequency-based decoder improves robustness of ultrasound-modulated EEG across coupling regimes. Validation includes simulation, phantoms and data-level coupling of visual-evoked signals from ten volunteers. A 0.79 mm encoding resolution is reported; these experiments do not establish a clinical noninvasive brain interface.",
+      "topics": [
+        "Signal reconstruction",
+        "Ultrasound",
+        "Neural interfaces"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.893830+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aei7948",
+      "title": "Human carotid plaque risk imaging using multiparametric photoacoustic and ultrasound fusion (hCAPRI)",
+      "journal": "Science Advances",
+      "authors": [
+        "Minsik Sung",
+        "Sunghun Nam",
+        "Sun Oh Kim",
+        "Jong-Il Park",
+        "Dong Young Jeong",
+        "Yujung Jung",
+        "Changyeop Lee",
+        "Moongyu Han",
+        "Hong-Ju Kim",
+        "Jun-Chang Jeong",
+        "Kwanju Song",
+        "Jeong Yoon Song",
+        "Jae Young Park",
+        "Hyeseon Lee",
+        "Bum Joon Kim",
+        "Byullee Park",
+        "Ung Kim",
+        "Chulhong Kim"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aei7948",
+      "id": "10.1126/sciadv.aei7948",
+      "date": "2026-11-04",
+      "relevance": 2,
+      "summary": "hCAPRI combines photoacoustic composition measurements with ultrasound plaque structure. The study examined 171 carotid arteries from 120 patients and compared 36 arteries with MRI. Reported high-risk classification sensitivity and specificity were 89% and 84%; prospective outcome prediction remains a separate question.",
+      "topics": [
+        "Ultrasound",
+        "Hemodynamics",
+        "Multimodal sensing"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.893836+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aeh1001",
+      "title": "Adaptive dual-programming magnetic soft robot with lifelike behavior",
+      "journal": "Science Advances",
+      "authors": [
+        "Yanchen Ye",
+        "Can Xu",
+        "Sen Wang",
+        "Weijia Li",
+        "RongYe Wu",
+        "Hao Wu",
+        "Neng Xia",
+        "TianYe Yang",
+        "Shuang Song",
+        "Li Zhang",
+        "Yue Dong",
+        "Bing Li"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aeh1001",
+      "id": "10.1126/sciadv.aeh1001",
+      "date": "2026-11-06",
+      "relevance": 2,
+      "summary": "Patterned magnetic skeletons and anisotropic hydrogels provide dual programming of soft-robot shape and function. Demonstrations include environment-dependent locomotion and region-selective delivery. A gastric-ulcer concept was explored with capsule endoscopy in a pig model; sensing and clinical treatment performance should not be inferred beyond those demonstrations.",
+      "topics": [
+        "Magnetic actuation",
+        "Soft robotics",
+        "Responsive materials"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.893986+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aef2310",
+      "title": "A fully hydrogel implantable patch for in situ ultrasonic monitoring of gastric leakage",
+      "journal": "Science Advances",
+      "authors": [
+        "Ye Tian",
+        "Na Li",
+        "Zhangqi Pan",
+        "Jiaxin Wang",
+        "Qiyun Hu",
+        "Zheng Dai",
+        "Xudong Xu",
+        "Yueying Yang",
+        "Sendong Zhang",
+        "Xinguo Lan",
+        "Qianyue Liu",
+        "Lejie Qin",
+        "Wei Wang",
+        "Xurui Liu",
+        "Zheng Wang",
+        "Hanchuan Tang",
+        "Jianfeng Zang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aef2310",
+      "id": "10.1126/sciadv.aef2310",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "A fully hydrogel patch converts pH-responsive material changes into an ultrasound-readable signature. Concentric air-cell arrays provide strong backscatter without a conventional electronic implant. Gastric-leak monitoring was demonstrated for up to seven days in rabbits, directly informing degradable biochemical-to-acoustic transduction.",
+      "topics": [
+        "Implantable devices",
+        "Ultrasound",
+        "Biochemical sensing",
+        "Biodegradable electronics"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.894028+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aei3615",
+      "title": "Electronic hair: Transforming hair into a scalable bioelectronic interface",
+      "journal": "Science Advances",
+      "authors": [
+        "Shweta Shweta",
+        "Malamati Giompliaki",
+        "Linta Sohail",
+        "Rémy Cornuéjols",
+        "Preston D Donaldson",
+        "Tobias Abrahamsson",
+        "Dina Kc",
+        "Maria Ntzouni",
+        "Sıla Yıldız Cengiz",
+        "Sofia Drakopoulou",
+        "Mary J Donahue",
+        "Maria Seitanidou",
+        "Zifang Zhao",
+        "Daniel T Simon",
+        "Magnus Berggren",
+        "Sarah Mclntyre",
+        "Robrecht Raedt",
+        "Xenofon Strakosas",
+        "George D Spyropoulos"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aei3615",
+      "id": "10.1126/sciadv.aei3615",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "Conductive polymer dyes turn hair into conformal mixed ionic–electronic interfaces. Coated bundles and individual strands support electrophysiological recording, while hair-based organic electrochemical transistors provide local amplification. This offers a scalable neural-interface route; long-term deployment is not established by the abstract.",
+      "topics": [
+        "Bioelectronics",
+        "Neural interfaces",
+        "Wearable sensing"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.894051+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aei5736",
+      "title": "Dynamic plasmonic imaging of electromechanically driven nano-oscillators for charge-resolved multiplex biosensing",
+      "journal": "Science Advances",
+      "authors": [
+        "Yunxiao Wang",
+        "Xiaoyin Liu",
+        "Jingyu Wu",
+        "Jinbiao Ma",
+        "Baiqi Cui",
+        "Guangzhong Ma",
+        "Jianxin Ma",
+        "Qingjun Liu",
+        "Di Wang",
+        "Fenni Zhang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aei5736",
+      "id": "10.1126/sciadv.aei5736",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "Electrically driven, surface-tethered nanoparticles translate binding-induced charge changes into oscillation amplitude. Plasmonic imaging tracks multiple size-encoded oscillators and reduces dependence on analyte mass. Demonstrations span roughly a 300-fold molecular-weight range and 24 patient-derived cell-supernatant samples, offering a biochemical-to-mechanical readout strategy rather than an implanted sensor.",
+      "topics": [
+        "Biochemical sensing",
+        "Mechanical transduction",
+        "Multiplexed sensing"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.894057+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aej2247",
+      "title": "Arbitrarily cuttable and ultrathin MXene structural colors for customizable and wearable multispectral information management",
+      "journal": "Science Advances",
+      "authors": [
+        "Chunxiao Wu",
+        "Huhu Cheng",
+        "Chuanxin Weng",
+        "Chen Luo",
+        "Qihua Liao",
+        "Kaixuan Zhu",
+        "Yajie Hu",
+        "Leilei Liang",
+        "Bin Wang",
+        "Yan Li",
+        "Liangti Qu"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aej2247",
+      "id": "10.1126/sciadv.aej2247",
+      "date": "2026-11-11",
+      "relevance": 1,
+      "summary": "Layer-by-layer spray assembly produces flexible MXene structural-color films approximately 22–154 nm thick. The authors report meter-scale processing and visible–infrared patterning that tolerates cutting and sewing. Manufacturing may transfer to wearable optical surfaces, although physiological sensing is not demonstrated.",
+      "topics": [
+        "Flexible electronics",
+        "Manufacturing"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.894064+00:00"
+    },
+    {
+      "doi": "10.1126/sciadv.aek2097",
+      "title": "Piezoelectrically actuated magnetic dipole twisting resonators enable miniaturized low-frequency antennas",
+      "journal": "Science Advances",
+      "authors": [
+        "Jianglei Chang",
+        "Bohan Li",
+        "Xiangyu Gao",
+        "Kexin Song",
+        "Yaojin Wang",
+        "Jie Jiao",
+        "Davresh Hasanyan",
+        "Shujun Zhang",
+        "Fei Li"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/sciadv.aek2097",
+      "id": "10.1126/sciadv.aek2097",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "Piezoelectric twisting resonators mechanically oscillate a magnetic dipole to radiate at low frequencies. Centimeter- and millimeter-scale antennas operate at 15.4 and 668 Hz, with reported radiation-efficiency gains of 49,000 and 5,000 over size-matched loops. Underwater links reached 115 m at milliwatt power, and an implantable-device demonstration increased range fourfold at equal power; comparisons are specific to the reported configurations.",
+      "topics": [
+        "Magnetomechanics",
+        "Wireless communication",
+        "Resonant sensors",
+        "Implantable devices"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2375-2548/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2375-2548+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:31.894072+00:00"
+    },
+    {
+      "doi": "10.1038/s41467-026-78804-2",
+      "title": "Insular motor and error encoding supports self-correcting intracranial brain-computer interface",
+      "journal": "Nature Communications",
+      "authors": [
+        "Paul Weger",
+        "Sophia Gimple",
+        "Maarten C. Ottenhoff",
+        "Maxime Verwoert",
+        "Lauren Ostrowski",
+        "Albert Colon",
+        "Louis Wagner",
+        "Johannes P. van Dijk",
+        "Yasin Temel",
+        "Pieter Kubben",
+        "Christian Herff"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41467-026-78804-2",
+      "id": "10.1038/s41467-026-78804-2",
+      "date": "2026-11-07",
+      "relevance": 2,
+      "summary": "Intracranial recordings identify insular activity related to interface errors and movement feedback. Frontoinsular signals separate error responses from compensatory motor activity more clearly than some centroparietal sites. The findings support integrating performance monitoring into neural control, with evidence limited to the studied epilepsy-patient recordings.",
+      "topics": [
+        "Neural interfaces",
+        "Signal reconstruction"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2041-1723/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2041-1723/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2041-1723/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:42.774912+00:00"
+    },
+    {
+      "doi": "10.1073/pnas.2609599123",
+      "title": "Dysregulation of mechanosensing signaling in monocytes of patients with systemic sclerosis is associated with skin inflammation",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "authors": [
+        "Vidyanath Chaudhary",
+        "Yong Du",
+        "Bikash Mishra",
+        "Marie Dominique Ah Kioon",
+        "Palak Ahuja",
+        "Lionel B Ivashkiv",
+        "Marie-Elise Truchetet",
+        "Robert F Spiera",
+        "Kimberly Lakin",
+        "Jessica K Gordon",
+        "Franck J Barrat"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1073/pnas.2609599123",
+      "id": "10.1073/pnas.2609599123",
+      "date": "2026-11-05",
+      "relevance": 1,
+      "summary": "Stiffness-matched hydrogels reveal SP1-dependent inflammatory activation of human monocytes. Patient-derived cells show exaggerated responses to fibrotic stiffness, whereas canonical YAP/TAZ and PIEZO1 mechanisms did not explain the findings. This highlights biological consequences of interface mechanics rather than a device result.",
+      "topics": [
+        "Mechanobiology",
+        "Implant interfaces"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0027-8424/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0027-8424/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0027-8424/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0027-8424+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:57.015885+00:00"
+    },
+    {
+      "doi": "10.1073/pnas.2622418123",
+      "title": "Wearable interstitial fluid sensing of time-resolved uric acid for early prediction of flare-associated pain in an induced mouse model",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "authors": [
+        "Dayeon Kim",
+        "Yeon-Mi Hong",
+        "Hayoung Song",
+        "Joonho Paek",
+        "Jihui Lee",
+        "Dongwook Lee",
+        "Min-Gyo Jeong",
+        "Jayoung Kim",
+        "Jang-Ung Park"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1073/pnas.2622418123",
+      "id": "10.1073/pnas.2622418123",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "A skin-attached insertion electrode measures interstitial uric acid with battery-free NFC readout. Time-resolved measurements in an induced mouse gout model reveal dynamics that differ from isolated metabolic or inflammatory conditions. Time-series features preceded peak pain, but performance depended on the event definition; human flare prediction is not established.",
+      "topics": [
+        "Wearable sensing",
+        "Biochemical sensing",
+        "Wireless power",
+        "Longitudinal monitoring"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0027-8424/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0027-8424/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0027-8424/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0027-8424+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:57.015982+00:00"
+    },
+    {
+      "doi": "10.1021/acsnano.6c08903",
+      "title": "Recombinant Humanized Collagen V-Engineered Implant Interfaces Drive in situ Low-Thrombogenic Vascular Repair via Selective Bioadhesion",
+      "journal": "ACS Nano",
+      "authors": [
+        "Yuan Feng",
+        "Tiantian Zheng",
+        "Rifang Luo",
+        "Min He",
+        "Xia Yang",
+        "Li Yang",
+        "Yunbing Wang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1021/acsnano.6c08903",
+      "id": "10.1021/acsnano.6c08903",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "Recombinant humanized collagen V coatings promote endothelial repair while reducing platelet adhesion. Mechanistic assays and rabbit stent models support selective bioadhesion and reduced thrombogenic responses. The coating concept may transfer to blood-contacting sensor interfaces, which were not tested here.",
+      "topics": [
+        "Implant interfaces",
+        "Hemodynamics"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:21.286437+00:00"
+    },
+    {
+      "doi": "10.1021/acsnano.6c13460",
+      "title": "Ultrasound-Responsive Electroactive Polyetheretherketone Scaffold Promotes Bioenergetic Bone Regeneration by Regulating Mitochondrial Permeability Transition Pores",
+      "journal": "ACS Nano",
+      "authors": [
+        "Meihua Zhang",
+        "Lingzhu Yu",
+        "Yangrui Chen",
+        "Mengmeng Ming",
+        "Bin Luo",
+        "Yao Wu"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1021/acsnano.6c13460",
+      "id": "10.1021/acsnano.6c13460",
+      "date": "2026-11-12",
+      "relevance": 1,
+      "summary": "Ultrasound-activated MXene–barium-titanate heterojunctions on PEEK scaffolds provide electroactive stimulation. Cell and rat experiments connect mitochondrial-pore regulation with osteogenic recovery under senescence-related conditions. This is an adjacent wireless-stimulation material strategy, with no implantable sensing demonstration.",
+      "topics": [
+        "Ultrasound",
+        "Wireless stimulation",
+        "Responsive materials"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:21.286517+00:00"
+    },
+    {
+      "doi": "10.1002/adma.75657",
+      "title": "Engineering High‐Performance Flexible Electronics Through Scalable Manufacturing: Interplay of Materials, Processing, and Morphology",
+      "journal": "Advanced Materials",
+      "authors": [
+        "Boyue Gao",
+        "Yuzhu Li",
+        "Yue Wang",
+        "Zhitao Zhang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adma.75657",
+      "id": "10.1002/adma.75657",
+      "date": "2026-11-06",
+      "relevance": 2,
+      "summary": "This review connects material assembly, processing and morphology with scalable planar and fiber electronics. It emphasizes preserving performance, yield and reproducibility during manufacturing scale-up. The synthesis is useful for translating flexible sensors beyond laboratory prototypes; it is not a new production benchmark.",
+      "topics": [
+        "Flexible electronics",
+        "Manufacturing"
+      ],
+      "type": "Review",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0935-9648/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0935-9648/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0935-9648/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0935-9648+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:22.004257+00:00"
+    },
+    {
+      "doi": "10.1016/j.bios.2026.119394",
+      "title": "All-plastic-fiber D-shaped functionalized biosensor through ROI-camera analysis: towards IoT-based DIY saliva analysis",
+      "journal": "Biosensors and Bioelectronics",
+      "authors": [
+        "Aidana Bissen",
+        "Akkumis Sarsenova",
+        "Mustafa Darkhanuly",
+        "Zhannur Aiip",
+        "Artur Tagirov",
+        "Christabel K L Tan",
+        "Yaping Dan",
+        "Rui Min",
+        "Aliya Bekmurzayeva",
+        "Daniele Tosi"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1016/j.bios.2026.119394",
+      "id": "10.1016/j.bios.2026.119394",
+      "date": "2026-11-05",
+      "relevance": 2,
+      "summary": "A polished D-shaped plastic fiber couples a phone flashlight to camera-based intensity readout. Antibody-functionalized fibers detected IL-8 in artificial and spiked healthy saliva. The reported saliva detection-limit estimate was 219 aM, but clinical diagnostic validation and broader calibration robustness remain to be established.",
+      "topics": [
+        "Optical sensing",
+        "Portable instrumentation"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0956-5663/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0956-5663+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:44.488319+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79473",
+      "title": "Biodegradable Conductors for Implantable and Wearable Transient Bioelectronics",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Yicheng Zhu",
+        "Yijun Liu",
+        "Naoji Matsuhisa"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79473",
+      "id": "10.1002/adfm.79473",
+      "date": "2026-11-06",
+      "relevance": 3,
+      "summary": "This review surveys biodegradable conductors, their degradation mechanisms and integration requirements. It covers sensing, stimulation, energy devices and drug delivery in transient systems. The main value is a materials framework for temporary implants; application-specific lifetime and compatibility still require validation.",
+      "topics": [
+        "Biodegradable electronics",
+        "Implantable devices"
+      ],
+      "type": "Review",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875275+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79552",
+      "title": "Stretchable Antimicrobial Nanomesh Antenna for Robust Epidermal Millimeter‐Wave Wireless Communications",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Buyun Yu",
+        "Hai Lin Wang",
+        "Shuxu Wang",
+        "Jianbin Deng",
+        "Masahito Takakuwa",
+        "Chika Okuda",
+        "Hongting Chen",
+        "Haoyu Ma",
+        "Xiaoping Liang",
+        "Ruiliu Wang",
+        "Chao Zhang",
+        "Sunghoon Lee",
+        "Fu‐Gen Wu",
+        "Hui Feng Ma",
+        "Takao Someya",
+        "Tomoyuki Yokota"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79552",
+      "id": "10.1002/adfm.79552",
+      "date": "2026-11-07",
+      "relevance": 3,
+      "summary": "An antimicrobial metal nanomesh combines low sheet resistance with micrometer-scale patterning for epidermal millimeter-wave antennas. A stretchable array achieved 6.8 dBi realized gain at 24 GHz, with electrical stability after 1,000 deformation cycles. This supports on-skin communications, while long-term clinical wear remains outside the reviewed evidence.",
+      "topics": [
+        "Wireless communication",
+        "Wearable sensing",
+        "Flexible electronics"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875299+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79517",
+      "title": "Wireless Electrical Stimulation via Piezoelectric Nanogenerator for Parkinson's Disease Therapy Through Activating Calcium Channels and Mitigating Oxidative Damage",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Xueyao Li",
+        "Jiahui Fan",
+        "Xinyue Shao",
+        "Xiaoling Zhao",
+        "Yuling Li",
+        "Hailong An",
+        "Jinping Wang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79517",
+      "id": "10.1002/adfm.79517",
+      "date": "2026-11-07",
+      "relevance": 2,
+      "summary": "A brain-targeted piezoelectric nanogenerator couples ultrasound-driven electrical output with hydrogen generation. Mouse Parkinsonian-model results link the treatment to calcium-channel activity and reduced oxidative damage. The approach informs remotely powered stimulation materials, not demonstrated human therapy.",
+      "topics": [
+        "Ultrasound",
+        "Wireless stimulation"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875322+00:00"
+    },
+    {
+      "doi": "10.1002/adhm.71956",
+      "title": "Pagoda‐Inspired Microneedles for Multiphase Coverage Wound Healing",
+      "journal": "Advanced Healthcare Materials",
+      "authors": [
+        "Lu Fan",
+        "Li Wang",
+        "Wenzhao Li",
+        "Danna Liang",
+        "Hong Chen",
+        "Chenjie Yu",
+        "Yuanjin Zhao"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adhm.71956",
+      "id": "10.1002/adhm.71956",
+      "date": "2026-11-08",
+      "relevance": 1,
+      "summary": "Layered pagoda-like microneedles sequence hemostatic, antimicrobial and regenerative actions. Quaternized chitosan, antimicrobial peptides and VEGF address different phases of wound repair in animal experiments. The multilayer release architecture may transfer to responsive devices, but it is not a sensing study.",
+      "topics": [
+        "Microneedles",
+        "Responsive materials"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2192-2640/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2192-2640/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2192-2640/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2192-2640+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:20.673444+00:00"
+    },
+    {
+      "doi": "10.1109/tbme.2026.3657968",
+      "title": "Transnasal Implants in the Nasal Cavity and Sphenoid Sinus for Minimally Invasive Deep Brain Stimulation: Measurement of Electric Field in Cadavers",
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "authors": [
+        "Mats Forssell",
+        "Yuxin Guo",
+        "Dorian M Kusyk",
+        "Boyle Cheng",
+        "Alexander C Whiting",
+        "Eric W Wang",
+        "Pulkit Grover"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1109/tbme.2026.3657968",
+      "id": "10.1109/tbme.2026.3657968",
+      "date": null,
+      "relevance": 2,
+      "summary": "A compact transnasal stimulator targets the sphenoid sinus and inferior skull base. Cadaver experiments measured deep-brain electric fields above 10 V/m, and the design supports battery or inductive power. These measurements establish field delivery, not neuronal efficacy or safety in living subjects.",
+      "topics": [
+        "Implantable devices",
+        "Wireless power",
+        "Neural interfaces"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0018-9294/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0018-9294+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:37.769706+00:00",
+      "dateLabel": "Publication date unverified",
+      "reportedDateContext": "2026-11"
+    },
+    {
+      "doi": "10.1109/tbme.2026.3660806",
+      "title": "A Two-Stage Algorithm to Detect Electrographically Focal Seizures Using a Wearable Single-Channel EEG Sensor",
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "authors": [
+        "Shini Renjith",
+        "Karthik Gopalakrishnan",
+        "Tobias Loddenkemper",
+        "Daniel Friedman",
+        "Mark Spitz",
+        "Mitchell A Frankel",
+        "Mark J Lehmkuhle",
+        "V John Mathews"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1109/tbme.2026.3660806",
+      "id": "10.1109/tbme.2026.3660806",
+      "date": null,
+      "relevance": 2,
+      "summary": "A two-stage model processes wearable single-channel EEG to reduce false alerts. In multicenter recordings, an example configuration increased sensitivity from 61% to 75% while reducing false alerts from 3.3 to 2.4 per hour. The authors frame it as a step toward longer-duration monitoring rather than a finished clinical alarm system.",
+      "topics": [
+        "Wearable sensing",
+        "Signal reconstruction",
+        "Longitudinal monitoring"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0018-9294/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0018-9294+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:37.769714+00:00",
+      "dateLabel": "Publication date unverified",
+      "reportedDateContext": "2026-11"
+    },
+    {
+      "doi": "10.1109/tbme.2026.3752549",
+      "title": "A 2-DoF Wearable Robot for Measuring Coupled Wrist Stiffness in Humans",
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "authors": [
+        "Giorgia Giovannetti",
+        "Alessia Noccaro",
+        "Nevio Luigi Tagliamonte",
+        "Domenico Formica"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1109/tbme.2026.3752549",
+      "id": "10.1109/tbme.2026.3752549",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "PDMeter2 is a portable two-degree-of-freedom wrist robot measuring coupled stiffness from controlled perturbations. Embedded current-based torque estimates were compared with a six-axis reference sensor, with validation in 14 unimpaired participants. It provides an engineering route to mechanical biomarkers; disease diagnosis and home use require further studies.",
+      "topics": [
+        "Mechanical sensing",
+        "Wearable sensing",
+        "Robotics"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0018-9294/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0018-9294+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:37.769752+00:00"
+    },
+    {
+      "doi": "10.1021/acsnano.6c14214",
+      "title": "Decoupling Conductivity and Interfacial State in Pristine-Like Carbon Nanotube Coatings Reveals Their Distinct Contributions to Neuronal Function",
+      "journal": "ACS Nano",
+      "authors": [
+        "Alice Sartini",
+        "Antonella Iaia",
+        "Stefano Sartini",
+        "Davide Lattanzi",
+        "Alessia Rinaldi",
+        "Concetta Nobile",
+        "Lillo Raia",
+        "Francesco Ferrara",
+        "Rossana Rauti",
+        "Antonio Turco"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1021/acsnano.6c14214",
+      "id": "10.1021/acsnano.6c14214",
+      "date": "2026-11-11",
+      "relevance": 2,
+      "summary": "Pristine-like CNT coatings separate changes in network transport from interfacial wettability. Spinal neuron–glia cultures showed activity more consistently associated with initial surface state than CNT length-dependent conductivity. This supports interface-controlled neural-electrode design while remaining an in vitro result.",
+      "topics": [
+        "Neural interfaces",
+        "Implant interfaces"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:21.286501+00:00"
+    },
+    {
+      "doi": "10.1021/acsnano.6c16644",
+      "title": "Silencing MSR1 in Macrophages Attenuates the Cochlear Foreign Body Response and Preserves Electrode–Neural Interface",
+      "journal": "ACS Nano",
+      "authors": [
+        "Anning Chen",
+        "Yunyou You",
+        "Jie Yang",
+        "Ying Zhang",
+        "Jing Pan",
+        "Yongdong Lin",
+        "Andrej Kral",
+        "Jie Tang",
+        "Qing Peng",
+        "Hongzheng Zhang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1021/acsnano.6c16644",
+      "id": "10.1021/acsnano.6c16644",
+      "date": "2026-11-12",
+      "relevance": 2,
+      "summary": "Targeted extracellular vesicles deliver siRNA against macrophage MSR1 after cochlear implantation. Rat experiments report reduced fibrosis and preservation of neural and myelin structures. This may inform foreign-body mitigation at implanted electrodes; translation to other implant sites remains hypothetical.",
+      "topics": [
+        "Implant interfaces",
+        "Neural interfaces",
+        "Biocompatibility"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1936-0851/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:21.286520+00:00"
+    },
+    {
+      "doi": "10.1002/adma.75664",
+      "title": "Pd Single‐Atom Engineered Janus BiOCl/MXene Heterostructure for Printed Self‐Decoupled Temperature‐Humidity Dual‐Mode Sensors",
+      "journal": "Advanced Materials",
+      "authors": [
+        "Hao-Wen Zhang",
+        "Yan Chen",
+        "Xiang Xu",
+        "Lin-Xue Zhang",
+        "Wei Liu",
+        "Cheng-Rong Liao",
+        "Lin-Ze Wu",
+        "Zhe-Sheng Feng",
+        "Zong-Kai Yan",
+        "Yan Wang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adma.75664",
+      "id": "10.1002/adma.75664",
+      "date": "2026-11-09",
+      "relevance": 3,
+      "summary": "A printed Janus BiOCl/MXene structure separates humidity-driven ionic transport from temperature-driven electronic transport. The authors report rapid responses and durability through 5,000 test cycles, alongside a wound-management demonstration. The orthogonal material pathways directly inform multimodal decoupling, with broader clinical performance still unverified.",
+      "topics": [
+        "Multimodal sensing",
+        "Flexible electronics",
+        "Signal decoupling"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0935-9648/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0935-9648/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0935-9648/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0935-9648+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:22.004267+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79533",
+      "title": "Skin‐Matched Ferroelectric Triboelectric Interfaces for Self‐Powered Human‐Machine Interactions Under Ultralow Force",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Jihun Son",
+        "Minwoo Song",
+        "Won Jae Kim",
+        "Jaeha Park",
+        "Minjin Kim",
+        "Gui Won Hwang",
+        "Gyun Ro Kang",
+        "Changrok Park",
+        "Junchul Bae",
+        "Kayeon Kang",
+        "Changhyun Pang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79533",
+      "id": "10.1002/adfm.79533",
+      "date": "2026-11-06",
+      "relevance": 3,
+      "summary": "A porous ferroelectric triboelectric interface matches soft skin mechanics under very small forces. The framework has a Young’s modulus below 20 kPa and reported power density near 140 mW/m² below 0.2 N preload. Integrated adhesion and stretchable electrodes support motion sensing, with output dependent on the stated loading conditions.",
+      "topics": [
+        "Wearable sensing",
+        "Mechanical sensing",
+        "Energy harvesting"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875281+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79255",
+      "title": "A Nonlinear Organic Low‐Frequency Sound Sensor Based on Electrochemical Coupling in a Solidified Gel Membrane",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Maarten Mittmann",
+        "Carsten Habenicht",
+        "Andreas Hofacker",
+        "Richard Kantelberg",
+        "Stefan Jacob",
+        "Karl Leo",
+        "Hans Kleemann"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79255",
+      "id": "10.1002/adfm.79255",
+      "date": "2026-11-06",
+      "relevance": 2,
+      "summary": "Conductive-polymer fibers in a solidified gel membrane form a three-terminal organic electrochemical acoustic sensor. Gating introduces nonlinear response for low-frequency sound and software reservoir classification of spoken digits. Missing mathematical values in the retrieved abstract prevent reliable quotation of bandwidth and power.",
+      "topics": [
+        "Mechanical transduction",
+        "Bioelectronics",
+        "Signal processing"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875288+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79477",
+      "title": "Lanthanide MOF‐Perovskite Quantum‐Cutting Circularly Polarized Emitters for Vital Sensing and AI‐Assisted Emotion Recognition",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Shangwei Zhou",
+        "Yang Chen",
+        "Pengjia Qi",
+        "Renhuan Song",
+        "Ruixin Song",
+        "Enhui Wang",
+        "Depeng He",
+        "Zhuan Zheng",
+        "Tingting Zhou",
+        "Donglei Zhou"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79477",
+      "id": "10.1002/adfm.79477",
+      "date": "2026-11-07",
+      "relevance": 2,
+      "summary": "Chiral lanthanide-MOF/perovskite emitters provide red and near-infrared polarized output for optical biosensing. A portable blood-oxygen demonstration reports a 15 s response and error below 1.5%. The emotion-recognition extension should be interpreted as a study-specific demonstration, not a validated clinical inference.",
+      "topics": [
+        "Optical sensing",
+        "Wearable sensing"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875309+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79572",
+      "title": "A Single‐Channel Humidity‐Pressure Dual‐Modal Decoupling Sensor for Assistive Geriatric Rehabilitation",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Xingfeng Zhao",
+        "Yangyang Pei",
+        "Bolin Kang",
+        "Maomao He",
+        "Yumeng Xue",
+        "Ting Liu",
+        "Jiangli Cai",
+        "Bin Liu",
+        "Huasheng Tian",
+        "Lili Sun",
+        "Linghai Xie",
+        "Wei Huang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79572",
+      "id": "10.1002/adfm.79572",
+      "date": "2026-11-10",
+      "relevance": 3,
+      "summary": "A sandwich sensor separates humidity and pressure information within one channel. Reported performance includes a 0.58–392 kPa pressure range, over 50,000 mechanical cycles and a 200 ms humidity response. Respiratory-state classification reached 98.9% in the reported dataset; independent clinical validation is not established.",
+      "topics": [
+        "Signal decoupling",
+        "Mechanical sensing",
+        "Wearable sensing"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875341+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.78283",
+      "title": "Hydrogel‐Based Optical Fiber: Sensing Mechanism, Biomedical Applications, and Perspectives",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Yani Zhang",
+        "Zhe Guang",
+        "Jiali Yin",
+        "Yun Xia Zhang",
+        "Shao Jie Li",
+        "Bo Guo",
+        "Yong Mei Chen",
+        "Xueni Zhao",
+        "Jie Hu",
+        "Liyang Shao"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.78283",
+      "id": "10.1002/adfm.78283",
+      "date": "2026-11-10",
+      "relevance": 3,
+      "summary": "This review links hydrogel-fiber fabrication to optical modulation and biochemical sensing. Applications include glucose, dopamine, pH and other analytes, with tissue-compatible mechanics as a motivation. Sterilization, lifetime and multimodal integration remain key engineering constraints rather than solved capabilities.",
+      "topics": [
+        "Optical sensing",
+        "Biochemical sensing",
+        "Implantable devices"
+      ],
+      "type": "Review",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875366+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79329",
+      "title": "Mechanical Strain Tunes Proton Chemistry at Oxide–Water Interfaces",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Zheng Yu",
+        "Chunyi Zhang",
+        "Roberto Car",
+        "Annabella Selloni"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79329",
+      "id": "10.1002/adfm.79329",
+      "date": "2026-11-10",
+      "relevance": 2,
+      "summary": "Atomistic simulations show that biaxial strain changes proton chemistry at an oxide–water interface. Tension shifts molecular adsorption toward dissociation and changes interfacial stress. This provides a mechanochemical transduction hypothesis, not experimental validation of a biochemical sensor.",
+      "topics": [
+        "Mechanical transduction",
+        "Responsive materials"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875374+00:00"
+    },
+    {
+      "doi": "10.1002/adfm.79591",
+      "title": "Multifunctional Photochromic Piezoionic Eutectogels Through Interfacial Nanoparticle Engineering",
+      "journal": "Advanced Functional Materials",
+      "authors": [
+        "Saúl Carrasco‐Saavedra",
+        "Alister Urain",
+        "Nerea Casado",
+        "Ilaria Abdel Aziz",
+        "Naroa Lopez‐Larrea",
+        "Domingo Rangel‐Miranda",
+        "Gerardo A. Fonseca‐Hernández",
+        "Nicolas Tanguy",
+        "David Mecerreyes",
+        "Josué D. Mota‐Morales"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1002/adfm.79591",
+      "id": "10.1002/adfm.79591",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "Photochromic WO3 nanoparticles tune ionic transport in printable eutectogels. Pressure-driven ionic output changes with optical activation while bulk elastic properties are retained. The reported voltage/current outputs support self-powered strain-sensing concepts; long-term wearable reliability was not established in the abstract.",
+      "topics": [
+        "Mechanical transduction",
+        "Responsive materials",
+        "Soft robotics"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1616-301X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:05.875391+00:00"
+    },
+    {
+      "doi": "10.1126/scitranslmed.aec1215",
+      "title": "Sleep-like slow waves during wakefulness are associated with hallucinations and poorer cognition in Parkinson’s disease",
+      "journal": "Science Translational Medicine",
+      "authors": [
+        "Fosco Bernasconi",
+        "Thomas Andrillon",
+        "Juan Carlos Farah",
+        "Isabelle Arnulf",
+        "Sophie Schwartz",
+        "Jevita Potheegadoo",
+        "Saul Martínez-Horta",
+        "Javier Pagonabarraga",
+        "Jaime Kulisevsky",
+        "Olaf Blanke"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/scitranslmed.aec1215",
+      "id": "10.1126/scitranslmed.aec1215",
+      "date": "2026-11-11",
+      "relevance": 1,
+      "summary": "Awake EEG slow waves were examined in 84 nondemented Parkinsonian patients and 30 healthy older adults. Greater slow-wave prominence was associated with hallucination traits and poorer cognition. This suggests a longitudinal physiological marker to investigate, without proving causality or a validated wearable diagnostic.",
+      "topics": [
+        "Longitudinal monitoring",
+        "Neural interfaces"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/1946-6234/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/1946-6234/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A1946-6234+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:31:51.440684+00:00"
+    },
+    {
+      "doi": "10.1038/s41928-026-01743-9",
+      "title": "A smart display woven on your sleeve",
+      "journal": "Nature Electronics",
+      "authors": [
+        "Huang, Yan"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41928-026-01743-9",
+      "id": "10.1038/s41928-026-01743-9",
+      "date": "2026-11-12",
+      "relevance": 2,
+      "summary": "This research highlight describes a fiber-based garment interface with integrated LEDs, touch electrodes and peripheral sensors. The cited sleeve demonstration uses a 96 × 54-pixel display at 30 frames per second. It summarizes another study rather than reporting a new independent experiment.",
+      "topics": [
+        "Flexible electronics",
+        "Human–machine interfaces"
+      ],
+      "type": "Research highlight",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2520-1131/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2520-1131/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2520-1131/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.nature.com/articles/s41928-026-01743-9"
+      ],
+      "firstSeenAt": "2026-11-12T19:35:41.377858+00:00"
+    },
+    {
+      "doi": "10.1038/s41746-026-03425-4",
+      "title": "Wrist photoplethysmography encodes dietary information",
+      "journal": "npj Digital Medicine",
+      "authors": [
+        "Verrier, Kyle",
+        "Nazaret, Achille",
+        "Futoma, Joseph",
+        "Miller, Andrew C.",
+        "Sapiro, Guillermo"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41746-026-03425-4",
+      "id": "10.1038/s41746-026-03425-4",
+      "date": "2026-11-07",
+      "relevance": 3,
+      "summary": "A model aligns wrist PPG with descriptions of 1.1 million meals. Near-meal PPG adds dietary information beyond individual traits and improves AUC by 11% for the reported caloric-intake proxy and satiety tasks. The study supports complementary physiological logging, not direct measurement of meal composition.",
+      "topics": [
+        "Wearable sensing",
+        "Longitudinal monitoring",
+        "Digital health"
+      ],
+      "type": "Brief communication",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.nature.com/articles/s41746-026-03425-4"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:53.765685+00:00"
+    },
+    {
+      "doi": "10.1038/s41467-026-79045-z",
+      "title": "Soft robotic and computational models of left atrial hemodynamics in sinus rhythm and atrial fibrillation",
+      "journal": "Nature Communications",
+      "authors": [
+        "Singh, Manisha",
+        "Mendez, Keegan",
+        "Ayers, Brian",
+        "Wang, Sophie X.",
+        "Takahashi, Atsushi",
+        "Teodorescu, Debbie L.",
+        "Mill, Jordi",
+        "Albors, Carlos",
+        "Escher, Andreas",
+        "Fan, Yiling",
+        "Ozturk, Caglar",
+        "Sheridan, Eve",
+        "Rutherford, Emma",
+        "Camara, Oscar",
+        "Chakravarty, Tarun",
+        "Roche, Ellen T."
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41467-026-79045-z",
+      "id": "10.1038/s41467-026-79045-z",
+      "date": "2026-11-07",
+      "relevance": 2,
+      "summary": "A patient-specific soft robotic simulator is paired with a lumped-parameter model of left atrial function. Wall motion and hemodynamics were compared with human imaging and porcine evidence. The platform may support controlled sensor and device testing; patient-outcome benefit is not demonstrated.",
+      "topics": [
+        "Hemodynamics",
+        "Soft robotics",
+        "Experimental methods"
+      ],
+      "type": "Research article",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2041-1723/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2041-1723/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2041-1723/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.nature.com/articles/s41467-026-79045-z"
+      ],
+      "firstSeenAt": "2026-11-12T19:32:42.774908+00:00"
+    },
+    {
+      "doi": "10.1038/s42256-026-01335-4",
+      "title": "Tensegrity continuum robots enable task-adaptive morphologies for cooperative behaviours",
+      "journal": "Nature Machine Intelligence",
+      "authors": [
+        "Saikot, Mahmud Hasan",
+        "Spiegel, Sydney",
+        "Kariyawasam, Sudheera Akalanka",
+        "Stefka, Andrew",
+        "Chrisler, Josh",
+        "Zhao, Jianguo"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s42256-026-01335-4",
+      "id": "10.1038/s42256-026-01335-4",
+      "date": "2026-11-11",
+      "relevance": 2,
+      "summary": "Compliant tensegrity modules use claw connections to assemble chains, loops and branches. Individual and collective robots perform manipulation and locomotion in varied environments. The modular mechanics may inform reconfigurable systems, without a demonstrated biomedical sensing application.",
+      "topics": [
+        "Soft robotics",
+        "Mechanical design"
+      ],
+      "type": "Research article",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2522-5839/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2522-5839/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2522-5839/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.nature.com/articles/s42256-026-01335-4"
+      ],
+      "firstSeenAt": "2026-11-12T19:35:25.904372+00:00"
+    },
+    {
+      "doi": "10.1038/s44287-026-00345-z",
+      "title": "A unified view of system identification in the learning era",
+      "journal": "Nature Reviews Electrical Engineering",
+      "authors": [
+        "Pillonetto, Gianluigi",
+        "Chen, Tianshi",
+        "Ljung, Lennart"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s44287-026-00345-z",
+      "id": "10.1038/s44287-026-00345-z",
+      "date": "2026-11-10",
+      "relevance": 2,
+      "summary": "This review connects classical system identification with kernel methods and deep dynamical models. It emphasizes finite noisy data, model-order selection, generalization and uncertainty. The framework is relevant to sensor inverse problems and reconstruction, without establishing performance for any specific implant.",
+      "topics": [
+        "Inverse problems",
+        "Signal reconstruction"
+      ],
+      "type": "Review",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2948-1201/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2948-1201/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2948-1201/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.nature.com/articles/s44287-026-00345-z"
+      ],
+      "firstSeenAt": "2026-11-12T19:36:28.960499+00:00"
+    },
+    {
+      "doi": "10.1038/s44222-026-00512-9",
+      "title": "Open-source hardware for biomanufacturing",
+      "journal": "Nature Reviews Bioengineering",
+      "authors": [
+        "Dikyol, Caner",
+        "Hocevar, Daniel",
+        "Radisic, Milica",
+        "Zhao, Yimu",
+        "Yakavets, Ilya"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s44222-026-00512-9",
+      "id": "10.1038/s44222-026-00512-9",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "The accessible briefing describes a curated atlas of open-source biomanufacturing hardware. Standardized cost, components and performance records address weak documentation and inconsistent validation. Only the public preview was read, so no detailed hardware comparison is asserted.",
+      "topics": [
+        "Manufacturing",
+        "Experimental methods"
+      ],
+      "type": "Research briefing",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2731-6092/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2731-6092/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2731-6092/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.nature.com/articles/s44222-026-00512-9"
+      ],
+      "firstSeenAt": "2026-11-12T19:36:20.799549+00:00"
+    },
+    {
+      "doi": "10.1038/s41578-026-00986-4",
+      "title": "Bioprinting, ten years on: from shape to function",
+      "journal": "Nature Reviews Materials",
+      "authors": [
+        "Jang, Jinah"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41578-026-00986-4",
+      "id": "10.1038/s41578-026-00986-4",
+      "date": "2026-11-10",
+      "relevance": 1,
+      "summary": "The accessible commentary argues that bioprinting should be judged by function rather than shape alone. It links computational design, printing hardware and instructive bioinks as a coupled process. This offers an adjacent evaluation principle for engineered tissue models; only the public preview was reviewed.",
+      "topics": [
+        "Tissue engineering",
+        "Manufacturing"
+      ],
+      "type": "Commentary",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2058-8437/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2058-8437/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2058-8437/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.nature.com/articles/s41578-026-00986-4"
+      ],
+      "firstSeenAt": "2026-11-12T19:36:54.075731+00:00"
+    },
+    {
+      "doi": "10.1038/s41551-026-01784-7",
+      "title": "Closing the loop on blood flow control in spinal cord injury",
+      "journal": "Nature Biomedical Engineering",
+      "authors": [],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.1038/s41551-026-01784-7",
+      "id": "10.1038/s41551-026-01784-7",
+      "date": "2026-10-29",
+      "relevance": 3,
+      "summary": "This briefing summarizes ultrasound-guided feedback control of norepinephrine infusion after spinal injury. The preview describes stabilization of local perfusion and preservation of neurological function in animals. It is a summary of the linked original study, not a separate efficacy experiment.",
+      "topics": [
+        "Hemodynamics",
+        "Closed-loop systems",
+        "Ultrasound"
+      ],
+      "type": "Research briefing",
+      "readingBasis": "Official abstract or publicly readable article preview",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2157-846X/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2157-846X/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2157-846X+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+        "https://www.nature.com/articles/s41551-026-01784-7"
+      ],
+      "firstSeenAt": "2026-11-12T19:35:10.302953+00:00"
+    },
+    {
+      "doi": "10.1038/s41746-026-03424-5",
+      "title": "Evaluation of PainWaive: a consumer-grade EEG headset for remote EEG monitoring and neurofeedback research in chronic pain",
+      "journal": "npj Digital Medicine",
+      "authors": [
+        "Nahian S Chowdhury",
+        "Joshua Rawsthorne",
+        "Negin Hesam-Shariati",
+        "Yann Quidé",
+        "Lara Alexander",
+        "Ekaterina Ermolenko",
+        "Angus McIntyre",
+        "Sebastian Restrepo",
+        "Kevin Chen",
+        "Chin-Teng Lin",
+        "Toby Newton-John",
+        "James W Middleton",
+        "Ashley Craig",
+        "Mark P Jensen",
+        "James H McAuley",
+        "Sylvia M Gustin"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41746-026-03424-5",
+      "id": "10.1038/s41746-026-03424-5",
+      "date": "2026-11-06",
+      "relevance": 2,
+      "summary": "PainWaive is a two-channel headset evaluated against research EEG and during home neurofeedback sessions. Eighty participants and 160 home sessions support repeatability of several central spectral measures. Weaker cross-device agreement for beta and theta cautions against treating consumer and research systems as numerically interchangeable.",
+      "topics": [
+        "Wearable sensing",
+        "Neural interfaces",
+        "Reliability"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2398-6352+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:53.765683+00:00"
+    },
+    {
+      "doi": "10.1038/s41746-026-03450-3",
+      "title": "MambaSleepCVD for prediction of long term cardiovascular outcomes from polysomnography",
+      "journal": "npj Digital Medicine",
+      "authors": [
+        "Alessia Calzoni",
+        "Alvise Dei Rossi",
+        "Giuliana Monachino",
+        "Beatrice Zanchi",
+        "Luigi Fiorillo",
+        "Mattia Savardi",
+        "Francesca Dalia Faraci",
+        "Alberto Signoroni"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41746-026-03450-3",
+      "id": "10.1038/s41746-026-03450-3",
+      "date": "2026-11-07",
+      "relevance": 2,
+      "summary": "MambaSleepCVD combines modality-specific encoders with temporal fusion for sleep-based cardiovascular risk ranking. Analysis highlights that the cardiac channel and chronological age explain much of the discrimination in the reference dataset. External cohorts and explicit confounder control remain necessary before screening use.",
+      "topics": [
+        "Longitudinal monitoring",
+        "Digital health",
+        "Signal reconstruction"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2398-6352/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:33:53.765687+00:00"
+    },
+    {
+      "doi": "10.1088/1361-6439/aeb67f",
+      "title": "Reliability of a dielectrowetting based liquid crystal optical shutter under environmental and operational stresses for compact camera systems",
+      "journal": "Journal of Micromechanics and Microengineering",
+      "authors": [
+        "Jeong Hyun Kim",
+        "Chan Lee",
+        "Youngdoo Son",
+        "Jungwoo Yoon",
+        "Sang Kug Chung",
+        "Jeongmin Lee"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1088/1361-6439/aeb67f",
+      "id": "10.1088/1361-6439/aeb67f",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "A dielectrowetting liquid shutter uses wafer-level MEMS processing and a sealed microfluidic cell. Tests address repeated actuation, temperature and vibration, including an annular spacer to reduce bubble ingress. The reliability strategy can transfer to fluidic microsystems, although it is an optical-shutter application.",
+      "topics": [
+        "MEMS",
+        "Packaging",
+        "Reliability"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:49.131716+00:00"
+    },
+    {
+      "doi": "10.1088/1361-6439/aebb3b",
+      "title": "Differential colorimetric pH measuring microfluidic manifold with embedded sensors and actuators for textile dyeing industry",
+      "journal": "Journal of Micromechanics and Microengineering",
+      "authors": [
+        "Senol Mutlu",
+        "Ismail Terkesli",
+        "Mehmet Taygun"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1088/1361-6439/aebb3b",
+      "id": "10.1088/1361-6439/aebb3b",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "A microfluidic manifold combines differential absorbance, pumps and a magnetic stirrer for pH measurement in colored solutions. Background compensation restores near-linear response in textile-dye tests. The differential measurement principle may transfer to optically interfering biofluids, which were not studied here.",
+      "topics": [
+        "Microfluidics",
+        "Optical sensing",
+        "Signal reconstruction"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:49.131723+00:00"
+    },
+    {
+      "doi": "10.1088/1361-6439/aebbc6",
+      "title": "Design and experimental study of a piezoelectric-driven rotary platform",
+      "journal": "Journal of Micromechanics and Microengineering",
+      "authors": [
+        "Liangyu Cui",
+        "Shiwen Hong",
+        "Haonan Zhu",
+        "Jingwei Liu",
+        "Xiaofan Deng"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1088/1361-6439/aebbc6",
+      "id": "10.1088/1361-6439/aebbc6",
+      "date": "2026-11-11",
+      "relevance": 2,
+      "summary": "A single piezoelectric actuator drives a symmetric compliant rotary platform. Analytical force/compliance models and finite-element calculations support the intended pure rotation, with experimental work reported by the paper. The architecture informs compact mechanical actuation; no quantitative sensor improvement is asserted from the abstract.",
+      "topics": [
+        "MEMS",
+        "Mechanical design"
+      ],
+      "type": "Research article",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0960-1317/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:34:49.131726+00:00"
+    },
+    {
+      "doi": "10.1038/s41378-026-01462-3",
+      "title": "Advances in engineered 3D cardiac tissue for functional biosensing, disease modeling, and regenerative medicine",
+      "journal": "Microsystems & Nanoengineering",
+      "authors": [
+        "Cheng Zhang",
+        "Weiqi Sun",
+        "Xuanyu Liu",
+        "Wentao Xiong",
+        "Wei Xiao",
+        "Yinru Yang",
+        "Fatemeh Mirshafiei Langari",
+        "Abdelkader Daoud",
+        "Chen Sun",
+        "Wenyuan Chen",
+        "Wentian Tang",
+        "Xinyu Liu",
+        "Jason T Maynes",
+        "Yu Sun",
+        "Wenkun Dou"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41378-026-01462-3",
+      "id": "10.1038/s41378-026-01462-3",
+      "date": "2026-11-10",
+      "relevance": 2,
+      "summary": "This review connects microfabricated cardiac tissue architecture with electrical, optical and mechanical sensing. It covers multiparameter contractility and electrophysiology readout alongside disease models and regenerative constructs. Predictive validity, scalability and translation remain open engineering issues.",
+      "topics": [
+        "Mechanical sensing",
+        "Bioelectronics",
+        "Tissue engineering"
+      ],
+      "type": "Review",
+      "readingBasis": "Deposited abstract (Crossref/Europe PMC); full text and SI not read",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/2055-7434/works?filter=from-online-pub-date%3A2026-10-16%2Cuntil-online-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2055-7434/works?filter=from-pub-date%3A2026-10-16%2Cuntil-pub-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/2055-7434/works?filter=from-created-date%3A2026-10-16%2Cuntil-created-date%3A2026-11-13&rows=1000&cursor=%2A",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A2055-7434+AND+FIRST_PDATE%3A%5B2026-10-16+TO+2026-11-13%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A"
+      ],
+      "firstSeenAt": "2026-11-12T19:37:23.530631+00:00"
+    },
+    {
+      "doi": "10.64898/2026.11.04.764045",
+      "title": "Extensional Flow Microfluidics Reveal Size-Dependent Core-Shell Mechanical Heterogeneity in Pancreatic Tumor Spheroids",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Ghanbarpour Mamaghani, S.",
+        "Costa, T. M.",
+        "Wagner, E. C.",
+        "Kargar, S.",
+        "Celli, J. P.",
+        "Dahl, J. B."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.04.764045",
+      "id": "10.64898/2026.11.04.764045",
+      "date": "2026-11-06",
+      "relevance": 2,
+      "summary": "A cross-slot microfluidic device stretches pancreatic-tumor spheroids without contact. Digital image correlation reveals size-dependent internal strain heterogeneity that projected outlines miss. This preprint informs mechanical-property inference across scales; it has not been peer reviewed.",
+      "topics": [
+        "Microfluidics",
+        "Mechanical sensing",
+        "Inverse problems"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.64898/2026.11.04.764386",
+      "title": "From Fill to Freeze: Redesigning homeRNA to Enable Robust Sampling and Scalable Downstream Processing Workflows for Remote Blood Transcriptomics",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Eakman, M.",
+        "Robertson, I. H.",
+        "Wei, X.",
+        "Stefanovic, F.",
+        "Caira, T.",
+        "Guckenberger, D. J.",
+        "Adams, K. N.",
+        "Berthier, E.",
+        "Brown, L. G.",
+        "Thongpang, S.",
+        "Theberge, A. B."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.04.764386",
+      "id": "10.64898/2026.11.04.764386",
+      "date": "2026-11-06",
+      "relevance": 1,
+      "summary": "A redesigned remote blood-sampling platform tests transport, storage and sample-volume robustness. RNA quality was maintained under the reported shipment and storage stresses. This is adjacent infrastructure for longitudinal studies, not continuous biosensing, and has not been peer reviewed.",
+      "topics": [
+        "Longitudinal monitoring",
+        "Experimental methods"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.64898/2026.11.06.757988",
+      "title": "An Accessible and Scalable Pipette-Driven Microfluidic Platform for Lipid Nanoparticle Formulation",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Takeda, Y. S.",
+        "Wang, F.",
+        "Gu, X.",
+        "Forster, J.",
+        "Hou, H.",
+        "Hemmati, P.",
+        "Partopour, B.",
+        "Maugeri, L.",
+        "Kim, Y.",
+        "Apel, S.",
+        "Norton, R.",
+        "Finelli, J.",
+        "Molaei, P.",
+        "Shafiee, S.",
+        "Li, S.",
+        "Lin, J.",
+        "Chiang, C.-w.",
+        "Mayo, M.",
+        "Ayehunie, S.",
+        "Akbari, S.",
+        "Mao, H.-Q.",
+        "Wang, T.-H.",
+        "Dehghani, M."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.06.757988",
+      "id": "10.64898/2026.11.06.757988",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "A dual-chamber pipette actuates a disposable microfluidic mixer without external pumps. Mixing design supports lipid-nanoparticle screening and scale-up to the reported production configuration. The workflow may transfer to reproducible materials preparation; this preprint has not been peer reviewed.",
+      "topics": [
+        "Microfluidics",
+        "Manufacturing"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.64898/2026.11.06.764854",
+      "title": "A Continuum Fibre Network Model for the Anisotropic and Compressible Mechanics of Human Skin",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Quinn, C.",
+        "Vafaeefar, M.",
+        "Fereidoonnezhad, B.",
+        "Vaughan, T. J."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.06.764854",
+      "id": "10.64898/2026.11.06.764854",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "A continuum-fiber model describes anisotropic, strain-stiffening and compressible human skin mechanics. Calibration uses published tensile and volume-change datasets, while indentation and shear are model predictions. It may inform skin-device mechanical matching; the preprint is not peer reviewed.",
+      "topics": [
+        "Mechanical modeling",
+        "Wearable sensing"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.64898/2026.11.06.764681",
+      "title": "Tissue-like Viscoelasticity Drives Muscle Stem Cell Expansion Through Mechanical Memory Formation",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Hu, H.",
+        "Kwon, T. Y.",
+        "Gao, Z.",
+        "Zhou, P.",
+        "Madl, C. M."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.06.764681",
+      "id": "10.64898/2026.11.06.764681",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "Dual-network hydrogels independently tune stiffness, relaxation and ligand presentation. Muscle-like viscoelasticity supports stem-cell expansion with persistent mechanical-memory effects. The material-control strategy may inform mechanobiology experiments; this preprint has not been peer reviewed.",
+      "topics": [
+        "Responsive materials",
+        "Mechanobiology"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.64898/2026.11.07.765050",
+      "title": "Agile manufacturing of PDMS microfluidic devices for cell culture without a clean room",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Merino, J.-A.",
+        "Angeli, C.",
+        "Garcia-Arcos, J. M."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.07.765050",
+      "id": "10.64898/2026.11.07.765050",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "Laser-cut molds and staged PDMS curing enable clean-room-free microfluidic prototypes. Devices reportedly withstood about 400 mbar without treatment and 900 mbar after handheld-corona glass activation. The process supports rapid manufacturing at the demonstrated feature scales; this preprint has not been peer reviewed.",
+      "topics": [
+        "Microfluidics",
+        "Manufacturing",
+        "Packaging"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.64898/2026.11.07.764907",
+      "title": "A shared wireless acquisition core for cortical and peripheral recordings in freely moving mice",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Zhang, W.",
+        "Du, Y.",
+        "Li, J.",
+        "Liang, G.",
+        "Yi, C.",
+        "Cheng, M.",
+        "Xv, X.",
+        "Wang, H.",
+        "Song, S.",
+        "Zhang, Y.",
+        "Ma, Z."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.07.764907",
+      "id": "10.64898/2026.11.07.764907",
+      "date": "2026-11-10",
+      "relevance": 3,
+      "summary": "An eight-channel wireless headstage combines cortical, neck-electrode and synchronized acceleration recordings. The approximately 1.2 g head assembly uses a separately carried battery and can reassign electrodes for cardiac recording. Mouse demonstrations support shared acquisition across signals; this preprint is not peer reviewed, and a malformed noise unit in the abstract is not reproduced.",
+      "topics": [
+        "Wireless communication",
+        "Neural interfaces",
+        "Longitudinal monitoring"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.64898/2026.11.03.763613",
+      "title": "A Fibrous Optofluidic Probe for Endovascular Sensing of Blood Oxygenation and Flow Velocity",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Sheng, X."
+      ],
+      "authorsComplete": false,
+      "url": "https://doi.org/10.64898/2026.11.03.763613",
+      "id": "10.64898/2026.11.03.763613",
+      "date": "2026-11-10",
+      "relevance": 3,
+      "summary": "A submillimeter flexible optofluidic probe combines optical transmission and dye delivery for local blood oxygenation and flow-velocity sensing. Rabbit and canine vascular experiments include occlusion and reperfusion responses. This directly informs local hemodynamic instrumentation, but the preprint has not been peer reviewed.",
+      "topics": [
+        "Hemodynamics",
+        "Optical sensing",
+        "Microfluidics"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official bioRxiv details API abstract; author strings retained as supplied; full author names not fully verified",
+      "evidenceSources": [
+        "https://api.biorxiv.org/details/biorxiv/2026-11-06/2026-11-12/0/json?category=bioengineering"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "title": "Additively manufactured ceramic platforms for miniaturized optical frequency references and robust atomic sensor systems",
+      "journal": "Arxiv - Applied Physics",
+      "authors": [
+        "Marc Christ",
+        "Sascha Neinert",
+        "Conrad Zimmermann",
+        "Klaus Döringshoff",
+        "Markus Krutzik"
+      ],
+      "authorsComplete": true,
+      "url": "https://arxiv.org/abs/2611.13800v1",
+      "id": "2611.13800v1",
+      "date": "2026-11-10",
+      "relevance": 2,
+      "summary": "Additively manufactured ceramic micro-optical benches integrate compact atomic instrumentation. Demonstrators include a 6 mL frequency-reference module and a 7 mL optically pumped magnetometer head with reported picotesla sensitivity. This preprint informs low-noise sensor packaging and has not been peer reviewed.",
+      "topics": [
+        "Magnetic sensing",
+        "Packaging",
+        "Manufacturing"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official arXiv API abstract and exact published timestamp",
+      "evidenceSources": [
+        "https://export.arxiv.org/api/query?search_query=cat:physics.app-ph+AND+submittedDate:[202611051930+TO+202611121930]"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "title": "Why fluid relaxation modes matter: Nonlinear frequency response, dynamical integrity, and dynamic pull-in of electrostatic microbeams with squeeze-film damping",
+      "journal": "Arxiv - Applied Physics",
+      "authors": [
+        "Fehmi Najar"
+      ],
+      "authorsComplete": true,
+      "url": "https://arxiv.org/abs/2611.12350v1",
+      "id": "2611.12350v1",
+      "date": "2026-11-09",
+      "relevance": 3,
+      "summary": "A reduced fluid–structure model retains relaxation dynamics in electrostatic microbeams with squeeze-film damping. Frequency response, attraction basins and pull-in boundaries change when the fluid mode is omitted. It directly informs damping-based resonant sensing models, with experimental comparison limited to the cited microswitch evidence; the preprint is not peer reviewed.",
+      "topics": [
+        "MEMS",
+        "Resonant sensors",
+        "Mechanical modeling"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official arXiv API abstract and exact published timestamp",
+      "evidenceSources": [
+        "https://export.arxiv.org/api/query?search_query=cat:physics.app-ph+AND+submittedDate:[202611051930+TO+202611121930]"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "title": "Split-Ring Couplers for On-Skin Wi-Fi Communication via an SSPP Waveguide Textile",
+      "journal": "Arxiv - Applied Physics",
+      "authors": [
+        "Akihito Noda",
+        "Ryo Takahashi"
+      ],
+      "authorsComplete": true,
+      "url": "https://arxiv.org/abs/2611.12036v1",
+      "id": "2611.12036v1",
+      "date": "2026-11-09",
+      "relevance": 3,
+      "summary": "Split-ring couplers connect skin nodes to a textile surface-wave guide. Tests on a body phantom report −18.8 dB transmission over 450 mm and a 65 Mb/s two-node link under the stated conditions. This supports placement-tolerant on-body communications; the preprint is not peer reviewed and does not establish human-use reliability.",
+      "topics": [
+        "Wireless communication",
+        "Wearable sensing"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official arXiv API abstract and exact published timestamp",
+      "evidenceSources": [
+        "https://export.arxiv.org/api/query?search_query=cat:physics.app-ph+AND+submittedDate:[202611051930+TO+202611121930]"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "title": "Bifurcation-based phononic frequency combs in a forced van der Pol-Duffing oscillator",
+      "journal": "Arxiv - Applied Physics",
+      "authors": [
+        "Adriano A. Batista",
+        "Madhurendra Mishra",
+        "Adarsh Ganesan"
+      ],
+      "authorsComplete": true,
+      "url": "https://arxiv.org/abs/2611.10722v1",
+      "id": "2611.10722v1",
+      "date": "2026-11-07",
+      "relevance": 2,
+      "summary": "A nonlinear oscillator analysis links phononic-comb generation to transitions near frequency locking. Averaging approximations are compared with numerical integration and extended with dissipative modal coupling. This provides a theoretical route for nonlinear resonator analysis; the preprint has not been peer reviewed.",
+      "topics": [
+        "Resonant sensors",
+        "Mechanical modeling"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official arXiv API abstract and exact published timestamp",
+      "evidenceSources": [
+        "https://export.arxiv.org/api/query?search_query=cat:physics.app-ph+AND+submittedDate:[202611051930+TO+202611121930]"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11296823/v1",
+      "title": "Photoacoustic imaging of human brain function through intact adult skulls",
+      "journal": "Research Square - Nature Portfolio",
+      "authors": [
+        "Lihong Wang",
+        "Yilin Luo",
+        "Rui Cao",
+        "Manxiu Cui",
+        "Karteekeya Sastry",
+        "Kay Jann",
+        "Yousuf Aborahama",
+        "Geng Ku",
+        "Jinhua Xu",
+        "Xiaofei Luo",
+        "Shuai Na",
+        "Samuel Davis",
+        "Konstantin Maslov",
+        "Yang Zhang",
+        "Danny Wang"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.researchsquare.com/article/rs-11296823/v1",
+      "id": "10.21203/rs.3.rs-11296823/v1",
+      "date": "2026-11-11",
+      "relevance": 3,
+      "summary": "A 3,072-element hemispherical array performs transcranial functional photoacoustic imaging at 20 Hz. Healthy-adult task responses were localized through intact skulls and compared with 7 T fMRI. This directly informs deep-tissue hemodynamic readout, but the preprint is not peer reviewed and Nature Portfolio review status does not imply acceptance.",
+      "topics": [
+        "Ultrasound",
+        "Hemodynamics",
+        "Deep-tissue sensing"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official visible abstract, expanded authors and posted date; Nature Portfolio filter and card/detail badge verified",
+      "evidenceSources": [
+        "https://www.researchsquare.com/article/rs-11296823/v1"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11505206/v1",
+      "title": "Continuous glucose monitoring earbuds for periodic metabolic sensing",
+      "journal": "Research Square - Nature Portfolio",
+      "authors": [
+        "Joseph Wang",
+        "Barak Sabbagh",
+        "Christian Gosti",
+        "Ellen V Stadler",
+        "Madeleine McSwain",
+        "Lauren Chiu",
+        "Muhammad Inam Khan",
+        "Qinyu Yu",
+        "Victor Perez",
+        "Tamoghna Saha",
+        "Gaoyuan Ji",
+        "Minjoon Park",
+        "Kavya Garg",
+        "Parth Bhagwat",
+        "Yi Fung Winsten Lam",
+        "Omeed Djassemi",
+        "Maria Reynoso",
+        "Fabiana Arduini"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.researchsquare.com/article/rs-11505206/v1",
+      "id": "10.21203/rs.3.rs-11505206/v1",
+      "date": "2026-11-10",
+      "relevance": 3,
+      "summary": "Earbuds integrate osmotic sweat extraction, microfluidics and electrochemical glucose sensing. Personalized calibration and adaptive noise cancellation gave a reported 8.79% MARD over more than 50 h relative to a commercial CGM. The result concerns periodic in-ear sweat sensing rather than replacement of diabetes CGM; this preprint is not peer reviewed.",
+      "topics": [
+        "Wearable sensing",
+        "Biochemical sensing",
+        "Microfluidics"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official visible abstract, expanded authors and posted date; Nature Portfolio filter and card/detail badge verified",
+      "evidenceSources": [
+        "https://www.researchsquare.com/article/rs-11505206/v1"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11230753/v1",
+      "title": "A Wireless Microrobot for Deep Brain Navigation at the Human Head Scale",
+      "journal": "Research Square - Nature Portfolio",
+      "authors": [
+        "Tian Qiu",
+        "Meng Zhang",
+        "Jyothi Mariyanna",
+        "Moonkwang Jeong",
+        "Andre Sagerer",
+        "Jiyuan Tian",
+        "Yue Gao",
+        "Rudi Apolle",
+        "Haoying Wang",
+        "Ann-Sophia Müller",
+        "Liyuan Tan",
+        "Rayan Younis",
+        "Martin Wagner",
+        "Tirosh Mekler",
+        "Netanel Korin",
+        "Konstantin Morozov",
+        "Alexander Leshansky",
+        "Tareq Juratli"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.researchsquare.com/article/rs-11230753/v1",
+      "id": "10.21203/rs.3.rs-11230753/v1",
+      "date": "2026-11-08",
+      "relevance": 3,
+      "summary": "BrainBot uses a multithread magnetic helix with tissue-clearing microstructures for propulsion in brain tissue. A 24 cm aperture magnetic system enables fluoroscopy-guided deep targeting in an intact porcine head, alongside ex vivo human glioblastoma work. Sampling, fiber placement and localized delivery were demonstrated; this preprint is not peer reviewed and does not establish human clinical safety.",
+      "topics": [
+        "Magnetic actuation",
+        "Deep-tissue devices",
+        "Neural interfaces"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official visible abstract, expanded authors and posted date; Nature Portfolio filter and card/detail badge verified",
+      "evidenceSources": [
+        "https://www.researchsquare.com/article/rs-11230753/v1"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11459867/v1",
+      "title": "Kilohertz electrical stimulation drives widespread neuronal activation and temporal interference imposes focal rhythmic modulation",
+      "journal": "Research Square - Nature Portfolio",
+      "authors": [
+        "Ken Berglund",
+        "Ryohei Yoshimoto",
+        "Matthew Stern",
+        "Thomas Eggers",
+        "Emma Acerbo",
+        "Nealen Laxpati",
+        "Claire-Anne Gutekunst"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.researchsquare.com/article/rs-11459867/v1",
+      "id": "10.21203/rs.3.rs-11459867/v1",
+      "date": "2026-11-11",
+      "relevance": 2,
+      "summary": "Mouse two-photon imaging, histology and modeling show that kilohertz fields can activate neurons without amplitude modulation. Temporal interference organizes activity rhythmically, with strongest entrainment near the interference center. This challenges a simplifying targeting assumption and informs stimulation design; the preprint is not peer reviewed.",
+      "topics": [
+        "Neural interfaces",
+        "Wireless stimulation"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official visible abstract, expanded authors and posted date; Nature Portfolio filter and card/detail badge verified",
+      "evidenceSources": [
+        "https://www.researchsquare.com/article/rs-11459867/v1"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11372464/v1",
+      "title": "Assessment of sensorimotor cortical beta oscillations from peripheral electromyography and force recordings",
+      "journal": "Research Square - Nature Portfolio",
+      "authors": [
+        "Christian Georgiev",
+        "Pierre Cabaraux",
+        "Nicolás Yanguma Muñoz",
+        "Daria Digileva",
+        "Scott Mongold",
+        "Vincent Wens",
+        "Armin Torbati",
+        "Lousin Moumdjian",
+        "Gilles Naeije",
+        "Xavier de Tiège",
+        "Mathieu Bourguignon"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.researchsquare.com/article/rs-11372464/v1",
+      "id": "10.21203/rs.3.rs-11372464/v1",
+      "date": "2026-11-09",
+      "relevance": 2,
+      "summary": "Peripheral muscle and force recordings are used to estimate modulation of sensorimotor beta activity. Evidence spans younger and older healthy participants and Parkinsonian patients, including bilateral coupling analyses. This may enable accessible physiological markers, but general-purpose cortical reconstruction is not established; the preprint is not peer reviewed.",
+      "topics": [
+        "Signal reconstruction",
+        "Mechanical sensing",
+        "Neural interfaces"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official visible abstract, expanded authors and posted date; Nature Portfolio filter and card/detail badge verified",
+      "evidenceSources": [
+        "https://www.researchsquare.com/article/rs-11372464/v1"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11571811/v1",
+      "title": "An insect-scale quadruped robot with a mechanically coupled transmission for confined environments",
+      "journal": "Research Square - Nature Portfolio",
+      "authors": [
+        "Yide Liu",
+        "Rui Chen",
+        "Bian Gan",
+        "Bo Feng",
+        "Shaoxing Qu"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.researchsquare.com/article/rs-11571811/v1",
+      "id": "10.21203/rs.3.rs-11571811/v1",
+      "date": "2026-11-08",
+      "relevance": 1,
+      "summary": "A single-degree-of-freedom coupled transmission coordinates a 20.9 g quadruped. Separate configurations demonstrate high payload or faster locomotion, with untethered travel beyond 400 m. The compact mechanism offers adjacent engineering inspiration rather than a biosensing result; this preprint is not peer reviewed.",
+      "topics": [
+        "Mechanical design",
+        "Robotics"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official visible abstract, expanded authors and posted date; Nature Portfolio filter and card/detail badge verified",
+      "evidenceSources": [
+        "https://www.researchsquare.com/article/rs-11571811/v1"
+      ],
+      "firstSeenAt": null
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11412743/v1",
+      "title": "Bioprinted aquatic plant-inspired soft machines for underwater environmental sensing",
+      "journal": "Research Square - Nature Portfolio",
+      "authors": [
+        "Isabella Fiorello",
+        "Israel Kellersztein",
+        "Beatriz Arsuffi",
+        "Frederike Klimm",
+        "Barbara Mazzolai",
+        "Thomas Speck",
+        "Chiara Daraio"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.researchsquare.com/article/rs-11412743/v1",
+      "id": "10.21203/rs.3.rs-11412743/v1",
+      "date": "2026-11-05",
+      "relevance": 2,
+      "summary": "Porous bioprinted hydrogel stems reduce flexural rigidity by about 38% relative to solid controls. Responsive leaf modules change curvature with temperature and salinity, yielding a modular aquatic soft machine. The architecture may inform distributed responsive materials, but quantitative biomedical sensing is not demonstrated; the preprint is not peer reviewed.",
+      "topics": [
+        "Responsive materials",
+        "Soft robotics",
+        "Manufacturing"
+      ],
+      "type": "Preprint — not peer reviewed",
+      "readingBasis": "Official visible abstract, expanded authors and posted date; Nature Portfolio filter and card/detail badge verified",
+      "evidenceSources": [
+        "https://www.researchsquare.com/article/rs-11412743/v1"
+      ],
+      "firstSeenAt": null
+    }
+  ],
+  "coverage": [
+    {
+      "journal": "Science",
+      "status": "partial",
+      "readCount": 166,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 39,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback. Editor’s summary attributions remain unknown where official text was unavailable; no complete signature coverage is claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 8,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 170,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 166,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 127,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 171
+    },
+    {
+      "journal": "Cell",
+      "status": "partial",
+      "readCount": 60,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 27,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (unavailable); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 34,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 60,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 33,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 60
+    },
+    {
+      "journal": "Nature",
+      "status": "partial",
+      "readCount": 379,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 2,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 377,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 377,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 378,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 315,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 380
+    },
+    {
+      "journal": "Science Robotics",
+      "status": "partial",
+      "readCount": 9,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 9,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 9,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 9,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 9
+    },
+    {
+      "journal": "Science Translational Medicine",
+      "status": "partial",
+      "readCount": 29,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 29,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 29,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 29,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 29
+    },
+    {
+      "journal": "Nature Biomedical Engineering",
+      "status": "partial",
+      "readCount": 15,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "error",
+          "detail": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 15,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 15,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 15,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 15
+    },
+    {
+      "journal": "Nature Biotechnology",
+      "status": "partial",
+      "readCount": 38,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 2,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 36,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 36,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 36,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 36,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 38
+    },
+    {
+      "journal": "Nature Cardiovascular Research",
+      "status": "partial",
+      "readCount": 17,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 17,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 17,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 17,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 17,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 17
+    },
+    {
+      "journal": "Nature Electronics",
+      "status": "partial",
+      "readCount": 10,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 10,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 10,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 10,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 10
+    },
+    {
+      "journal": "Nature Mechanical Engineering",
+      "status": "partial",
+      "readCount": null,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": null,
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "error",
+          "detail": "HTTP Error 404: Not Found"
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "error",
+          "detail": "HTTP Error 404: Not Found"
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "error",
+          "detail": "HTTP Error 404: Not Found"
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 0
+    },
+    {
+      "journal": "Nature Machine Intelligence",
+      "status": "partial",
+      "readCount": 14,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 14,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 14,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 14,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 14
+    },
+    {
+      "journal": "Nature Materials",
+      "status": "partial",
+      "readCount": 39,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 12,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 27,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 27,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 27,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 38,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 39
+    },
+    {
+      "journal": "Nature Medicine",
+      "status": "partial",
+      "readCount": 63,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 63,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 63,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 63,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 61,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 63
+    },
+    {
+      "journal": "Nature Methods",
+      "status": "partial",
+      "readCount": 46,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 6,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 40,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 40,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 40,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 45,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 46
+    },
+    {
+      "journal": "Nature Nanotechnology",
+      "status": "partial",
+      "readCount": 11,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 11,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 11,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 11,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 11,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 11
+    },
+    {
+      "journal": "Nature Neuroscience",
+      "status": "partial",
+      "readCount": 33,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 5,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 28,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 28,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 28,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 32,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 33
+    },
+    {
+      "journal": "Nature Photonics",
+      "status": "partial",
+      "readCount": 18,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 18,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 18,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 18,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 1,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 18
+    },
+    {
+      "journal": "Nature Sensors",
+      "status": "partial",
+      "readCount": 6,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 6,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 6,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 6,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 6
+    },
+    {
+      "journal": "Nature Reviews Bioengineering",
+      "status": "partial",
+      "readCount": 7,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 7,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 7,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 7,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 7
+    },
+    {
+      "journal": "Nature Reviews Electrical Engineering",
+      "status": "partial",
+      "readCount": 8,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 8,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 8,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 8,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 8
+    },
+    {
+      "journal": "Nature Reviews Materials",
+      "status": "partial",
+      "readCount": 13,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 13,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 13,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 13,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 13
+    },
+    {
+      "journal": "Science Advances",
+      "status": "partial",
+      "readCount": 379,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 46,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 9,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 377,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 331,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 449,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 495
+    },
+    {
+      "journal": "Nature Communications",
+      "status": "partial",
+      "readCount": 753,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 2,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 752,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 752,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 753,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 169,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 753
+    },
+    {
+      "journal": "Proceedings of the National Academy of Sciences",
+      "status": "partial",
+      "readCount": 424,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 5,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 2,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 424,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 424,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 424,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 422,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 429
+    },
+    {
+      "journal": "Matter",
+      "status": "partial",
+      "readCount": 47,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 48,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (unavailable); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 37,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 28,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 48
+    },
+    {
+      "journal": "Neuron",
+      "status": "partial",
+      "readCount": 39,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 20,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (unavailable); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 26,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 31,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 26,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 39
+    },
+    {
+      "journal": "Nature Protocols",
+      "status": "partial",
+      "readCount": 8,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 2,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 6,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 6,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 6,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 8,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 8
+    },
+    {
+      "journal": "Advanced Materials",
+      "status": "partial",
+      "readCount": 291,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 6,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 2,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 288,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 276,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 296,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 257,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 296
+    },
+    {
+      "journal": "ACS Nano",
+      "status": "partial",
+      "readCount": 233,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 1,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 4,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 237,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 237,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 240,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 116,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 241
+    },
+    {
+      "journal": "Nano Letters",
+      "status": "partial",
+      "readCount": 169,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 6,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 171,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 171,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 171,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 85,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 177
+    },
+    {
+      "journal": "Device",
+      "status": "partial",
+      "readCount": 14,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 14,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (unavailable); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 5,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 14,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 14
+    },
+    {
+      "journal": "Biosensors and Bioelectronics",
+      "status": "partial",
+      "readCount": 274,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 222,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (unavailable); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 217,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 72,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 54,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 276
+    },
+    {
+      "journal": "Microsystems & Nanoengineering",
+      "status": "partial",
+      "readCount": 10,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 10,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 10,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 10,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 10,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 10
+    },
+    {
+      "journal": "npj Digital Medicine",
+      "status": "partial",
+      "readCount": 65,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 3,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 65,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 65,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 65,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 12,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 65
+    },
+    {
+      "journal": "npj Flexible Electronics",
+      "status": "partial",
+      "readCount": 11,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 11,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 11,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 11,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 11
+    },
+    {
+      "journal": "Advanced Functional Materials",
+      "status": "partial",
+      "readCount": 523,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 8,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 10,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 505,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 482,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 531,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 531
+    },
+    {
+      "journal": "Advanced Healthcare Materials",
+      "status": "partial",
+      "readCount": 117,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 5,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 1,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 112,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 102,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 117,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 98,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 117
+    },
+    {
+      "journal": "Sensors and Actuators A: Physical",
+      "status": "partial",
+      "readCount": 341,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 344,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (unavailable); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 236,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 126,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 344
+    },
+    {
+      "journal": "Sensors and Actuators B: Chemical",
+      "status": "partial",
+      "readCount": 464,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 468,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (unavailable); indexed metadata are a partial fallback.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 351,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 138,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 468
+    },
+    {
+      "journal": "IEEE Transactions on Biomedical Engineering",
+      "status": "partial",
+      "readCount": 49,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 33,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 3,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 26,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 28,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 37,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 49
+    },
+    {
+      "journal": "Journal of Microelectromechanical Systems",
+      "status": "partial",
+      "readCount": 16,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 16,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 0,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 16,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 16
+    },
+    {
+      "journal": "Journal of Micromechanics and Microengineering",
+      "status": "partial",
+      "readCount": 12,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 3,
+      "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "metadataAttempts": [
+        {
+          "service": "Crossref",
+          "query": "online-pub",
+          "status": "ok",
+          "records": 12,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "pub",
+          "status": "ok",
+          "records": 7,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Crossref",
+          "query": "created",
+          "status": "ok",
+          "records": 7,
+          "pagination_exhausted": true
+        },
+        {
+          "service": "Europe PMC",
+          "status": "ok",
+          "records": 0,
+          "pagination_exhausted": true
+        }
+      ],
+      "recordsRecovered": 12
+    },
+    {
+      "journal": "Arxiv - Applied Physics",
+      "status": "partial",
+      "readCount": 31,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 4,
+      "detail": "Official Applied Physics API returned 31 entries in the precise UTC discovery window (2026-11-05T19:30Z to 2026-11-12T19:30Z); one page below the 100-record page size. Published timestamps were inspected. No entire historical baseline claim.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00"
+    },
+    {
+      "journal": "bioRxiv - Bioengineering",
+      "status": "partial",
+      "readCount": 40,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 40,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 8,
+      "detail": "Official details API category=bioengineering, cursors 0 and 30 exhausted 42 version records; 40 unique DOIs. Version updates were distinguished from v1 and not treated as new papers. API day dates do not resolve the 03:30 boundary. Author strings may retain initials.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00"
+    },
+    {
+      "journal": "Research Square - Nature Portfolio",
+      "status": "partial",
+      "readCount": 100,
+      "readCountIsLowerBound": false,
+      "readCountDatePending": 0,
+      "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
+      "selectedCount": 7,
+      "detail": "Visible Browse filter Nature Portfolio selected, Search pressed and result-card logos confirmed. Ten consecutive pages / 100 metadata records inspected (posted 5–12 November); displayed catalogue total 5,920 is not a weekly count. Seven relevant detail pages checked for abstract, expanded authors, posted date and membership. Preprints are not peer reviewed; filter status does not imply acceptance. Older baseline coverage remains partial.",
+      "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00"
+    }
+  ]
+}
