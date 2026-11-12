@@ -1386,6 +1386,682 @@
       "first_delivered_edition": "2026-10-30",
       "delivery_confirmed_on": "2026-10-30",
       "delivery_channel": "Previously delivered message; public identifier imported from accessible history"
+    },
+    {
+      "id": "10.1038/s41586-026-11324-7",
+      "doi": "10.1038/s41586-026-11324-7",
+      "title": "NRF2 is a mechanosensitive checkpoint for NLRP3 inflammasome activation",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:31:46.234460+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aeg2342",
+      "doi": "10.1126/sciadv.aeg2342",
+      "title": "Ultrasound neural interface enabling acute spinal cord monitoring and blood flow modulation",
+      "first_publication_date": "2026-11-04",
+      "first_seen_at": "2026-11-12T19:32:31.893807+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aei1954",
+      "doi": "10.1126/sciadv.aei1954",
+      "title": "A high robustness decoding technique for ultrasound modulated electroencephalogram",
+      "first_publication_date": "2026-11-04",
+      "first_seen_at": "2026-11-12T19:32:31.893830+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aei7948",
+      "doi": "10.1126/sciadv.aei7948",
+      "title": "Human carotid plaque risk imaging using multiparametric photoacoustic and ultrasound fusion (hCAPRI)",
+      "first_publication_date": "2026-11-04",
+      "first_seen_at": "2026-11-12T19:32:31.893836+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aeh1001",
+      "doi": "10.1126/sciadv.aeh1001",
+      "title": "Adaptive dual-programming magnetic soft robot with lifelike behavior",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:32:31.893986+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aef2310",
+      "doi": "10.1126/sciadv.aef2310",
+      "title": "A fully hydrogel implantable patch for in situ ultrasonic monitoring of gastric leakage",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:32:31.894028+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aei3615",
+      "doi": "10.1126/sciadv.aei3615",
+      "title": "Electronic hair: Transforming hair into a scalable bioelectronic interface",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:32:31.894051+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aei5736",
+      "doi": "10.1126/sciadv.aei5736",
+      "title": "Dynamic plasmonic imaging of electromechanically driven nano-oscillators for charge-resolved multiplex biosensing",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:32:31.894057+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aej2247",
+      "doi": "10.1126/sciadv.aej2247",
+      "title": "Arbitrarily cuttable and ultrathin MXene structural colors for customizable and wearable multispectral information management",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:32:31.894064+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/sciadv.aek2097",
+      "doi": "10.1126/sciadv.aek2097",
+      "title": "Piezoelectrically actuated magnetic dipole twisting resonators enable miniaturized low-frequency antennas",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:32:31.894072+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41467-026-78804-2",
+      "doi": "10.1038/s41467-026-78804-2",
+      "title": "Insular motor and error encoding supports self-correcting intracranial brain-computer interface",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:32:42.774912+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1073/pnas.2609599123",
+      "doi": "10.1073/pnas.2609599123",
+      "title": "Dysregulation of mechanosensing signaling in monocytes of patients with systemic sclerosis is associated with skin inflammation",
+      "first_publication_date": "2026-11-05",
+      "first_seen_at": "2026-11-12T19:32:57.015885+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1073/pnas.2622418123",
+      "doi": "10.1073/pnas.2622418123",
+      "title": "Wearable interstitial fluid sensing of time-resolved uric acid for early prediction of flare-associated pain in an induced mouse model",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:32:57.015982+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1021/acsnano.6c08903",
+      "doi": "10.1021/acsnano.6c08903",
+      "title": "Recombinant Humanized Collagen V-Engineered Implant Interfaces Drive in situ Low-Thrombogenic Vascular Repair via Selective Bioadhesion",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:33:21.286437+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1021/acsnano.6c13460",
+      "doi": "10.1021/acsnano.6c13460",
+      "title": "Ultrasound-Responsive Electroactive Polyetheretherketone Scaffold Promotes Bioenergetic Bone Regeneration by Regulating Mitochondrial Permeability Transition Pores",
+      "first_publication_date": "2026-11-12",
+      "first_seen_at": "2026-11-12T19:33:21.286517+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adma.75657",
+      "doi": "10.1002/adma.75657",
+      "title": "Engineering High‐Performance Flexible Electronics Through Scalable Manufacturing: Interplay of Materials, Processing, and Morphology",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:33:22.004257+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1016/j.bios.2026.119394",
+      "doi": "10.1016/j.bios.2026.119394",
+      "title": "All-plastic-fiber D-shaped functionalized biosensor through ROI-camera analysis: towards IoT-based DIY saliva analysis",
+      "first_publication_date": "2026-11-05",
+      "first_seen_at": "2026-11-12T19:33:44.488319+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79473",
+      "doi": "10.1002/adfm.79473",
+      "title": "Biodegradable Conductors for Implantable and Wearable Transient Bioelectronics",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:34:05.875275+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79552",
+      "doi": "10.1002/adfm.79552",
+      "title": "Stretchable Antimicrobial Nanomesh Antenna for Robust Epidermal Millimeter‐Wave Wireless Communications",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:34:05.875299+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79517",
+      "doi": "10.1002/adfm.79517",
+      "title": "Wireless Electrical Stimulation via Piezoelectric Nanogenerator for Parkinson's Disease Therapy Through Activating Calcium Channels and Mitigating Oxidative Damage",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:34:05.875322+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adhm.71956",
+      "doi": "10.1002/adhm.71956",
+      "title": "Pagoda‐Inspired Microneedles for Multiphase Coverage Wound Healing",
+      "first_publication_date": "2026-11-08",
+      "first_seen_at": "2026-11-12T19:34:20.673444+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1109/tbme.2026.3657968",
+      "doi": "10.1109/tbme.2026.3657968",
+      "title": "Transnasal Implants in the Nasal Cavity and Sphenoid Sinus for Minimally Invasive Deep Brain Stimulation: Measurement of Electric Field in Cadavers",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-12T19:34:37.769706+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1109/tbme.2026.3660806",
+      "doi": "10.1109/tbme.2026.3660806",
+      "title": "A Two-Stage Algorithm to Detect Electrographically Focal Seizures Using a Wearable Single-Channel EEG Sensor",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-12T19:34:37.769714+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1109/tbme.2026.3752549",
+      "doi": "10.1109/tbme.2026.3752549",
+      "title": "A 2-DoF Wearable Robot for Measuring Coupled Wrist Stiffness in Humans",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:34:37.769752+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1021/acsnano.6c14214",
+      "doi": "10.1021/acsnano.6c14214",
+      "title": "Decoupling Conductivity and Interfacial State in Pristine-Like Carbon Nanotube Coatings Reveals Their Distinct Contributions to Neuronal Function",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:33:21.286501+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1021/acsnano.6c16644",
+      "doi": "10.1021/acsnano.6c16644",
+      "title": "Silencing MSR1 in Macrophages Attenuates the Cochlear Foreign Body Response and Preserves Electrode–Neural Interface",
+      "first_publication_date": "2026-11-12",
+      "first_seen_at": "2026-11-12T19:33:21.286520+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adma.75664",
+      "doi": "10.1002/adma.75664",
+      "title": "Pd Single‐Atom Engineered Janus BiOCl/MXene Heterostructure for Printed Self‐Decoupled Temperature‐Humidity Dual‐Mode Sensors",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:33:22.004267+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79533",
+      "doi": "10.1002/adfm.79533",
+      "title": "Skin‐Matched Ferroelectric Triboelectric Interfaces for Self‐Powered Human‐Machine Interactions Under Ultralow Force",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:34:05.875281+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79255",
+      "doi": "10.1002/adfm.79255",
+      "title": "A Nonlinear Organic Low‐Frequency Sound Sensor Based on Electrochemical Coupling in a Solidified Gel Membrane",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:34:05.875288+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79477",
+      "doi": "10.1002/adfm.79477",
+      "title": "Lanthanide MOF‐Perovskite Quantum‐Cutting Circularly Polarized Emitters for Vital Sensing and AI‐Assisted Emotion Recognition",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:34:05.875309+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79572",
+      "doi": "10.1002/adfm.79572",
+      "title": "A Single‐Channel Humidity‐Pressure Dual‐Modal Decoupling Sensor for Assistive Geriatric Rehabilitation",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:34:05.875341+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.78283",
+      "doi": "10.1002/adfm.78283",
+      "title": "Hydrogel‐Based Optical Fiber: Sensing Mechanism, Biomedical Applications, and Perspectives",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:34:05.875366+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79329",
+      "doi": "10.1002/adfm.79329",
+      "title": "Mechanical Strain Tunes Proton Chemistry at Oxide–Water Interfaces",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:34:05.875374+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1002/adfm.79591",
+      "doi": "10.1002/adfm.79591",
+      "title": "Multifunctional Photochromic Piezoionic Eutectogels Through Interfacial Nanoparticle Engineering",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:34:05.875391+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1126/scitranslmed.aec1215",
+      "doi": "10.1126/scitranslmed.aec1215",
+      "title": "Sleep-like slow waves during wakefulness are associated with hallucinations and poorer cognition in Parkinson’s disease",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:31:51.440684+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41928-026-01743-9",
+      "doi": "10.1038/s41928-026-01743-9",
+      "title": "A smart display woven on your sleeve",
+      "first_publication_date": "2026-11-12",
+      "first_seen_at": "2026-11-12T19:35:41.377858+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41746-026-03425-4",
+      "doi": "10.1038/s41746-026-03425-4",
+      "title": "Wrist photoplethysmography encodes dietary information",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:33:53.765685+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41467-026-79045-z",
+      "doi": "10.1038/s41467-026-79045-z",
+      "title": "Soft robotic and computational models of left atrial hemodynamics in sinus rhythm and atrial fibrillation",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:32:42.774908+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s42256-026-01335-4",
+      "doi": "10.1038/s42256-026-01335-4",
+      "title": "Tensegrity continuum robots enable task-adaptive morphologies for cooperative behaviours",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:35:25.904372+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s44287-026-00345-z",
+      "doi": "10.1038/s44287-026-00345-z",
+      "title": "A unified view of system identification in the learning era",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:36:28.960499+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s44222-026-00512-9",
+      "doi": "10.1038/s44222-026-00512-9",
+      "title": "Open-source hardware for biomanufacturing",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:36:20.799549+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41578-026-00986-4",
+      "doi": "10.1038/s41578-026-00986-4",
+      "title": "Bioprinting, ten years on: from shape to function",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:36:54.075731+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41551-026-01784-7",
+      "doi": "10.1038/s41551-026-01784-7",
+      "title": "Closing the loop on blood flow control in spinal cord injury",
+      "first_publication_date": "2026-10-29",
+      "first_seen_at": "2026-11-12T19:35:10.302953+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41746-026-03424-5",
+      "doi": "10.1038/s41746-026-03424-5",
+      "title": "Evaluation of PainWaive: a consumer-grade EEG headset for remote EEG monitoring and neurofeedback research in chronic pain",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:33:53.765683+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41746-026-03450-3",
+      "doi": "10.1038/s41746-026-03450-3",
+      "title": "MambaSleepCVD for prediction of long term cardiovascular outcomes from polysomnography",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:33:53.765687+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1088/1361-6439/aeb67f",
+      "doi": "10.1088/1361-6439/aeb67f",
+      "title": "Reliability of a dielectrowetting based liquid crystal optical shutter under environmental and operational stresses for compact camera systems",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:34:49.131716+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1088/1361-6439/aebb3b",
+      "doi": "10.1088/1361-6439/aebb3b",
+      "title": "Differential colorimetric pH measuring microfluidic manifold with embedded sensors and actuators for textile dyeing industry",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:34:49.131723+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1088/1361-6439/aebbc6",
+      "doi": "10.1088/1361-6439/aebbc6",
+      "title": "Design and experimental study of a piezoelectric-driven rotary platform",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:34:49.131726+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41378-026-01462-3",
+      "doi": "10.1038/s41378-026-01462-3",
+      "title": "Advances in engineered 3D cardiac tissue for functional biosensing, disease modeling, and regenerative medicine",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:37:23.530631+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.04.764045",
+      "doi": "10.64898/2026.11.04.764045",
+      "title": "Extensional Flow Microfluidics Reveal Size-Dependent Core-Shell Mechanical Heterogeneity in Pancreatic Tumor Spheroids",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.04.764386",
+      "doi": "10.64898/2026.11.04.764386",
+      "title": "From Fill to Freeze: Redesigning homeRNA to Enable Robust Sampling and Scalable Downstream Processing Workflows for Remote Blood Transcriptomics",
+      "first_publication_date": "2026-11-06",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.06.757988",
+      "doi": "10.64898/2026.11.06.757988",
+      "title": "An Accessible and Scalable Pipette-Driven Microfluidic Platform for Lipid Nanoparticle Formulation",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.06.764854",
+      "doi": "10.64898/2026.11.06.764854",
+      "title": "A Continuum Fibre Network Model for the Anisotropic and Compressible Mechanics of Human Skin",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.06.764681",
+      "doi": "10.64898/2026.11.06.764681",
+      "title": "Tissue-like Viscoelasticity Drives Muscle Stem Cell Expansion Through Mechanical Memory Formation",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.07.765050",
+      "doi": "10.64898/2026.11.07.765050",
+      "title": "Agile manufacturing of PDMS microfluidic devices for cell culture without a clean room",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.07.764907",
+      "doi": "10.64898/2026.11.07.764907",
+      "title": "A shared wireless acquisition core for cortical and peripheral recordings in freely moving mice",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.64898/2026.11.03.763613",
+      "doi": "10.64898/2026.11.03.763613",
+      "title": "A Fibrous Optofluidic Probe for Endovascular Sensing of Blood Oxygenation and Flow Velocity",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "2611.13800v1",
+      "title": "Additively manufactured ceramic platforms for miniaturized optical frequency references and robust atomic sensor systems",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "2611.12350v1",
+      "title": "Why fluid relaxation modes matter: Nonlinear frequency response, dynamical integrity, and dynamic pull-in of electrostatic microbeams with squeeze-film damping",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "2611.12036v1",
+      "title": "Split-Ring Couplers for On-Skin Wi-Fi Communication via an SSPP Waveguide Textile",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "2611.10722v1",
+      "title": "Bifurcation-based phononic frequency combs in a forced van der Pol-Duffing oscillator",
+      "first_publication_date": "2026-11-07",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11296823/v1",
+      "doi": "10.21203/rs.3.rs-11296823/v1",
+      "title": "Photoacoustic imaging of human brain function through intact adult skulls",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11505206/v1",
+      "doi": "10.21203/rs.3.rs-11505206/v1",
+      "title": "Continuous glucose monitoring earbuds for periodic metabolic sensing",
+      "first_publication_date": "2026-11-10",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11230753/v1",
+      "doi": "10.21203/rs.3.rs-11230753/v1",
+      "title": "A Wireless Microrobot for Deep Brain Navigation at the Human Head Scale",
+      "first_publication_date": "2026-11-08",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11459867/v1",
+      "doi": "10.21203/rs.3.rs-11459867/v1",
+      "title": "Kilohertz electrical stimulation drives widespread neuronal activation and temporal interference imposes focal rhythmic modulation",
+      "first_publication_date": "2026-11-11",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11372464/v1",
+      "doi": "10.21203/rs.3.rs-11372464/v1",
+      "title": "Assessment of sensorimotor cortical beta oscillations from peripheral electromyography and force recordings",
+      "first_publication_date": "2026-11-09",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11571811/v1",
+      "doi": "10.21203/rs.3.rs-11571811/v1",
+      "title": "An insect-scale quadruped robot with a mechanically coupled transmission for confined environments",
+      "first_publication_date": "2026-11-08",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.21203/rs.3.rs-11412743/v1",
+      "doi": "10.21203/rs.3.rs-11412743/v1",
+      "title": "Bioprinted aquatic plant-inspired soft machines for underwater environmental sensing",
+      "first_publication_date": "2026-11-05",
+      "first_seen_at": "2026-11-12T19:52:07.004940+00:00",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
+      "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
     }
   ]
 }
