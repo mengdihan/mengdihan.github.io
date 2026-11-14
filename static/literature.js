@@ -29,6 +29,8 @@
   let feedback=Object.create(null),accountState={status:'loading',user:null},tooltipIndex=0;
   let displayedOrder=[],rankingHydrated=false;
   const defaultEdition=edition.value;
+  const readLaterToggle=byId('lit-read-later-toggle');
+  let readLaterOnly=false,includeReadLater=true;
   const feedbackBoxes=[...document.querySelectorAll('[data-feedback-filter]')];
   const canReact=()=>accountState.status==='signed-in'&&rankingHydrated;
   const feedbackId=personalization.key;
@@ -77,6 +79,8 @@
     const focused=document.activeElement,focusedArticle=focused?.closest('.lit-paper')?.dataset.id,focusedSignal=focused?.dataset.signal;
     const e=selected(),q=search.value.trim().toLocaleLowerCase();
     const feedbackFilter=new Set(feedbackBoxes.filter(box=>box.checked).map(box=>box.dataset.feedbackFilter)),version=sort.value==='personal'?'personal':'community';
+    if(includeReadLater)feedbackFilter.add('later');
+    readLaterToggle.setAttribute('aria-pressed',String(readLaterOnly));
     const positions=new Map(displayedOrder.map((id,i)=>[id,i]));
     // Keep membership as well as order stable when a mark is removed in a filtered list.
     const items=e.articles.filter(a=>(reorder===false?positions.has(a.id):personalization.matchesFeedback(feedback[feedbackId(a)],feedbackFilter))&&(!topic||articleTopicGroups(a).includes(topic))&&journals.has(sourceName(a.journal))&&(!q||[a.title,a.journal,a.summary,a.doi,...a.authors,...a.topics].join(' ').toLocaleLowerCase().includes(q)));
@@ -169,23 +173,23 @@
   for(const id of ['lit-journals-close','lit-journals-cancel'])byId(id).addEventListener('click',()=>dialog.close());
   search.addEventListener('input',render);sort.addEventListener('change',render);edition.addEventListener('change',setup);
   function resetFilters(){
+    readLaterOnly=false;includeReadLater=true;
     search.value='';edition.value=data.latest||defaultEdition;sort.value=accountState.user?'personal':'community';
     feedbackBoxes.forEach(box=>box.checked=box.dataset.feedbackFilter!=='irrelevant');
     setup();draft=new Set(journals);
   }
   feedbackBoxes.forEach(box=>box.addEventListener('change',()=>{
-    if(box.dataset.feedbackFilter==='later'){
-      if(box.checked||feedbackBoxes.some(other=>other!==box&&other.checked)){
-        feedbackBoxes.forEach(other=>other.checked=other===box);
-        edition.value='all';setup();draft=new Set(journals);
-      }else resetFilters();
-      return;
-    }
-    render();
+    readLaterOnly=false;includeReadLater=false;render();
   }));
+  readLaterToggle.addEventListener('click',()=>{
+    if(readLaterOnly){resetFilters();return;}
+    readLaterOnly=true;includeReadLater=true;
+    feedbackBoxes.forEach(box=>box.checked=false);
+    edition.value='all';setup();draft=new Set(journals);
+  });
   byId('lit-filters-reset').addEventListener('click',resetFilters);
   for(const [id,checked] of [['lit-marks-all',true],['lit-marks-clear',false]]){
-    byId(id).addEventListener('click',()=>{feedbackBoxes.forEach(box=>box.checked=checked);render();});
+    byId(id).addEventListener('click',()=>{readLaterOnly=false;includeReadLater=checked;feedbackBoxes.forEach(box=>box.checked=checked);render();});
   }
 
   document.querySelectorAll('[data-reading-version]').forEach(b=>b.addEventListener('click',()=>{version=b.dataset.readingVersion;sort.value='personal';render();}));

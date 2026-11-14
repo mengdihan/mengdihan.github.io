@@ -41,9 +41,9 @@ function ui(initial,extraReports=[]){
   showModal(){this.open=true;}close(){this.open=false;}
  }
  const ids=new Map(),roots=[];const add=(id,tag='div',cls='')=>{const e=new Element(tag);e.id=id;e.className=cls;ids.set(id,e);roots.push(e);return e;};
- const names=['lit-data','lit-search','lit-edition','lit-sort','lit-results','lit-journals-dialog','lit-journals-open','lit-version-note','lit-count','lit-empty','lit-window','lit-coverage-list','lit-journals-options','lit-journals-selection','lit-journals-all','lit-journals-none','lit-journals-apply','lit-journals-close','lit-journals-cancel','lit-filters-reset','lit-marks-all','lit-marks-clear','lit-sources-toggle','lit-sources-body','lit-recommendations-toggle','lit-recommendations-body','lit-account-signout','lit-account-name','lit-email-open','lit-feedback-status','lit-schedule-times'];
+ const names=['lit-data','lit-search','lit-edition','lit-sort','lit-results','lit-journals-dialog','lit-journals-open','lit-version-note','lit-count','lit-empty','lit-window','lit-coverage-list','lit-journals-options','lit-journals-selection','lit-journals-all','lit-journals-none','lit-journals-apply','lit-journals-close','lit-journals-cancel','lit-read-later-toggle','lit-filters-reset','lit-marks-all','lit-marks-clear','lit-sources-toggle','lit-sources-body','lit-recommendations-toggle','lit-recommendations-body','lit-account-signout','lit-account-name','lit-email-open','lit-feedback-status','lit-schedule-times'];
  names.forEach(id=>add(id));const topics=add('topics','div','lit-topics'),panel=add('account-panel','div','lit-account-panel'),help=add('help','div','lit-account-help');help.append(ids.get('lit-recommendations-toggle'),ids.get('lit-recommendations-body'));
- const boxes=['more','useful','irrelevant','later','unlabeled'].map(signal=>{const box=add('mark-'+signal,'input');box.dataset.feedbackFilter=signal;box.checked=true;return box;});
+ const boxes=['more','useful','irrelevant','unlabeled'].map(signal=>{const box=add('mark-'+signal,'input');box.dataset.feedbackFilter=signal;box.checked=true;return box;});
  const option=new Element('option');option.setAttribute('value','personal');ids.get('lit-sort').append(option);
  ids.get('lit-edition').value='2026-10-30';ids.get('lit-sort').value='community';
  ids.get('lit-data').content={textContent:JSON.stringify({editions:[{id:'2026-10-30',start:'2026-10-23 03:30',end:'2026-10-30 03:30',publishedAt:'2026-10-30T03:30:00+08:00',coverage:[{journal:'Science'}],articles:[paper('a',4),paper('b',3),paper('c',2),paper('d',1)]},...extraReports]})};
@@ -96,9 +96,9 @@ test('Read Later persists privately, can coexist with reactions, and ranks betwe
 });
 test('mark filters use OR; select all checks all four including unmarked; undo preserves membership until explicit changes',async()=>{
  const app=ui();await app.click('b','more');await app.click('c','useful');await app.click('d','later');
- for(const box of app.boxes)box.checked=['more','later'].includes(box.dataset.feedbackFilter);
- await app.trigger('mark-more','change');assert.deepEqual(new Set(app.order()),new Set(['b','d']));
- await app.click('d','later');assert.deepEqual(new Set(app.order()),new Set(['b','d']));assert.equal(app.button('d','later').getAttribute('aria-pressed'),'false');
+ for(const box of app.boxes)box.checked=['more','useful'].includes(box.dataset.feedbackFilter);
+ await app.trigger('mark-more','change');assert.deepEqual(new Set(app.order()),new Set(['b','c']));
+ await app.click('c','useful');assert.deepEqual(new Set(app.order()),new Set(['b','c']));assert.equal(app.button('c','useful').getAttribute('aria-pressed'),'false');
  await app.trigger('lit-search','input');assert.deepEqual(app.order(),['b']);
  for(const box of app.boxes)box.checked=false;await app.trigger('mark-more','change');assert.deepEqual(app.order(),[]);
  await app.trigger('lit-marks-all','click');assert.equal(app.boxes.every(box=>box.checked),true);assert.equal(app.order().length,4);
@@ -139,13 +139,13 @@ test('All editions merges articles, deduplicates DOI using the newest record, an
  const app=ui(undefined,[old]);assert.equal(app.order().length,4);
  app.ids.get('lit-edition').value='all';await app.trigger('lit-edition','change');assert.deepEqual(app.order(),['a','b','c','d','e']);assert.match(app.ids.get('lit-window').textContent,/All editions.*2026-10-16/);
  await app.click('e','later');await app.trigger('lit-sort','change');assert.equal(app.order()[0],'e');
- await app.trigger('lit-marks-clear','click');assert.deepEqual(app.order(),[]);app.ids.get('mark-later').checked=true;await app.trigger('mark-later','change');assert.deepEqual(app.order(),['e']);
+ await app.trigger('lit-marks-clear','click');assert.deepEqual(app.order(),[]);await app.trigger('lit-read-later-toggle','click');assert.deepEqual(app.order(),['e']);
  await app.trigger('lit-marks-all','click');app.ids.get('lit-edition').value='2026-10-30';await app.trigger('lit-edition','change');assert.equal(app.order().length,4);assert.equal(app.order().includes('e'),false);
 });
 
 
 test('Unlabeled means no reaction and no bookmark; four selected categories do not imply all',()=>{
- const defaults=new Set(['more','useful','later','unlabeled']);
+ const defaults=new Set(['more','useful','unlabeled']);
  assert.equal(P.matchesFeedback(undefined,defaults),true);
  assert.equal(P.matchesFeedback({signals:['irrelevant']},defaults),false);
  assert.equal(P.matchesFeedback({signals:['more']},new Set(['unlabeled'])),false);
@@ -157,23 +157,24 @@ test('Reset restores search, latest edition, sorting, all sources, topics and de
  await app.trigger('lit-marks-clear','click');assert.equal(app.order().length,0);
  await app.trigger('lit-filters-reset','click');
  assert.equal(app.ids.get('lit-search').value,'');assert.equal(app.ids.get('lit-sort').value,'personal');
- assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','later','unlabeled']);
+ assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','unlabeled']);
  assert.equal(app.order().length,4);
 });
 
 
 test('Read Later switches a mixed filter to bookmarks only, including from checked defaults',async()=>{
  const app=ui();await app.click('b','later');await app.click('c','more');
- // A click on the initially checked filter toggles it off before change fires.
- app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
- assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['later']);
+ // The button starts inactive even though the default list includes bookmarks.
+ assert.equal(app.ids.get('lit-read-later-toggle').getAttribute('aria-pressed'),'false');
+ await app.trigger('lit-read-later-toggle','click');
+ assert.deepEqual(app.boxes.filter(b=>b.checked),[]);assert.equal(app.ids.get('lit-read-later-toggle').getAttribute('aria-pressed'),'true');
  assert.deepEqual(app.order(),['b']);
  app.ids.get('lit-search').value='missing';app.ids.get('lit-sort').value='date';
- app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
+ await app.trigger('lit-read-later-toggle','click');
  assert.equal(app.ids.get('lit-edition').value,'2026-10-30');assert.equal(app.ids.get('lit-search').value,'');assert.equal(app.ids.get('lit-sort').value,'personal');
- assert.equal(app.boxes.filter(b=>b.checked).length,4);assert.equal(app.order().length,4);
- app.ids.get('mark-later').checked=true;await app.trigger('mark-later','change');assert.deepEqual(app.order(),['b']);
- await app.trigger('lit-filters-reset','click');assert.equal(app.boxes.filter(b=>b.checked).length,4);
+ assert.equal(app.boxes.filter(b=>b.checked).length,3);assert.equal(app.order().length,4);assert.equal(app.ids.get('lit-read-later-toggle').getAttribute('aria-pressed'),'false');
+ await app.trigger('lit-read-later-toggle','click');assert.deepEqual(app.order(),['b']);
+ await app.trigger('lit-filters-reset','click');assert.equal(app.boxes.filter(b=>b.checked).length,3);
 });
 
 
@@ -181,9 +182,9 @@ test('Read Later opens all editions and includes older bookmarks; toggling off r
  const old={id:'2026-10-23',start:'2026-10-16',end:'2026-10-23',coverage:[{journal:'Science'}],articles:[paper('old-bookmark')]};
  const app=ui(undefined,[old]);
  app.emit({feedback:{'old-bookmark':P.toggleReadLater({signals:[]}),b:P.toggleReadLater({signals:[]})}});
- app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
+ await app.trigger('lit-read-later-toggle','click');
  assert.equal(app.ids.get('lit-edition').value,'all');assert.deepEqual(new Set(app.order()),new Set(['b','old-bookmark']));
- app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
+ await app.trigger('lit-read-later-toggle','click');
  assert.equal(app.ids.get('lit-edition').value,'2026-10-30');assert.equal(app.order().includes('old-bookmark'),false);
- assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','later','unlabeled']);
+ assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','unlabeled']);
 });
