@@ -2070,6 +2070,14 @@
       "first_delivered_edition": "2026-11-13",
       "delivery_confirmed_on": "2026-11-14T03:21:11.839193+00:00",
       "deployment_run": "https://github.com/mengdihan/mengdihan.github.io/actions/runs/43551066899"
+    },
+    {
+      "id": "10.1126/science.aed8712",
+      "doi": "10.1126/science.aed8712",
+      "title": "AI-monitored bioadhesive for sutureless microvascular anastomosis",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-14T03:57:43.069849+00:00",
+      "deployment_run": "https://github.com/mengdihan/mengdihan.github.io/actions/runs/43554117195"
     }
   ]
 }
