@@ -2062,6 +2062,14 @@
       "first_delivered_edition": "2026-11-13",
       "delivery_confirmed_on": "2026-11-12T19:52:07.004940+00:00",
       "delivery_channel": "Confirmed GitHub Pages deployment and official hmd-lab.com edition verification"
+    },
+    {
+      "id": "10.1038/s41586-026-11336-3",
+      "doi": "10.1038/s41586-026-11336-3",
+      "title": "Opportunistically Detecting Signs of Hypertension on a Consumer Smartwatch",
+      "first_delivered_edition": "2026-11-13",
+      "delivery_confirmed_on": "2026-11-14T03:21:11.839193+00:00",
+      "deployment_run": "https://github.com/mengdihan/mengdihan.github.io/actions/runs/43551066899"
     }
   ]
 }
