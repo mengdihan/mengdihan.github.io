@@ -97,7 +97,7 @@
       "readCountIsLowerBound": false,
       "readCountDatePending": 2,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
-      "selectedCount": 1,
+      "selectedCount": 2,
       "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. The accessible publisher landing/list page was inspected; historical and all-page coverage is not claimed.",
       "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
       "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
@@ -130,7 +130,12 @@
           "pagination_exhausted": true
         }
       ],
-      "recordsRecovered": 380
+      "recordsRecovered": 380,
+      "manualSupplement": {
+        "reviewedAt": "2026-11-14T03:18:54.892120+00:00",
+        "doi": "10.1038/s41586-026-11336-3",
+        "basis": "User-identified omission, publisher-indexed/PubMed abstract review. Prior candidate-level decision unavailable; metadata read counts unchanged."
+      }
     },
     {
       "journal": "Science Robotics",
