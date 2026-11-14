@@ -4,8 +4,53 @@
   "end": "2026-11-13 03:30",
   "updated": "2026-11-13",
   "publishedAt": "2026-11-12T19:47:10.431209+00:00",
-  "note": "Newly reviewed deliveries and backfills; publication dates are retained or explicitly unverified. Coverage is partial: level 1/2 all-content review and Science editorial-summary attribution could not be completed. Counts represent inspected metadata rather than total publications or full-text reads. No private reader feedback was accessed. Manual correction: the smartwatch hypertension study (published 5 November) was added as a backfill after a user-identified omission; original publication and edition timestamps are retained.",
+  "note": "Newly reviewed deliveries and backfills; publication dates are retained or explicitly unverified. Coverage is partial: level 1/2 all-content review and Science editorial-summary attribution could not be completed. Counts represent inspected metadata rather than total publications or full-text reads. No private reader feedback was accessed. Manual correction: the smartwatch hypertension study (published 5 November) was added as a backfill after a user-identified omission; original publication and edition timestamps are retained. Manual correction: the Science microvascular bioadhesive study (published 12 November) was added after a user-identified omission.",
   "articles": [
+    {
+      "doi": "10.1126/science.aed8712",
+      "title": "AI-monitored bioadhesive for sutureless microvascular anastomosis",
+      "journal": "Science",
+      "authors": [
+        "Fangchao Xue",
+        "Shanlan Zhao",
+        "Hao Tian",
+        "Lang Li",
+        "Xinrong Xu",
+        "Yixiang Lu",
+        "Kaige Xu",
+        "Lang He",
+        "Yueying Wang",
+        "Zhaojing Ba",
+        "Yumei Que",
+        "Di Liu",
+        "Yuxin Xing",
+        "Yang Su",
+        "Malcolm Xing",
+        "Wen Zeng"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/science.aed8712",
+      "id": "10.1126/science.aed8712",
+      "date": "2026-11-12",
+      "relevance": 5,
+      "summary": "A plant-root-inspired adhesive combines a hydrophobic polymer matrix with tetrahedral microneedles to join small blood vessels without sutures. An integrated AI-assisted wireless sensor tracks blood flow and graft condition to identify emerging complications. In rat models, the system shortened the procedure by 78% and reduced neointimal hyperplasia. This preclinical platform links tissue adhesion, implantable sensing and postoperative monitoring; clinical performance has not been established. Added after an earlier Radar omission.",
+      "topics": [
+        "Bioadhesives",
+        "Microneedles",
+        "Wireless implants",
+        "Hemodynamic monitoring"
+      ],
+      "type": "Research article",
+      "readingBasis": "PubMed-derived abstract and ordered author metadata reproduced by Life Science Network; publisher-derived editorial-summary excerpt reproduced by Muck Rack. Publisher HTML, full text, figures, Methods and SI not accessible.",
+      "evidenceSources": [
+        "https://www.science.org/doi/10.1126/science.aed8712",
+        "https://pubmed.ncbi.nlm.nih.gov/43019420/",
+        "https://www.lifescience.net/publications/2298602/ai-monitored-bioadhesive-for-sutureless-microvascu/",
+        "https://muckrack.com/media-outlet/sciencemag"
+      ],
+      "firstSeenAt": "2026-11-14T03:55:26.249058+00:00",
+      "backfill": true
+    },
     {
       "doi": "10.1038/s41586-026-11336-3",
       "title": "Opportunistically Detecting Signs of Hypertension on a Consumer Smartwatch",
@@ -2401,7 +2446,7 @@
       "readCountIsLowerBound": false,
       "readCountDatePending": 39,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "detail": "Public metadata and available article content were reviewed. Publisher/all-content completeness and first-online boundary times remain unverified. Counts include baseline/backfill metadata, not full-text reads or publication totals. Official catalogue request failed (HTTP Error 403: Forbidden); indexed metadata are a partial fallback. Editor’s summary attributions remain unknown where official text was unavailable; no complete signature coverage is claimed.",
       "lastMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
       "lastSuccessfulMetadataScanAt": "2026-11-12T19:47:10.431209+00:00",
@@ -2434,7 +2479,12 @@
           "pagination_exhausted": true
         }
       ],
-      "recordsRecovered": 171
+      "recordsRecovered": 171,
+      "manualSupplement": {
+        "reviewedAt": "2026-11-14T03:55:26.249058+00:00",
+        "doi": "10.1126/science.aed8712",
+        "basis": "User-identified omission; substantive PubMed-derived abstract and publisher-derived editorial-summary excerpt reviewed. Official individual editorial signature inaccessible; user attribution retained only in audit. Historical metadata counts unchanged."
+      }
     },
     {
       "journal": "Cell",
