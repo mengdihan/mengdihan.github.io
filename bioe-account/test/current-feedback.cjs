@@ -168,7 +168,22 @@ test('Read Later switches a mixed filter to bookmarks only, including from check
  app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
  assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['later']);
  assert.deepEqual(app.order(),['b']);
- app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');assert.deepEqual(app.order(),[]);
+ app.ids.get('lit-search').value='missing';app.ids.get('lit-sort').value='date';
+ app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
+ assert.equal(app.ids.get('lit-edition').value,'2026-10-30');assert.equal(app.ids.get('lit-search').value,'');assert.equal(app.ids.get('lit-sort').value,'personal');
+ assert.equal(app.boxes.filter(b=>b.checked).length,4);assert.equal(app.order().length,4);
  app.ids.get('mark-later').checked=true;await app.trigger('mark-later','change');assert.deepEqual(app.order(),['b']);
  await app.trigger('lit-filters-reset','click');assert.equal(app.boxes.filter(b=>b.checked).length,4);
+});
+
+
+test('Read Later opens all editions and includes older bookmarks; toggling off restores reset defaults',async()=>{
+ const old={id:'2026-10-23',start:'2026-10-16',end:'2026-10-23',coverage:[{journal:'Science'}],articles:[paper('old-bookmark')]};
+ const app=ui(undefined,[old]);
+ app.emit({feedback:{'old-bookmark':P.toggleReadLater({signals:[]}),b:P.toggleReadLater({signals:[]})}});
+ app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
+ assert.equal(app.ids.get('lit-edition').value,'all');assert.deepEqual(new Set(app.order()),new Set(['b','old-bookmark']));
+ app.ids.get('mark-later').checked=false;await app.trigger('mark-later','change');
+ assert.equal(app.ids.get('lit-edition').value,'2026-10-30');assert.equal(app.order().includes('old-bookmark'),false);
+ assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','later','unlabeled']);
 });
