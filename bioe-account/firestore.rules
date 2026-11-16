@@ -3,6 +3,8 @@
 // communityReactions/{uid}_{sha64}: key<=1000, article sha64, uid<=128,
 // token-verified name<=100, signals, event autoID20, server updatedAt.
 // reactionEvents/{autoID20}: same shared fields, server createdAt; immutable.
+// publicReactionCounts/{sha64}: key<=1000, like/useful nonnegative integer totals,
+// updatedAt timestamp. Public read; signed-in writes only with exact atomic reaction deltas.
 // Shared records are readable by signed-in readers; never contain notes/email.
 rules_version = '2';
 service cloud.firestore {
@@ -72,14 +74,48 @@ service cloud.firestore {
         && reaction.name==d.name && reaction.signals==d.signals
         && feedbackDoc.key==d.key && feedbackDoc.signals==d.signals && feedbackDoc.updatedAt==request.time;
     }
+    function validPublicCounts(d) {
+      return d.keys().hasAll(['key','like','useful','updatedAt'])
+        && d.keys().hasOnly(['key','like','useful','updatedAt'])
+        && bounded(d.key,1000) && d.key.size()>0
+        && d.like is int && d.like>=0 && d.like<=1000000000
+        && d.useful is int && d.useful>=0 && d.useful<=1000000000
+        && d.updatedAt is timestamp;
+    }
+    function signalCount(signals,signal) { return signals.hasAny([signal]) ? 1 : 0; }
+    function countsMatchReaction(d) {
+      let counts=getAfter(/databases/$(database)/documents/publicReactionCounts/$(d.article)).data;
+      return validPublicCounts(counts) && counts.key==d.key && counts.updatedAt==request.time;
+    }
+    function validCountDelta(article,oldLike,oldUseful) {
+      let reactionPath=/databases/$(database)/documents/communityReactions/$(request.auth.uid+'_'+article);
+      let before=exists(reactionPath) ? get(reactionPath).data.signals : [];
+      let after=getAfter(reactionPath).data;
+      let d=request.resource.data;
+      return validPublicCounts(d) && d.updatedAt==request.time
+        && after.updatedAt==request.time && after.article==article && after.key==d.key
+        && d.like==oldLike+signalCount(after.signals,'more')-signalCount(before,'more')
+        && d.useful==oldUseful+signalCount(after.signals,'useful')-signalCount(before,'useful');
+    }
+    match /publicReactionCounts/{article} {
+      // Explicit owner request: anonymous visitors can read counts, never names.
+      allow read: if true;
+      allow create: if isAuthenticated() && article.matches('^[a-f0-9]{64}$')
+        && !exists(/databases/$(database)/documents/communityReactions/$(request.auth.uid+'_'+article))
+        && validCountDelta(article,0,0);
+      allow update: if isAuthenticated() && article.matches('^[a-f0-9]{64}$')
+        && request.resource.data.key==resource.data.key
+        && validCountDelta(article,resource.data.like,resource.data.useful);
+      allow delete: if false;
+    }
     match /communityReactions/{reaction} {
       allow read: if isAuthenticated();
       allow create: if isAuthenticated() && validReaction(request.resource.data)
-        && reaction==request.auth.uid+'_'+request.resource.data.article && eventMatches(request.resource.data);
+        && reaction==request.auth.uid+'_'+request.resource.data.article && eventMatches(request.resource.data) && countsMatchReaction(request.resource.data);
       allow update: if isAuthenticated() && validReaction(request.resource.data)
         && isOwner(resource.data.uid) && request.resource.data.uid==resource.data.uid
         && request.resource.data.key==resource.data.key && request.resource.data.article==resource.data.article
-        && reaction==request.auth.uid+'_'+request.resource.data.article && eventMatches(request.resource.data);
+        && reaction==request.auth.uid+'_'+request.resource.data.article && eventMatches(request.resource.data) && countsMatchReaction(request.resource.data);
       allow delete: if false;
     }
     match /reactionEvents/{event} {

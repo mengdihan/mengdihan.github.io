@@ -2,8 +2,9 @@
   'use strict';
   // Public Firebase web-app identifiers; access is enforced by Firestore rules.
   const config={apiKey:'AIzaSyBVzfqjQ9ws3rjblYOiSs0NK7qpfyl0_wE',authDomain:'bioe-radar.firebaseapp.com',projectId:'bioe-radar',storageBucket:'bioe-radar.firebasestorage.app',messagingSenderId:'790864157367',appId:'1:790864157367:web:90dac5fe58bfcb675d4b32'};
-  let state={status:'loading',user:null,feedback:Object.create(null),reactions:[],events:[],communityStatus:'loading',message:'Connecting to your account…'},sdk,auth,db,subscriptions=[],generation=0;
+  let state={status:'loading',user:null,feedback:Object.create(null),reactions:[],events:[],publicCounts:Object.create(null),publicCountsStatus:'loading',communityStatus:'loading',message:'Connecting to your account…'},sdk,auth,db,subscriptions=[],generation=0;
   const listeners=new Set();
+  let publicGeneration=0;
   const emit=patch=>{state={...state,...patch};listeners.forEach(fn=>fn(state));};
   const explain=error=>({
     'auth/popup-blocked':'Allow the Google sign-in popup, then try again.',
@@ -27,6 +28,20 @@
       const base='https://www.gstatic.com/firebasejs/13.1.0/';
       const [app,A,F]=await Promise.all([import(base+'firebase-app.js'),import(base+'firebase-auth.js'),import(base+'firebase-firestore.js')]);
       sdk={A,F};const instance=app.initializeApp(config);auth=A.getAuth(instance);db=F.getFirestore(instance);
+      // Public listener contains aggregate counts only and never requests named records.
+      F.onSnapshot(F.collection(db,'publicReactionCounts'),async snapshot=>{
+        const revision=++publicGeneration,publicCounts=Object.create(null),checks=[];
+        snapshot.forEach(doc=>{const d=doc.data();
+          if(typeof d.key!=='string'||!Number.isSafeInteger(d.like)||d.like<0||!Number.isSafeInteger(d.useful)||d.useful<0)return;
+          checks.push((async()=>{
+            const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(d.key));
+            const hash=Array.from(new Uint8Array(bytes),x=>x.toString(16).padStart(2,'0')).join('');
+            if(doc.id===hash)publicCounts[d.key]={like:d.like,useful:d.useful};
+          })());
+        });
+        try{await Promise.all(checks);if(revision===publicGeneration)emit({publicCounts,publicCountsStatus:'ready'});}
+        catch(error){if(revision===publicGeneration)emit({publicCounts:Object.create(null),publicCountsStatus:'error'});}
+      },()=>{publicGeneration++;emit({publicCounts:Object.create(null),publicCountsStatus:'error'});});
       A.onAuthStateChanged(auth,user=>{
         const current=++generation;subscriptions.forEach(unsubscribe=>unsubscribe());subscriptions=[];
         emit({status:user?'syncing':'signed-out',user:user?{uid:user.uid,displayName:user.displayName||'Reader'}:null,feedback:Object.create(null),reactions:[],events:[],communityStatus:user?'loading':'signed-out',message:user?'Loading your private feedback…':'Sign in to save private feedback and sync across devices.'});
@@ -107,6 +122,11 @@
           const shared={key:entry.key,article:id,uid:user,name:auth.currentUser.displayName||'Reader',signals:[...entry.signals]};
           batch.set(F.doc(db,'communityReactions',user+'_'+id),{...shared,event:event.id,updatedAt:F.serverTimestamp()});
           batch.set(event,{...shared,createdAt:F.serverTimestamp()});
+          const prior=state.reactions.find(r=>r.uid===user&&r.key===entry.key)?.signals||[];
+          batch.set(F.doc(db,'publicReactionCounts',id),{
+            key:entry.key,like:F.increment(Number(entry.signals.includes('more'))-Number(prior.includes('more'))),
+            useful:F.increment(Number(entry.signals.includes('useful'))-Number(prior.includes('useful'))),updatedAt:F.serverTimestamp()
+          },{merge:true});
         }
         await batch.commit();return true;
       }
