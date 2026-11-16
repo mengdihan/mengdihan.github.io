@@ -323,3 +323,6 @@
 .lit-edition-year>strong{display:block;position:sticky;top:0;padding:6px 8px;background:#edf2f8;color:var(--hmd-navy);font-size:12px}
 .lit-edition-count,.lit-edition-no-match{margin:8px 7px 3px;color:#626a75;font-size:11px;font-weight:400}
 .literature-tools .lit-edition-choices [hidden]{display:none}
+
+/* Keep the native fallback hidden after the English edition picker is ready. */
+#lit-edition[hidden]{display:none!important}
