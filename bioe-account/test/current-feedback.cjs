@@ -198,15 +198,34 @@ test('Read Later opens all editions and includes older bookmarks; toggling off r
 test('edition checkbox picker combines chosen editions, deduplicates and handles All, none, reset and Read Later',async()=>{
  const old={id:'2026-10-23',start:'2026-10-16',end:'2026-10-23',coverage:[{journal:'Science'}],articles:[{...paper('a'),title:'Older duplicate'},paper('old')]};
  const app=ui(undefined,[old],true),select=app.ids.get('lit-edition'),picker=select.nextSibling;
- const inputs=picker.children[1].children.map(label=>label.children[0]);
+ const inputs=picker.querySelectorAll('input').filter(input=>input.type==='checkbox');
  const choose=async(value,checked)=>{const input=inputs.find(i=>i.value===value);input.checked=checked;await input.dispatch('change');};
  assert.equal(picker.children[0].textContent,'2026-10-30');
  await choose('2026-10-23',true);assert.deepEqual(app.order(),['a','b','c','d','old']);assert.equal(app.order().filter(id=>id==='a').length,1);
  await choose('2026-10-30',false);assert.deepEqual(new Set(app.order()),new Set(['a','old']));
- await choose('all',true);assert.equal(app.order().length,5);
- await choose('all',false);assert.equal(app.order().length,0);
+ await choose('all',true);assert.equal(app.order().length,5);assert.equal(inputs.every(i=>i.checked),true);assert.equal(select.options.every(o=>o.selected),true);
+ await choose('2026-10-23',false);assert.equal(inputs.find(i=>i.value==='all').checked,false);assert.equal(inputs.find(i=>i.value==='all').indeterminate,true);
+ await choose('all',true);
+ await picker.querySelector('.lit-edition-clear').dispatch('click');assert.equal(app.order().length,0);assert.equal(inputs.some(i=>i.checked),false);
+ const dateSearch=picker.querySelector('.lit-edition-search');dateSearch.value='2026-10-23';await dateSearch.dispatch('input');
+ const rows=picker.querySelectorAll('label').filter(l=>l.children[0]?.value!=='all');assert.equal(rows.filter(l=>!l.hidden).length,1);
+ dateSearch.value='1999';await dateSearch.dispatch('input');assert.equal(picker.querySelector('.lit-edition-no-match').hidden,false);
+ dateSearch.value='';await dateSearch.dispatch('input');
  await app.trigger('lit-filters-reset','click');assert.deepEqual(select.selectedOptions.map(o=>o.value),['2026-10-30']);
  app.emit({feedback:{old:P.toggleReadLater({signals:[]})}});
- await app.trigger('lit-read-later-toggle','click');assert.deepEqual(select.selectedOptions.map(o=>o.value),['all']);assert.deepEqual(app.order(),['old']);
+ await app.trigger('lit-read-later-toggle','click');assert.equal(select.options.every(o=>o.selected),true);assert.deepEqual(app.order(),['old']);
  await app.trigger('lit-read-later-toggle','click');assert.deepEqual(select.selectedOptions.map(o=>o.value),['2026-10-30']);
+});
+
+
+test('edition picker supports a multi-year archive without losing hidden selections during search',async()=>{
+ const reports=Array.from({length:104},(_,i)=>{const id=new Date(Date.UTC(2026,9,23)-i*7*86400000).toISOString().slice(0,10);return {id,start:id,end:id,coverage:[{journal:'Science'}],articles:[paper('archive-'+i)]};});
+ const app=ui(undefined,reports,true),select=app.ids.get('lit-edition'),picker=select.nextSibling;
+ const inputs=picker.querySelectorAll('input').filter(input=>input.type==='checkbox'),all=inputs.find(input=>input.value==='all');
+ all.checked=true;await all.dispatch('change');assert.equal(inputs.every(i=>i.checked),true);
+ const search=picker.querySelector('.lit-edition-search');search.value='2025';await search.dispatch('input');
+ const visible=picker.querySelectorAll('label').filter(l=>l.children[0]?.value!=='all'&&!l.hidden);
+ assert.equal(visible.length>40,true);assert.equal(visible.every(l=>l.children[0].value.startsWith('2025')),true);
+ assert.equal(select.options.every(o=>o.selected),true);
+ await picker.querySelector('.lit-edition-clear').dispatch('click');assert.equal(select.selectedOptions.length,0);assert.equal(inputs.some(i=>i.checked),false);
 });

@@ -49,21 +49,36 @@
   }
   const editionIds=()=>edition.options?[...edition.selectedOptions].map(o=>o.value):[edition.value];
   const setEditions=ids=>{
-    if(edition.options){for(const o of edition.options)o.selected=ids.includes(o.value);}
+    if(edition.options){for(const o of edition.options)o.selected=ids.includes('all')||ids.includes(o.value);}
     else edition.value=ids[0]||'';
     syncEditionPicker();
   };
-  let editionPicker,editionSummary,editionChoices=[];
+  let editionPicker,editionSummary,editionCount,editionChoices=[];
+  let resetEditionSearch=()=>{};
   function syncEditionPicker(){
     if(!editionPicker)return;
     const ids=editionIds(),all=ids.includes('all')||data.editions.every(e=>ids.includes(e.id));
     editionSummary.textContent=all?'All editions':ids.length===1?ids[0]:ids.length?ids.length+' editions':'Select editions';
     editionSummary.setAttribute('aria-label','Edition: '+editionSummary.textContent+'; select one or more');
+    editionCount.textContent=(all?data.editions.length:ids.filter(id=>id!=='all').length)+' of '+data.editions.length+' editions selected';
     editionChoices.forEach(input=>{input.checked=input.value==='all'?all:all||ids.includes(input.value);input.indeterminate=input.value==='all'&&!all&&ids.length>0;});
   }
   if(edition.options){
     editionPicker=node('details','lit-edition-picker');editionSummary=node('summary','', 'Edition');
     editionPicker.append(editionSummary);const choices=node('div','lit-edition-choices');
+    const actions=node('div','lit-edition-actions'),clear=node('button','lit-edition-clear','Clear');clear.type='button';
+    clear.addEventListener('click',()=>{setEditions([]);setup();});
+    const dateSearch=node('input','lit-edition-search');dateSearch.type='search';dateSearch.placeholder='Search date or year';dateSearch.setAttribute('aria-label','Search editions by date or year');
+    const list=node('div','lit-edition-list'),groups=new Map(),rows=[];
+    editionCount=node('p','lit-edition-count');editionCount.setAttribute('role','status');
+    const noMatches=node('p','lit-edition-no-match','No matching editions.');noMatches.hidden=true;
+    resetEditionSearch=()=>{dateSearch.value='';rows.forEach(({label})=>label.hidden=false);for(const section of groups.values())section.hidden=false;noMatches.hidden=true;};
+    dateSearch.addEventListener('input',()=>{
+      const query=dateSearch.value.trim().toLowerCase();
+      rows.forEach(({label,id})=>label.hidden=!id.toLowerCase().includes(query));
+      for(const section of groups.values())section.hidden=section.querySelectorAll('label').length>0&&[...section.querySelectorAll('label')].every(label=>label.hidden);
+      noMatches.hidden=rows.some(({label})=>!label.hidden);
+    });
     for(const option of edition.options){
       const label=node('label'),input=node('input');input.type='checkbox';input.value=option.value;
       input.addEventListener('change',()=>{
@@ -72,8 +87,15 @@
         else{input.checked?ids.add(input.value):ids.delete(input.value);setEditions([...ids]);}
         setup();
       });
-      editionChoices.push(input);label.append(input,node('span','',option.value==='all'?'All editions':option.textContent));choices.append(label);
+      editionChoices.push(input);label.append(input,node('span','',option.value==='all'?'All editions':option.textContent));
+      if(option.value==='all')actions.append(label);
+      else{
+        const year=option.value.slice(0,4);
+        if(!groups.has(year)){const section=node('section','lit-edition-year');section.append(node('strong','',year));groups.set(year,section);list.append(section);}
+        groups.get(year).append(label);rows.push({label,id:option.value});
+      }
     }
+    actions.append(clear);list.append(noMatches);choices.append(actions,dateSearch,list,editionCount);
     editionPicker.append(choices);edition.after(editionPicker);edition.hidden=true;syncEditionPicker();
     document.addEventListener('click',event=>{if(!editionPicker.contains(event.target))editionPicker.open=false;});
     editionPicker.addEventListener('keydown',event=>{if(event.key==='Escape'){editionPicker.open=false;editionSummary.focus();}});
@@ -205,6 +227,7 @@
   for(const id of ['lit-journals-close','lit-journals-cancel'])byId(id).addEventListener('click',()=>dialog.close());
   search.addEventListener('input',render);sort.addEventListener('change',render);edition.addEventListener('change',()=>{syncEditionPicker();setup();});
   function resetFilters(){
+    resetEditionSearch();
     if(editionPicker)editionPicker.open=false;
     readLaterOnly=false;includeReadLater=true;
     search.value='';setEditions([data.latest||defaultEdition]);sort.value=accountState.user?'personal':'community';
@@ -217,6 +240,7 @@
   readLaterToggle.addEventListener('click',()=>{
     if(readLaterOnly){resetFilters();return;}
     if(editionPicker)editionPicker.open=false;
+    resetEditionSearch();
     readLaterOnly=true;includeReadLater=true;
     feedbackBoxes.forEach(box=>box.checked=false);
     setEditions(['all']);setup();draft=new Set(journals);
