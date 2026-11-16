@@ -22,7 +22,7 @@ test('community uses current totals, counts a double mark twice, and handles und
 });
 
 // Small DOM fixture: runs the real page script with fake accounts, no browser or live data.
-function ui(initial,extraReports=[]){
+function ui(initial,extraReports=[],multiEdition=false){
  let document;
  class Element{
   constructor(tag='div'){this.tagName=tag.toUpperCase();this.children=[];this.dataset={};this.style={};this.attributes={};this.handlers={};this.value='';this.textContent='';this.className='';this.isConnected=true;}
@@ -38,6 +38,7 @@ function ui(initial,extraReports=[]){
   closest(s){return this.matches(s)?this:this.parent?.closest(s)||null;}
   focus(){document.activeElement=this;}
   getBoundingClientRect(){return {left:0,right:1000,top:0,bottom:10,height:10};}
+  after(element){this.nextSibling=element;}
   showModal(){this.open=true;}close(){this.open=false;}
  }
  const ids=new Map(),roots=[];const add=(id,tag='div',cls='')=>{const e=new Element(tag);e.id=id;e.className=cls;ids.set(id,e);roots.push(e);return e;};
@@ -51,6 +52,10 @@ function ui(initial,extraReports=[]){
  let state=initial||{status:'signed-in',user:{uid:'alice',displayName:'Alice'},feedback:{},reactions:[],events:[],communityStatus:'ready',message:'Synced across your devices.'};let subscriber;
  const emit=patch=>{state={...state,...patch};subscriber(state);};
  const account={subscribe(fn){subscriber=fn;fn(state);},async save(entry){const feedback={...state.feedback,[entry.key]:{...entry,updatedAt:Date.now()}};emit({feedback});const others=state.reactions.filter(r=>!(r.uid===state.user.uid&&r.key===entry.key));emit({reactions:[...others,{...entry,uid:state.user.uid,name:state.user.displayName,updatedAt:Date.now()}]});return true;},signOut(){emit({status:'signed-out',user:null,feedback:{},reactions:[],communityStatus:'signed-out'});}};
+ if(multiEdition){
+  const select=ids.get('lit-edition');select.options=['all','2026-10-30',...extraReports.map(e=>e.id)].map(value=>({value,textContent:value,selected:value==='2026-10-30'}));
+  Object.defineProperty(select,'selectedOptions',{get:()=>select.options.filter(o=>o.selected)});
+ }
  const window={BioERadarAccount:account,BioERadarPersonalization:P,matchMedia:()=>({matches:true}),addEventListener(){}};
  vm.runInNewContext(fs.readFileSync(path.resolve(__dirname,'../../static/literature.js'),'utf8'),{window,document,ResizeObserver:class{observe(){}},Intl,Date,innerWidth:1000,innerHeight:800});
  const order=()=>ids.get('lit-results').children.map(e=>e.dataset.id);
@@ -187,4 +192,21 @@ test('Read Later opens all editions and includes older bookmarks; toggling off r
  await app.trigger('lit-read-later-toggle','click');
  assert.equal(app.ids.get('lit-edition').value,'2026-10-30');assert.equal(app.order().includes('old-bookmark'),false);
  assert.deepEqual(app.boxes.filter(b=>b.checked).map(b=>b.dataset.feedbackFilter),['more','useful','unlabeled']);
+});
+
+
+test('edition checkbox picker combines chosen editions, deduplicates and handles All, none, reset and Read Later',async()=>{
+ const old={id:'2026-10-23',start:'2026-10-16',end:'2026-10-23',coverage:[{journal:'Science'}],articles:[{...paper('a'),title:'Older duplicate'},paper('old')]};
+ const app=ui(undefined,[old],true),select=app.ids.get('lit-edition'),picker=select.nextSibling;
+ const inputs=picker.children[1].children.map(label=>label.children[0]);
+ const choose=async(value,checked)=>{const input=inputs.find(i=>i.value===value);input.checked=checked;await input.dispatch('change');};
+ assert.equal(picker.children[0].textContent,'2026-10-30');
+ await choose('2026-10-23',true);assert.deepEqual(app.order(),['a','b','c','d','old']);assert.equal(app.order().filter(id=>id==='a').length,1);
+ await choose('2026-10-30',false);assert.deepEqual(new Set(app.order()),new Set(['a','old']));
+ await choose('all',true);assert.equal(app.order().length,5);
+ await choose('all',false);assert.equal(app.order().length,0);
+ await app.trigger('lit-filters-reset','click');assert.deepEqual(select.selectedOptions.map(o=>o.value),['2026-10-30']);
+ app.emit({feedback:{old:P.toggleReadLater({signals:[]})}});
+ await app.trigger('lit-read-later-toggle','click');assert.deepEqual(select.selectedOptions.map(o=>o.value),['all']);assert.deepEqual(app.order(),['old']);
+ await app.trigger('lit-read-later-toggle','click');assert.deepEqual(select.selectedOptions.map(o=>o.value),['2026-10-30']);
 });

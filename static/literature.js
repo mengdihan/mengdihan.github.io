@@ -47,11 +47,43 @@
     }
     box.append(buttons);return box;
   }
-  let allEditions;
+  const editionIds=()=>edition.options?[...edition.selectedOptions].map(o=>o.value):[edition.value];
+  const setEditions=ids=>{
+    if(edition.options){for(const o of edition.options)o.selected=ids.includes(o.value);}
+    else edition.value=ids[0]||'';
+    syncEditionPicker();
+  };
+  let editionPicker,editionSummary,editionChoices=[];
+  function syncEditionPicker(){
+    if(!editionPicker)return;
+    const ids=editionIds(),all=ids.includes('all')||data.editions.every(e=>ids.includes(e.id));
+    editionSummary.textContent=all?'All editions':ids.length===1?ids[0]:ids.length?ids.length+' editions':'Select editions';
+    editionSummary.setAttribute('aria-label','Edition: '+editionSummary.textContent+'; select one or more');
+    editionChoices.forEach(input=>{input.checked=input.value==='all'?all:all||ids.includes(input.value);input.indeterminate=input.value==='all'&&!all&&ids.length>0;});
+  }
+  if(edition.options){
+    editionPicker=node('details','lit-edition-picker');editionSummary=node('summary','', 'Edition');
+    editionPicker.append(editionSummary);const choices=node('div','lit-edition-choices');
+    for(const option of edition.options){
+      const label=node('label'),input=node('input');input.type='checkbox';input.value=option.value;
+      input.addEventListener('change',()=>{
+        const current=editionIds(),ids=new Set(current.includes('all')?data.editions.map(e=>e.id):current);
+        if(input.value==='all'){setEditions(input.checked?['all']:[]);}
+        else{input.checked?ids.add(input.value):ids.delete(input.value);setEditions([...ids]);}
+        setup();
+      });
+      editionChoices.push(input);label.append(input,node('span','',option.value==='all'?'All editions':option.textContent));choices.append(label);
+    }
+    editionPicker.append(choices);edition.after(editionPicker);edition.hidden=true;syncEditionPicker();
+    document.addEventListener('click',event=>{if(!editionPicker.contains(event.target))editionPicker.open=false;});
+    editionPicker.addEventListener('keydown',event=>{if(event.key==='Escape'){editionPicker.open=false;editionSummary.focus();}});
+  }
+  const editionCache=new Map();
   const selected=()=>{
-    if(edition.value!=='all')return data.editions.find(e=>e.id===edition.value);
-    if(!allEditions){
-      const reports=[...data.editions].sort((a,b)=>b.id.localeCompare(a.id)),articles=new Map(),coverage=new Map();
+    const ids=editionIds(),all=ids.includes('all'),key=[...ids].sort().join(',');
+    if(ids.length===1&&!all)return data.editions.find(e=>e.id===ids[0]);
+    if(!editionCache.has(key)){
+      const reports=data.editions.filter(e=>all||ids.includes(e.id)).sort((a,b)=>b.id.localeCompare(a.id)),articles=new Map(),coverage=new Map();
       for(const report of reports){
         for(const article of report.articles)if(!articles.has(feedbackId(article)))articles.set(feedbackId(article),article);
         for(const source of report.coverage){
@@ -60,10 +92,10 @@
           coverage.set(source.journal,total);
         }
       }
-      allEditions={id:'all',articles:[...articles.values()],coverage:[...coverage.values()],
-        start:reports.map(e=>e.start).sort()[0],end:reports.map(e=>e.end).sort().at(-1)};
+      editionCache.set(key,{id:all?'all':'multiple',articles:[...articles.values()],coverage:[...coverage.values()],
+        start:reports.map(e=>e.start).sort()[0]||'',end:reports.map(e=>e.end).sort().at(-1)||''});
     }
-    return allEditions;
+    return editionCache.get(key);
   };
   const sourceName=s=>s.replace('bioRxiv - Bioengineering','bioRxiv · Bioengineering').replace('Arxiv - Applied Physics','arXiv · Applied Physics');
   function row(a){
@@ -103,7 +135,7 @@
     byId('lit-version-note').hidden=!byId('lit-version-note').textContent;
     byId('lit-count').textContent=items.length+' of '+e.articles.length+' selected articles';
     byId('lit-empty').hidden=items.length!==0;
-    byId('lit-window').textContent=(e.id==='all'?'All editions · ':'')+e.start+' – '+e.end+' (Beijing time)';
+    byId('lit-window').textContent=(e.id==='all'?'All editions · ':e.id==='multiple'?(editionIds().length?editionIds().length+' editions · ':'No editions selected'):'')+e.start+' – '+e.end+' (Beijing time)';
     byId('lit-coverage-list').textContent=sources.join('; ')+'.';
     document.querySelectorAll('.lit-topics button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.topic===topic)));
     journalOpen.textContent=journals.size===sources.length?'All '+sources.length+' sources':journals.size+' selected';
@@ -171,10 +203,11 @@
   byId('lit-journals-none').addEventListener('click',()=>{draft.clear();paintJournals();});
   byId('lit-journals-apply').addEventListener('click',()=>{journals=new Set(draft);render();dialog.close();});
   for(const id of ['lit-journals-close','lit-journals-cancel'])byId(id).addEventListener('click',()=>dialog.close());
-  search.addEventListener('input',render);sort.addEventListener('change',render);edition.addEventListener('change',setup);
+  search.addEventListener('input',render);sort.addEventListener('change',render);edition.addEventListener('change',()=>{syncEditionPicker();setup();});
   function resetFilters(){
+    if(editionPicker)editionPicker.open=false;
     readLaterOnly=false;includeReadLater=true;
-    search.value='';edition.value=data.latest||defaultEdition;sort.value=accountState.user?'personal':'community';
+    search.value='';setEditions([data.latest||defaultEdition]);sort.value=accountState.user?'personal':'community';
     feedbackBoxes.forEach(box=>box.checked=box.dataset.feedbackFilter!=='irrelevant');
     setup();draft=new Set(journals);
   }
@@ -183,9 +216,10 @@
   }));
   readLaterToggle.addEventListener('click',()=>{
     if(readLaterOnly){resetFilters();return;}
+    if(editionPicker)editionPicker.open=false;
     readLaterOnly=true;includeReadLater=true;
     feedbackBoxes.forEach(box=>box.checked=false);
-    edition.value='all';setup();draft=new Set(journals);
+    setEditions(['all']);setup();draft=new Set(journals);
   });
   byId('lit-filters-reset').addEventListener('click',resetFilters);
   for(const [id,checked] of [['lit-marks-all',true],['lit-marks-clear',false]]){
@@ -208,7 +242,7 @@
     sort.querySelector('option[value="personal"]').disabled=!state.user;
     if(!state.user&&sort.value==='personal')sort.value='community';
     if(prior!==state.user?.uid)sort.value=state.user?'personal':'community';
-    if(edition.value&&(prior!==state.user?.uid||document.activeElement?.tagName!=='TEXTAREA'))render(prior!==state.user?.uid||initialReady);
+    if(editionIds().length&&(prior!==state.user?.uid||document.activeElement?.tagName!=='TEXTAREA'))render(prior!==state.user?.uid||initialReady);
   });
   // Anchor the recurring schedule in Beijing, then derive both DST-sensitive cities.
   const now=new Date(),parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);
