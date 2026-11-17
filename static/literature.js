@@ -39,11 +39,11 @@
     const current=()=>feedback[key]||{key,id:a.id,doi:a.doi||'',title:a.title,journal:a.journal,signals:[],note:''};
     const update=async entry=>{await account.save(entry);};
     for(const [signal,title] of [['more','Like'],['useful','Useful'],['irrelevant','Not relevant'],['later','Read Later']]){
-      const voters=(accountState.user?accountState.reactions||[]:[]).filter(r=>r.key===key&&r.signals.includes(signal));
+      const voters=(accountState.user&&['more','useful'].includes(signal)?accountState.reactions||[]:[]).filter(r=>r.key===key&&r.signals.includes(signal));
       const names=[...new Map(voters.map(r=>[r.uid,r.name])).values()].sort((a,b)=>a.localeCompare(b));
-      const wrap=node('span','lit-reaction-wrap'),tip=node('span','lit-reaction-tip',signal==='later'?'Your private reading list':names.length?names.join(', '):accountState.user?'No reactions yet':'Sign in to see reader reactions');tip.id='lit-reaction-tip-'+(++tooltipIndex);tip.setAttribute('role','tooltip');
+      const wrap=node('span','lit-reaction-wrap'),tip=node('span','lit-reaction-tip',signal==='later'?'Your private reading list':signal==='irrelevant'?'Only you can see this mark':names.length?names.join(', '):accountState.user?'No reactions yet':'Sign in to see reader reactions');tip.id='lit-reaction-tip-'+(++tooltipIndex);tip.setAttribute('role','tooltip');
       const publicField=signal==='more'?'like':signal==='useful'?'useful':null;
-      const count=accountState.user?names.length:publicField&&accountState.publicCountsStatus==='ready'?(accountState.publicCounts?.[key]?.[publicField]||0):null;
+      const count=!publicField?null:accountState.user?names.length:publicField&&accountState.publicCountsStatus==='ready'?(accountState.publicCounts?.[key]?.[publicField]||0):null;
       const b=node('button','',title+(signal!=='later'&&count!==null?' '+count:''));b.setAttribute('aria-label',b.textContent);b.setAttribute('aria-describedby',tip.id);b.type='button';b.dataset.signal=signal;b.disabled=!canReact();b.setAttribute('aria-pressed',String(signal==='later'?personalization.readLater(current()):current().signals.includes(signal)));
       b.addEventListener('click',async()=>{let entry={...current(),signals:[...current().signals]};if(signal==='later'){try{entry=personalization.toggleReadLater(entry);}catch(error){byId('lit-feedback-status').textContent=error.message;return;}}else if(entry.signals.includes(signal))entry.signals=entry.signals.filter(x=>x!==signal);else entry.signals=signal==='irrelevant'?['irrelevant']:[...entry.signals.filter(x=>x!=='irrelevant'),signal];b.disabled=true;await update(entry);if(b.isConnected)b.disabled=!canReact();});wrap.append(b,tip);buttons.append(wrap);
     }

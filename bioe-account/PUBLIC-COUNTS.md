@@ -50,3 +50,7 @@ GOOGLE_CLOUD_PROJECT=bioe-radar NODE_PATH=/tmp/bioe-public-counts-deps/node_modu
 ```
 
 5. Build and verify the site, publish the matching frontend, and verify with a signed-out browser: current counts are visible, nickname documents cannot be read, and changing/undoing a signed-in mark changes the corresponding public total exactly once. Keep existing history and preferences intact.
+
+## Not Relevant display update — 17 November 2026
+
+The article controls no longer display a count or voter names for Not Relevant. Its pressed state is read only from the current reader's private feedback. Like and Useful retain their existing count and nickname behavior. This display update does not change deployed Firebase rules or delete historical shared negative records. The separate `feature/public-reaction-counts` branch contains the pending private-only write rules and administrative history-redaction migration; those require backend validation and authorized Firebase deployment before the data-level privacy change is complete.

@@ -246,3 +246,10 @@ test('signed-out production adapter subscribes only to public counts and discard
  assert.deepEqual(paths,['publicReactionCounts']);
  const state=window.BioERadarAccount.getState();assert.equal(state.publicCounts.a.like,4);assert.equal('name' in state.publicCounts.a,false);assert.equal('uid' in state.publicCounts.a,false);assert.equal(state.user,null);
 });
+
+test('Not Relevant displays only my own selected state without counts or voter names',()=>{
+ const app=ui({status:'signed-in',user:{uid:'alice',displayName:'Alice'},feedback:{a:{signals:['irrelevant']}},reactions:[{key:'a',uid:'bob',name:'Hidden Negative Reader',signals:['irrelevant']}],communityStatus:'ready'});
+ assert.equal(app.button('a','irrelevant').textContent,'Not relevant');assert.equal(app.button('a','irrelevant').getAttribute('aria-pressed'),'true');
+ assert.equal(app.button('b','irrelevant').getAttribute('aria-pressed'),'false');
+ assert.equal(app.ids.get('lit-results').querySelectorAll('.lit-reaction-tip').some(t=>t.textContent.includes('Hidden Negative Reader')),false);
+});
