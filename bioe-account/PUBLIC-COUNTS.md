@@ -1,6 +1,6 @@
-# Public Like / Useful totals — implementation draft
+# Public Like / Useful totals
 
-The target is the existing `bioe-radar` default Standard Firestore database, documented in `README.md`; the live edition could not be reverified because the Firebase CLI is unauthenticated. No new database or Cloud Function is required.
+The deployed target is the existing `bioe-radar` default Standard Firestore database, documented in `README.md`. No new database or Cloud Function is required.
 
 Anonymous visitors subscribe only to `publicReactionCounts`. Each document has exactly `key`, `like`, `useful`, `updatedAt`. Its document ID is the article SHA-256. It contains no reader UID, nickname, email, individual vote or note. The adapter verifies the document ID against the key before displaying the counts. Missing records display zero only after a successful public snapshot; denied/failed reads do not pretend to be zero.
 
@@ -14,7 +14,9 @@ Passing: production-adapter and UI regression tests cover public-count-only subs
 
 Verified on 17 November 2026: all 11 Firestore emulator security tests and all 28 adapter, UI, personalization and authentication regression tests passed. The official Firestore emulator v1.22.0 ran with a demo project. The isolated site build, verification of 50 HTML pages, archive checks and account-adapter syntax check passed.
 
-Production rollout is pending Google Cloud Shell authorization for the existing project administrator session, historical-count migration, coordinated rule/frontend deployment and live verification. No production rules or data have been changed.
+Production rollout completed on 17 November 2026. Firebase CLI compiled and released the rules to the existing `bioe-radar` project. The trusted migration dry-run identified 45 articles, and the applied migration initialized all 45. GitHub PR #1 was merged; Pages workflow run 43999452014 completed successfully.
+
+Live anonymous SDK checks read all 45 aggregate documents and verified the strict four-field schema (24 Like and 35 Useful at verification time). Anonymous reads of communityReactions, reactionEvents and private feedback were denied. Live browser verification showed a signed-in Like increment from 3 to 4, undo back to 3, and signed-out display of Like 3 / Useful 2 with no voter names; the temporary test mark was undone. The verification browser was left signed out.
 
 ## Complete validation before rollout
 
