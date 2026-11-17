@@ -12,9 +12,9 @@ Each signed-in reaction update atomically writes private feedback, the named rea
 
 Passing: production-adapter and UI regression tests cover public-count-only subscriptions when signed out, stripping identity fields, displayed numbers, disabled voting, private bookmarks, account isolation and existing sorting/filter behavior.
 
-Not run: Firestore rules emulator tests. The official emulator JAR download is blocked with `403: Domain forbidden`. The test tools are installed in `/tmp/bioe-public-counts-deps` for this session. Do not deploy the rules until these tests pass. Firebase database listing returns `Failed to authenticate`; there is no authenticated Firebase management session in this environment. No production rule, data or website change has been made for this feature.
+Verified on 17 November 2026: all 11 Firestore emulator security tests and all 28 adapter, UI, personalization and authentication regression tests passed. The official Firestore emulator v1.22.0 ran with a demo project. The isolated site build, verification of 50 HTML pages, archive checks and account-adapter syntax check passed.
 
-I've set up prototype Security Rules to keep the data in Firestore safe. They are designed to be secure for anonymous aggregate reads while keeping reader identities and private feedback restricted and validating atomic counter changes. However, you should review and verify them before broadly sharing your app. If you'd like, I can help you harden these rules.
+Production rollout is pending Google Cloud Shell authorization for the existing project administrator session, historical-count migration, coordinated rule/frontend deployment and live verification. No production rules or data have been changed.
 
 ## Complete validation before rollout
 
