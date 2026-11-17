@@ -14,6 +14,8 @@ Passing: production-adapter and UI regression tests cover public-count-only subs
 
 Verified on 17 November 2026: all 11 Firestore emulator security tests and all 28 adapter, UI, personalization and authentication regression tests passed. The official Firestore emulator v1.22.0 ran with a demo project. The isolated site build, verification of 50 HTML pages, archive checks and account-adapter syntax check passed.
 
+The recorded emulator/build results above predate the Not Relevant privacy update. The updated adapter/UI tests pass, including private-only negative saves and suppression of negative counts/names. Rerun the modified Firestore emulator suite before rollout; the new private-negative permission test has not yet been executed in this workspace.
+
 Production rollout is pending Google Cloud Shell authorization for the existing project administrator session, historical-count migration, coordinated rule/frontend deployment and live verification. No production rules or data have been changed.
 
 ## Complete validation before rollout
