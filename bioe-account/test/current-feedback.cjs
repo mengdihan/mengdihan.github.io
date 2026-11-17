@@ -116,8 +116,8 @@ test('production account adapter saves bookmarks only in owner feedback and pres
  const writes=[],records=new Map();let privateListener;
  const user={uid:'alice',displayName:'Alice'};
  const auth={currentUser:user};
- const F={getFirestore:()=>({}),collection:(_db,...parts)=>parts.join('/'),doc:(...args)=>({path:args.slice(1).join('/')}),serverTimestamp:()=>123,
-  onSnapshot(collection,...args){const cb=args.find(x=>typeof x==='function');if(collection==='readers/alice/feedback'){privateListener=()=>cb({forEach:fn=>records.forEach(data=>fn({data:()=>data})),metadata:{}});privateListener();}else cb({docs:[]});return()=>{};},
+ const F={getFirestore:()=>({}),collection:(_db,...parts)=>parts.join('/'),doc:(...args)=>({path:args.slice(1).join('/')}),serverTimestamp:()=>123,increment:n=>({increment:n}),
+  onSnapshot(collection,...args){const cb=args.find(x=>typeof x==='function');if(collection==='readers/alice/feedback'){privateListener=()=>cb({forEach:fn=>records.forEach(data=>fn({data:()=>data})),metadata:{}});privateListener();}else cb({docs:[],forEach(){}});return()=>{};},
   writeBatch(){const batch=[];return {set(ref,data){batch.push({path:ref.path,data});},async commit(){writes.push(batch);for(const w of batch)if(w.path.startsWith('readers/'))records.set(w.data.key,w.data);privateListener();}};}};
  const A={getAuth:()=>auth,onAuthStateChanged(_auth,fn){fn(user);}};
  const window={};
@@ -127,7 +127,7 @@ test('production account adapter saves bookmarks only in owner feedback and pres
  const account=window.BioERadarAccount;
  let entry={key:'paper',id:'paper',doi:'',title:'Test paper',journal:'Science',signals:[],note:''};
  entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[0].length,1);assert.match(writes[0][0].path,/^readers\/alice\/feedback\/[a-f0-9]{64}$/);assert.equal(P.readLater(writes[0][0].data),true);
- entry={...entry,signals:['more']};assert.equal(await account.save(entry),true);assert.equal(writes[1].length,3);for(const w of writes[1].slice(1))assert.equal('note' in w.data,false);
+ entry={...entry,signals:['more']};assert.equal(await account.save(entry),true);assert.equal(writes[1].length,4);for(const w of writes[1].slice(1))assert.equal('note' in w.data,false);
  entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[2].length,1);assert.equal(P.readLater(writes[2][0].data),false);assert.deepEqual(Array.from(writes[2][0].data.signals),['more']);
 });
 
@@ -228,4 +228,21 @@ test('edition picker supports a multi-year archive without losing hidden selecti
  assert.equal(visible.length>40,true);assert.equal(visible.every(l=>l.children[0].value.startsWith('2025')),true);
  assert.equal(select.options.every(o=>o.selected),true);
  await picker.querySelector('.lit-edition-clear').dispatch('click');assert.equal(select.selectedOptions.length,0);assert.equal(inputs.some(i=>i.checked),false);
+});
+
+
+test('signed-out readers see public Like/Useful numbers without reader names or enabled reactions',()=>{
+ const app=ui({status:'signed-out',user:null,feedback:{},reactions:[{key:'a',uid:'secret',name:'Hidden Reader',signals:['more']}],publicCountsStatus:'ready',publicCounts:{a:{like:7,useful:3}},communityStatus:'signed-out'});
+ assert.equal(app.button('a','more').textContent,'Like 7');assert.equal(app.button('a','useful').textContent,'Useful 3');assert.equal(app.button('a','more').disabled,true);
+ const tips=app.ids.get('lit-results').querySelectorAll('.lit-reaction-tip');assert.equal(tips.some(t=>t.textContent.includes('Hidden Reader')),false);
+ assert.equal(app.button('b','more').textContent,'Like 0');
+});
+
+test('signed-out production adapter subscribes only to public counts and discards identity fields',async()=>{
+ const paths=[],window={},F={getFirestore:()=>({}),collection:(_db,...parts)=>parts.join('/'),onSnapshot(path,callback){paths.push(path);callback({forEach(fn){fn({id:require('node:crypto').createHash('sha256').update('a').digest('hex'),data:()=>({key:'a',like:4,useful:2,name:'Never expose',uid:'secret'})});}});return()=>{};}};
+ const A={getAuth:()=>({}),onAuthStateChanged(_auth,fn){fn(null);}};
+ const source=fs.readFileSync(path.resolve(__dirname,'../../static/literature-account.js'),'utf8').replace("await Promise.all([import(base+'firebase-app.js'),import(base+'firebase-auth.js'),import(base+'firebase-firestore.js')])","await Promise.resolve([mock.app,mock.A,mock.F])");
+ vm.runInNewContext(source,{window,mock:{app:{initializeApp:()=>({})},A,F},crypto:require('node:crypto').webcrypto,TextEncoder});await new Promise(resolve=>setTimeout(resolve,20));
+ assert.deepEqual(paths,['publicReactionCounts']);
+ const state=window.BioERadarAccount.getState();assert.equal(state.publicCounts.a.like,4);assert.equal('name' in state.publicCounts.a,false);assert.equal('uid' in state.publicCounts.a,false);assert.equal(state.user,null);
 });
