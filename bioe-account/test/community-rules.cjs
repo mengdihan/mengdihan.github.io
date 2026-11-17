@@ -58,3 +58,17 @@ test('two readers, double positives and undo produce exact totals; a valid vote 
  await assertSucceeds(make([], -1,-1));counts=(await F.getDoc(F.doc(anon,'publicReactionCounts',hash))).data();assert.equal(counts.like,1);assert.equal(counts.useful,0);
  await assertFails(make([],1,0));
 });
+
+
+test('Not Relevant is private and may not be written into named current or historical records',async()=>{
+ await env.clearFirestore();
+ const b=F.writeBatch(alice);
+ b.set(F.doc(alice,'readers','alice','feedback',hash),{...feedback(),signals:['irrelevant']});
+ b.set(F.doc(alice,'communityReactions','alice_'+hash),{...shared(),signals:[],event,updatedAt:F.serverTimestamp()});
+ b.set(F.doc(alice,'reactionEvents',event),{...shared(),signals:[],createdAt:F.serverTimestamp()});
+ b.set(F.doc(alice,'publicReactionCounts',hash),{key,like:0,useful:0,updatedAt:F.serverTimestamp()});
+ await assertSucceeds(b.commit());
+ assert.deepEqual((await F.getDoc(F.doc(alice,'readers','alice','feedback',hash))).data().signals,['irrelevant']);
+ assert.deepEqual((await F.getDoc(F.doc(bob,'communityReactions','alice_'+hash))).data().signals,[]);
+ await env.clearFirestore();await assertFails(batch(alice,{reaction:{signals:['irrelevant']},event:{signals:['irrelevant']},feedback:{signals:['irrelevant']}}));
+});

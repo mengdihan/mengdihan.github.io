@@ -4,7 +4,7 @@ The target is the existing `bioe-radar` default Standard Firestore database, doc
 
 Anonymous visitors subscribe only to `publicReactionCounts`. Each document has exactly `key`, `like`, `useful`, `updatedAt`. Its document ID is the article SHA-256. It contains no reader UID, nickname, email, individual vote or note. The adapter verifies the document ID against the key before displaying the counts. Missing records display zero only after a successful public snapshot; denied/failed reads do not pretend to be zero.
 
-Named `communityReactions` and `reactionEvents` stay authenticated-only. Private feedback and Read Later remain owner-only. Visitors cannot submit reactions. Signed-in readers retain existing nickname tooltips. Counts remain visible after sign-out; all named reactions are cleared.
+Named `communityReactions` and `reactionEvents` stay authenticated-only. Private feedback and Read Later remain owner-only. Visitors cannot submit reactions. Signed-in readers retain nickname tooltips for Like/Useful only. Not Relevant never displays counts or names: its selected state comes only from the signed-in reader’s private feedback. Selecting Not Relevant without an existing shared positive mark writes only private feedback, creating no shared record or event. When it replaces a shared positive mark, only the positive undo is shared. New shared reactions and events contain only Like/Useful signals; an empty shared signal list does not disclose whether the reader privately chose Not Relevant or simply undid a positive mark. Community ranking no longer uses other readers’ private negative marks. Counts remain visible after sign-out; all named reactions are cleared.
 
 Each signed-in reaction update atomically writes private feedback, the named reaction, its historical event and the exact public-counter delta. Rules require the public total and corresponding current reaction to update together, reject standalone/replayed/inflated changes, validate both create and update, and deny deletion. Bookmarks do not affect public counts. A new count document cannot be bootstrapped by an already-existing voter; historical reactions must first be backfilled by a trusted administrator.
 
@@ -40,10 +40,12 @@ Do not publish the new client separately from the backend changes: the old rules
 GOOGLE_CLOUD_PROJECT=bioe-radar NODE_PATH=/tmp/bioe-public-counts-deps/node_modules node bioe-account/admin/backfill-public-counts.cjs
 ```
 
-4. Deploy the tested rules, then initialize historical totals. The migration recomputes current Like/Useful marks from shared reactions only, not private notes or immutable historical events. Each article is updated in a transaction, and rerunning the migration replaces totals rather than adding them again.
+4. Deploy the tested rules, redact historical negative signals from the two shared collections, then initialize historical totals. This authorized administrative migration replaces only shared negative signal lists with empty lists (including immutable history through the Admin SDK); it preserves timestamps and all owner-only feedback. It cannot undo prior authorized reads or copies. Do not declare negative marks private in production until the migration succeeds. The migration recomputes current Like/Useful marks from shared reactions only, not private notes or immutable historical events. Each article is updated in a transaction, and rerunning the migration replaces totals rather than adding them again.
 
 ```sh
 /tmp/bioe-public-counts-deps/node_modules/.bin/firebase deploy --only firestore:rules --project bioe-radar --config bioe-account/public-counts-emulator.json
+GOOGLE_CLOUD_PROJECT=bioe-radar NODE_PATH=/tmp/bioe-public-counts-deps/node_modules node bioe-account/admin/redact-shared-negative-marks.cjs
+GOOGLE_CLOUD_PROJECT=bioe-radar NODE_PATH=/tmp/bioe-public-counts-deps/node_modules node bioe-account/admin/redact-shared-negative-marks.cjs --apply
 GOOGLE_CLOUD_PROJECT=bioe-radar NODE_PATH=/tmp/bioe-public-counts-deps/node_modules node bioe-account/admin/backfill-public-counts.cjs --apply
 ```
 

@@ -117,12 +117,15 @@
       const record={key:entry.key,id:String(state.feedback[entry.key]?.id||entry.id||''),doi:String(entry.doi||''),title:entry.title,journal:entry.journal,signals:[...entry.signals],note:entry.note,updatedAt:sdk.F.serverTimestamp()};
       try{
         const F=sdk.F,batch=F.writeBatch(db);batch.set(F.doc(db,'readers',user,'feedback',id),record);
-        if(JSON.stringify(entry.signals)!==JSON.stringify(state.feedback[entry.key]?.signals||[])){
+        const prior=state.reactions.find(r=>r.uid===user&&r.key===entry.key)?.signals||[];
+        const positiveSignals=entry.signals.filter(signal=>signal==='more'||signal==='useful');
+        // A purely private negative mark creates no shared record or event.
+        if(JSON.stringify(entry.signals)!==JSON.stringify(state.feedback[entry.key]?.signals||[])&&
+          (positiveSignals.length||prior.some(signal=>signal==='more'||signal==='useful'))){
           const event=F.doc(F.collection(db,'reactionEvents'));
-          const shared={key:entry.key,article:id,uid:user,name:auth.currentUser.displayName||'Reader',signals:[...entry.signals]};
+          const shared={key:entry.key,article:id,uid:user,name:auth.currentUser.displayName||'Reader',signals:positiveSignals};
           batch.set(F.doc(db,'communityReactions',user+'_'+id),{...shared,event:event.id,updatedAt:F.serverTimestamp()});
           batch.set(event,{...shared,createdAt:F.serverTimestamp()});
-          const prior=state.reactions.find(r=>r.uid===user&&r.key===entry.key)?.signals||[];
           batch.set(F.doc(db,'publicReactionCounts',id),{
             key:entry.key,like:F.increment(Number(entry.signals.includes('more'))-Number(prior.includes('more'))),
             useful:F.increment(Number(entry.signals.includes('useful'))-Number(prior.includes('useful'))),updatedAt:F.serverTimestamp()

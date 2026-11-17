@@ -48,7 +48,7 @@ service cloud.firestore {
         && bounded(d.uid,128) && d.uid==request.auth.uid
         && bounded(d.name,100) && d.name.size()>0
         && d.name==request.auth.token.get('name','Reader')
-        && validSignals(d.signals);
+        && validSignals(d.signals) && d.signals.hasOnly(['more','useful']);
     }
     function validReaction(d) {
       return d.keys().hasAll(['key','article','uid','name','signals','event','updatedAt'])
@@ -66,13 +66,14 @@ service cloud.firestore {
       return event.uid==d.uid && event.article==d.article && event.key==d.key
         && event.name==d.name && event.signals==d.signals && event.createdAt==request.time;
     }
+    function shareableSignals(signals) { return signals.hasAny(['irrelevant']) ? [] : signals; }
     function currentMatches(d,eventId) {
       let reaction=getAfter(/databases/$(database)/documents/communityReactions/$(d.uid+'_'+d.article)).data;
       let feedbackDoc=getAfter(/databases/$(database)/documents/readers/$(d.uid)/feedback/$(d.article)).data;
       return reaction.event==eventId && reaction.updatedAt==request.time
         && reaction.uid==d.uid && reaction.key==d.key && reaction.article==d.article
         && reaction.name==d.name && reaction.signals==d.signals
-        && feedbackDoc.key==d.key && feedbackDoc.signals==d.signals && feedbackDoc.updatedAt==request.time;
+        && feedbackDoc.key==d.key && shareableSignals(feedbackDoc.signals)==d.signals && feedbackDoc.updatedAt==request.time;
     }
     function validPublicCounts(d) {
       return d.keys().hasAll(['key','like','useful','updatedAt'])

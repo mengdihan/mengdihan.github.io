@@ -129,6 +129,9 @@ test('production account adapter saves bookmarks only in owner feedback and pres
  entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[0].length,1);assert.match(writes[0][0].path,/^readers\/alice\/feedback\/[a-f0-9]{64}$/);assert.equal(P.readLater(writes[0][0].data),true);
  entry={...entry,signals:['more']};assert.equal(await account.save(entry),true);assert.equal(writes[1].length,4);for(const w of writes[1].slice(1))assert.equal('note' in w.data,false);
  entry=P.toggleReadLater(entry);assert.equal(await account.save(entry),true);assert.equal(writes[2].length,1);assert.equal(P.readLater(writes[2][0].data),false);assert.deepEqual(Array.from(writes[2][0].data.signals),['more']);
+ account.getState().reactions=[{key:'paper',uid:'alice',signals:['more']}];
+ entry={...entry,signals:['irrelevant']};assert.equal(await account.save(entry),true);const negative=writes.at(-1);assert.deepEqual(Array.from(negative[0].data.signals),['irrelevant']);for(const write of negative.filter(w=>w.path.startsWith('communityReactions/')||w.path.startsWith('reactionEvents/')))assert.deepEqual(Array.from(write.data.signals),[]);
+ account.getState().reactions=[];const privateOnly={...entry,key:'private-negative',id:'private-negative',signals:['irrelevant']};assert.equal(await account.save(privateOnly),true);assert.equal(writes.at(-1).length,1);assert.equal(writes.at(-1)[0].path.startsWith('readers/'),true);
 });
 
 test('All/Clear change only mark filters and retain search and sort',async()=>{
@@ -245,4 +248,12 @@ test('signed-out production adapter subscribes only to public counts and discard
  vm.runInNewContext(source,{window,mock:{app:{initializeApp:()=>({})},A,F},crypto:require('node:crypto').webcrypto,TextEncoder});await new Promise(resolve=>setTimeout(resolve,20));
  assert.deepEqual(paths,['publicReactionCounts']);
  const state=window.BioERadarAccount.getState();assert.equal(state.publicCounts.a.like,4);assert.equal('name' in state.publicCounts.a,false);assert.equal('uid' in state.publicCounts.a,false);assert.equal(state.user,null);
+});
+
+
+test('Not Relevant shows only my own state, never other readers or counts',()=>{
+ const app=ui({status:'signed-in',user:{uid:'alice',displayName:'Alice'},feedback:{a:{signals:['irrelevant']}},reactions:[{key:'a',uid:'bob',name:'Hidden Negative Reader',signals:['irrelevant']}],communityStatus:'ready'});
+ assert.equal(app.button('a','irrelevant').textContent,'Not relevant');assert.equal(app.button('a','irrelevant').getAttribute('aria-pressed'),'true');
+ assert.equal(app.button('b','irrelevant').getAttribute('aria-pressed'),'false');
+ assert.equal(app.ids.get('lit-results').querySelectorAll('.lit-reaction-tip').some(t=>t.textContent.includes('Hidden Negative Reader')),false);
 });
