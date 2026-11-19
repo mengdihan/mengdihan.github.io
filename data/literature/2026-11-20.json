@@ -4,7 +4,7 @@
   "end": "2026-11-20 03:30",
   "updated": "2026-11-20",
   "publishedAt": "2026-11-19T19:51:57.413651+00:00",
-  "note": "Newly reviewed deliveries and relevant backfills; original online dates are retained or explicitly unverified. Coverage is partial: level 1/2 all-content review and Science editorial-summary signatures could not be completed. The Chinese report separates reviewed articles from 136 metadata-only records pending substantive-content verification. Counts are inspected metadata, not full-text reads or publication totals. No private reader feedback or click telemetry was accessed.",
+  "note": "Newly reviewed deliveries and relevant backfills; original online dates are retained or explicitly unverified. Coverage is partial: level 1/2 all-content review and Science editorial-summary signatures could not be completed. The Chinese report separates reviewed articles from 99 metadata-only records pending substantive-content verification. Counts are inspected metadata, not full-text reads or publication totals. No private reader feedback or click telemetry was accessed.",
   "articles": [
     {
       "doi": "10.1126/science.aef9553",
@@ -40,7 +40,7 @@
       "firstSeenAt": "2026-11-19T19:32:32.375881+00:00",
       "dateLabel": "Publication date unverified",
       "reportedDateContext": "2026-11-19",
-      "editorSummarySignatureStatus": "Unknown; no verified official Editor’s summary signature retrieved in this run"
+      "editorSummarySignatureStatus": "Unknown; official Editor’s summary signature inaccessible in this run"
     },
     {
       "doi": "10.1126/science.aei7840",
@@ -77,7 +77,7 @@
       "firstSeenAt": "2026-11-19T19:32:32.375889+00:00",
       "dateLabel": "Publication date unverified",
       "reportedDateContext": "2026-11-19",
-      "editorSummarySignatureStatus": "Unknown; no verified official Editor’s summary signature retrieved in this run"
+      "editorSummarySignatureStatus": "Unknown; official Editor’s summary signature inaccessible in this run"
     },
     {
       "doi": "10.1126/science.aee9889",
@@ -112,7 +112,7 @@
       "firstSeenAt": "2026-11-19T19:32:32.375878+00:00",
       "dateLabel": "Publication date unverified",
       "reportedDateContext": "2026-11-19",
-      "editorSummarySignatureStatus": "Unknown; no verified official Editor’s summary signature retrieved in this run"
+      "editorSummarySignatureStatus": "Unknown; official Editor’s summary signature inaccessible in this run"
     },
     {
       "doi": "10.1126/science.aef8963",
@@ -147,7 +147,7 @@
       "firstSeenAt": "2026-11-19T19:32:32.375880+00:00",
       "dateLabel": "Publication date unverified",
       "reportedDateContext": "2026-11-19",
-      "editorSummarySignatureStatus": "Unknown; no verified official Editor’s summary signature retrieved in this run"
+      "editorSummarySignatureStatus": "Unknown; official Editor’s summary signature inaccessible in this run"
     },
     {
       "doi": "10.1126/scirobotics.aee1549",
@@ -2698,6 +2698,356 @@
         "https://www.researchsquare.com/article/rs-9379840/v1"
       ],
       "firstSeenAt": "2026-11-19T19:45:55.525807+00:00"
+    },
+    {
+      "doi": "10.1038/s41586-026-11251-7",
+      "title": "A glucose-powered artificial neuroimmune axis for metabolic control",
+      "journal": "Nature",
+      "authors": [
+        "Weijun Xiu",
+        "Qian Wang",
+        "Ling Wan",
+        "Zhuoming Liang",
+        "Michael Raphael Panganiban",
+        "Xiaoye Li",
+        "Ao He",
+        "Yu Zhang",
+        "Heng Dong",
+        "Yu Fu",
+        "Lianhui Wang",
+        "Yuxin Liu"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41586-026-11251-7",
+      "id": "10.1038/s41586-026-11251-7",
+      "date": "2026-11-18",
+      "relevance": 3,
+      "type": "Research article",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/s41586-026-11251-7"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241026+00:00",
+      "summary": "NeuroAxis uses endogenous glucose to power closed-loop neuromodulation without batteries or wireless power transfer. The abstract reports improved glycaemic control and reduced inflammation in rat models of type 1 and type 2 diabetes, with effects persisting after treatment cessation. It directly links autonomous implant power, metabolic feedback and bioelectronic therapy; human efficacy is not established.",
+      "topics": [
+        "Battery-free implants",
+        "Glucose sensing",
+        "Closed-loop bioelectronics"
+      ]
+    },
+    {
+      "doi": "10.1038/d41586-026-03377-5",
+      "title": "Glucose-powered implant brings devices for treating diabetes a step closer",
+      "journal": "Nature",
+      "authors": [
+        "Junta Imai"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/d41586-026-03377-5",
+      "id": "10.1038/d41586-026-03377-5",
+      "date": "2026-11-18",
+      "relevance": 2,
+      "type": "News and Views",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/d41586-026-03377-5"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241103+00:00",
+      "summary": "This News and Views discusses the NeuroAxis glucose-powered implant reported in a separate research article. The accessible preview explains the motivation for automatically monitoring and controlling glucose and notes proof-of-principle efficacy in diabetic rats. It provides interpretation of that study rather than an additional independent experiment.",
+      "topics": [
+        "Battery-free implants",
+        "Closed-loop bioelectronics"
+      ]
+    },
+    {
+      "doi": "10.1038/s41586-026-11300-1",
+      "title": "Transient contacts between filaments impart its elasticity to branched actin",
+      "journal": "Nature",
+      "authors": [
+        "Mehdi Bouzid",
+        "Cesar Valencia-Gallardo",
+        "Magdalena Kopec",
+        "Lara Koehler",
+        "Giuseppe Foffi",
+        "Olivia du Roure",
+        "Julien Heuvingh",
+        "Martin Lenz"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41586-026-11300-1",
+      "id": "10.1038/s41586-026-11300-1",
+      "date": "2026-11-18",
+      "relevance": 2,
+      "type": "Research article",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/s41586-026-11300-1"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241113+00:00",
+      "summary": "Compression creates additional transient contacts between filaments in dense, weakly connected branched-actin networks. Contacts trapped during growth under force help explain adaptive stiffness beyond standard elastic-network models. The mechanism may inform nonlinear tissue-mechanics interpretation and fibrous sensor interfaces, without demonstrating a sensor device.",
+      "topics": [
+        "Tissue mechanics",
+        "Adaptive materials"
+      ]
+    },
+    {
+      "doi": "10.1038/s41586-026-11292-y",
+      "title": "Host–microbe interactions in engineered immunocompetent human gut tissues",
+      "journal": "Nature",
+      "authors": [
+        "Rubén López-Sandoval",
+        "Marius F. Harter",
+        "Qianhui Yu",
+        "Laura Gaspa-Toneu",
+        "Lukas Kaltenbach",
+        "Stefano Secchia",
+        "Ninouk Akkerman",
+        "Adrian M. Filip",
+        "Julien Aubert",
+        "Suraj Rajan Vasandani",
+        "Kristina Kromer",
+        "Dany Chauvin",
+        "Sinduya Krishnarajah",
+        "Irene Calvo-Asensio",
+        "Irineja Cubela",
+        "Sofia Tsiepa",
+        "Marina Almato-Bellavista",
+        "Salem Munteanu",
+        "Justine Fidelin",
+        "Angelique Augustin",
+        "Christian Schori",
+        "Marc Bickle",
+        "Yannik Bollen",
+        "Matthias P. Lutolf",
+        "Timothy Recaldin",
+        "Dirk Bumann",
+        "Florent Ginhoux",
+        "Michael Hensel",
+        "Joep Beumer",
+        "Mikhail Nikolaev",
+        "Nikolche Gjorevski",
+        "J. Gray Camp"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41586-026-11292-y",
+      "id": "10.1038/s41586-026-11292-y",
+      "date": "2026-11-18",
+      "relevance": 1,
+      "type": "Research article",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/s41586-026-11292-y",
+        "https://www.nature.com/articles/s41586-026-11292-y.pdf",
+        "https://www.nature.com/subjects/genomics/nature"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241120+00:00",
+      "summary": "Engineered small-intestinal and colonic barriers combine multilineage epithelium, mucus, an accessible microbial compartment and tissue-resident immune cells. Official summaries describe single-cell characterization of epithelial responses to Salmonella. These controlled host–microbe interfaces offer an adjacent validation environment for mucosal sensing, rather than evidence of an integrated sensor.",
+      "topics": [
+        "Mucosal interfaces",
+        "Microfluidics",
+        "Validation models"
+      ]
+    },
+    {
+      "doi": "10.1038/d41586-026-03742-4",
+      "title": "AI wearables could exploit people’s most vulnerable moments",
+      "journal": "Nature",
+      "authors": [
+        "Tony Huiquan Zhang",
+        "Jing Hu"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/d41586-026-03742-4",
+      "id": "10.1038/d41586-026-03742-4",
+      "date": "2026-11-17",
+      "relevance": 1,
+      "type": "Correspondence",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/d41586-026-03742-4"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241133+00:00",
+      "summary": "This correspondence argues that adding AI to consumer wearables and smart glasses can introduce harms beyond conventional privacy concerns. The accessible opening frames the ethical issue without providing an engineering performance study. It is relevant to responsible continuous monitoring; the complete correspondence was inaccessible.",
+      "topics": [
+        "Wearable sensing",
+        "Responsible design"
+      ]
+    },
+    {
+      "doi": "10.1038/d41586-026-03770-0",
+      "title": "‘Light and sound’ therapy for Alzheimer’s flops in long-anticipated trial",
+      "journal": "Nature",
+      "authors": [
+        "Asher Mullard"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/d41586-026-03770-0",
+      "id": "10.1038/d41586-026-03770-0",
+      "date": "2026-11-17",
+      "relevance": 1,
+      "type": "News",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/d41586-026-03770-0"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241140+00:00",
+      "summary": "Nature reports that a headset using flickering light and rhythmic sound failed to slow memory loss in an Alzheimer’s trial. Only the official news preview was accessible, so trial methods, subgroup analyses and numerical outcomes were not independently assessed here. The report offers a translational caution for neuromodulation devices rather than a newly verified efficacy claim.",
+      "topics": [
+        "Neuromodulation",
+        "Clinical translation"
+      ]
+    },
+    {
+      "doi": "10.1038/s44161-026-00919-y",
+      "title": "Sex differences in activity thresholds",
+      "journal": "Nature Cardiovascular Research",
+      "authors": [
+        "François-Denis Desgorces",
+        "Philippe Noirez",
+        "Arnaud Gouelle"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s44161-026-00919-y",
+      "id": "10.1038/s44161-026-00919-y",
+      "date": "2026-11-16",
+      "relevance": 2,
+      "type": "Matters Arising",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/s44161-026-00919-y"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241147+00:00",
+      "summary": "This Matters Arising questions whether common accelerometer thresholds measure equivalent physical-activity doses in women and men. It argues that threshold assumptions can affect inferred dose–response relationships with coronary heart disease. The discussion directly informs wearable-biomarker calibration and should not be presented as a new intervention trial.",
+      "topics": [
+        "Wearable sensing",
+        "Digital biomarkers",
+        "Calibration"
+      ]
+    },
+    {
+      "doi": "10.1038/s44161-026-00918-z",
+      "title": "Interplay of duration and intensity",
+      "journal": "Nature Cardiovascular Research",
+      "authors": [
+        "Jiajin Chen",
+        "Zihang Zhong",
+        "Le Zhang",
+        "Yan Wang"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s44161-026-00918-z",
+      "id": "10.1038/s44161-026-00918-z",
+      "date": "2026-11-16",
+      "relevance": 2,
+      "type": "Matters Arising — response",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/s44161-026-00918-z"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241152+00:00",
+      "summary": "This response discusses the relation between activity duration, intensity and sex-specific recommendations. The accessible opening situates it as a reply about accelerometer-derived physical activity and coronary heart disease. It complements the associated threshold critique without constituting a separate new efficacy trial.",
+      "topics": [
+        "Wearable sensing",
+        "Digital biomarkers",
+        "Calibration"
+      ]
+    },
+    {
+      "doi": "10.1038/s41592-026-03263-y",
+      "title": "A zero-shot spillover denoiser for highly multiplexed images",
+      "journal": "Nature Methods",
+      "authors": [
+        "Jason Lequyer",
+        "Ferris Nowlan",
+        "Wen-Hsin Hsu",
+        "Reuben Philip",
+        "Anna Christina Erpf",
+        "Angela M. Y. Chan",
+        "Christine Tran",
+        "Ben X. Wang",
+        "Zoltan Maliga",
+        "Hartland Warren Jackson",
+        "Laurence Pelletier"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41592-026-03263-y",
+      "id": "10.1038/s41592-026-03263-y",
+      "date": "2026-11-18",
+      "relevance": 2,
+      "type": "Research article",
+      "readingBasis": "Official indexed abstract or publicly accessible preview; full text and SI not read",
+      "evidenceSources": [
+        "https://www.nature.com/articles/s41592-026-03263-y"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241156+00:00",
+      "summary": "SpillOT uses input-image-only learning and optimal transport to reduce noise and cross-channel spillover in multiplexed biological images. The abstract reports evaluation on imaging mass cytometry and multiplexed immunofluorescence without additional spillover-calibration experiments. Its separation of true signal from structured contamination may inform multichannel sensor reconstruction, a transfer interpretation rather than an existing magnetic-sensor result.",
+      "topics": [
+        "Signal reconstruction",
+        "Crosstalk",
+        "Imaging"
+      ]
+    },
+    {
+      "doi": "10.1038/s41592-026-03345-x",
+      "title": "Scalable electron tomography for connectomics",
+      "journal": "Nature Methods",
+      "authors": [
+        "Aaron T. Kuan",
+        "Sébastien Phan",
+        "Kevin M. Delgado",
+        "Keun-Young Kim",
+        "Mason R. Mackey",
+        "Minsu Kim",
+        "Xiuye Chen",
+        "Steven T. Peltier",
+        "Mark Ellisman",
+        "Wei-Chung Allen Lee"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1038/s41592-026-03345-x",
+      "id": "10.1038/s41592-026-03345-x",
+      "date": "2026-11-19",
+      "relevance": 1,
+      "type": "Brief Communication",
+      "readingBasis": "Official journal catalogue substantive method summary plus verified article metadata; complete abstract, full text and SI inaccessible",
+      "evidenceSources": [
+        "https://www.nature.com/articles/s41592-026-03345-x",
+        "https://www.nature.com/nmeth/research-articles"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241160+00:00",
+      "summary": "An official journal summary describes electron tomography using thick tissue sections, a small number of tilt angles and computational volume reconstruction. The method targets connectomics and volume electron microscopy. It offers an adjacent three-dimensional imaging reference; the complete abstract, resolution metrics and throughput claims were inaccessible.",
+      "topics": [
+        "3D imaging",
+        "Computational reconstruction"
+      ]
+    },
+    {
+      "doi": "10.1126/science.aem7976",
+      "title": "Pinpointing planned speech",
+      "journal": "Science",
+      "authors": [
+        "Adeen Flinker"
+      ],
+      "authorsComplete": true,
+      "url": "https://doi.org/10.1126/science.aem7976",
+      "id": "10.1126/science.aem7976",
+      "date": null,
+      "relevance": 1,
+      "type": "Commentary — section unverified",
+      "readingBasis": "Short deposited editorial teaser only; complete commentary and official signature inaccessible",
+      "evidenceSources": [
+        "https://api.crossref.org/journals/0036-8075/works?filter=from-pub-date%3A2026-10-23%2Cuntil-pub-date%3A2026-11-20&rows=1000&cursor=%2A",
+        "https://api.crossref.org/journals/0036-8075/works?filter=from-created-date%3A2026-10-23%2Cuntil-created-date%3A2026-11-20&rows=1000&cursor=%2A"
+      ],
+      "firstSeenAt": "2026-11-19T20:04:36.241165+00:00",
+      "dateLabel": "Publication date unverified",
+      "reportedDateContext": "2026-11-19",
+      "summary": "The deposited editorial teaser identifies human temporal-cortex neurons involved in planning upcoming speech. This is contextual commentary relevant to neural-interface targeting, rather than a separate device demonstration. Only the short teaser and metadata were accessible, leaving detailed arguments and editorial attribution unverified.",
+      "topics": [
+        "Neural interfaces",
+        "Speech decoding"
+      ],
+      "editorSummarySignatureStatus": "Unknown; official Editor’s summary signature inaccessible in this run"
     }
   ],
   "coverage": [
@@ -2708,9 +3058,9 @@
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
-      "selectedCount": 4,
+      "selectedCount": 5,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden. Official article requests also returned HTTP 403. Editor’s summary signatures are unknown; no complete Lavine-signature coverage is claimed.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -2740,7 +3090,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 179
     },
     {
@@ -2752,7 +3102,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: unavailable.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -2782,7 +3132,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 54
     },
     {
@@ -2792,9 +3142,9 @@
       "readCountIsLowerBound": false,
       "readCountDatePending": 6,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
-      "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "selectedCount": 6,
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -2824,7 +3174,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 391
     },
     {
@@ -2836,7 +3186,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 3,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -2866,7 +3216,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 9
     },
     {
@@ -2878,7 +3228,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 1,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -2908,7 +3258,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 28
     },
     {
@@ -2919,8 +3269,8 @@
       "readCountDatePending": 1,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 1,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -2950,7 +3300,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 21
     },
     {
@@ -2961,8 +3311,8 @@
       "readCountDatePending": 1,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -2992,7 +3342,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 35
     },
     {
@@ -3002,9 +3352,9 @@
       "readCountIsLowerBound": false,
       "readCountDatePending": 5,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
-      "selectedCount": 1,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "selectedCount": 3,
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3034,7 +3384,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 25
     },
     {
@@ -3045,8 +3395,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3076,7 +3426,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 10
     },
     {
@@ -3087,8 +3437,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3125,8 +3475,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3156,7 +3506,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 10
     },
     {
@@ -3167,8 +3517,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 3,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3198,7 +3548,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 41
     },
     {
@@ -3209,8 +3559,8 @@
       "readCountDatePending": 2,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 1,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3240,7 +3590,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 82
     },
     {
@@ -3250,9 +3600,9 @@
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
-      "selectedCount": 1,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "selectedCount": 3,
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3282,7 +3632,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 51
     },
     {
@@ -3293,8 +3643,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3324,7 +3674,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 19
     },
     {
@@ -3335,8 +3685,8 @@
       "readCountDatePending": 1,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3366,7 +3716,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 31
     },
     {
@@ -3377,8 +3727,8 @@
       "readCountDatePending": 1,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3408,7 +3758,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 14
     },
     {
@@ -3419,8 +3769,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3450,7 +3800,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 5
     },
     {
@@ -3461,8 +3811,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3492,7 +3842,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 6
     },
     {
@@ -3503,8 +3853,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3533,7 +3883,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 7
     },
     {
@@ -3544,8 +3894,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3575,7 +3925,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 15
     },
     {
@@ -3587,7 +3937,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 8,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3617,7 +3967,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 374
     },
     {
@@ -3628,8 +3978,8 @@
       "readCountDatePending": 34,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3659,7 +4009,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 741
     },
     {
@@ -3671,7 +4021,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 1,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3701,7 +4051,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 415
     },
     {
@@ -3713,7 +4063,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: unavailable.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3743,7 +4093,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 45
     },
     {
@@ -3755,7 +4105,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: unavailable.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3785,7 +4135,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 32
     },
     {
@@ -3796,8 +4146,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3827,7 +4177,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 14
     },
     {
@@ -3839,7 +4189,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 5,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3869,7 +4219,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 313
     },
     {
@@ -3881,7 +4231,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 2,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3911,7 +4261,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 295
     },
     {
@@ -3923,7 +4273,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 1,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3953,7 +4303,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 212
     },
     {
@@ -3965,7 +4315,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: unavailable.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -3995,7 +4345,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 13
     },
     {
@@ -4007,7 +4357,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: unavailable.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4037,7 +4387,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 273
     },
     {
@@ -4049,7 +4399,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 2,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4079,7 +4429,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 8
     },
     {
@@ -4090,8 +4440,8 @@
       "readCountDatePending": 3,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4121,7 +4471,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 62
     },
     {
@@ -4132,8 +4482,8 @@
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 1,
-      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. An official list was accessible, but publisher pagination was not exhausted. Follow-up direct article retrieval encountered HTTP 429 and was paused; available official indexed abstracts/previews supplied a limited fallback.",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4163,7 +4513,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 9
     },
     {
@@ -4175,7 +4525,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 8,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4205,7 +4555,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 530
     },
     {
@@ -4217,7 +4567,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 4,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4247,7 +4597,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 126
     },
     {
@@ -4259,7 +4609,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: unavailable.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4289,7 +4639,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 333
     },
     {
@@ -4301,7 +4651,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: unavailable.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4331,7 +4681,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 474
     },
     {
@@ -4343,7 +4693,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 4,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 418: Unknown.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4373,7 +4723,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 46
     },
     {
@@ -4385,7 +4735,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 0,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 418: Unknown.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4415,7 +4765,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 9
     },
     {
@@ -4427,7 +4777,7 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 2,
       "detail": "Public metadata discovery and available content review are partial. Exhausted metadata cursors do not establish all publisher content or first-online date completeness. Counts include inspected backfills and undated metadata, not full-text reads or publication totals. Official catalogue request failed: HTTP Error 403: Forbidden.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [
         {
           "service": "Crossref",
@@ -4457,7 +4807,7 @@
           "pagination_exhausted": true
         }
       ],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 16
     },
     {
@@ -4469,9 +4819,9 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 4,
       "detail": "Official Applied Physics API cursor exhausted for 2026-11-12T19:30:00Z to 2026-11-19T19:30:00Z. All 44 published timestamps checked within the half-open interval. Abstracts and author metadata inspected; full text and SI not read.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 44
     },
     {
@@ -4483,9 +4833,9 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 15,
       "detail": "Official details API category=bioengineering verified, both pages exhausted. 54 version records represent 50 unique DOIs: 35 DOIs have a version-1 record in the day-level date interval; updates are not new papers. Midnight/03:30 boundary times remain unverified. Count is inspected unique metadata, not new-publication count.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 50
     },
     {
@@ -4497,9 +4847,9 @@
       "readCountBasis": "Unique metadata actually inspected in this run, including undated records, version checks and backfill; not full-text or publication counts",
       "selectedCount": 8,
       "detail": "Visible browse UI: Nature Portfolio selected under Journals & Platforms, then Search; logo and detail membership checked. Twelve pages (offsets 0 through 110) yielded 120 unique records dated November 11–19, including baseline/backfill. Displayed catalogue total 5,957 is not a weekly count. Eight selected details and expanded ordered authors were read. Day-level dates do not verify 03:30 boundary times; subset pagination was not exhausted.",
-      "lastMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "metadataAttempts": [],
-      "lastSuccessfulMetadataScanAt": "2026-11-19T19:51:57.413651+00:00",
+      "lastSuccessfulMetadataScanAt": "2026-11-19T20:04:59.489012+00:00",
       "recordsRecovered": 120
     }
   ]

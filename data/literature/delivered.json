@@ -1,7 +1,7 @@
 {
   "version": 1,
   "policy": "Only confirmed delivered entries; unknown publication dates are allowed",
-  "history_scope": "Confirmed public editions plus four independently visible earlier delivery identifiers. Does not establish complete coverage of all historical private reports. Includes 126 reviewed articles actually delivered in the 2026-11-20 Chinese report. Metadata-only pending records are excluded.",
+  "history_scope": "Confirmed public editions plus four independently visible earlier delivery identifiers. Does not establish complete coverage of all historical private reports. Includes 163 reviewed articles actually delivered in the 2026-11-20 Chinese report. Metadata-only pending records are excluded.",
   "entries": [
     {
       "id": "10.1126/science.ady8560",
@@ -3491,6 +3491,376 @@
       "title": "Designed broken symmetries facilitate configurational complexity in nematic vortex crystals",
       "first_publication_date": "2026-11-18",
       "first_seen_at": "2026-11-19T19:55:03.952070+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s41586-026-11251-7",
+      "doi": "10.1038/s41586-026-11251-7",
+      "title": "A glucose-powered artificial neuroimmune axis for metabolic control",
+      "first_publication_date": "2026-11-18",
+      "first_seen_at": "2026-11-19T20:04:36.241026+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03377-5",
+      "doi": "10.1038/d41586-026-03377-5",
+      "title": "Glucose-powered implant brings devices for treating diabetes a step closer",
+      "first_publication_date": "2026-11-18",
+      "first_seen_at": "2026-11-19T20:04:36.241103+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s41586-026-11300-1",
+      "doi": "10.1038/s41586-026-11300-1",
+      "title": "Transient contacts between filaments impart its elasticity to branched actin",
+      "first_publication_date": "2026-11-18",
+      "first_seen_at": "2026-11-19T20:04:36.241113+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s41586-026-11292-y",
+      "doi": "10.1038/s41586-026-11292-y",
+      "title": "Host–microbe interactions in engineered immunocompetent human gut tissues",
+      "first_publication_date": "2026-11-18",
+      "first_seen_at": "2026-11-19T20:04:36.241120+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03742-4",
+      "doi": "10.1038/d41586-026-03742-4",
+      "title": "AI wearables could exploit people’s most vulnerable moments",
+      "first_publication_date": "2026-11-17",
+      "first_seen_at": "2026-11-19T20:04:36.241133+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03770-0",
+      "doi": "10.1038/d41586-026-03770-0",
+      "title": "‘Light and sound’ therapy for Alzheimer’s flops in long-anticipated trial",
+      "first_publication_date": "2026-11-17",
+      "first_seen_at": "2026-11-19T20:04:36.241140+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s44161-026-00919-y",
+      "doi": "10.1038/s44161-026-00919-y",
+      "title": "Sex differences in activity thresholds",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241147+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s44161-026-00918-z",
+      "doi": "10.1038/s44161-026-00918-z",
+      "title": "Interplay of duration and intensity",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241152+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s41592-026-03263-y",
+      "doi": "10.1038/s41592-026-03263-y",
+      "title": "A zero-shot spillover denoiser for highly multiplexed images",
+      "first_publication_date": "2026-11-18",
+      "first_seen_at": "2026-11-19T20:04:36.241156+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s41592-026-03345-x",
+      "doi": "10.1038/s41592-026-03345-x",
+      "title": "Scalable electron tomography for connectomics",
+      "first_publication_date": "2026-11-19",
+      "first_seen_at": "2026-11-19T20:04:36.241160+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aem7976",
+      "doi": "10.1126/science.aem7976",
+      "title": "Pinpointing planned speech",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241165+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aeb9995",
+      "doi": "10.1126/science.aeb9995",
+      "title": "Rising risk of deforestation in Indonesia’s pulp sector",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241172+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aek1724",
+      "doi": "10.1126/science.aek1724",
+      "title": "Bumble bee cognition",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241180+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.ael6252",
+      "doi": "10.1126/science.ael6252",
+      "title": "Digital doubles and the modern crisis of identity",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241185+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aem4000",
+      "doi": "10.1126/science.aem4000",
+      "title": "A quantum paradox at work",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241190+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aem7343",
+      "doi": "10.1126/science.aem7343",
+      "title": "Mammalian development, recorded and decoded",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241194+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aeo2671",
+      "doi": "10.1126/science.aeo2671",
+      "title": "Ghost chemicals",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241198+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aeo2672",
+      "doi": "10.1126/science.aeo2672",
+      "title": "Measles comeback in U.S. adds to global resurgence",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241203+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aeo2673",
+      "doi": "10.1126/science.aeo2673",
+      "title": "AI rivals take on one of physics’ hardest math problems",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241208+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aeo2674",
+      "doi": "10.1126/science.aeo2674",
+      "title": "DOE to delay atom smasher and speed AI, quantum, and fusion projects",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241213+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aeo2675",
+      "doi": "10.1126/science.aeo2675",
+      "title": "Killing more sea lions won’t help endangered salmon recover, model suggests",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241218+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1126/science.aeo2676",
+      "doi": "10.1126/science.aeo2676",
+      "title": "Chinese gene-therapy researchers fired after probe into child’s death",
+      "first_publication_date": null,
+      "first_seen_at": "2026-11-19T20:04:36.241224+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03516-y",
+      "doi": "10.1038/d41586-026-03516-y",
+      "title": "Accept all changes",
+      "first_publication_date": "2026-11-13",
+      "first_seen_at": "2026-11-19T20:04:36.241641+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03456-7",
+      "doi": "10.1038/d41586-026-03456-7",
+      "title": "Chinese graduate students are now choosing to stay closer to home",
+      "first_publication_date": "2026-11-13",
+      "first_seen_at": "2026-11-19T20:04:36.241650+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03716-6",
+      "doi": "10.1038/d41586-026-03716-6",
+      "title": "Is the climate totally cooked? What the data say",
+      "first_publication_date": "2026-11-13",
+      "first_seen_at": "2026-11-19T20:04:36.241656+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03679-8",
+      "doi": "10.1038/d41586-026-03679-8",
+      "title": "This AI ‘mechanic’ can peer inside the black box of other neural networks",
+      "first_publication_date": "2026-11-13",
+      "first_seen_at": "2026-11-19T20:04:36.241661+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03712-w",
+      "doi": "10.1038/d41586-026-03712-w",
+      "title": "Is the sixth great extinction imminent? Scientists must draw on natural history for clues",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241668+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03713-9",
+      "doi": "10.1038/d41586-026-03713-9",
+      "title": "The psychology of imaginary friends — and why they are good for kids",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241674+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03668-x",
+      "doi": "10.1038/d41586-026-03668-x",
+      "title": "Number of international students arriving in US plunges — worrying scientists",
+      "first_publication_date": "2026-11-13",
+      "first_seen_at": "2026-11-19T20:04:36.241681+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03715-7",
+      "doi": "10.1038/d41586-026-03715-7",
+      "title": "As El Niño builds, studies of extreme marine heatwaves must start now",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241687+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03760-2",
+      "doi": "10.1038/d41586-026-03760-2",
+      "title": "The climate is in crisis — here’s four things we can do",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241696+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03752-2",
+      "doi": "10.1038/d41586-026-03752-2",
+      "title": "Chinese scientist sacked after child died in gene-editing trial",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241704+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03762-0",
+      "doi": "10.1038/d41586-026-03762-0",
+      "title": "Genetic variant that reshaped the human brain was inherited from Neanderthals",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241708+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03763-z",
+      "doi": "10.1038/d41586-026-03763-z",
+      "title": "Can AI actually help the climate? Nations want to harness the technology to cut emissions",
+      "first_publication_date": "2026-11-16",
+      "first_seen_at": "2026-11-19T20:04:36.241713+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03709-5",
+      "doi": "10.1038/d41586-026-03709-5",
+      "title": "New US Congress should ‘reimagine’ science — not just return to the past",
+      "first_publication_date": "2026-11-17",
+      "first_seen_at": "2026-11-19T20:04:36.241719+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/d41586-026-03602-1",
+      "doi": "10.1038/d41586-026-03602-1",
+      "title": "Tropical land-use intensification reshapes biodiversity in expected and unexpected ways",
+      "first_publication_date": "2026-11-18",
+      "first_seen_at": "2026-11-19T20:04:36.241725+00:00",
+      "first_delivered_edition": "2026-11-20",
+      "delivery_confirmed_on": "2026-11-20",
+      "delivery_channel": "Chinese report delivered in conversation"
+    },
+    {
+      "id": "10.1038/s41551-026-01843-z",
+      "doi": "10.1038/s41551-026-01843-z",
+      "title": "Designer mucin-responsive nanomedicine for enhanced solid tumour penetration and therapy",
+      "first_publication_date": "2026-11-18",
+      "first_seen_at": "2026-11-19T20:04:36.241730+00:00",
       "first_delivered_edition": "2026-11-20",
       "delivery_confirmed_on": "2026-11-20",
       "delivery_channel": "Chinese report delivered in conversation"
