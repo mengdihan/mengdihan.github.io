@@ -131,3 +131,14 @@ Firebase project `bioe-radar` provides Google sign-in and a private Standard Fir
 The For you view ranks the public article pool using that reader's signals, titles, summaries and topic overlap, including feedback from earlier editions. Ranking adjustments are bounded; an irrelevant paper is demoted without excluding its field, journal or other public articles. Notes are stored for the reader and are not automatically interpreted by AI. This client ranking is separate from the weekly scheduled survey; the scheduled task does not automatically obtain private Firestore feedback. Preserve existing level 1/2 completeness and Science-editor inclusion rules without displaying editor names.
 
 WeChat remains pending an approved website application and a secure backend token exchange. Do not expose an AppSecret in the frontend or claim WeChat is live. The source rules and deployment details are in `bioe-account/`.
+
+
+### 2026-11-20 partial weekly delivery
+
+- Published pool: 80 independently reviewed, previously undelivered relevant articles, including 27 preprints. Original dates remain unverified for 12 entries; six author lists retain explicit incompleteness flags.
+- Chinese report: the same 80 relevant entries plus 46 reviewed other level 1/2 entries in both views. Another 136 current level 1/2 metadata records remain pending substantive content verification and are not delivery-ledger entries. This is not a complete level 1/2 report.
+- Read-only Journal list checked; Small excluded and Nature Protocols official source corrected locally. Forty-two journal metadata collections used Crossref online-pub/pub/created and Europe PMC fallbacks with 21-day discovery lookback. Raw abstracts remain intermediate only.
+- Applied Physics: 44 exact-window API records; bioRxiv Bioengineering: 54 version records / 50 unique DOIs / 35 version-1 DOIs in the day interval. Research Square: 120 visible Nature Portfolio records across 12 pages, eight selected details; 5,957 is the displayed full catalogue total.
+- Science catalogues and two individual article requests returned HTTP 403. Editor’s summary signatures remain unknown; no full signature or publisher coverage claim. Relevant deposited abstracts remain eligible.
+- New Nature Medicine smartwatch highlight is labelled as a highlight of the already delivered underlying study, with no independent experiment implied. Smartwatch and microvascular-adhesive corrections in the previous edition are preserved and not redelivered.
+- Delivery ledger must be updated only after live Pages verification or actual Chinese report delivery. No raw abstracts, private feedback, reader identifiers or credentials are published. No UI/account code is changed.

@@ -1,0 +1,185 @@
+{
+  "checked_on": "2026-11-19T19:51:57.413651+00:00",
+  "source": "Research Square - Nature Portfolio",
+  "method": "Visible browse UI, select Nature Portfolio under Journals & Platforms, press Search; filter and result logos verified; no guessed query parameters",
+  "filter": "Nature Portfolio",
+  "filtered_catalogue_total_displayed": 5957,
+  "records_inspected": 120,
+  "offsets_inspected": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110
+  ],
+  "scope": "Partial latest catalogue, November 11–19; eight selected detail abstracts, dates and expanded author lists verified; no full-text or SI claim",
+  "records": [
+    {
+      "id": "10.21203/rs.3.rs-11691299/v1",
+      "title": "Octopus-Inspired Implants for Rapid Deployment and Active Localization of Biochemical Abnormalities",
+      "authors": [
+        "Jing Zhao",
+        "Zhongyi Li",
+        "Lifeng Wu",
+        "Yiqi Yin",
+        "Zhejian Feng",
+        "Guozhen Shen",
+        "La Li"
+      ],
+      "date": "2026-11-18",
+      "url": "https://www.researchsquare.com/article/rs-11691299/v1",
+      "summary": "A battery-free implant separates a magnetically navigable electrochemical probe from its resonant wireless module. The reported demonstrations include rapid deployment, pH resolution of 0.1 and active biochemical localization in abdominal and intracranial settings. This directly informs spatially adaptive implants, but the preprint is not peer reviewed and clinical reliability remains unestablished."
+    },
+    {
+      "id": "10.21203/rs.3.rs-10969336/v1",
+      "title": "An ingestible bioelectronic capsule for in vivo DNA monitoring in the gastrointestinal tract",
+      "authors": [
+        "Hanjie Wang",
+        "Guijie Bai",
+        "Xin Huang",
+        "Xinran Li",
+        "Yinli Bao",
+        "Hui Liu",
+        "Hongxiang Li",
+        "Leilei Wang",
+        "Xinyue Cao",
+        "Maoxing Yang",
+        "Zhanpu Bin",
+        "Xufei Teng",
+        "Meng Song",
+        "Jiachao Cao",
+        "Jiazhen Lu",
+        "Yi Zhang",
+        "Yanning Zhang",
+        "Long Li",
+        "Hanyan Zhou",
+        "Zhen Yang",
+        "Yue Jiang",
+        "Chao Zhang",
+        "Xi Jiang",
+        "Dawei Sun",
+        "Yihao Wang",
+        "Haihan Yao",
+        "Tiantian Hao",
+        "Cuiqin Huang",
+        "Zhijie Feng",
+        "Duo Liu"
+      ],
+      "date": "2026-11-12",
+      "url": "https://www.researchsquare.com/article/rs-10969336/v1",
+      "summary": "A capsule integrates sampling, lysis, CRISPR-based DNA recognition and wireless readout. Canine and porcine gastric demonstrations target Salmonella DNA, while Helicobacter detection includes human volunteer samples. Human samples are distinct from an in-human capsule trial; this preprint is not peer reviewed."
+    },
+    {
+      "id": "10.21203/rs.3.rs-11263263/v1",
+      "title": "Reaction-driven ionic remodeling enables durable soft electronics",
+      "authors": [
+        "Do Hwan Kim",
+        "Ji Hong Kim",
+        "Yeongjun Yoon",
+        "Sung Gyu Shin",
+        "Won Hyuk Choi",
+        "Jong Hwi Kim",
+        "Yoseph Park",
+        "Joo Sung Kim",
+        "Hanbin Choi",
+        "Hyo Jeong Kim",
+        "So Young Kim",
+        "Youngho Eom",
+        "Jae Hyun Jeong",
+        "Kyeounghak Kim"
+      ],
+      "date": "2026-11-16",
+      "url": "https://www.researchsquare.com/article/rs-11263263/v1",
+      "summary": "Reaction-controlled ionic remodeling stabilizes soft conductor interfaces. The gel reportedly retains over 90% conductivity after two years in ambient storage, while integrated sensor/transistor tests span seven days. Storage retention must not be conflated with two-year device operation; this preprint is not peer reviewed."
+    },
+    {
+      "id": "10.21203/rs.3.rs-11576702/v1",
+      "title": "Programmable Ultrasound Fields from a Single Laser Pulse",
+      "authors": [
+        "Sayaka Ichihara",
+        "Pedro Quinto-Su",
+        "Claus-Dieter Ohl"
+      ],
+      "date": "2026-11-12",
+      "url": "https://www.researchsquare.com/article/rs-11576702/v1",
+      "summary": "Spatially patterned laser excitation programs broadband fields in a photoacoustic transducer. Experiments demonstrate planar and multiple-focus fields with model agreement in the acoustic near field. The method may transfer to compact acoustic actuation, without proving deep-tissue performance; it is not peer reviewed."
+    },
+    {
+      "id": "10.21203/rs.3.rs-10907597/v1",
+      "title": "Bio-CM²: Distributed computational optics for cortex-wide cellular imaging",
+      "authors": [
+        "Lei Tian",
+        "Guorong Hu",
+        "Qilin Deng",
+        "Tianrui Qi",
+        "Zhixiong Chen",
+        "Bradley Rauscher",
+        "Nathan Chai",
+        "Daria Bogatova",
+        "Bethany Weinberg",
+        "Jesse Smith",
+        "Ian Davison",
+        "Anna Devor",
+        "Martin Thunemann"
+      ],
+      "date": "2026-11-18",
+      "url": "https://www.researchsquare.com/article/rs-10907597/v1",
+      "summary": "Four optical modules share one sensor to combine a 7.5 × 10 mm² field with cellular imaging. Demonstrations include vascular dynamics and more than 3,000 neurons in head-fixed mice. The distributed architecture informs multiscale readout, but should not be described as free-behavior mouse imaging; this preprint is not peer reviewed."
+    },
+    {
+      "id": "10.21203/rs.3.rs-11579608/v1",
+      "title": "Unsupervised chemical-space organization enables identification of self-healing yet ultra-robust polyurethane elastomers",
+      "authors": [
+        "Zhigang Xue",
+        "Dian Liu",
+        "Zhen Shi",
+        "Junchen Meng",
+        "Xiaoyu Ji"
+      ],
+      "date": "2026-11-19",
+      "url": "https://www.researchsquare.com/article/rs-11579608/v1",
+      "summary": "A literature-informed chemical-space workflow selects polyurethane candidates for experimental comparison. The resulting material reports approximately 98 MPa tensile strength and healing after 24 h at 80 °C with water. The method may inform durable flexible substrates, but does not establish body-temperature self-healing; the preprint is not peer reviewed."
+    },
+    {
+      "id": "10.21203/rs.3.rs-11438059/v1",
+      "title": "Molecular-scale tough adhesives based on the Lake–Thomas model",
+      "authors": [
+        "Jeong-Yun Sun",
+        "Yuseon Heo",
+        "Hakjun Lee",
+        "Chang Seo Park",
+        "Jinwoo Park",
+        "Seunghyun Sun",
+        "Sunbo Kang",
+        "Gimin Sung",
+        "Yun Hyeok Lee",
+        "Byoung Soo Kim",
+        "Jihye Shim",
+        "Junhyeong Park"
+      ],
+      "date": "2026-11-16",
+      "url": "https://www.researchsquare.com/article/rs-11438059/v1",
+      "summary": "Covalent molecular bridges tune adhesion through load-bearing backbone length. A polyimide interface below 5 nm thick reaches approximately 500 J/m² fracture energy in the reported test. The mechanism may inform heterogeneous packaging, without establishing tissue adhesion; this preprint is not peer reviewed."
+    },
+    {
+      "id": "10.21203/rs.3.rs-9379840/v1",
+      "title": "An open-source, high-torque, and portable hip exoskeleton for physically demanding locomotion",
+      "authors": [
+        "Patrick Slade",
+        "Jae-Ryeong Choi",
+        "Yinkai Dong",
+        "Catherine Rohner"
+      ],
+      "date": "2026-11-17",
+      "url": "https://www.researchsquare.com/article/rs-9379840/v1",
+      "summary": "A portable hip exoskeleton uses human-in-the-loop optimization of assistance. Eight healthy adults showed a reported 22% metabolic-cost reduction in the tested incline-walking protocol, with smaller exploratory outdoor cohorts. It offers adjacent wearable-control insight, not a broad clinical efficacy result; the preprint is not peer reviewed."
+    }
+  ]
+}
