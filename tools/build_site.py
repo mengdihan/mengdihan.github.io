@@ -468,11 +468,20 @@ rebuild_research(ROOT)
 
 # Apply branding last: page renderers also replace entire document heads.
 # Cover archives, standalone pages, maps, and the 404 page, including future pages.
+# iOS composites transparent touch icons on black. Keep browser favicons
+# transparent, and compile a separate opaque white icon for Home Screen use.
+from PIL import Image
+with Image.open(ROOT/'images/brand/hmd-smile-180.png') as source_icon:
+    foreground=source_icon.convert('RGBA')
+    touch_icon=Image.new('RGB',foreground.size,'#FFFFFF')
+    touch_icon.paste(foreground,mask=foreground.getchannel('A'))
+    touch_icon.save(ROOT/'apple-touch-icon.png')
+touch_icon_version=hashlib.sha256((ROOT/'apple-touch-icon.png').read_bytes()).hexdigest()[:12]
 favicon_version=hashlib.sha256((ROOT/'favicon.ico').read_bytes()).hexdigest()[:12]
 favicon_links=''.join([
     f'<link rel="icon" href="/favicon.ico?v={favicon_version}" sizes="any">',
     *[f'<link rel="icon" type="image/png" sizes="{size}x{size}" href="/images/brand/hmd-smile-{size}.png?v={favicon_version}">' for size in (16,32,48,192)],
-    f'<link rel="apple-touch-icon" sizes="180x180" href="/images/brand/hmd-smile-180.png?v={favicon_version}">',
+    f'<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={touch_icon_version}">',
 ])
 for page in ROOT.rglob('*.html'):
     markup=page.read_text(encoding='utf-8')
