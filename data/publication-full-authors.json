@@ -1691,7 +1691,7 @@
     },
     "128": {
       "title": "Digitizing force-assisted clinical manipulation and procedure via a wireless, multimodal tactile glove",
-      "url": "/publications/2026/#paper-128",
+      "url": "https://www.nature.com/articles/s41467-026-79749-2",
       "authors": "Yaozheng Wang¹, Wen Fan¹, Yiran Wang, Jingyan Zhang, Jie Xu, Pengcheng Zhao, Zehua Xiang, Xiaowen Zhang, Shaotong Zhang, Ruyue Zhong, Xiang Lin, Zhongyi Nie, Yuefang Zhao, Kedong Wu, Denghua Wu, Chong Zhang, Yipeng Lu, Guoqing Cui*, Mengdi Han*",
       "evidence": {
         "id": 128,
@@ -1706,7 +1706,10 @@
         "corresponding_authors": [
           "Guoqing Cui",
           "Mengdi Han"
-        ]
+        ],
+        "doi": "10.1038/s41467-026-79749-2",
+        "publisher_url": "https://www.nature.com/articles/s41467-026-79749-2",
+        "publisher_url_source": "User provided on 2026-11-24; scheduled publisher availability 2026-11-30."
       }
     }
   }
