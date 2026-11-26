@@ -1,3 +1,7 @@
+## 27 November 2026 BioBeacon backfill correction
+
+Added the previously omitted bioRxiv preprint 10.64898/2026.11.07.760898 to the 27 November edition. Its first-posted date is 19 November 2026, independently confirmed by bioRxiv details and Crossref; it is not a new publication within the reporting window. The author-provided manuscript confirms all 21 authors and the reported material, displacement and animal results. Wired-reference accuracy under anaesthesia is distinguished from freely behaving demonstrations. The edition now has 235 related entries, including 48 preprints; the Chinese dual-view report has 399 reviewed entries. Bioengineering inspected metadata becomes 43 and selected entries 25; the original 42-record API window scan remains unchanged. Preserve the edition publication timestamp, all historical editions, feedback controls and source-coverage limitations. Update the delivery ledger only after confirmed report delivery or live deployment.
+
 ## 27 November 2026 delivery and coverage
 
 Target: mengdihan/mengdihan.github.io, master, https://hmd-lab.com/BioE_Radar/. Data-only curation preserves the current account, mark, edition and stable-order implementation and all prior public editions.

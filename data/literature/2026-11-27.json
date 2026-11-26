@@ -4,7 +4,7 @@
   "end": "2026-11-27 03:30",
   "updated": "2026-11-27",
   "publishedAt": "2026-11-26T20:09:09.357770+00:00",
-  "note": "Newly reviewed deliveries and relevant backfills; original online/posted dates are retained or explicitly unverified. Publisher and level 1/2 all-content coverage remain partial; the Chinese report lists pending metadata separately. Science Editor’s summary signatures remain unknown. No private reader reactions or click telemetry were accessed.",
+  "note": "Newly reviewed deliveries and relevant backfills; original online/posted dates are retained or explicitly unverified. Publisher and level 1/2 all-content coverage remain partial; the Chinese report lists pending metadata separately. Science Editor’s summary signatures remain unknown. No private reader reactions or click telemetry were accessed. Correction on 27 November: BioBeacon (first posted 19 November 2026) added as a previously omitted, directly relevant preprint backfill.",
   "articles": [
     {
       "id": "10.1126/sciadv.aej0517",
@@ -8237,6 +8237,56 @@
         "Sensor stability",
         "Materials characterization"
       ]
+    },
+    {
+      "id": "10.64898/2026.11.07.760898",
+      "doi": "10.64898/2026.11.07.760898",
+      "title": "Bioresorbable permanent-magnet beacons for tracking internal biomechanics during free movement",
+      "journal": "bioRxiv - Bioengineering",
+      "authors": [
+        "Zhongyi Nie",
+        "Xiang Lin",
+        "Ji Wan",
+        "Jie Xu",
+        "Kedong Wu",
+        "Yan Wang",
+        "Chong Zhang",
+        "Chendong Yang",
+        "Ruyue Zhong",
+        "Ning Sun",
+        "Weitao Man",
+        "Yingda Huang",
+        "Shaotong Zhang",
+        "Denghua Wu",
+        "Yiran Wang",
+        "Yaozheng Wang",
+        "Minki Hong",
+        "Yujie Sun",
+        "Hongjie Hu",
+        "Jahyun Koo",
+        "Mengdi Han"
+      ],
+      "authorsComplete": true,
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.07.760898v1",
+      "date": "2026-11-19",
+      "type": "Preprint — not peer reviewed",
+      "firstSeenAt": "2026-11-26T23:36:48.982171+00:00",
+      "readingBasis": "Author-provided manuscript title page, abstract and main-text results; bioRxiv details API and Crossref metadata; SI not read",
+      "evidenceSources": [
+        "https://www.biorxiv.org/content/10.64898/2026.11.07.760898v1",
+        "https://api.biorxiv.org/details/biorxiv/10.64898/2026.11.07.760898",
+        "https://api.crossref.org/works/10.64898/2026.11.07.760898"
+      ],
+      "relevance": 3,
+      "summary": "Aligned iron nanowires form bioresorbable permanent-magnet beacons with remanence of ~30 emu/g. A wearable magnetic-field camera and learned decoding separate implant deformation from changes in reader position and orientation, with a displacement-equivalent mean absolute error of 2.74 μm. Intracranial pressure measurements agree with a wired reference under anaesthesia, while separate freely behaving rat experiments track pressure responses and post-stroke dynamics over multiple days. Simultaneous wired-reference accuracy was not measured during free behaviour. This preprint connects bioresorbable magnetic materials, chipless implants and motion-tolerant biomechanical monitoring; it is a backfill first posted on 19 November 2026 and has not been peer reviewed.",
+      "topics": [
+        "Bioresorbable sensors",
+        "Magnetic sensing",
+        "Wireless implants",
+        "Motion-tolerant readout",
+        "Intracranial pressure"
+      ],
+      "backfill": true
     }
   ],
   "coverage": [
@@ -10027,12 +10077,12 @@
     {
       "journal": "bioRxiv - Bioengineering",
       "status": "partial",
-      "readCount": 42,
+      "readCount": 43,
       "readCountIsLowerBound": false,
       "readCountDatePending": 0,
       "readCountBasis": "Unique metadata actually inspected in this run, including undated entries, revisions and backfills; not a weekly publication total or full-text count",
-      "selectedCount": 24,
-      "detail": "Category-filtered bioRxiv details API exhausted; 42 version records inspected and deduplicated by DOI. Selected original dates and author lists checked in Crossref. Version-2 revisions retain original first-posted dates. Publisher source-XML requests returned 429 and were paused; no full text was read.",
+      "selectedCount": 25,
+      "detail": "Category-filtered bioRxiv details API exhausted; 42 version records inspected and deduplicated by DOI. Selected original dates and author lists checked in Crossref. Version-2 revisions retain original first-posted dates. Publisher source-XML requests returned 429 and were paused; no full text was read. Follow-up on 27 November: one older omitted BioBeacon record was checked against its author-provided manuscript, bioRxiv details API and Crossref, then added as a dated backfill; the original 42-record API scan is unchanged.",
       "lastMetadataScanAt": "2026-11-26T20:09:09.357770+00:00",
       "metadataAttempts": [
         {
@@ -10050,6 +10100,16 @@
           "service": "Official author XML",
           "status": "rate_limited",
           "detail": "HTTP 429; requests paused"
+        },
+        {
+          "service": "BioBeacon follow-up",
+          "status": "ok",
+          "uniqueRecords": 1,
+          "urls": [
+            "https://www.biorxiv.org/content/10.64898/2026.11.07.760898v1",
+            "https://api.biorxiv.org/details/biorxiv/10.64898/2026.11.07.760898",
+            "https://api.crossref.org/works/10.64898/2026.11.07.760898"
+          ]
         }
       ],
       "recordsRecovered": 42,
