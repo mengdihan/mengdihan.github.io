@@ -1,0 +1,922 @@
+{
+  "checked_on": "2026-11-27",
+  "source": "https://www.researchsquare.com/browse",
+  "method": "Visible Browse UI: choose Nature Portfolio in Journals & Platforms, press Search, verify selected control and result-card/detail platform labels, then paginate.",
+  "filter": "Nature Portfolio",
+  "filtered_catalogue_total_displayed": 6001,
+  "records_inspected": 120,
+  "pages_inspected": 12,
+  "pagination_exhausted": false,
+  "scope": "Twelve pages, dates 19–26 November; includes backfill. Catalogue total is not a weekly publication count. Actual UI generated a query-string URL in this run; no filter parameters were guessed.",
+  "records": [
+    {
+      "id": "rs-11685190",
+      "url": "https://www.researchsquare.com/article/rs-11685190/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11813187",
+      "url": "https://www.researchsquare.com/article/rs-11813187/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11516834",
+      "url": "https://www.researchsquare.com/article/rs-11516834/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11751591",
+      "url": "https://www.researchsquare.com/article/rs-11751591/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11778785",
+      "url": "https://www.researchsquare.com/article/rs-11778785/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11591553",
+      "url": "https://www.researchsquare.com/article/rs-11591553/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11610542",
+      "url": "https://www.researchsquare.com/article/rs-11610542/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11406874",
+      "url": "https://www.researchsquare.com/article/rs-11406874/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11693236",
+      "url": "https://www.researchsquare.com/article/rs-11693236/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11722356",
+      "url": "https://www.researchsquare.com/article/rs-11722356/v1",
+      "platform": "Nature Portfolio",
+      "page": 1
+    },
+    {
+      "id": "rs-11652031",
+      "url": "https://www.researchsquare.com/article/rs-11652031/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11469627",
+      "url": "https://www.researchsquare.com/article/rs-11469627/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11434981",
+      "url": "https://www.researchsquare.com/article/rs-11434981/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11644756",
+      "url": "https://www.researchsquare.com/article/rs-11644756/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11522715",
+      "url": "https://www.researchsquare.com/article/rs-11522715/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11553275",
+      "url": "https://www.researchsquare.com/article/rs-11553275/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11272215",
+      "url": "https://www.researchsquare.com/article/rs-11272215/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11560585",
+      "url": "https://www.researchsquare.com/article/rs-11560585/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11059625",
+      "url": "https://www.researchsquare.com/article/rs-11059625/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-11846734",
+      "url": "https://www.researchsquare.com/article/rs-11846734/v1",
+      "platform": "Nature Portfolio",
+      "page": 2
+    },
+    {
+      "id": "rs-10949215",
+      "url": "https://www.researchsquare.com/article/rs-10949215/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11666302",
+      "url": "https://www.researchsquare.com/article/rs-11666302/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11727750",
+      "url": "https://www.researchsquare.com/article/rs-11727750/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11654294",
+      "url": "https://www.researchsquare.com/article/rs-11654294/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-9748856",
+      "url": "https://www.researchsquare.com/article/rs-9748856/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11551189",
+      "url": "https://www.researchsquare.com/article/rs-11551189/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11643311",
+      "url": "https://www.researchsquare.com/article/rs-11643311/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11700682",
+      "url": "https://www.researchsquare.com/article/rs-11700682/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11545171",
+      "url": "https://www.researchsquare.com/article/rs-11545171/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11687281",
+      "url": "https://www.researchsquare.com/article/rs-11687281/v1",
+      "platform": "Nature Portfolio",
+      "page": 3
+    },
+    {
+      "id": "rs-11466051",
+      "url": "https://www.researchsquare.com/article/rs-11466051/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11682015",
+      "url": "https://www.researchsquare.com/article/rs-11682015/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-10743890",
+      "url": "https://www.researchsquare.com/article/rs-10743890/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11627958",
+      "url": "https://www.researchsquare.com/article/rs-11627958/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11696177",
+      "url": "https://www.researchsquare.com/article/rs-11696177/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11479006",
+      "url": "https://www.researchsquare.com/article/rs-11479006/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11236824",
+      "url": "https://www.researchsquare.com/article/rs-11236824/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11363559",
+      "url": "https://www.researchsquare.com/article/rs-11363559/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11268381",
+      "url": "https://www.researchsquare.com/article/rs-11268381/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11790853",
+      "url": "https://www.researchsquare.com/article/rs-11790853/v1",
+      "platform": "Nature Portfolio",
+      "page": 4
+    },
+    {
+      "id": "rs-11820242",
+      "url": "https://www.researchsquare.com/article/rs-11820242/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11537093",
+      "url": "https://www.researchsquare.com/article/rs-11537093/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11084393",
+      "url": "https://www.researchsquare.com/article/rs-11084393/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11457341",
+      "url": "https://www.researchsquare.com/article/rs-11457341/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11762082",
+      "url": "https://www.researchsquare.com/article/rs-11762082/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11403390",
+      "url": "https://www.researchsquare.com/article/rs-11403390/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11445833",
+      "url": "https://www.researchsquare.com/article/rs-11445833/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11630285",
+      "url": "https://www.researchsquare.com/article/rs-11630285/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11606425",
+      "url": "https://www.researchsquare.com/article/rs-11606425/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11558857",
+      "url": "https://www.researchsquare.com/article/rs-11558857/v1",
+      "platform": "Nature Portfolio",
+      "page": 5
+    },
+    {
+      "id": "rs-11596029",
+      "url": "https://www.researchsquare.com/article/rs-11596029/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11514306",
+      "url": "https://www.researchsquare.com/article/rs-11514306/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11663180",
+      "url": "https://www.researchsquare.com/article/rs-11663180/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11697362",
+      "url": "https://www.researchsquare.com/article/rs-11697362/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11752706",
+      "url": "https://www.researchsquare.com/article/rs-11752706/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11557645",
+      "url": "https://www.researchsquare.com/article/rs-11557645/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11652820",
+      "url": "https://www.researchsquare.com/article/rs-11652820/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11502601",
+      "url": "https://www.researchsquare.com/article/rs-11502601/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11570096",
+      "url": "https://www.researchsquare.com/article/rs-11570096/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11649344",
+      "url": "https://www.researchsquare.com/article/rs-11649344/v1",
+      "platform": "Nature Portfolio",
+      "page": 6
+    },
+    {
+      "id": "rs-11211242",
+      "url": "https://www.researchsquare.com/article/rs-11211242/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11652417",
+      "url": "https://www.researchsquare.com/article/rs-11652417/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11639752",
+      "url": "https://www.researchsquare.com/article/rs-11639752/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11587599",
+      "url": "https://www.researchsquare.com/article/rs-11587599/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11555353",
+      "url": "https://www.researchsquare.com/article/rs-11555353/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-10357366",
+      "url": "https://www.researchsquare.com/article/rs-10357366/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11663191",
+      "url": "https://www.researchsquare.com/article/rs-11663191/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11744314",
+      "url": "https://www.researchsquare.com/article/rs-11744314/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11013810",
+      "url": "https://www.researchsquare.com/article/rs-11013810/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11815062",
+      "url": "https://www.researchsquare.com/article/rs-11815062/v1",
+      "platform": "Nature Portfolio",
+      "page": 7
+    },
+    {
+      "id": "rs-11652907",
+      "url": "https://www.researchsquare.com/article/rs-11652907/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11221544",
+      "url": "https://www.researchsquare.com/article/rs-11221544/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11213380",
+      "url": "https://www.researchsquare.com/article/rs-11213380/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11545400",
+      "url": "https://www.researchsquare.com/article/rs-11545400/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11582000",
+      "url": "https://www.researchsquare.com/article/rs-11582000/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11576387",
+      "url": "https://www.researchsquare.com/article/rs-11576387/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11761451",
+      "url": "https://www.researchsquare.com/article/rs-11761451/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-10925522",
+      "url": "https://www.researchsquare.com/article/rs-10925522/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11400211",
+      "url": "https://www.researchsquare.com/article/rs-11400211/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11451986",
+      "url": "https://www.researchsquare.com/article/rs-11451986/v1",
+      "platform": "Nature Portfolio",
+      "page": 8
+    },
+    {
+      "id": "rs-11582608",
+      "url": "https://www.researchsquare.com/article/rs-11582608/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11763847",
+      "url": "https://www.researchsquare.com/article/rs-11763847/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11600256",
+      "url": "https://www.researchsquare.com/article/rs-11600256/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11710090",
+      "url": "https://www.researchsquare.com/article/rs-11710090/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11706200",
+      "url": "https://www.researchsquare.com/article/rs-11706200/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11761315",
+      "url": "https://www.researchsquare.com/article/rs-11761315/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11118642",
+      "url": "https://www.researchsquare.com/article/rs-11118642/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11573698",
+      "url": "https://www.researchsquare.com/article/rs-11573698/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11681053",
+      "url": "https://www.researchsquare.com/article/rs-11681053/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11677308",
+      "url": "https://www.researchsquare.com/article/rs-11677308/v1",
+      "platform": "Nature Portfolio",
+      "page": 9
+    },
+    {
+      "id": "rs-11492575",
+      "url": "https://www.researchsquare.com/article/rs-11492575/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-11503653",
+      "url": "https://www.researchsquare.com/article/rs-11503653/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-10358815",
+      "url": "https://www.researchsquare.com/article/rs-10358815/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-11379339",
+      "url": "https://www.researchsquare.com/article/rs-11379339/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-11778511",
+      "url": "https://www.researchsquare.com/article/rs-11778511/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-10562696",
+      "url": "https://www.researchsquare.com/article/rs-10562696/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-11633918",
+      "url": "https://www.researchsquare.com/article/rs-11633918/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-11269199",
+      "url": "https://www.researchsquare.com/article/rs-11269199/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-11609420",
+      "url": "https://www.researchsquare.com/article/rs-11609420/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-10668007",
+      "url": "https://www.researchsquare.com/article/rs-10668007/v1",
+      "platform": "Nature Portfolio",
+      "page": 10
+    },
+    {
+      "id": "rs-11635233",
+      "url": "https://www.researchsquare.com/article/rs-11635233/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11586805",
+      "url": "https://www.researchsquare.com/article/rs-11586805/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11710930",
+      "url": "https://www.researchsquare.com/article/rs-11710930/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11406927",
+      "url": "https://www.researchsquare.com/article/rs-11406927/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11706754",
+      "url": "https://www.researchsquare.com/article/rs-11706754/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11777053",
+      "url": "https://www.researchsquare.com/article/rs-11777053/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11427882",
+      "url": "https://www.researchsquare.com/article/rs-11427882/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11209504",
+      "url": "https://www.researchsquare.com/article/rs-11209504/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11664166",
+      "url": "https://www.researchsquare.com/article/rs-11664166/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11494900",
+      "url": "https://www.researchsquare.com/article/rs-11494900/v1",
+      "platform": "Nature Portfolio",
+      "page": 11
+    },
+    {
+      "id": "rs-11683398",
+      "url": "https://www.researchsquare.com/article/rs-11683398/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-9292073",
+      "url": "https://www.researchsquare.com/article/rs-9292073/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-11435219",
+      "url": "https://www.researchsquare.com/article/rs-11435219/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-11447024",
+      "url": "https://www.researchsquare.com/article/rs-11447024/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-7644312",
+      "url": "https://www.researchsquare.com/article/rs-7644312/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-11113054",
+      "url": "https://www.researchsquare.com/article/rs-11113054/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-11651255",
+      "url": "https://www.researchsquare.com/article/rs-11651255/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-11579608",
+      "url": "https://www.researchsquare.com/article/rs-11579608/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-11531588",
+      "url": "https://www.researchsquare.com/article/rs-11531588/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    },
+    {
+      "id": "rs-9860091",
+      "url": "https://www.researchsquare.com/article/rs-9860091/v1",
+      "platform": "Nature Portfolio",
+      "page": 12
+    }
+  ],
+  "details_reviewed": [
+    {
+      "doi": "10.21203/rs.3.rs-11654294/v1",
+      "title": "Heterogeneously Integrated GaAsSb/Si Separate Absorption, Charge, and Multiplication (SACM) Photodiodes with Electrically Active Bonded Interface",
+      "date": "2026-11-25",
+      "url": "https://www.researchsquare.com/article/rs-11654294/v1",
+      "authors": [
+        "Manisha Muduli",
+        "Sophie Mills",
+        "Dylan Plouffe",
+        "Nathan Gajowski",
+        "Punam Murkute",
+        "Yongkang Xia",
+        "Fritz Kyser",
+        "Shamsul Arafin",
+        "Sanjay Krishna"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11466051/v1",
+      "title": "Physical Artificial Intelligence-Driven Robotic Platform for Autonomous Intravascular Injection and Pharmacokinetic Applications",
+      "date": "2026-11-24",
+      "url": "https://www.researchsquare.com/article/rs-11466051/v1",
+      "authors": [
+        "Kyeong-Ryoon Lee",
+        "Yoon-Jee Chae",
+        "Jaeyoung Lee",
+        "Hyeon-Cheol Jeong",
+        "Ryeo-Won Kim",
+        "Hui-Jeong Gwon",
+        "Ki-Suk Kim",
+        "Ki-Hwan Nam",
+        "Sung Gurl Park"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11502601/v1",
+      "title": "Ultrasonic servoing for autonomous intraoperative robotic imaging in neurosurgery: ex-vivo experiments and medical assessment",
+      "date": "2026-11-23",
+      "url": "https://www.researchsquare.com/article/rs-11502601/v1",
+      "authors": [
+        "Michael Dyck",
+        "Arne Sachtler",
+        "Luke Dixon",
+        "Alexander Kirst",
+        "Bernhard Weber",
+        "Alistair Weld",
+        "Sophie Camp",
+        "Stamatia Giannarou",
+        "Alexander Dietrich",
+        "Julian Klodmann",
+        "Alin Albu-Schäffer"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11445833/v1",
+      "title": "Label-free holotomography reveals dynamic structural remodeling in living pancreatic islets",
+      "date": "2026-11-24",
+      "url": "https://www.researchsquare.com/article/rs-11445833/v1",
+      "authors": [
+        "Naoaki Sakata",
+        "Ryo Kawakami",
+        "Teppei Yamada",
+        "Gumpei Yoshimatsu",
+        "Shohta Kodama"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11268381/v1",
+      "title": "Emergent Dynamic Instability in Micrometre-scale Synthetic Active-matter Polymers",
+      "date": "2026-11-24",
+      "url": "https://www.researchsquare.com/article/rs-11268381/v1",
+      "authors": [
+        "Yonatan Biniuri",
+        "Maria Bespalova",
+        "Philippe Bastiaens"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11744314/v1",
+      "title": "Bacterial metalloproteinase-gated titanium implants enable on-demand infection control and osseointegration",
+      "date": "2026-11-23",
+      "url": "https://www.researchsquare.com/article/rs-11744314/v1",
+      "authors": [
+        "Lin Wang",
+        "Wentao Zhang",
+        "Zhongyuan He",
+        "Xinliang Peng",
+        "Hang Zhou",
+        "Zhaoyang Guo",
+        "Ru Zhong",
+        "Meng Zhang",
+        "Zhongliang Deng",
+        "Youliang Ren",
+        "Lei Chu"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-11492575/v1",
+      "title": "Neurofeedback reveals cognitive states supporting waking human hippocampal ripples",
+      "date": "2026-11-19",
+      "url": "https://www.researchsquare.com/article/rs-11492575/v1",
+      "authors": [
+        "Takufumi Yanagisawa",
+        "Takamitsu Iwata",
+        "Yuji Ikegaya",
+        "Ryohei Fukuma",
+        "Satoru Oshino",
+        "Naoki Tani",
+        "Hui Ming Khoo",
+        "Yasushi Iimura",
+        "Hiroharu Suzuki",
+        "Takumi Mitsuhashi",
+        "Haruhiko Kishima"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-7644312/v1",
+      "title": "Embryonic Durotaxis: A Mechanical Framework for Understanding Cesarean Scar Pregnancy",
+      "date": "2026-11-19",
+      "url": "https://www.researchsquare.com/article/rs-7644312/v1",
+      "authors": [
+        "Jing Du",
+        "Jialing Cao",
+        "Jianwen Li",
+        "Huanyu You",
+        "Weiwei Jin",
+        "Shiping Yue",
+        "Bingqi Song",
+        "Yan Zha",
+        "Hangyu Li",
+        "Jiaqi Wei",
+        "Jine Zhang",
+        "Weiyu Fan",
+        "Jianlin Liu",
+        "Jiyu Wei",
+        "Zheng Guo",
+        "Dongshi Guan",
+        "Shuhua Yue",
+        "Yan Zu",
+        "Xu Zheng",
+        "Yan Wang"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "doi": "10.21203/rs.3.rs-9292073/v1",
+      "title": "Closed-loop navigation of reaction-diffusion pattern via Reservoir Computing and electric field modulation",
+      "date": "2026-11-19",
+      "url": "https://www.researchsquare.com/article/rs-9292073/v1",
+      "authors": [
+        "Yoshikatsu Hayashi",
+        "Federico Rossi",
+        "Amiko Aizawa",
+        "Muneyuki Matsuo"
+      ],
+      "decision": "selected",
+      "reading_scope": "Official abstract and expanded author list; no full text or SI"
+    },
+    {
+      "id": "rs-11751591",
+      "title": "Bio-inspired rebalancing through selective restraint loss",
+      "decision": "reviewed_not_selected",
+      "reason": "Marine infrastructure restraint control; no sufficiently concrete biomedical or microsensing transfer identified."
+    },
+    {
+      "id": "rs-11639752",
+      "title": "Interrupting Epitaxial Inheritance Through Phase Evolution Enables Grain Refinement in Additive Manufacturing",
+      "decision": "reviewed_not_selected",
+      "reason": "Bulk steel additive-manufacturing metallurgy; no sufficiently concrete flexible/MEMS biointerface transfer identified."
+    }
+  ],
+  "preprint_notice": "Not peer reviewed. Nature Portfolio filtering does not imply journal acceptance.",
+  "signature_evidence": "Science editorial signatures are outside this audit; no inference made."
+}

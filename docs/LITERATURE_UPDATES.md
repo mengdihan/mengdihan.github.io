@@ -1,3 +1,19 @@
+## 27 November 2026 delivery and coverage
+
+Target: mengdihan/mengdihan.github.io, master, https://hmd-lab.com/BioE_Radar/. Data-only curation preserves the current account, mark, edition and stable-order implementation and all prior public editions.
+
+This edition contains 234 newly reviewed related entries, including 47 preprints and dated/undated backfills. The private Chinese report contains the same related entries plus 164 other level 1/2 items in two full views (398 total). It separately lists 10 pending level 1/2 records and unresolved engineering candidates; pending items are not delivered. The live Journal list and links were read without modification; Small remains excluded and the Nature Protocols source is corrected locally.
+
+Crossref online-pub, pub and created discovery and Europe PMC were run with cursor pagination and a 21-day discovery lookback. Counts describe unique metadata actually inspected, including backfill, undated records and revisions; they are not weekly publication totals or full-text reads. Additional official indexed abstracts recovered relevant engineering content despite blocked publisher catalogue requests. Publisher and level 1/2 all-content completeness remain partial. Current window: 20–27 November at 03:30 Beijing time; unknown and older first-online dates do not independently block eligible unpushed deliveries.
+
+Science catalogue and individual article access remained blocked. Editor's summary signatures remain unknown; an aggregate column byline does not establish an individual paper's signature. Related Science and STM papers were reviewed from actual abstracts, without claiming full-text access. No complete signature-subset coverage is asserted.
+
+Research Square's visible Nature Portfolio filter and result/detail labels were verified: 12 pages, 120 records, 11 details, nine selected. The displayed 6,001 is a catalogue total. This run's UI generated a query-string URL; no parameters were guessed. See data/research-square-nature-portfolio-audit-2026-11-27.json.
+
+The precise-window arXiv API returned HTTP 500 twice. The official recent list supplied 48 records; 15 abstract pages and v1 UTC submission histories were checked, with 14 selected. This does not prove an exhaustive precise-window scan. bioRxiv's Bioengineering API was exhausted with 42 version records; 24 selected records received Crossref author/first-posted checks. Source-XML requests hit 429 and were paused. Preprints remain explicitly not peer reviewed; revisions retain original first-posted dates.
+
+Private reader feedback, identifiers, credentials, profile sources and full abstracts are excluded from public updates. The delivery ledger is updated only after independently confirmed delivery; pending and rejected candidates never enter it.
+
 ## 13 November 2026 delivery and coverage
 
 Publication target: mengdihan/mengdihan.github.io, master, https://hmd-lab.com/BioE_Radar/. This overrides historical repository/branch references below. Preserve all prior editions and current account/filter implementation.
